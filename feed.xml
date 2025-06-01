@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Memoria</title>
-    <link href="https://freshflash4096.github.io/GH-Pages/feed.xml" rel="self" />
-    <link href="https://freshflash4096.github.io/GH-Pages" />
+    <link href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/feed.xml" rel="self" />
+    <link href="https://FreshFlash4096.github.io/FreshFlash4096.github.io" />
     <updated>2024-05-11T17:33:50+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
-    <id>https://freshflash4096.github.io/GH-Pages</id>
+    <id>https://FreshFlash4096.github.io/FreshFlash4096.github.io</id>
 
     <entry>
         <title>OSS HIB732</title>
         <author>
             <name>Huie</name>
         </author>
-        <link href="https://freshflash4096.github.io/GH-Pages/oss-hib732/index.html"/>
-        <id>https://freshflash4096.github.io/GH-Pages/oss-hib732/index.html</id>
+        <link href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/oss-hib732/index.html"/>
+        <id>https://FreshFlash4096.github.io/FreshFlash4096.github.io/oss-hib732/index.html</id>
             <category term="전파인증"/>
             <category term="뉴스"/>
 
@@ -27,7 +27,7 @@
             </summary>
         <content type="html">
             <![CDATA[
-                <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://freshflash4096.github.io/GH-Pages/media/posts/30/Capture-2024-05-11-003053.png" alt="" width="1080" height="907"></figure>
+                <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/30/Capture-2024-05-11-003053.png" alt="" width="1080" height="907"></figure>
 <figcaption ><a href="https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000154668">출처</a></figcaption>
 </figure>
 <p>PCIe 5.0 x16 기반의 어댑터를 오늘의 마지막 전파인증으로 포스팅하겠다.</p>
@@ -43,8 +43,8 @@
         <author>
             <name>Huie</name>
         </author>
-        <link href="https://freshflash4096.github.io/GH-Pages/seagate-nytro-5060/index.html"/>
-        <id>https://freshflash4096.github.io/GH-Pages/seagate-nytro-5060/index.html</id>
+        <link href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/seagate-nytro-5060/index.html"/>
+        <id>https://FreshFlash4096.github.io/FreshFlash4096.github.io/seagate-nytro-5060/index.html</id>
             <category term="전파인증"/>
             <category term="뉴스"/>
             <category term="Seagate"/>
@@ -58,7 +58,7 @@
             </summary>
         <content type="html">
             <![CDATA[
-                <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://freshflash4096.github.io/GH-Pages/media/posts/29/SEAGATE-TECHNOLOGY-LLC-_-Nytro-5060-SSD-____.jpeg" alt="" width="1050" height="4100"></figure>
+                <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/29/SEAGATE-TECHNOLOGY-LLC-_-Nytro-5060-SSD-____.jpeg" alt="" width="1050" height="4100"></figure>
 <figcaption ><a href="https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000154979">출처</a></figcaption>
 </figure>
 <p>이번에도 상당히 길쭉하다. 오늘 전파인증은 재미난게 많다...</p>
@@ -75,8 +75,8 @@
         <author>
             <name>Huie</name>
         </author>
-        <link href="https://freshflash4096.github.io/GH-Pages/phison-pcie-ssd/index.html"/>
-        <id>https://freshflash4096.github.io/GH-Pages/phison-pcie-ssd/index.html</id>
+        <link href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/phison-pcie-ssd/index.html"/>
+        <id>https://FreshFlash4096.github.io/FreshFlash4096.github.io/phison-pcie-ssd/index.html</id>
             <category term="전파인증"/>
             <category term="뉴스"/>
             <category term="SSD"/>
@@ -91,9 +91,9 @@
         <content type="html">
             <![CDATA[
                 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/GH-Pages/media/posts/28/gallery/Capture-2024-05-10-234826.png" data-size="1080x1609"><img loading="lazy" src="https://freshflash4096.github.io/GH-Pages/media/posts/28/gallery/Capture-2024-05-10-234826-thumbnail.png" alt="" width="768" height="1144"></a></figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/GH-Pages/media/posts/28/gallery/Capture-2024-05-10-234839.png" data-size="1080x1453"><img loading="lazy" src="https://freshflash4096.github.io/GH-Pages/media/posts/28/gallery/Capture-2024-05-10-234839-thumbnail.png" alt="" width="768" height="1033"></a></figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/GH-Pages/media/posts/28/gallery/Capture-2024-05-10-234842.png" data-size="1080x1375"><img loading="lazy" src="https://freshflash4096.github.io/GH-Pages/media/posts/28/gallery/Capture-2024-05-10-234842-thumbnail.png" alt="" width="768" height="978"></a></figure>
+<figure class="gallery__item"><a href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/28/gallery/Capture-2024-05-10-234826.png" data-size="1080x1609"><img loading="lazy" src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/28/gallery/Capture-2024-05-10-234826-thumbnail.png" alt="" width="768" height="1144"></a></figure>
+<figure class="gallery__item"><a href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/28/gallery/Capture-2024-05-10-234839.png" data-size="1080x1453"><img loading="lazy" src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/28/gallery/Capture-2024-05-10-234839-thumbnail.png" alt="" width="768" height="1033"></a></figure>
+<figure class="gallery__item"><a href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/28/gallery/Capture-2024-05-10-234842.png" data-size="1080x1375"><img loading="lazy" src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/28/gallery/Capture-2024-05-10-234842-thumbnail.png" alt="" width="768" height="978"></a></figure>
 </div></div>
 <p><a href="https://www.phison.com/phocadownload/enterprises/pdf/1758053_EnterpriseProductSeriesBrochures_B100_122223.pdf">B100</a>은 Boot, <a href="https://www.phison.com/phocadownload/enterprises/pdf/EnterpriseProductSeriesBrochures_D100_022024.pdf">D100</a>은... Datacenter? <a href="https://www.phison.com/phocadownload/enterprises/pdf/EnterpriseProductSeriesBrochures_X100_011824.pdf">X100</a>은 그냥 성능의 X일까?</p>
 <p>B100과 D100은 M.2 2280과 M.2 22110이 있는데 시트 상의 성능 값은 동일하다. 그럼 22110을 굳이 만들 필요가 있나? 22110만 장착이 가능한 보드가 있을 수도.</p>
@@ -266,8 +266,8 @@
         <author>
             <name>Huie</name>
         </author>
-        <link href="https://freshflash4096.github.io/GH-Pages/synology-ns4825/index.html"/>
-        <id>https://freshflash4096.github.io/GH-Pages/synology-ns4825/index.html</id>
+        <link href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/synology-ns4825/index.html"/>
+        <id>https://FreshFlash4096.github.io/FreshFlash4096.github.io/synology-ns4825/index.html</id>
             <category term="전파인증"/>
             <category term="뉴스"/>
             <category term="Synology"/>
@@ -280,7 +280,7 @@
             </summary>
         <content type="html">
             <![CDATA[
-                <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://freshflash4096.github.io/GH-Pages/media/posts/27/Capture-2024-05-10-223419.png" alt="" width="1080" height="907"></figure>
+                <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/27/Capture-2024-05-10-223419.png" alt="" width="1080" height="907"></figure>
 <figcaption ><a href="https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000154288">출처</a></figcaption>
 </figure>
 <p>비교적 최근 행사에서 시놀로지가 네트워크 스위치를 보여줬던 적이 있던가? 뭔가 기억상에 있는 것 같은데 흐릿하다.</p>
@@ -294,8 +294,8 @@
         <author>
             <name>Huie</name>
         </author>
-        <link href="https://freshflash4096.github.io/GH-Pages/wd-us7s/index.html"/>
-        <id>https://freshflash4096.github.io/GH-Pages/wd-us7s/index.html</id>
+        <link href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/wd-us7s/index.html"/>
+        <id>https://FreshFlash4096.github.io/FreshFlash4096.github.io/wd-us7s/index.html</id>
             <category term="전파인증"/>
             <category term="뉴스"/>
             <category term="WD"/>
@@ -310,11 +310,11 @@
         <content type="html">
             <![CDATA[
                 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/GH-Pages/media/posts/26/gallery/Capture-2024-05-10-222642.png" data-size="1080x907"><img loading="lazy" src="https://freshflash4096.github.io/GH-Pages/media/posts/26/gallery/Capture-2024-05-10-222642-thumbnail.png" alt="" width="768" height="645"></a></figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/GH-Pages/media/posts/26/gallery/Capture-2024-05-10-222647.png" data-size="1080x907"><img loading="lazy" src="https://freshflash4096.github.io/GH-Pages/media/posts/26/gallery/Capture-2024-05-10-222647-thumbnail.png" alt="" width="768" height="645"></a></figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/GH-Pages/media/posts/26/gallery/Capture-2024-05-10-222651.png" data-size="1080x907"><img loading="lazy" src="https://freshflash4096.github.io/GH-Pages/media/posts/26/gallery/Capture-2024-05-10-222651-thumbnail.png" alt="" width="768" height="645"></a></figure>
+<figure class="gallery__item"><a href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/26/gallery/Capture-2024-05-10-222642.png" data-size="1080x907"><img loading="lazy" src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/26/gallery/Capture-2024-05-10-222642-thumbnail.png" alt="" width="768" height="645"></a></figure>
+<figure class="gallery__item"><a href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/26/gallery/Capture-2024-05-10-222647.png" data-size="1080x907"><img loading="lazy" src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/26/gallery/Capture-2024-05-10-222647-thumbnail.png" alt="" width="768" height="645"></a></figure>
+<figure class="gallery__item"><a href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/26/gallery/Capture-2024-05-10-222651.png" data-size="1080x907"><img loading="lazy" src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/26/gallery/Capture-2024-05-10-222651-thumbnail.png" alt="" width="768" height="645"></a></figure>
 </div></div>
-<p>낯선 모델명이다. 검색해도 별 다른건 나오지 않고, <a href="https://freshflash4096.github.io/GH-Pages/wd/index.html">이전에 인증받은 것</a>들과 다르게 제조국가가 태국만 있는 점도 눈에 띈다.</p>
+<p>낯선 모델명이다. 검색해도 별 다른건 나오지 않고, <a href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/wd/index.html">이전에 인증받은 것</a>들과 다르게 제조국가가 태국만 있는 점도 눈에 띈다.</p>
 <p> </p>
 <p>아래는 출처다.</p>
 <ul>
@@ -330,8 +330,8 @@
         <author>
             <name>Huie</name>
         </author>
-        <link href="https://freshflash4096.github.io/GH-Pages/samsung-mz-vmx/index.html"/>
-        <id>https://freshflash4096.github.io/GH-Pages/samsung-mz-vmx/index.html</id>
+        <link href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/samsung-mz-vmx/index.html"/>
+        <id>https://FreshFlash4096.github.io/FreshFlash4096.github.io/samsung-mz-vmx/index.html</id>
             <category term="전파인증"/>
             <category term="뉴스"/>
             <category term="Samsung"/>
@@ -345,7 +345,7 @@
             </summary>
         <content type="html">
             <![CDATA[
-                <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://freshflash4096.github.io/GH-Pages/media/posts/25//Capture-2024-05-09-211311.png" alt="" width="1080" height="1219"></figure>
+                <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/25//Capture-2024-05-09-211311.png" alt="" width="1080" height="1219"></figure>
 <figcaption ><a href="https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000153665">출처</a></figcaption>
 </figure>
 <p>M.2 2280</p>
@@ -363,28 +363,28 @@
         <author>
             <name>Huie</name>
         </author>
-        <link href="https://freshflash4096.github.io/GH-Pages/unifi-pro-max-16-seuwici/index.html"/>
-        <id>https://freshflash4096.github.io/GH-Pages/unifi-pro-max-16-seuwici/index.html</id>
-        <media:content url="https://freshflash4096.github.io/GH-Pages/media/posts/24/UniFi-Pro-Max-16-PoE.png" medium="image" />
+        <link href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/unifi-pro-max-16-seuwici/index.html"/>
+        <id>https://FreshFlash4096.github.io/FreshFlash4096.github.io/unifi-pro-max-16-seuwici/index.html</id>
+        <media:content url="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/24/UniFi-Pro-Max-16-PoE.png" medium="image" />
             <category term="뉴스"/>
             <category term="Ubiquiti"/>
 
         <updated>2024-05-08T22:47:22+09:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://freshflash4096.github.io/GH-Pages/media/posts/24/UniFi-Pro-Max-16-PoE.png" alt="USW-Pro-Max-16-PoE" />
+                        <img src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/24/UniFi-Pro-Max-16-PoE.png" alt="USW-Pro-Max-16-PoE" />
                     게이밍 스위치~ Ubiquiti사에선 Etherlighting이라고 말하는 RGB를 통해 VLAN이나 Link Speed등을 직관적으로 알&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://freshflash4096.github.io/GH-Pages/media/posts/24/UniFi-Pro-Max-16-PoE.png" class="type:primaryImage" alt="USW-Pro-Max-16-PoE" /></p>
+                    <p><img src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/24/UniFi-Pro-Max-16-PoE.png" class="type:primaryImage" alt="USW-Pro-Max-16-PoE" /></p>
                 <p> </p>
 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/GH-Pages/media/posts/24/gallery/Capture-2024-05-08-225134.png" data-size="2049x2434"><img loading="lazy" src="https://freshflash4096.github.io/GH-Pages/media/posts/24/gallery/Capture-2024-05-08-225134-thumbnail.png" alt="" width="768" height="912"></a>
+<figure class="gallery__item"><a href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/24/gallery/Capture-2024-05-08-225134.png" data-size="2049x2434"><img loading="lazy" src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/24/gallery/Capture-2024-05-08-225134-thumbnail.png" alt="" width="768" height="912"></a>
 <figcaption>USW-Pro-Max-16-PoE</figcaption>
 </figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/GH-Pages/media/posts/24/gallery/Capture-2024-05-08-225115.png" data-size="1730x1514"><img loading="lazy" src="https://freshflash4096.github.io/GH-Pages/media/posts/24/gallery/Capture-2024-05-08-225115-thumbnail.png" alt="" width="768" height="672"></a>
+<figure class="gallery__item"><a href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/24/gallery/Capture-2024-05-08-225115.png" data-size="1730x1514"><img loading="lazy" src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/24/gallery/Capture-2024-05-08-225115-thumbnail.png" alt="" width="768" height="672"></a>
 <figcaption>How to Rackmount</figcaption>
 </figure>
 </div></div>
@@ -445,7 +445,7 @@
 </tbody>
 </table>
 <hr>
-<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://freshflash4096.github.io/GH-Pages/media/posts/24/Switch-Pro-Max-16-and-POE.webp" alt="" width="1080" height="813"></figure>
+<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/24/Switch-Pro-Max-16-and-POE.webp" alt="" width="1080" height="813"></figure>
 <figcaption >USW Pro Max 16 PoE on UDM Pro</figcaption>
 </figure>
 <p><a href="https://www.reddit.com/r/Ubiquiti/comments/1cmbrfl/switch_pro_max_16_and_switch_pro_max_16_poe/">레딧의 글</a>을 보니 개인적으로 지금 사용 중인 UDM-Pro와 함께 쓰긴 너무 못생겨져서.. 좀 그렇다. 나는 차라리 SFP+포트를 포기하고 그냥 Standard 라인업을 구입하련다.</p>
@@ -467,23 +467,23 @@
         <author>
             <name>Huie</name>
         </author>
-        <link href="https://freshflash4096.github.io/GH-Pages/crucial-lpcamm2-memori-panmae/index.html"/>
-        <id>https://freshflash4096.github.io/GH-Pages/crucial-lpcamm2-memori-panmae/index.html</id>
-        <media:content url="https://freshflash4096.github.io/GH-Pages/media/posts/23/Crucial-64GB-LPCAMM2-LPDDR5X-7500-memory.png" medium="image" />
+        <link href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/crucial-lpcamm2-memori-panmae/index.html"/>
+        <id>https://FreshFlash4096.github.io/FreshFlash4096.github.io/crucial-lpcamm2-memori-panmae/index.html</id>
+        <media:content url="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/23/Crucial-64GB-LPCAMM2-LPDDR5X-7500-memory.png" medium="image" />
             <category term="뉴스"/>
             <category term="Micron"/>
 
         <updated>2024-05-08T22:31:25+09:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://freshflash4096.github.io/GH-Pages/media/posts/23/Crucial-64GB-LPCAMM2-LPDDR5X-7500-memory.png" alt="Crucial LPDDR5X CAMM2" />
+                        <img src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/23/Crucial-64GB-LPCAMM2-LPDDR5X-7500-memory.png" alt="Crucial LPDDR5X CAMM2" />
                     Crucial 64GB LPCAMM2 LPDDR5X-7500 memory 이전에 SO-DIMM의 한계를 벗어나기 위해 Dell에서 개발을&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://freshflash4096.github.io/GH-Pages/media/posts/23/Crucial-64GB-LPCAMM2-LPDDR5X-7500-memory.png" class="type:primaryImage" alt="Crucial LPDDR5X CAMM2" /></p>
-                <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://freshflash4096.github.io/GH-Pages/media/posts/23/Capture-2024-05-08-224425.png" alt="" width="2552" height="1648"></figure>
+                    <p><img src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/23/Crucial-64GB-LPCAMM2-LPDDR5X-7500-memory.png" class="type:primaryImage" alt="Crucial LPDDR5X CAMM2" /></p>
+                <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/23/Capture-2024-05-08-224425.png" alt="" width="2552" height="1648"></figure>
 <figcaption >Crucial 64GB LPCAMM2 LPDDR5X-7500 memory</figcaption>
 </figure>
 <p>이전에 SO-DIMM의 한계를 벗어나기 위해 Dell에서 개발을 시작하고 JEDEC에 받아들여져 표준으로 정착된 CAMM2와 LPCAMM2. 여러번 공개되었지만 실제로 판매를 시작한 것은 이번이 처음이다.</p>
@@ -506,22 +506,22 @@
         <author>
             <name>Huie</name>
         </author>
-        <link href="https://freshflash4096.github.io/GH-Pages/geugjeoon-3d-nand-siggag/index.html"/>
-        <id>https://freshflash4096.github.io/GH-Pages/geugjeoon-3d-nand-siggag/index.html</id>
-        <media:content url="https://freshflash4096.github.io/GH-Pages/media/posts/22/Tokyo_Electron_logo.svg.png" medium="image" />
+        <link href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/geugjeoon-3d-nand-siggag/index.html"/>
+        <id>https://FreshFlash4096.github.io/FreshFlash4096.github.io/geugjeoon-3d-nand-siggag/index.html</id>
+        <media:content url="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/22/Tokyo_Electron_logo.svg.png" medium="image" />
             <category term="뉴스"/>
             <category term="SSD"/>
 
         <updated>2024-05-07T22:14:53+09:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://freshflash4096.github.io/GH-Pages/media/posts/22/Tokyo_Electron_logo.svg.png" alt="Tokyo Electron" />
+                        <img src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/22/Tokyo_Electron_logo.svg.png" alt="Tokyo Electron" />
                     Tokyo Electron(TEL)은 2023년 6월, IEEE Symposium on VLSI Technology &amp; Circuits에서 Beyond&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://freshflash4096.github.io/GH-Pages/media/posts/22/Tokyo_Electron_logo.svg.png" class="type:primaryImage" alt="Tokyo Electron" /></p>
+                    <p><img src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/22/Tokyo_Electron_logo.svg.png" class="type:primaryImage" alt="Tokyo Electron" /></p>
                 <p>Tokyo Electron(TEL)은 2023년 6월, IEEE Symposium on VLSI Technology &amp; Circuits에서 <span class="notion-enable-hover" data-token-index="0"><strong>Beyond 10um Depth Ultra-High Speed Etch Process with 84% Lower Carbon Footprint for Memory Channel Hole of 3D NAND Flash over 400 Layers</strong>를 발표했다.</span><!-- notionvc: 1482f45e-daca-4eba-9e05-da86244ef2c0 --><!-- notionvc: cb9299e0-e391-41c2-94ab-b27f5e88167e --></p>
 <p>해당 발표에선 극저온에서 높은 속도의 식각을 가지는 시스템을 구현했다. 아래에 논문의 Abstract를 인용한다.</p>
 <blockquote>
@@ -544,8 +544,8 @@
         <author>
             <name>Huie</name>
         </author>
-        <link href="https://freshflash4096.github.io/GH-Pages/ambrose-server-platform-evt3/index.html"/>
-        <id>https://freshflash4096.github.io/GH-Pages/ambrose-server-platform-evt3/index.html</id>
+        <link href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/ambrose-server-platform-evt3/index.html"/>
+        <id>https://FreshFlash4096.github.io/FreshFlash4096.github.io/ambrose-server-platform-evt3/index.html</id>
             <category term="전파인증"/>
             <category term="뉴스"/>
 
@@ -558,8 +558,8 @@
         <content type="html">
             <![CDATA[
                 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/GH-Pages/media/posts/21/gallery/Capture-2024-05-07-215301-2.png" data-size="1080x985"><img loading="lazy" src="https://freshflash4096.github.io/GH-Pages/media/posts/21/gallery/Capture-2024-05-07-215301-2-thumbnail.png" alt="" width="768" height="700"></a></figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/GH-Pages/media/posts/21/gallery/Capture-2024-05-07-215252-2.png" data-size="1080x985"><img loading="lazy" src="https://freshflash4096.github.io/GH-Pages/media/posts/21/gallery/Capture-2024-05-07-215252-2-thumbnail.png" alt="" width="768" height="700"></a></figure>
+<figure class="gallery__item"><a href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/21/gallery/Capture-2024-05-07-215301-2.png" data-size="1080x985"><img loading="lazy" src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/21/gallery/Capture-2024-05-07-215301-2-thumbnail.png" alt="" width="768" height="700"></a></figure>
+<figure class="gallery__item"><a href="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/21/gallery/Capture-2024-05-07-215252-2.png" data-size="1080x985"><img loading="lazy" src="https://FreshFlash4096.github.io/FreshFlash4096.github.io/media/posts/21/gallery/Capture-2024-05-07-215252-2-thumbnail.png" alt="" width="768" height="700"></a></figure>
 </div></div>
 <p><strong>Ambrose Server Platform-EVT3</strong> 라는 이름으로 Headnode와 JBOG가 보인다.</p>
 <p>Headnode는 짐작이 쉽게 가는데, JBOG는 JBOD에서 Drive가 GPU로 바뀐 <strong>Just-a-Bunch-Of-GPU</strong>로 생각된다.</p>
