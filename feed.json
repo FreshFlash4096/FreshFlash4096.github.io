@@ -1,0 +1,185 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Memoria",
+    "description": "",
+    "home_page_url": "https://freshflash4096.github.io/GH-Pages",
+    "feed_url": "https://freshflash4096.github.io/GH-Pages/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Huie"
+    },
+    "items": [
+        {
+            "id": "https://freshflash4096.github.io/GH-Pages/oss-hib732/index.html",
+            "url": "https://freshflash4096.github.io/GH-Pages/oss-hib732/index.html",
+            "title": "OSS HIB732",
+            "summary": "출처 PCIe 5.0 x16 기반의 어댑터를 오늘의 마지막 전파인증으로 포스팅하겠다. 홈페이지를 참고하면&hellip;",
+            "content_html": "<figure class=\"post__image\" ><figure class=\"post__image post__image--center\"><img loading=\"lazy\"  src=\"https://freshflash4096.github.io/GH-Pages/media/posts/30/Capture-2024-05-11-003053.png\" alt=\"\" width=\"1080\" height=\"907\"></figure>\n<figcaption ><a href=\"https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000154668\">출처</a></figcaption>\n</figure>\n<p>PCIe 5.0 x16 기반의 어댑터를 오늘의 마지막 전파인증으로 포스팅하겠다.</p>\n<p><a href=\"https://onestopsystems.com/products/pcie-x16-gen5-cable-adapter\">홈페이지</a>를 참고하면 가격은 약 $3600이며 커넥터는 Dual QSFP-DD를 채용했는데, 핀아웃을 커스텀했기에 자사의 케이블이 필요하다고 한다.</p>\n<p>외부로 빼려면 그렇다는 것이고, 내부용으로 8레인을 사용 가능한 ARF커넥터가 있다. 생소한 커넥터인데, 자사의 백플레인에도 상당수 채용한 것을 생각하면 해당 카드의 용도를 짐작할 수 있다.</p>\n<p>PCIe 스위칭 칩은 Broadcom의 <a href=\"https://www.broadcom.com/products/pcie-switches-retimers/expressfabric/gen5/pex89072\">PEX89072</a>를 사용했다.</p>\n<p>더 자세한 것이 궁금하면 <a href=\"https://cdn.shopify.com/s/files/1/0286/3140/0483/files/pcie-gen5-x16-cable-adapter_rem7422.pdf?v=1660578666\">데이터시트</a>를 참고하자.</p>",
+            "author": {
+                "name": "Huie"
+            },
+            "tags": [
+                   "전파인증",
+                   "뉴스"
+            ],
+            "date_published": "2024-05-11T00:41:25+09:00",
+            "date_modified": "2024-05-11T00:42:03+09:00"
+        },
+        {
+            "id": "https://freshflash4096.github.io/GH-Pages/seagate-nytro-5060/index.html",
+            "url": "https://freshflash4096.github.io/GH-Pages/seagate-nytro-5060/index.html",
+            "title": "Seagate Nytro 5060",
+            "summary": "출처 이번에도 상당히 길쭉하다. 오늘 전파인증은 재미난게 많다... Nytro 5060은 작년 FMS에서&hellip;",
+            "content_html": "<figure class=\"post__image\" ><figure class=\"post__image post__image--center\"><img loading=\"lazy\"  src=\"https://freshflash4096.github.io/GH-Pages/media/posts/29/SEAGATE-TECHNOLOGY-LLC-_-Nytro-5060-SSD-____.jpeg\" alt=\"\" width=\"1050\" height=\"4100\"></figure>\n<figcaption ><a href=\"https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000154979\">출처</a></figcaption>\n</figure>\n<p>이번에도 상당히 길쭉하다. 오늘 전파인증은 재미난게 많다...</p>\n<hr>\n<p>Nytro 5060은 작년 FMS에서 공개되었는데 인증을 드디어 받았다.</p>\n<p>Phison X 시리즈 PCIe 5.0 컨트롤러를 사용하였으며, E3.S와 U.2의 두 가지 폼팩터가 있다. 데이터센터 제품군 답게 듀얼 포트를 지원하는 모델도 있다.</p>\n<p>다른 기준으로도 보자면 1 DWPD, 3 DWPD를 갖는 모델로도 분류된다. 당시엔 1.6TB ~ 30TB급 까지의 용량이 있을 것이라 했는데, 파생모델명에서 유추하면 아직 7.68TB가 최대인 모델로 보인다. 다음주 중으로 한 번 더 인증을 받으려나?</p>\n<p><a href=\"https://www.seagate.com/kr/ko/products/enterprise-drives/nytro-nvme-ssd/\">Seagate Nytro 제품군</a>의 페이지에는 현재 4350, 5350, 5550만이 등록되어있는 상태다.</p>",
+            "author": {
+                "name": "Huie"
+            },
+            "tags": [
+                   "전파인증",
+                   "뉴스",
+                   "Seagate",
+                   "SSD"
+            ],
+            "date_published": "2024-05-11T00:23:24+09:00",
+            "date_modified": "2024-05-11T00:30:08+09:00"
+        },
+        {
+            "id": "https://freshflash4096.github.io/GH-Pages/phison-pcie-ssd/index.html",
+            "url": "https://freshflash4096.github.io/GH-Pages/phison-pcie-ssd/index.html",
+            "title": "Phison B100, D100, X100",
+            "summary": "B100은 Boot, D100은... Datacenter? X100은 그냥 성능의 X일까? B100과 D100은 M.2 2280과&hellip;",
+            "content_html": "<div class=\"gallery-wrapper\"><div class=\"gallery\"  data-is-empty=\"false\" data-translation=\"이미지 추가\" data-columns=\"3\">\n<figure class=\"gallery__item\"><a href=\"https://freshflash4096.github.io/GH-Pages/media/posts/28/gallery/Capture-2024-05-10-234826.png\" data-size=\"1080x1609\"><img loading=\"lazy\" src=\"https://freshflash4096.github.io/GH-Pages/media/posts/28/gallery/Capture-2024-05-10-234826-thumbnail.png\" alt=\"\" width=\"768\" height=\"1144\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://freshflash4096.github.io/GH-Pages/media/posts/28/gallery/Capture-2024-05-10-234839.png\" data-size=\"1080x1453\"><img loading=\"lazy\" src=\"https://freshflash4096.github.io/GH-Pages/media/posts/28/gallery/Capture-2024-05-10-234839-thumbnail.png\" alt=\"\" width=\"768\" height=\"1033\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://freshflash4096.github.io/GH-Pages/media/posts/28/gallery/Capture-2024-05-10-234842.png\" data-size=\"1080x1375\"><img loading=\"lazy\" src=\"https://freshflash4096.github.io/GH-Pages/media/posts/28/gallery/Capture-2024-05-10-234842-thumbnail.png\" alt=\"\" width=\"768\" height=\"978\"></a></figure>\n</div></div>\n<p><a href=\"https://www.phison.com/phocadownload/enterprises/pdf/1758053_EnterpriseProductSeriesBrochures_B100_122223.pdf\">B100</a>은 Boot, <a href=\"https://www.phison.com/phocadownload/enterprises/pdf/EnterpriseProductSeriesBrochures_D100_022024.pdf\">D100</a>은... Datacenter? <a href=\"https://www.phison.com/phocadownload/enterprises/pdf/EnterpriseProductSeriesBrochures_X100_011824.pdf\">X100</a>은 그냥 성능의 X일까?</p>\n<p>B100과 D100은 M.2 2280과 M.2 22110이 있는데 시트 상의 성능 값은 동일하다. 그럼 22110을 굳이 만들 필요가 있나? 22110만 장착이 가능한 보드가 있을 수도.</p>\n<p>X100은 UBER 스펙이 10^18로 눈에 띈다. </p>\n<table style=\"border-collapse: collapse; width: 100%; height: 552.945px;\" border=\"1\"><caption>B100P (Performance Specifications based on M.2 2280 960GB)</caption>\n<tbody>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Dimensions</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">M.2 2280, M.2 22110</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Bus Interface</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">PCIe 4.0 x4 [NVMe 1.4]</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Flash</td>\n<td id=\"Q~UQ\" class=\"\" style=\"width: 66.4765%; height: 69.1172px;\">3D TLC</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Capacity</td>\n<td id=\"Q~UQ\" class=\"\" style=\"width: 66.4765%; height: 69.1172px;\">480GB / 960GB</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.1172px;\">SEQ R/W [FIO]</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">4500 / 1100 MBps</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.1172px;\">RND R/W [FIO]</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">400K / 25K IOPS</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.1172px;\">DWPD</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">1 DWPD (JESD219A)</td>\n</tr>\n<tr style=\"height: 69.125px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.125px;\">UBER</td>\n<td style=\"width: 66.4765%; height: 69.125px;\">1 in 10^17</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<table style=\"border-collapse: collapse; width: 100%; height: 552.945px;\" border=\"1\"><caption>D100P (Performance Specifications based on M.2 22110 3840GB)</caption>\n<tbody>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Dimensions</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">M.2 2280, M.2 22110, E1.S</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Bus Interface</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">PCIe 4.0 x4 [NVMe 1.4]</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Flash</td>\n<td id=\"Q~UQ\" class=\"\" style=\"width: 66.4765%; height: 69.1172px;\">3D TLC</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Capacity</td>\n<td id=\"Q~UQ\" class=\"\" style=\"width: 66.4765%; height: 69.1172px;\">480GB / 960GB / 1920GB / 3840GB</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.1172px;\">SEQ R/W [FIO]</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">4500 / 1700 MBps</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.1172px;\">RND R/W [FIO]</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">400K / 50K IOPS</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.1172px;\">DWPD</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">1 DWPD (JESD219A)</td>\n</tr>\n<tr style=\"height: 69.125px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.125px;\">UBER</td>\n<td style=\"width: 66.4765%; height: 69.125px;\">1 in 10^17</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<table style=\"border-collapse: collapse; width: 100%; height: 620.578px;\" border=\"1\"><caption>X100E (Performance Specifications based on 25600GB)</caption>\n<tbody>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Dimensions</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">U.3, U.2</td>\n</tr>\n<tr style=\"height: 136.75px;\">\n<td style=\"width: 33.5235%; height: 136.75px;\">Bus Interface</td>\n<td style=\"width: 66.4765%; height: 136.75px;\">\n<p>PCIe 4.0 x4 [NVMe 1.4]</p>\n<p>(single port x4 / dual port x2)</p>\n</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Flash</td>\n<td id=\"Q~UQ\" class=\"\" style=\"width: 66.4765%; height: 69.1172px;\">3D TLC</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Capacity</td>\n<td id=\"Q~UQ\" class=\"\" style=\"width: 66.4765%; height: 69.1172px;\">1600GB / 3200GB / 6400GB / 12800GB / 25600GB</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.1172px;\">SEQ R/W [FIO]</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">7000 / 6000 MBps</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.1172px;\">RND R/W [FIO]</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">1600K / 450K IOPS</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.1172px;\">DWPD</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">3 DWPD (JESD219A)</td>\n</tr>\n<tr style=\"height: 69.125px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.125px;\">UBER</td>\n<td style=\"width: 66.4765%; height: 69.125px;\">1 in 10^18</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<table style=\"border-collapse: collapse; width: 100%; height: 552.945px;\" border=\"1\"><caption>X100P (Performance Specifications based on 30720GB)</caption>\n<tbody>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Dimensions</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">U.3, U.2</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Bus Interface</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">\n<p>PCIe 4.0 x4 [NVMe 1.4]</p>\n<p>(single port x4 / dual port x2)</p>\n</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Flash</td>\n<td id=\"Q~UQ\" class=\"\" style=\"width: 66.4765%; height: 69.1172px;\">3D TLC</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td style=\"width: 33.5235%; height: 69.1172px;\">Capacity</td>\n<td id=\"Q~UQ\" class=\"\" style=\"width: 66.4765%; height: 69.1172px;\">1920GB / 3840GB / 7680GB / 15360GB / 30720GB</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.1172px;\">SEQ R/W [FIO]</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">7000 / 6000 MBps</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.1172px;\">RND R/W [FIO]</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">1600K / 180K IOPS</td>\n</tr>\n<tr style=\"height: 69.1172px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.1172px;\">DWPD</td>\n<td style=\"width: 66.4765%; height: 69.1172px;\">1 DWPD (JESD219A)</td>\n</tr>\n<tr style=\"height: 69.125px;\">\n<td id=\"tBjb\" class=\"\" style=\"width: 33.5235%; height: 69.125px;\">UBER</td>\n<td style=\"width: 66.4765%; height: 69.125px;\">1 in 10^18</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<p>아래는 출처다. 각 이미지마다 달 수가 없으니 조금 불편하네... HTML을 건드려서 편집해볼까도 싶고, 스펙 시트가 사라질 것을 대비해 표로 굳이 써놓을 필요가 있을까? 다음부터는 그냥 생략해야겠다.</p>\n<ul>\n<li><a href=\"https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000154021\">PCIe M.2 2280</a></li>\n<li><a href=\"https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000154007\">PCIe M.2 22110</a></li>\n<li><a href=\"https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000153885\">PCIe-Box 25 Slim S7</a></li>\n</ul>",
+            "author": {
+                "name": "Huie"
+            },
+            "tags": [
+                   "전파인증",
+                   "뉴스",
+                   "SSD",
+                   "Phison"
+            ],
+            "date_published": "2024-05-10T23:44:55+09:00",
+            "date_modified": "2024-05-11T00:21:14+09:00"
+        },
+        {
+            "id": "https://freshflash4096.github.io/GH-Pages/synology-ns4825/index.html",
+            "url": "https://freshflash4096.github.io/GH-Pages/synology-ns4825/index.html",
+            "title": "Synology NS4825",
+            "summary": "출처 비교적 최근 행사에서 시놀로지가 네트워크 스위치를 보여줬던 적이 있던가? 뭔가 기억상에&hellip;",
+            "content_html": "<figure class=\"post__image\" ><figure class=\"post__image post__image--center\"><img loading=\"lazy\"  src=\"https://freshflash4096.github.io/GH-Pages/media/posts/27/Capture-2024-05-10-223419.png\" alt=\"\" width=\"1080\" height=\"907\"></figure>\n<figcaption ><a href=\"https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000154288\">출처</a></figcaption>\n</figure>\n<p>비교적 최근 행사에서 시놀로지가 네트워크 스위치를 보여줬던 적이 있던가? 뭔가 기억상에 있는 것 같은데 흐릿하다.</p>\n<p>NS4825라... NS는 Network Switch의 준말일까. 4825는 잘 모르겠다.</p>\n<p> </p>",
+            "author": {
+                "name": "Huie"
+            },
+            "tags": [
+                   "전파인증",
+                   "뉴스",
+                   "Synology"
+            ],
+            "date_published": "2024-05-10T22:37:20+09:00",
+            "date_modified": "2024-05-10T22:37:32+09:00"
+        },
+        {
+            "id": "https://freshflash4096.github.io/GH-Pages/wd-us7s/index.html",
+            "url": "https://freshflash4096.github.io/GH-Pages/wd-us7s/index.html",
+            "title": "WD US7S",
+            "summary": "낯선 모델명이다. 검색해도 별 다른건 나오지 않고, 이전에 인증받은 것들과 다르게 제조국가가&hellip;",
+            "content_html": "<div class=\"gallery-wrapper\"><div class=\"gallery\"  data-is-empty=\"false\" data-translation=\"이미지 추가\" data-columns=\"3\">\n<figure class=\"gallery__item\"><a href=\"https://freshflash4096.github.io/GH-Pages/media/posts/26/gallery/Capture-2024-05-10-222642.png\" data-size=\"1080x907\"><img loading=\"lazy\" src=\"https://freshflash4096.github.io/GH-Pages/media/posts/26/gallery/Capture-2024-05-10-222642-thumbnail.png\" alt=\"\" width=\"768\" height=\"645\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://freshflash4096.github.io/GH-Pages/media/posts/26/gallery/Capture-2024-05-10-222647.png\" data-size=\"1080x907\"><img loading=\"lazy\" src=\"https://freshflash4096.github.io/GH-Pages/media/posts/26/gallery/Capture-2024-05-10-222647-thumbnail.png\" alt=\"\" width=\"768\" height=\"645\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://freshflash4096.github.io/GH-Pages/media/posts/26/gallery/Capture-2024-05-10-222651.png\" data-size=\"1080x907\"><img loading=\"lazy\" src=\"https://freshflash4096.github.io/GH-Pages/media/posts/26/gallery/Capture-2024-05-10-222651-thumbnail.png\" alt=\"\" width=\"768\" height=\"645\"></a></figure>\n</div></div>\n<p>낯선 모델명이다. 검색해도 별 다른건 나오지 않고, <a href=\"https://freshflash4096.github.io/GH-Pages/wd/index.html\">이전에 인증받은 것</a>들과 다르게 제조국가가 태국만 있는 점도 눈에 띈다.</p>\n<p> </p>\n<p>아래는 출처다.</p>\n<ul>\n<li><a href=\"https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000153967\">US7SSU260</a></li>\n<li><a href=\"https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000153989\">US7SAU260</a></li>\n<li><a href=\"https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000154002\">US7SAU26V</a></li>\n</ul>",
+            "author": {
+                "name": "Huie"
+            },
+            "tags": [
+                   "전파인증",
+                   "뉴스",
+                   "WD",
+                   "HDD"
+            ],
+            "date_published": "2024-05-10T22:27:31+09:00",
+            "date_modified": "2024-05-10T23:53:50+09:00"
+        },
+        {
+            "id": "https://freshflash4096.github.io/GH-Pages/samsung-mz-vmx/index.html",
+            "url": "https://freshflash4096.github.io/GH-Pages/samsung-mz-vmx/index.html",
+            "title": "Samsung MZ-VMX2T00",
+            "summary": "출처 M.2 2280 QLC? Controller? 512GB ~ 2TB M.2 2280인 것만 확인하고&hellip;",
+            "content_html": "<figure class=\"post__image\" ><figure class=\"post__image post__image--center\"><img loading=\"lazy\"  src=\"https://freshflash4096.github.io/GH-Pages/media/posts/25//Capture-2024-05-09-211311.png\" alt=\"\" width=\"1080\" height=\"1219\"></figure>\n<figcaption ><a href=\"https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000153665\">출처</a></figcaption>\n</figure>\n<p>M.2 2280</p>\n<p>QLC?</p>\n<p>Controller?</p>\n<p>512GB ~ 2TB</p>\n<hr>\n<p>M.2 2280인 것만 확인하고 엔터프라이즈 급으로 생각하지 않아 980 QVO, 990 QVO 등으로 생각했는데... 다시 생각해보니 컨슈머 타겟의 모델명이 아니다. OEM 채널로 풀리는 모델명이기에 PM9A1 같은 친구라고 봐야할 것이다.</p>\n<p>현재 삼성 SSD의 엔터프라이즈 제품군에 대해서만 파트넘버를 보고 있는데 점차 넓혀봐야겠다. 경험에 기반한 추측이지만 재밌으니.</p>",
+            "author": {
+                "name": "Huie"
+            },
+            "tags": [
+                   "전파인증",
+                   "뉴스",
+                   "Samsung",
+                   "SSD"
+            ],
+            "date_published": "2024-05-09T22:27:09+09:00",
+            "date_modified": "2024-05-11T17:33:50+09:00"
+        },
+        {
+            "id": "https://freshflash4096.github.io/GH-Pages/unifi-pro-max-16-seuwici/index.html",
+            "url": "https://freshflash4096.github.io/GH-Pages/unifi-pro-max-16-seuwici/index.html",
+            "title": "UniFi Pro Max 16 스위치 공개 및 판매",
+            "summary": "게이밍 스위치~ Ubiquiti사에선 Etherlighting이라고 말하는 RGB를 통해 VLAN이나 Link Speed등을 직관적으로 알&hellip;",
+            "content_html": "<p> </p>\n<div class=\"gallery-wrapper\"><div class=\"gallery\"  data-is-empty=\"false\" data-translation=\"이미지 추가\" data-columns=\"3\">\n<figure class=\"gallery__item\"><a href=\"https://freshflash4096.github.io/GH-Pages/media/posts/24/gallery/Capture-2024-05-08-225134.png\" data-size=\"2049x2434\"><img loading=\"lazy\" src=\"https://freshflash4096.github.io/GH-Pages/media/posts/24/gallery/Capture-2024-05-08-225134-thumbnail.png\" alt=\"\" width=\"768\" height=\"912\"></a>\n<figcaption>USW-Pro-Max-16-PoE</figcaption>\n</figure>\n<figure class=\"gallery__item\"><a href=\"https://freshflash4096.github.io/GH-Pages/media/posts/24/gallery/Capture-2024-05-08-225115.png\" data-size=\"1730x1514\"><img loading=\"lazy\" src=\"https://freshflash4096.github.io/GH-Pages/media/posts/24/gallery/Capture-2024-05-08-225115-thumbnail.png\" alt=\"\" width=\"768\" height=\"672\"></a>\n<figcaption>How to Rackmount</figcaption>\n</figure>\n</div></div>\n<p>게이밍 스위치~</p>\n<p>Ubiquiti사에선 Etherlighting이라고 말하는 RGB를 통해 VLAN이나 Link Speed등을 직관적으로 알 수 있는 것이 Professional과 Enterprise 라인업 사이에 새로 추가된 Professional Max 라인업의 가장 큰 특징이다. </p>\n<p>지금까지 24포트와 48포트만 있었는데 이렇게 새롭게 16포트 버전이 출시되었다. Professional 라인업도 24포트와 48포트만 있는데 말이다.</p>\n<p>초기에 이미지로 유출될 때부터 1U의 높이는 맞으나 너비가 이상해 랙마운트를 못하는 친구가 아닌가 말이 나왔었는데, 랙마운트가 가능하긴 가능했다. 외장 어댑터를 숨기는 방식으로 말이다.</p>\n<p>PoE 버전은 <a href=\"https://store.ui.com/us/en/pro/category/switching-professional-max/products/usw-pro-max-16-poe\">$399.00</a>이며 non-PoE 버전은 <a href=\"https://store.ui.com/us/en/pro/category/switching-professional-max/products/usw-pro-max-16\">$279.00</a>이며, 랙마운트 킷은 <a href=\"https://store.ui.com/us/en/pro/category/switching-professional-max/products/uacc-pro-max-16-rm?variant=uacc-pro-max-16-rm\">$49.00</a>이다.</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><caption>USW-Pro-Max-16-PoE</caption>\n<tbody>\n<tr>\n<td style=\"width: 49.9288%;\">Dimensions</td>\n<td style=\"width: 49.9288%;\">325.1 x 160 x 43.7 mm</td>\n</tr>\n<tr>\n<td style=\"width: 49.9288%;\">Weight</td>\n<td style=\"width: 49.9288%;\">2.1 kg</td>\n</tr>\n<tr>\n<td style=\"width: 49.9288%;\">Networking Interface</td>\n<td style=\"width: 49.9288%;\">\n<p>1GbE RJ45 *12</p>\n<p>2.5GbE RJ45 *4</p>\n<p>10GbE SFP+ *2</p>\n</td>\n</tr>\n<tr>\n<td style=\"width: 49.9288%;\">PoE Interface</td>\n<td style=\"width: 49.9288%;\">\n<p>PoE+ *12</p>\n<p>PoE++ *4</p>\n</td>\n</tr>\n<tr>\n<td style=\"width: 49.9288%;\">Switching capacity</td>\n<td style=\"width: 49.9288%;\">84 Gbps</td>\n</tr>\n<tr>\n<td style=\"width: 49.9288%;\">Forwarding rate</td>\n<td style=\"width: 49.9288%;\">62.496 Mpps</td>\n</tr>\n<tr>\n<td style=\"width: 49.9288%;\">Power supply</td>\n<td style=\"width: 49.9288%;\">54V, 210W DC adapter</td>\n</tr>\n<tr>\n<td style=\"width: 49.9288%;\">Max. power consumption</td>\n<td style=\"width: 49.9288%;\">30 W</td>\n</tr>\n<tr>\n<td style=\"width: 49.9288%;\">Total available PoE</td>\n<td style=\"width: 49.9288%;\">180 W</td>\n</tr>\n<tr>\n<td style=\"width: 49.9288%;\">Cooling Solution</td>\n<td style=\"width: 49.9288%;\">Fanless</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<figure class=\"post__image\" ><figure class=\"post__image post__image--center\"><img loading=\"lazy\"  src=\"https://freshflash4096.github.io/GH-Pages/media/posts/24/Switch-Pro-Max-16-and-POE.webp\" alt=\"\" width=\"1080\" height=\"813\"></figure>\n<figcaption >USW Pro Max 16 PoE on UDM Pro</figcaption>\n</figure>\n<p><a href=\"https://www.reddit.com/r/Ubiquiti/comments/1cmbrfl/switch_pro_max_16_and_switch_pro_max_16_poe/\">레딧의 글</a>을 보니 개인적으로 지금 사용 중인 UDM-Pro와 함께 쓰긴 너무 못생겨져서.. 좀 그렇다. 나는 차라리 SFP+포트를 포기하고 그냥 Standard 라인업을 구입하련다.</p>\n<p>Pro Max 24 PoE도 있다고는 하지만 가격도 상당한 가격이며 내게 있어서는 소음문제가 클 것으로 예상되어 기각했다.</p>\n<p>랙마운트 킷을 별도로 파는 것도, 외부 전원도, 생김새도 맘에 안든다...</p>\n<hr>\n<h3>참고자료</h3>\n<ul>\n<li><a href=\"https://techspecs.ui.com/unifi/switching/usw-pro-max-16-poe\">Ubiquiti Tech Specs - Pro Max 16 PoE</a></li>\n<li><a href=\"https://store.ui.com/us/en/pro/category/switching-professional-max/products/usw-pro-max-16-poe\">Ubiquiti Store - Pro Max 16 PoE</a></li>\n<li><a href=\"https://dl.ui.com/qig/uacc-pro-max-16-rm/#index\">Pro Max 16 Rack Installaion Guide</a></li>\n<li><a href=\"https://www.reddit.com/r/Ubiquiti/comments/1cmbrfl/switch_pro_max_16_and_switch_pro_max_16_poe/\">Switch Pro Max 16 and Switch Pro Max 16 POE [r/Ubiquiti]</a></li>\n</ul>",
+            "image": "https://freshflash4096.github.io/GH-Pages/media/posts/24/UniFi-Pro-Max-16-PoE.png",
+            "author": {
+                "name": "Huie"
+            },
+            "tags": [
+                   "뉴스",
+                   "Ubiquiti"
+            ],
+            "date_published": "2024-05-08T22:47:22+09:00",
+            "date_modified": "2024-05-08T23:14:22+09:00"
+        },
+        {
+            "id": "https://freshflash4096.github.io/GH-Pages/crucial-lpcamm2-memori-panmae/index.html",
+            "url": "https://freshflash4096.github.io/GH-Pages/crucial-lpcamm2-memori-panmae/index.html",
+            "title": "LPCAMM2 메모리의 첫 판매",
+            "summary": "Crucial 64GB LPCAMM2 LPDDR5X-7500 memory 이전에 SO-DIMM의 한계를 벗어나기 위해 Dell에서 개발을&hellip;",
+            "content_html": "<figure class=\"post__image\" ><figure class=\"post__image post__image--center\"><img loading=\"lazy\"  src=\"https://freshflash4096.github.io/GH-Pages/media/posts/23/Capture-2024-05-08-224425.png\" alt=\"\" width=\"2552\" height=\"1648\"></figure>\n<figcaption >Crucial 64GB LPCAMM2 LPDDR5X-7500 memory</figcaption>\n</figure>\n<p>이전에 SO-DIMM의 한계를 벗어나기 위해 Dell에서 개발을 시작하고 JEDEC에 받아들여져 표준으로 정착된 CAMM2와 LPCAMM2. 여러번 공개되었지만 실제로 판매를 시작한 것은 이번이 처음이다.</p>\n<p>2024년 5월 8일 현재, LPDDR5X-7500으로 32GB와 64GB 모듈이 <a href=\"https://www.crucial.com/memory/ddr5/ct64g75c2lp5xg\">판매</a>되고 있다. 가격은 각 $174.99와 $329.99로 나쁘진 않아보인다.</p>\n<p>문제가 아닌 문제라면, 현재는 초창기라 Lenovo ThinkPad P1 Gen 7만 지원한다. 차츰차츰 CAMM2를 지원하는 노트북이 늘어날 것으로 보이긴 하지만 빠르게 보급이 되었으면 하는 마음이다.</p>\n<p>iFixit과 협력해 교체 방법을 담은 <a href=\"https://ko.ifixit.com/Guide/Lenovo+ThinkPad+P1+Gen+7+LPCAMM2+Memory+Replacement/172267\">메뉴얼</a>을 내놓기도 했는데, 이를 통해 간접적으로 주의해야할 부분을 알 수 있다. 당연하지만 접점에 대해서 만지지 않는 등의 주의를 해야한다고 한다.</p>\n<p>CAMM2에 대한 자세한 정보는 <a href=\"https://www.jedec.org/document_search?search_api_views_fulltext=jesd318\">JESD318</a>를 통해 알 수 있다.</p>\n<hr>\n<h3>참고자료</h3>\n<ul>\n<li><a href=\"https://investors.micron.com/news-releases/news-release-details/micron-delivers-crucial-lpcamm2-lpddr5x-memory-new-ai-ready\">Micron Press Release</a></li>\n<li><a href=\"https://www.crucial.com/memory/ddr5/ct64g75c2lp5xg\">Crucial Shop</a></li>\n<li><a href=\"https://ko.ifixit.com/Guide/Lenovo+ThinkPad+P1+Gen+7+LPCAMM2+Memory+Replacement/172267\">How to Memory Replacement [iFixit]</a></li>\n</ul>",
+            "image": "https://freshflash4096.github.io/GH-Pages/media/posts/23/Crucial-64GB-LPCAMM2-LPDDR5X-7500-memory.png",
+            "author": {
+                "name": "Huie"
+            },
+            "tags": [
+                   "뉴스",
+                   "Micron"
+            ],
+            "date_published": "2024-05-08T22:31:25+09:00",
+            "date_modified": "2024-05-09T20:28:02+09:00"
+        },
+        {
+            "id": "https://freshflash4096.github.io/GH-Pages/geugjeoon-3d-nand-siggag/index.html",
+            "url": "https://freshflash4096.github.io/GH-Pages/geugjeoon-3d-nand-siggag/index.html",
+            "title": "극저온 3D NAND 식각",
+            "summary": "Tokyo Electron(TEL)은 2023년 6월, IEEE Symposium on VLSI Technology &amp; Circuits에서 Beyond&hellip;",
+            "content_html": "<p>Tokyo Electron(TEL)은 2023년 6월, IEEE Symposium on VLSI Technology &amp; Circuits에서 <span class=\"notion-enable-hover\" data-token-index=\"0\"><strong>Beyond 10um Depth Ultra-High Speed Etch Process with 84% Lower Carbon Footprint for Memory Channel Hole of 3D NAND Flash over 400 Layers</strong>를 발표했다.</span><!-- notionvc: 1482f45e-daca-4eba-9e05-da86244ef2c0 --><!-- notionvc: cb9299e0-e391-41c2-94ab-b27f5e88167e --></p>\n<p>해당 발표에선 극저온에서 높은 속도의 식각을 가지는 시스템을 구현했다. 아래에 논문의 Abstract를 인용한다.</p>\n<blockquote>\n<p>A novel High-Aspect-Ratio (HAR) dielectric etch technology which is capable of etching beyond <span id=\"MathJax-Element-2-Frame\" class=\"MathJax\" tabindex=\"0\"><span id=\"MathJax-Span-8\" class=\"math\"><span id=\"MathJax-Span-9\" class=\"mrow\"><span id=\"MathJax-Span-10\" class=\"mn\">10</span><span id=\"MathJax-Span-11\" class=\"mi\">μ</span><span id=\"MathJax-Span-12\" class=\"texatom\"><span id=\"MathJax-Span-13\" class=\"mrow\"><span id=\"MathJax-Span-14\" class=\"mi\">m</span></span></span></span></span></span> depth memory channel hole for future generations of 3D NAND flash memory has been successfully developed for the first time. Ten micron depth etching is not practical with conventional etching technology, but our novel technology using cryogenic wafer stage and new gas chemistry can achieve not only <span id=\"MathJax-Element-3-Frame\" class=\"MathJax\" tabindex=\"0\"><span id=\"MathJax-Span-15\" class=\"math\"><span id=\"MathJax-Span-16\" class=\"mrow\"><span id=\"MathJax-Span-17\" class=\"mn\">10</span><span id=\"MathJax-Span-18\" class=\"mi\">μ</span><span id=\"MathJax-Span-19\" class=\"texatom\"><span id=\"MathJax-Span-20\" class=\"mrow\"><span id=\"MathJax-Span-21\" class=\"mi\">m</span></span></span></span></span></span> etch capability but also quite short process time (33 minutes) with 84% carbon footprint reduction of greenhouse gases. Etched profile was also confirmed to be excellent. Thus, this is a key technology for highly productive, cost effective and sustainable manufacturing of 3D NAND flash memory device.</p>\n</blockquote>\n<p>400L 이상의 3D NAND에서 Single-Stack 또는 Double-Stack의 구축이 가능한 것으로도 기대되는데, 이러한 기술이 적용된 장비를 삼성에서는 직접 테스트하고 있으며, 하이닉스는 TEL에 웨이퍼를 보내 테스트를 진행하는 중이라 한다.</p>\n<p>참고로 작년에 공개된 하이닉스의 321L 3D NAND는 Triple-Stack으로 구현되었으며, 삼성에서도 V10 이후부터는 Triple-Stack을 도입할 것이라 말한 적이 있다.</p>\n<hr>\n<h3>참고자료</h3>\n<ul>\n<li><a href=\"https://www.thelec.kr/news/articleView.html?idxno=27560\">삼성과 하이닉스의 식각 장비 도입에 대한 기사 [THEELEC]</a></li>\n<li><a href=\"https://www.tel.com/news/product/2023/20230609_001.html\">TEL News Room</a></li>\n<li><span class=\"notion-enable-hover\" data-token-index=\"0\"><a href=\"https://ieeexplore.ieee.org/document/10185160\">Beyond 10um Depth Ultra-High Speed Etch Process with 84% Lower Carbon Footprint for Memory Channel Hole of 3D NAND Flash over 400 Layers [IEEE]</a></span></li>\n</ul>",
+            "image": "https://freshflash4096.github.io/GH-Pages/media/posts/22/Tokyo_Electron_logo.svg.png",
+            "author": {
+                "name": "Huie"
+            },
+            "tags": [
+                   "뉴스",
+                   "SSD"
+            ],
+            "date_published": "2024-05-07T22:14:53+09:00",
+            "date_modified": "2024-05-10T20:13:54+09:00"
+        },
+        {
+            "id": "https://freshflash4096.github.io/GH-Pages/ambrose-server-platform-evt3/index.html",
+            "url": "https://freshflash4096.github.io/GH-Pages/ambrose-server-platform-evt3/index.html",
+            "title": "Amazon Ambrose Server Platform-EVT3",
+            "summary": "Ambrose Server Platform-EVT3 라는 이름으로 Headnode와 JBOG가 보인다. Headnode는 짐작이 쉽게 가는데, JBOG는&hellip;",
+            "content_html": "<div class=\"gallery-wrapper\"><div class=\"gallery\"  data-is-empty=\"false\" data-translation=\"이미지 추가\" data-columns=\"3\">\n<figure class=\"gallery__item\"><a href=\"https://freshflash4096.github.io/GH-Pages/media/posts/21/gallery/Capture-2024-05-07-215301-2.png\" data-size=\"1080x985\"><img loading=\"lazy\" src=\"https://freshflash4096.github.io/GH-Pages/media/posts/21/gallery/Capture-2024-05-07-215301-2-thumbnail.png\" alt=\"\" width=\"768\" height=\"700\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://freshflash4096.github.io/GH-Pages/media/posts/21/gallery/Capture-2024-05-07-215252-2.png\" data-size=\"1080x985\"><img loading=\"lazy\" src=\"https://freshflash4096.github.io/GH-Pages/media/posts/21/gallery/Capture-2024-05-07-215252-2-thumbnail.png\" alt=\"\" width=\"768\" height=\"700\"></a></figure>\n</div></div>\n<p><strong>Ambrose Server Platform-EVT3</strong> 라는 이름으로 Headnode와 JBOG가 보인다.</p>\n<p>Headnode는 짐작이 쉽게 가는데, JBOG는 JBOD에서 Drive가 GPU로 바뀐 <strong>Just-a-Bunch-Of-GPU</strong>로 생각된다.</p>\n<p>다른 건 짐작이 잘 안가는데 제조자인 Amazon Data Service에서도 힌트를 얻을 수 있을까? Web이 아니라 Data인 부분이 약간 걸린다.</p>\n<hr>\n<p>두 인증을 합쳤기에 출처는 아래에 기입한다.</p>\n<ul>\n<li><a href=\"https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000149511\">Headnode</a></li>\n<li><a href=\"https://www.rra.go.kr/ko/license/A_b_popup.do?app_no=202417210000149521\">JBOG</a></li>\n</ul>\n<p> </p>",
+            "author": {
+                "name": "Huie"
+            },
+            "tags": [
+                   "전파인증",
+                   "뉴스"
+            ],
+            "date_published": "2024-05-07T21:57:34+09:00",
+            "date_modified": "2024-05-07T22:09:55+09:00"
+        }
+    ]
+}
