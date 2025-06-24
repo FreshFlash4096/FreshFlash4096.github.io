@@ -3,12 +3,327 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-06-20T22:56:24+09:00</updated>
+    <updated>2025-06-25T00:03:25+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
     <id>https://freshflash4096.github.io</id>
 
+    <entry>
+        <title>My SSD Benchmark Method</title>
+        <author>
+            <name>Huie</name>
+        </author>
+        <link href="https://freshflash4096.github.io/benchmark-method/"/>
+        <id>https://freshflash4096.github.io/benchmark-method/</id>
+            <category term="Benchmark"/>
+
+        <updated>2025-06-22T02:20:11+09:00</updated>
+            <summary>
+                <![CDATA[
+                    Change log N/A 국내외를 불문하고 컴덕들을 위한 커뮤니티가 존재합니다. 그리고 커뮤니티에선 새로운&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <blockquote>
+<p>Change log</p>
+<p>N/A</p>
+</blockquote>
+<p> </p>
+<p>국내외를 불문하고 컴덕들을 위한 커뮤니티가 존재합니다. 그리고 커뮤니티에선 새로운 컴퓨터 부품에 대한 벤치마크가 여럿 올라옵니다.</p>
+<p>예시를 들자면, 국내에선 쿨엔조이, 퀘이사존, 조드가 있으며, 해외에선 TechPowerUp, Tom's Hardware 등이 유명하죠. </p>
+<p>전 상술한 국내 커뮤니티 어느 곳에서도 활동하지 않지만, 최근에 제 SSD 벤치마크를 공유하고자 일부에는 계정을 만들었습니다. </p>
+<hr>
+<p>잡담은 그만하고 본론으로 넘어가겠습니다. 벤치마크 대상이 되는 부품 중에선 저장장치가 당연히 존재하며, SSD의 보급이 대부분 이루어진 지금의 저장장치 중에선 SSD가 가장 흔합니다. </p>
+<p>사용하는 벤치마크 도구로는 CrystalDiskMark, ATTO Disk Benchmark, 국내 한정으로는 나래온 더티테스트가 있습니다. 해당 도구들은 사용하기 굉장히 편리하게 설계되어 버튼 한 번만 누른다면 결과값을 바로 출력해주죠. 하지만 해당 결과값을 신뢰할 수 있는가는 별도의 문제입니다.</p>
+<figure class="post__image" ><img loading="lazy" style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/seukeurinsyas-2025-06-21-ohu-11.10.42.png" alt="" width="2290" height="1328">
+<figcaption >SSD Performace Change</figcaption>
+</figure>
+<p>SSD의 성능은 변화합니다. 가장 처음의 FOB(Fresh Out of Box)상태에서 Transition 단계를 거쳐 안정적인 Steady State로 향하죠. NAND기반의 모든 저장장치는 이와 같은 단계를 따릅니다.</p>
+<p>eSSD(enterprise SSD)에선 Steady State를 측정하는 것이 맞습니다. 제품 자체의 데이터시트에 명기된 스펙도 Steady State가 기준인 경우가 대부분이며, 애초에 이러한 워크로드에 적용하라고 나온 eSSD들이니까요.</p>
+<p>하지만 cSSD(consumer SSD)에선 어떨까요? 현대 cSSD에는 SLC 캐시라는 메커니즘이 포함되어 있습니다. 초기형 SLC캐시는 단순히 고정된 용량이었지만 최신형에선 전체 공간을 시뮬레이션하는 경우도 있는가하면, 일부 공간만을 시뮬레이션 하는 경우도 있어 성능 측정이 굉장히 복잡해졌습니다.</p>
+<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">애초에 cSSD의 판매대상인 일반 소비자가 Steady State를 경험하는 일은 드물 것입니다. </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">그럼에도 불구하고, 사람들이 사용하는 SSD의 상태는 FOB와 다른 것이 분명합니다.</span></p>
+<p>많은 고민이 있었습니다. 한창 SSD에 관심을 가지기 시작했던 <a href="https://huie.tistory.com/47">22년도</a>부터 이러한 고민을 했던 것 같네요.</p>
+<p>그리고 여러 번의 시행착오와 실험을 거쳐 아래와 같은 벤치마크 방법을 수립했습니다. 급하게 진행해야했던 Intel Optane SSD 905P 960GB를 예시로 들어 설명하겠습니다.</p>
+<div class="post__toc">
+<h3>목차</h3>
+<ul>
+<li><a href="#mcetoc_1iuejnn4l47m">cSSD Benchmarking Method</a>
+<ul>
+<li><a href="#mcetoc_1iuejmtca479">Pre-Conditioning</a></li>
+<li><a href="#mcetoc_1iuejmtca47a">CrystalDiskMark 9.x.x</a></li>
+<li><a href="#mcetoc_1iuejmtca47b">3DMark Storage Benchmark</a></li>
+<li><a href="#mcetoc_1iuejqi41492">SPECworkstation 4.0.0</a></li>
+<li><a href="#mcetoc_1iuejqi41493">OCP BootBench</a></li>
+<li><a href="#mcetoc_1iuejqi41494">Fill Drive</a></li>
+<li><a href="#mcetoc_1iuejqi41495">Sync Performance</a></li>
+<li><a href="#mcetoc_1iuejmtca47g">Low QD Performance by RW Ratio </a></li>
+<li><a href="#mcetoc_1iuejmtca47h">Latency Percentile</a></li>
+<li><a href="#mcetoc_1iuejmtca47i">Tail Latency</a></li>
+</ul>
+</li>
+<li><a href="#mcetoc_1iueju0sm49b">How about eSSD Benchmarking?</a></li>
+<li><a href="#mcetoc_1iuek3eau49h">Test Platform</a>
+<ul>
+<li><a href="#mcetoc_1iuek40fa49k">Hardware</a></li>
+<li><a href="#mcetoc_1iuek4g3749n">Software</a></li>
+<li><a href="#mcetoc_1iuek87ht49s">Future Improvements</a></li>
+</ul>
+</li>
+<li><a href="#mcetoc_1iuel76km4a0">Closing</a></li>
+<li><a href="#mcetoc_1iuel7q734a3">Reference</a></li>
+</ul>
+</div>
+<hr>
+<h2 id="mcetoc_1iuejnn4l47m">cSSD Benchmarking Method</h2>
+<h3 id="mcetoc_1iuejmtca479">Pre-Conditioning</h3>
+<p>윗 문단에서 언급했지만, SSD에서 FOB 성능은 유저가 실질적으로 체감하기 힘든 부분입니다. 그렇다면 SNIA SSS-PTS에 언급된대로의 Pre-Conditioning을 진행해 Steady State를 측정하는 것이 좋은가하면 전 마냥 긍정하긴 어려울 것 같습니다. </p>
+<p>일반소비자들의 워크로드는 몇 가지 특징을 따르는데, 그중 눈여겨 볼 부분이 몇 가지 있습니다. 바로 <strong>유휴시간이 상당</strong>하다는 것, <strong>일부영역에만 활발하게 엑세스</strong>한다는 것입니다. 저는 제 cSSD 벤치마크의 Pre-Conditioning의 단계를 아래와 같이 정의했습니다.</p>
+<ol>
+<li>장치를 Purge</li>
+<li>LBA의 200%를 128kiB 순차 쓰기로 작성</li>
+<li>LBA의 앞에서 8GiB를 4kiB 랜덤 쓰기로 작성</li>
+<li>사용 중인 공간이 75%가 되도록 뒤에서 25%를 삭제</li>
+</ol>
+<p>Pre-Conditioning 단계 중간에는 꾸준히 휴식을 취하며, 성능을 측정하는 단계에서도 벤치마크를 넘어갈 때마다 휴식을 취합니다. 그럼 사용하는 도구를 살펴보겠습니다.</p>
+<h3 id="mcetoc_1iuejmtca47a">CrystalDiskMark 9.x.x</h3>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/31/gallery/seukeurinsyas-2025-06-21-235614.png" data-size="1002x547"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/31/gallery/seukeurinsyas-2025-06-21-235614-thumbnail.png" alt="" width="768" height="419"></a>
+<figcaption>905P 960GB - Default / FOB</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/31/gallery/seukeurinsyas-2025-06-22-001645.png" data-size="1002x547"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/31/gallery/seukeurinsyas-2025-06-22-001645-thumbnail.png" alt="" width="768" height="419"></a>
+<figcaption>905P 960GB - NVMe / FOB</figcaption>
+</figure>
+</div></div>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/31/gallery/seukeurinsyas-2025-06-22-012113.png" data-size="1002x547"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/31/gallery/seukeurinsyas-2025-06-22-012113-thumbnail.png" alt="" width="768" height="419"></a>
+<figcaption>905P 960GB - Default</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/31/gallery/seukeurinsyas-2025-06-22-012450.png" data-size="1002x547"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/31/gallery/seukeurinsyas-2025-06-22-012450-thumbnail.png" alt="" width="768" height="419"></a>
+<figcaption>905P 960GB - NVMe</figcaption>
+</figure>
+</div></div>
+<p>가장 대중적인 도구인 CrystalDiskMark. 백엔드의 diskspd를 바로 사용할까도 고민했지만, 미리 설정된 프로필을 사용해 사람들에게 쉽게 읽혀지는 것이 목적입니다. FOB상태와 Pre-Conditioning을 끝낸 버전을 각기 측정합니다. <strong>제 벤치마크는 별도의 언급이 없다면 FOB상태의 성능은 측정하지 않습니다.</strong></p>
+<h3 id="mcetoc_1iuejmtca47b">3DMark Storage Benchmark</h3>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/31/seukeurinsyas-2025-06-22-020535.png" alt="" width="1386" height="873"></figure>
+<figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-4.png" alt="" width="1000" height="200"></figure>
+<p>게임관련 벤치마크로 유명한 3DMark의 DLC옵션인 3DMark Storage Benchmark입니다. 이 DLC만을 위해서 그래픽카드도 없는 제가 3DMark를 직접 구매했습니다. CDM과 더불어 다른 리뷰에서도 많이 보이는 벤치마크 도구이기에 자세한 설명은 생략하겠습니다.</p>
+<h3 id="mcetoc_1iuejqi41492">SPECworkstation 4.0.0</h3>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/31/Figure_1-3.png" alt="" width="1000" height="200"></figure>
+<p>SPECworkstation은 SPEC(Standard Performance Evaluation Corporation)에서 워크스테이션의 성능 지표를 측정하기 위해 만들어진 벤치마크 도구이며, WPCstorage 워크로드는 스토리지의 성능을 측정합니다. 결과는 SPEC Ratio라는 기준으로 출력되며, <a href="https://github.com/SPEC-GWPG-Dev/SPECgwpg-Docs/blob/main/SPECworkstation4/SPECworkstation4-User-Guide.md#reference-machine">Reference Machine</a>의 성능에 대한 비율로 측정됩니다.</p>
+<h3 id="mcetoc_1iuejqi41493">OCP BootBench</h3>
+<figure class="post__image align-center"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/31/seukeurinsyas-2025-06-23-ohu-10.44.16.png" alt="" width="297" height="450"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/31/Figure_1-5.png" alt="" width="1000" height="200"></figure>
+<p>OCP BootBench는 OCP(Open Compute Project)에서 만든 Hyperscale에서의 Boot Drive에 대한 성능 사양을 충족하는지 검증하는 벤치마크입니다. Hyperscale에서 Boot Drive의 요구사항은 일반적인 eSSD와 cSSD의 사이에 있기에 해당 워크로드는 cSSD에 대해 상당히 부하가 높지만, 성능이 높은 cSSD는 통과 기준인 60k IOPS를 상회할 수 있기에 해당 벤치마크를 채용했습니다.</p>
+<h3 id="mcetoc_1iuejqi41494">Fill Drive</h3>
+<figure class="post__image"><img  src="https://freshflash4096.github.io/media/posts/31/Figure_1-2.png" alt="" width="1000" height="500"></figure><figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-6.png" alt="" width="1000" height="500"></figure><figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-7.png" alt="" width="1000" height="500"></figure>
+<p>많은 곳에서 볼 수 있는 합성 벤치마크입니다. 국내에서는 나래온 더티테스트를 통해 이러한 벤치마크를 진행하는데, 개인적으로 나래온 더티테스트는 X축이 용량 단위이며, 기록 단위도 용량의 0.1% 단위라는 것이 꽤 큰 단점이라고 생각해 직접 진행하기로 했습니다.</p>
+<p>우선 저는 100ms단위로 측정하며, 워크로드는 SEQ 128kiB QD256입니다. 해당 벤치마크는 목적상 이례적으로 FOB상태에서 진행해 용량의 100%를 채우고 휴식을 부여합니다. 그리고 휴식이 끝나면 한 번 더 용량의 100%에 쓰기를 가합니다. cSSD에선 이를 통해 SLC캐시의 형태를 대략적으로 파악할 수 있으리라 기대됩니다.</p>
+<p>그래프 제시는 6가지입니다. 우선 위에서 제시한 대역폭 - 용량%, 대역폭 - 진행시간, 지연시간 - 진행시간 그래프입니다.</p>
+<p>첫 번째는 직관적인 이해를 위해 제시했지만, 최신 cSSD처럼 SLC캐시를 적용해 시간이 지남에 따라 변화하는 성능이라면 해상도 분포가 다른 것이 상당한 단점입니다.</p>
+<p>두 번째와 세 번째는 제가 제시하고 싶었던 그래프이며, 지연시간도 제시해 안정적인 정도를 파악할 수 있습니다. 두 번째의 대역폭 - 진행시간 그래프에서는 평균값을 수평선으로 하나 추가합니다.</p>
+<p>이외에 추가될 그래프는 최대 SLC 캐시 사이즈, 최소 SLC 캐시 사이즈를 순서대로 정렬한 그래프이며, 평균 대역폭도 순서대로 정렬한 그래프가 추가됩니다. 양식은 아래 Sync Performance 파트에 사용된 막대 그래프라고 생각하시면 될 것 같습니다.</p>
+<h3 id="mcetoc_1iuejqi41495">Sync Performance</h3>
+<figure class="post__image"><img  src="https://freshflash4096.github.io/media/posts/31/Figure_1.png" alt="" width="1000" height="200"></figure><figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-10.png" alt="" width="1000" height="200"></figure>
+<figure class="post__image"><img  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-9.png" alt="" width="1000" height="200"></figure><figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-8.png" alt="" width="1000" height="200"></figure>
+<p>동기 쓰기, fsync()의 성능을 확인합니다. 일반적으로 경험하는 워크로드는 비동기 쓰기, Async write인 경우가 많습니다. 하지만, Homelab에서 ZFS나 Ceph 등을 사용하는 사람들도 있는데, 이런 경우에 동기 쓰기 워크로드가 발생하기도 합니다.</p>
+<p>cSSD에서의 동기 쓰기는 HW PLP(Power Less Protection)이 구현되지 않아 비동기 쓰기 성능과의 차이가 심하게 납니다. 일반적으로 찾아보기 힘든 정보인 부분도 있어 해당 벤치마크를 채용했습니다.</p>
+<p>해당 벤치마크에서 순차 성능은 128kiB QD1으로 1GiB를 작성하며, Pre-Conditioning 단계에서 순차로 작성된 영역에만 접근합니다. LBA주소 기준으로 8GiB ~ 총 용량의 75% 지점입니다.</p>
+<p>랜덤 성능은 4kiB QD1으로 1GiB를 작성하며, Pre-Conditioning 단계에서 랜덤으로 작성된 영역에만 <span style="text-decoration: underline;">완전히 랜덤</span>으로 접근합니다. LBA주소 기준으로 시작지점에서 8GiB입니다. </p>
+<h3 id="mcetoc_1iuejmtca47g">Low QD Performance by RW Ratio </h3>
+<figure class="post__image"><img  src="https://freshflash4096.github.io/media/posts/31/Figure_1-11.png" alt="" width="1200" height="600"></figure><figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-12.png" alt="" width="1200" height="600"></figure>
+<p>cSSD의 스펙시트는 SEQ RW, RND RW로 이루어진 4-corners performance만 제시합니다. 하지만 SSD는 Read와 Write작업이 섞여있을 때 성능이 하락하며, 일반적으로 Windows의 C드라이브에서 100% Read 또는 100% Write의 작업이 발생하는 것은 드뭅니다. 따라서 Read 비율을 10% 단위로 변경하며 성능을 측정합니다.</p>
+<p>SEQ은 128kiB QD1, QD2, QD4로 진행하며 각 128MiB *3의 작업을 수행하고, RND도 4kiB QD1, QD2, QD4로 진행하며 각 4MiB *160의 작업을 수행합니다. 앞의 Sync 성능 측정과 동일하게 SEQ과 RND은 Pre-Conditioning이 진행된 각 영역에만 접근합니다.</p>
+<p>이 작업을 수행하며 아래의 Percentile Latency, Tail Latency 분석에서도 활용되는 정보를 산출합니다.</p>
+<figure class="post__image"><img  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-13.png" alt="" width="1200" height="600"></figure><figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-14.png" alt="" width="1200" height="600"></figure>
+<p>다른 SSD들과의 비교는 QD1은 70%, QD2는 20%, QD4는 10%로 가중치를 부여하고 그래프를 통해 눈에 잘 보이도록 비교가 가능합니다.</p>
+<h3>Percentile Latency</h3>
+<h3 id="mcetoc_1iuejmtca47h"></h3>
+<figure class="post__image"><img  src="https://freshflash4096.github.io/media/posts/31/Figure_1-15.png" alt="" width="1000" height="600"></figure><figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-16.png" alt="" width="1000" height="600"></figure><figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-18.png" alt="" width="1000" height="600"></figure>
+<p>기본적으로 cSSD의 스펙시트에는 지연시간을 잘 나타내지 않습니다. 하지만 실질적으로 사용자가 체감하게 되는 것은 프로그램들을 실행시키거나 어떤 명령에 대한 지연시간입니다. 이러한 지연시간을 백분위수로 나타낸 그래프입니다. SEQ 작업은 특성상 작업이 동시에 완전히 종료되는 것이 중요하다고 판단했기에, RND 성능, 그 중에서도 QD1에 대해서만 비교합니다. </p>
+<p>이 그래프는 지연시간을 나타내지만 실질적인 IOPS는 나타내지 않습니다. 타당한 비교를 하기 위해서는 지연시간만이 아닌 별도의 성능지표가 필요합니다. 따라서 평균 IOPS를 범례에 표시해 여러 SSD를 비교합니다.</p>
+<p>다른 파트에서는 눈에 익숙한 MiB/s값을 고집했지만, 여기서는 IOPS단위를 고집한 이유가 있습니다. MiB/s 단위로 표기하면 변화가 작아서 덜 직관적이라는 것이 첫 번째 이유이며, 해당 부분은 전부 4kiB의 사이즈란 것이 두 번째 이유입니다.</p>
+<h3 id="mcetoc_1iuejmtca47i">Tail Latency</h3>
+<figure class="post__image"><img  src="https://freshflash4096.github.io/media/posts/31/Figure_1-19.png" alt="" width="1000" height="600"></figure><figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-21.png" alt="" width="1000" height="600"></figure><figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-22.png" alt="" width="1000" height="600"></figure>
+<table style="border-collapse: collapse; width: 100%; height: 291.375px;" border="1">
+<tbody>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9644%; height: 48.5625px;">Percentile</td>
+<td style="width: 24.9644%; height: 48.5625px;">RND Read</td>
+<td style="width: 24.9644%; height: 48.5625px;">RND Read 70%</td>
+<td style="width: 24.9644%; height: 48.5625px;">RND Write</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9644%; height: 48.5625px;">90%</td>
+<td style="width: 24.9644%; height: 48.5625px;">10.98 <span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">µs</span></td>
+<td style="width: 24.9644%; height: 48.5625px;">22.67 µs</td>
+<td style="width: 24.9644%; height: 48.5625px;">22.97 µs</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9644%; height: 48.5625px;">99%</td>
+<td style="width: 24.9644%; height: 48.5625px;">20.45 <span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">µs</span></td>
+<td style="width: 24.9644%; height: 48.5625px;">23.72 µs</td>
+<td style="width: 24.9644%; height: 48.5625px;">36.10 µs</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9644%; height: 48.5625px;">99.9%</td>
+<td style="width: 24.9644%; height: 48.5625px;">38.75 <span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">µs</span></td>
+<td style="width: 24.9644%; height: 48.5625px;">43.80 µs</td>
+<td style="width: 24.9644%; height: 48.5625px;">48.57 µs</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9644%; height: 48.5625px;">99.99%</td>
+<td style="width: 24.9644%; height: 48.5625px;">43.62 <span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">µs</span></td>
+<td style="width: 24.9644%; height: 48.5625px;">50.15 µs</td>
+<td style="width: 24.9644%; height: 48.5625px;">52.31 µs</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9644%; height: 48.5625px;">99.999%</td>
+<td style="width: 24.9644%; height: 48.5625px;">52.27 <span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">µs</span></td>
+<td style="width: 24.9644%; height: 48.5625px;">57.57 µs</td>
+<td style="width: 24.9644%; height: 48.5625px;">53.83 µs</td>
+</tr>
+</tbody>
+</table>
+<p>꼬리 지연시간입니다. eSSD의 스펙시트에서는 QoS의 항목에 이러한 지연시간이 명시되어 있습니다. 하지만 그것은 Steady State를 가정한 것이고, 이는 Burst 중에서 늘어지는 지연시간입니다. </p>
+<p>사실상 Percentile Latency 그래프에서 90% 위쪽 구간을 확대시키고 로그스케일을 적용한 그래프입니다. 총 IO에서 가장 늘어진 지연시간들의 집합이며, 사용자 경험에 직접 영향을 줄 수 있는 영역입니다.</p>
+<p>상세한 값은 별도의 표로 나타냅니다.</p>
+<hr>
+<h2 id="mcetoc_1iueju0sm49b">How about eSSD Benchmarking?</h2>
+<p>eSSD는 SNIA SSS-PTS를 참고로 ezfio를 통해 수행되며, eSSD 중에서도 SCM급이나 WI SSD는 추가로 512B, 4kiB에 대한 WSAT(Write Saturation Test)을 수행할 예정입니다. </p>
+<p>다만, 최신 초고용량 SSD에서는 IU(Indirection Unit)이 4k가 아닌 경우가 많은데, 이러한 경우에는 드라이브의 IU보다 작은 크기의 쓰기 벤치마크는 진행하지 않습니다. </p>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 24.9644%;"> </td>
+<td style="width: 24.9644%;">cSSD</td>
+<td style="width: 24.9644%;">eSSD - RI / Mix</td>
+<td style="width: 24.9644%;">eSSD - WI</td>
+</tr>
+<tr>
+<td style="width: 24.9644%;">cSSD Benchmark</td>
+<td style="width: 24.9644%;">O</td>
+<td style="width: 24.9644%;">O</td>
+<td style="width: 24.9644%;">O</td>
+</tr>
+<tr>
+<td style="width: 24.9644%;">eSSD Benchmark</td>
+<td style="width: 24.9644%;">X</td>
+<td style="width: 24.9644%;">O</td>
+<td style="width: 24.9644%;">O</td>
+</tr>
+<tr>
+<td style="width: 24.9644%;">WSAT</td>
+<td style="width: 24.9644%;">X</td>
+<td style="width: 24.9644%;">X</td>
+<td style="width: 24.9644%;">O</td>
+</tr>
+</tbody>
+</table>
+<p>위 표를 보면 각 SSD에 대해 적용할 벤치마크가 이해가 쉬울 것입니다. 몇 가지 궁금할 사항에 대해 설명하겠습니다.</p>
+<p>eSSD에 대해 cSSD 벤치마크를 수행하는 이유는 일반 소비자들도 드물지만 중고시장을 통해 eSSD를 구매하는 경우가 있기 때문입니다. 일반 소비자의 워크로드에 최적화되진 않았지만 저를 포함한 사용사례가 분명히 존재하며, 다른 리뷰에선 찾아보기 힘들기 때문에 제 궁금사항을 풀고자 진행합니다.</p>
+<p>그렇다면 cSSD에 대해 eSSD 벤치마크를 수행하지 않는 이유는? 이것은 확실합니다. eSSD의 명시스펙이나 벤치마크 방법은 Steady State에 진입하고 나서야 시작입니다. cSSD에선 eSSD에 비해 OP비율이 낮고 SLC 캐시란 메커니즘이 존재해 Steady State에 진입하는 것부터가 힘든 사례가 상당합니다. 애초부터 시작할 수가 없다는 말이죠.</p>
+<p>물론 가능한 SSD들도 존재하지만, 속도가 상당히 느려 시간과 자본이 제한된 학생인 저는 피할 수 밖에 없는 선택지였습니다. 이런 이유로 cSSD 벤치마크에서도 제외된 테스트가 상당수 존재합니다.</p>
+<p>하지만 제가 수행하는 cSSD 벤치마크에선 일반 소비자 워크로드를 대변하지 않는 벤치마크도 상당 존재하기에 그 부분을 살펴본다면 eSSD의 뛰어남이 부각될 것이라 기대됩니다.</p>
+<hr>
+<h2 id="mcetoc_1iuek3eau49h">Test Platform</h2>
+<p>벤치마크 종류를 살펴보았으니 이제 수행되는 플랫폼에 대해 살펴보겠습니다. 금전의 영향을 많이 받아 타협을 거듭했습니다.</p>
+<h3 id="mcetoc_1iuek40fa49k">Hardware</h3>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 17.2611%;"><strong>CPU</strong></td>
+<td style="width: 64.4789%;">AMD Ryzen 5 9600X</td>
+<td style="width: 18.26%;">PBO Disable</td>
+</tr>
+<tr>
+<td style="width: 17.2611%;"><strong>MainBoard</strong></td>
+<td style="width: 64.4789%;">ASRock B650M PG Riptide WiFi White</td>
+<td style="width: 18.26%;">BIOS 3.30</td>
+</tr>
+<tr>
+<td style="width: 17.2611%;"><strong>RAM</strong></td>
+<td style="width: 64.4789%;">TeamGroup T-create DDR5-5600 CL46 Classic 32GB *2</td>
+<td style="width: 18.26%;"> </td>
+</tr>
+<tr>
+<td style="width: 17.2611%;"><strong>Boot SSD</strong></td>
+<td style="width: 64.4789%;">Intel Optane SSD 800P 118GB</td>
+<td style="width: 18.26%;"> </td>
+</tr>
+<tr>
+<td style="width: 17.2611%;"><strong>PSU</strong></td>
+<td style="width: 64.4789%;">Corsair SF750 ATX3.1</td>
+<td style="width: 18.26%;"> </td>
+</tr>
+<tr>
+<td style="width: 17.2611%;"><strong>Case</strong></td>
+<td style="width: 64.4789%;">SilverStone RM23-502-MINI</td>
+<td style="width: 18.26%;"> </td>
+</tr>
+<tr>
+<td style="width: 17.2611%;"><strong>Cooler</strong></td>
+<td style="width: 64.4789%;">Noctua NH-L9a-AM5 chromax.black</td>
+<td style="width: 18.26%;">Full Speed</td>
+</tr>
+<tr>
+<td style="width: 17.2611%;"><strong>Cooler</strong></td>
+<td style="width: 64.4789%;">Noctua NF-A8 PWM</td>
+<td style="width: 18.26%;">Full Speed</td>
+</tr>
+<tr>
+<td style="width: 17.2611%;"><strong>Ex</strong></td>
+<td style="width: 64.4789%;">Sipeed NanoKVM PCIe</td>
+<td style="width: 18.26%;"> </td>
+</tr>
+<tr>
+<td style="width: 17.2611%;"><strong>SW_Win</strong></td>
+<td style="width: 64.4789%;">Windows 11 Pro (24H2)</td>
+<td style="width: 18.26%;"> </td>
+</tr>
+<tr>
+<td style="width: 17.2611%;"><strong>SW_Linux</strong></td>
+<td style="width: 64.4789%;">Rocky Linux 10 Minimal (6.12.0-55.12.1.el10_0)</td>
+<td style="width: 18.26%;">FIO 3.40</td>
+</tr>
+</tbody>
+</table>
+<p>DUT(Device Under Test)가 될 SSD는 CPU레인에 직결하며, 최대 2-connector Topology까지 허용합니다. </p>
+<p>다시 말해, M.2 NVMe SSD는 CPU와 가장 가까운 PCIe 5.0 x4를 지원하는 M.2 슬롯에 장착하며, AIC타입과 2.5" NVMe SSD는 CPU와 가장 가까운 PCIe x16 슬롯에 장착하게 됩니다. 물론, 후자는 어댑터의 사용이 필수불가결하며, 여기엔 <span style="text-decoration: underline;"><em>UMC-PTU-2</em></span>라는 어댑터를 사용합니다.</p>
+<p>2.5" SATA SSD는 PROM21(B650 Chipset)에 내장된 SATA 컨트롤러에 의지해, 온보드 SATA 포트에 장착합니다.</p>
+<p>기본적으로 이 시스템은 제 랩이 가동되는 랙에 마운트되어 있기에 원격으로 설정할 필요가 있습니다. 따라서, <em><span style="text-decoration: underline;">NanoKVM</span></em>을 사용해 OOBM(Out-of-band Management)기능을 더합니다.</p>
+<p>기본적으로 DUT는 Spot Cooling을 통해 Thermal Throttling을 방지합니다.</p>
+<h3 id="mcetoc_1iuek4g3749n">Software</h3>
+<p>Windows는 전원옵션에서 고성능을 설정하고 상세값을 그에 맞춰주었으며 Indexing Service, Scheduled Defragmentation, System Protection, Windows Defender, Windows Updates를 비활성화했습니다. 혹시 모를 상황을 대비해 네트워크는 연결하지 않고 벤치마크를 진행합니다.</p>
+<pre class="language-batch"><code>start /wait Rundll32.exe advapi32.dll/ProcessIdleTasks</code></pre>
+<p>그에 더해 HWiNFO, 작업관리자, 벤치마크 도구를 실행시킨 뒤, 위 명령어를 입력하고 15분 뒤를 IDLE상태로 정의해 벤치마크를 진행했습니다.</p>
+<p>Rocky Linux는 Minimal 옵션으로 설치 이후에 필요한 패키지만 추가하였으며, 드라이버는 Windows, Linux 둘 다 Inbox Driver를 사용했습니다. </p>
+<h3>Future Improvements</h3>
+<h3 id="mcetoc_1iuek87ht49s"></h3>
+<p>자본은 유한합니다. 금전 뿐만 아니라 시간도 하나의 자본이죠.</p>
+<p>최초 계획과 현재 방법에는 약간의 차이가 있는데, 유휴시간에 대한 캐시 복구 벤치마크가 누락되었습니다. 사실상 개인적으로 궁금하기도 했던 여러 cSSD에 대한 Steady State 측정도 시간 상의 문제로 누락했습니다. 이는 추후에도 일반적으로 도입할 생각은 없으며, 몇몇 특이한 사항이 있는 SSD에 한정해 별도로 추가 벤치마크를 진행할 가능성이 있습니다.</p>
+<p>SSD에서 중요한 지표는 성능 뿐만이 아니라 신뢰성, 전력효율, 발열 등이 있습니다. 신뢰성은 개인의 입장에서 굉장히 평가하기 어려운 지표이므로 진작 포기했지만 전력효율과 발열에 대해선 생각이 조금 있습니다.</p>
+<p>전력은 개인적으로 Quarch Technology사의 제품을 고민 중인데, 가격이 상당해 마음에만 담아두고 있는 상태입니다. ElmorLabs에도 PMD라는 전력측정 장비가 있긴하지만, cSSD의 유휴 전력을 제대로 측정할 수 있는지 약간 의문이 들었습니다.</p>
+<p>온도는 쉽게 하려면 S.M.A.R.T.를 쿼리하며 로그를 남기는 방식으로 아주 쉽게 측정할 수 있습니다. 하지만 제 환경에서는 여러 의미로 변인이 통제되지 않는데, 우선 테스트 시스템 자체가 별도의 시스템이 추가로 들어있는 랙 캐비닛에 수납되어 있기에 온도 통제에서 자유롭지 못합니다. 또한, 내장된 온도센서의 위치도 조금씩 차이가 있기에 외부 온도계를 사용해야 정확한 비교가 가능하다고 판단했습니다.</p>
+<p>추가로 HW측면에서는 이후 쿨링이나 편의성을 고려해 2U 케이스에서 3U 케이스로 변경할 생각이며, 2.5" NVMe SSD의 테스트에는 최소한 ReDriver가 사용된 어댑터를 사용하고자 합니다. 추가로 메인보드 또한 온보드 BMC가 구현된 보드로 변경하고 싶습니다.</p>
+<p>부팅용 SSD는 PM981a 256GB로 2개를 마련해놓은 상태이며, 각자 OS를 설치해 바꿔가며 벤치마크를 진행할 예정입니다.</p>
+<hr>
+<h2 id="mcetoc_1iuel76km4a0">Closing</h2>
+<p>여기까지 오는데 많은 시간이 걸린 것 같습니다. 다만, 예시를 905P로 들게된 점은 약간 아쉽기도 합니다. 개인적인 이유로 제 손에서 떠날 물건이라 빠르게 진행했네요.</p>
+<p>우선, 지인들이 빌려준 cSSD들이 상당 수 있습니다. 얼른 벤치마크를 진행하고 돌려드리려 합니다. eSSD 밖에 없어서 첫 벤치마크 대상으로 고민하던 제게 희망을 제시한 지인분들께 감사를 전합니다.</p>
+<figure class="post__image align-center"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/31/seukeurinsyas-2025-06-24-ojeon-12.11.30.png" alt="" width="309" height="102"></figure>
+<p>코드는 비공개 레포에서 개발했으며, 구성비율은 위와 같습니다. 앞으로 개선사항은 있더라도 코드 자체를 공개할 생각은 없습니다.</p>
+<p>모르는 부분이 많고 아는 것도 없지만 직접 벤치마크를 하려는 이유는 제가 궁금한 점을 중심으로 벤치마크를 진행한 곳이 없었기 때문입니다. 저와 비슷하게 궁금한 것이 있는 분들에게 제 벤치마크가 도움이 되었으면 합니다.</p>
+<p>컴퓨터에 관심을 가지게 된지 6년이 되어갑니다. 6년 뒤에도 벤치마크를 하고 있을지는 모르겠지만, 이렇게 공개적으로 하며 저도 성장해갔으면 좋겠네요.</p>
+<p>감사합니다.</p>
+<hr>
+<h2 id="mcetoc_1iuel7q734a3">Reference</h2>
+<p> </p>
+<p>제가 고민하며 참고한 자료들의 일부입니다.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>LPCAMM2 메모리의 첫 판매</title>
         <author>
@@ -484,115 +799,6 @@ SSD_2: Transcend 430S 256GB</code></pre>
 <hr>
 <p>2022년은 전반기에만 달리고 후반기엔 얌전히 돈을 저축하며 지냈다.</p>
 <p>서버를 업그레이드 하기 위해서 그랬는데, 아직도 완성하지 못했다.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>2021년을 기억해내며</title>
-        <author>
-            <name>Huie</name>
-        </author>
-        <link href="https://freshflash4096.github.io/remember-2021/"/>
-        <id>https://freshflash4096.github.io/remember-2021/</id>
-            <category term="Homelab"/>
-            <category term="Archive"/>
-
-        <updated>2024-04-27T18:37:09+09:00</updated>
-            <summary>
-                <![CDATA[
-                    첫 데스크탑 [2020. 12. 07.] Desk with HDPLEX H1 CPU: AMD Ryzen&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h3>첫 데스크탑 [2020. 12. 07.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/10/gallery/HDPLEX-H1.png" data-size="2048x1280"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/10/gallery/HDPLEX-H1-thumbnail.png" alt="Desk with HDPLEX H1" width="768" height="480"></a>
-<figcaption>Desk with HDPLEX H1</figcaption>
-</figure>
-</div></div>
-<pre class="language-ini"><code>CPU: AMD Ryzen 3 PRO 4350G
-Mainboard: ASUS ROG STRIX B550I-GAMING
-RAM: ESSENCORE KLEVV DDR4 3200MHz 16GB *2
-SSD: WD SN750 500GB
-Case: HDPLEX H1 V3
-PSU: HDPLEX DC-ATX 200W
-
-Monitor: Dell P2419HC
-Keyboard: ASUS ROG FALCHION (적축)
-Mouse: ASUS ROG STRIX CARRY</code></pre>
-<p>처음으로 구매한 데스크탑. 완성하고 당분간은 만족하며 사용했지만 이런저런 문제로 결국 <a href="https://loneindustries.com/products/5">Lone Industries L5</a>라는 다른 케이스를 바라보게 되었다.</p>
-<hr>
-<h3>NAS 구매 [2021. 05. 14.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/10/gallery/DS620slim-2.png" data-size="2048x1280"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/10/gallery/DS620slim-2-thumbnail.png" alt="Synology DiskStation DS620slim" width="768" height="480"></a>
-<figcaption>Synology DiskStation DS620slim</figcaption>
-</figure>
-</div></div>
-<pre class="language-ini"><code>CPU: Intel Celeron J3355
-RAM: DDR3L 1866MHz 6GB (2GB+4GB)
-
-SSD_1: Samsung 870 EVO 1TB
-SSD_2: WD Green 120GB
-HDD_1: Seagate BarraCuda 4TB
-HDD_2: Toshiba MQ01 1TB
-HDD_3: Hitachi Travelstar 750GB</code></pre>
-<p>그렇게 바라던 NAS를 구매했다. 구매할 때는 도커로 서비스도 이것저것 올리고 VM으로도 이것저것 올려서 놀려고했는데 사양이 너무 낮아서 절망했다. </p>
-<p>많고 많은 모델 중 slim라인업을 선택한 이유는 2.5"만 들어가서 작기 때문이었다.</p>
-<hr>
-<h3>데스크탑 케이스 교체 [2021.07.09.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/10/gallery/Lone-L5_1.png" data-size="1280x2048"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/10/gallery/Lone-L5_1-thumbnail.png" alt="Lone Industries L5" width="768" height="1229"></a>
-<figcaption>Lone Industries L5</figcaption>
-</figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/10/gallery/Lone-L5_f.png" data-size="2048x1280"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/10/gallery/Lone-L5_f-thumbnail.png" alt="Desk with L5" width="768" height="480"></a>
-<figcaption>Desk with L5</figcaption>
-</figure>
-</div></div>
-<pre class="language-ini"><code>CPU: AMD Ryzen 7 PRO 4750G
-Mainboard: ASUS ROG STRIX B550I-GAMING
-RAM: Innodisk DDR4 VLP ECC 2666MHz 16GB *2
-SSD_C: Intel Optane SSD 800P 118GB
-SSD_D: Samsung 983 ZET 960GB
-Case: Lone Industries L5
-Cooling_CPU: Arctic Alpine AM4 Passive
-Cooling_Case: Noctua NF-A8 PWM chromax.black.swap
-PSU: G.Unique Custom GaN Fanless 300W
-
-Monitor: Dell P2419HC
-Keyboard: Leopold FC660MBT (저소음 적축)
-Mouse: Logitech MX Master 3
-Speaker: Creative Pebble V3</code></pre>
-<p>첫 데스크탑과 이 데스크탑의 사이에 얼마나 많은 일이 있던걸까... 엔터프라이즈용 SSD와 ECC램부터 주문제작한 파워까지.</p>
-<p>참고로 첫 번째 사진의 파워는 Meanwell의 EPP-200-12라는 SMPS다.</p>
-<hr>
-<h3>라즈베리 파이 구매 [2021.09.02.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/10/gallery/RPi-4B.png" data-size="2048x1280"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/10/gallery/RPi-4B-thumbnail.png" alt="Raspberry Pi 4B" width="768" height="480"></a>
-<figcaption>Raspberry Pi 4B</figcaption>
-</figure>
-</div></div>
-<pre class="language-ini"><code>CPU: Broadcom BCM2711
-RAM: LPDDR4 3200MHz 4GB
-
-Extra: PoE HAT</code></pre>
-<p>중요한 서비스들을 분리할 생각으로 구매한 라즈베리 파이들. 이 시점에서 Ubiquiti 장비의 구매를 고려 중이었다. PoE햇도 구입해서 상상 홈랩을 한창 굴릴 때.</p>
-<hr>
-<h3>백업용 NAS 구매 [2021.10.13.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/10/gallery/DS215j.png" data-size="2048x1280"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/10/gallery/DS215j-thumbnail.png" alt="Synology DiskStation DS215j" width="768" height="480"></a>
-<figcaption>Synology DiskStation DS215j</figcaption>
-</figure>
-</div></div>
-<pre class="language-ini"><code>CPU: Marvell Armada 375
-RAM: DDR3 512MB
-
-SSD: e-STAR S9 64GB
-HDD: Toshiba DT01 1TB</code></pre>
-<p>백업용으로만 사용할 새로운 NAS를 구매했다. 고용량 HDD를 구매해서 쓸 생각이었는데, 성능이 진짜 낮아도 너무 낮다. 1GbE라는 네트워크 대역폭에서 병목이 걸리는 것은 예상했지만 1GbE 자체를 완전히 못 뽑아낼 줄이야...</p>
-<hr>
-<p> </p>
-<p>건너뛰어진 것도 많지만 대체로 이런 흐름으로 2021년을 보냈던 것 같다. 지금은 백업용 NAS와 라즈베리 파이들은 없지만 말이다.</p>
             ]]>
         </content>
     </entry>
