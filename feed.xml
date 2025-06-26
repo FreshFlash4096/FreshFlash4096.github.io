@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-06-25T23:54:51+09:00</updated>
+    <updated>2025-06-26T22:16:59+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -21,7 +21,7 @@
         <updated>2025-06-22T02:20:11+09:00</updated>
             <summary>
                 <![CDATA[
-                    Change log 6.25 - 어색한 문맥 수정, Reference 목록 추가 국내외를 불문하고&hellip;
+                    Change log 6.25 - 어색한 문맥 수정, Reference 목록 추가 6.26 -&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -29,6 +29,7 @@
                 <blockquote>
 <p>Change log</p>
 <p>6.25 - 어색한 문맥 수정, Reference 목록 추가</p>
+<p>6.26 - Windows기반 벤치마크 상세옵션 명시</p>
 </blockquote>
 <p> </p>
 <p>국내외를 불문하고 컴덕들을 위한 커뮤니티가 존재합니다. 그리고 커뮤니티에선 새로운 컴퓨터 부품에 대한 벤치마크가 여럿 올라옵니다.</p>
@@ -86,7 +87,7 @@
 <li>LBA의 앞에서 8GiB를 4kiB RND Write</li>
 <li>사용 중인 공간이 75%가 되도록 LBA 기준으로 뒤에서 25%를 Trim</li>
 </ol>
-<p>다만, 이 Pre-Conditioning의 완전한 단계는 한 번만 적용되는데, 아래에서 다시 설명하도록 하겠습니다. 그럼 사용하는 도구를 살펴보겠습니다.</p>
+<p>그럼, 사용하는 도구로 넘어가겠습니다.</p>
 <h3 id="mcetoc_1iuejmtca47a">CrystalDiskMark 9.x.x</h3>
 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
 <figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/31/gallery/seukeurinsyas-2025-06-21-235614.png" data-size="1002x547"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/31/gallery/seukeurinsyas-2025-06-21-235614-thumbnail.png" alt="" width="768" height="419"></a>
@@ -275,14 +276,13 @@
 <ol>
 <li>Purge</li>
 <li>FOB상태에서 CDM Default, NVMe Profile의 순서로 벤치마크 수행</li>
-<li>cSSD <span style="text-decoration: underline;">Pre-Conditioning*</span> 진행 이후, CDM, 3DMark, SPECworkstation 벤치마크 수행</li>
+<li>cSSD Pre-Conditioning 진행 이후, CDM, 3DMark, SPECworkstation 벤치마크 수행</li>
 <li>Purge</li>
 <li>Fill Drive 벤치마크 수행</li>
-<li>cSSD Pre-Conditioning 진행 이후, 앞에서 말한 벤치마크를 차례대로 수행</li>
+<li>cSSD Pre-Conditioning 중 RND와 Trim 단계 진행 후, 앞에서 말한 벤치마크를 차례대로 수행</li>
 </ol>
-<p><strong>첫 번째 cSSD Pre-Conditioning에선 두 번째와 다르게 드라이브를 곧바로 User Capacity의 75%만 채웁니다.</strong> 이는 CDM, 3DMark, SPECworkstation의 특성상 쓰기가 적용된 LBA에 접근하는 것이 아니라 비어있는 LBA에 접근해 파일을 생성하고 벤치마크를 하기 때문에 완전한 Pre-Conditioning이 반드시 필요한 것은 아니라고 생각하였습니다.</p>
-<p>물론 완전한 단계가 좋다고는 스스로 판단하지만, SSD 쓰기량과 소모되는 시간을 대폭적으로 줄일 수 있기에 이러한 선택을 고수하기로 했습니다.</p>
-<p>cSSD Pre-Conditioning은 eSSD와 다르게 유휴시간이 충분히 주어집니다. 뿐만 아니라, 성능 측정 단계에서도 충분한 유휴시간이 주어지는 것이 중요한 부분입니다.</p>
+<p>Fill Drive 벤치마크 자체가 cSSD Pre-Conditioning에서 SEQ영역을 작성하는 것과 같으므로 두 번째 Pre-Conditioning에선 SEQ 단계를 제외합니다.</p>
+<p>또한, cSSD Pre-Conditioning은 eSSD와 다르게 유휴시간이 충분히 주어집니다. 뿐만 아니라, 성능 측정 단계에서도 충분한 유휴시간이 주어지는 것이 중요한 부분입니다.</p>
 <hr>
 <h2 id="mcetoc_1iuek3eau49h">Test Platform</h2>
 <p>벤치마크 종류를 살펴보았으니 이제 수행되는 플랫폼에 대해 살펴보겠습니다. 금전의 영향을 많이 받아 타협을 거듭했습니다.</p>
@@ -355,6 +355,7 @@
 <p>Windows는 전원옵션에서 고성능을 설정하고 상세값을 그에 맞춰주었으며 Indexing Service, Scheduled Defragmentation, System Protection, Windows Defender, Windows Updates를 비활성화했습니다. 혹시 모를 백그라운드 작업을 대비해 네트워크는 연결하지 않고 벤치마크를 진행합니다.</p>
 <pre class="language-batch"><code>start /wait Rundll32.exe advapi32.dll/ProcessIdleTasks</code></pre>
 <p>그에 더해 HWiNFO, 작업관리자, 벤치마크 도구를 실행시킨 뒤, 위 명령어를 입력하고 15분 뒤를 IDLE상태로 정의해 벤치마크를 진행했습니다.</p>
+<p>Windows는 Linux와 달리 NTFS의 기본값으로 포맷한 뒤에 벤치마크를 진행합니다. 이것이 Pre-Conditioning 단계를 구분해야했던 이유이기도 하고요.</p>
 <p>Rocky Linux는 Minimal 옵션으로 설치 이후에 필요한 패키지만 추가하였으며, 드라이버는 Windows, Linux 둘 다 Inbox Driver를 사용했습니다. </p>
 <p>Latency는 IO 조각이 제출된 시점에서 완료될 때까지의 시간을 측정한 값을 사용합니다.</p>
 <h3 id="mcetoc_1iujejkk8bn">Future Improvements</h3>
