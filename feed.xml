@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-06-28T14:59:06+09:00</updated>
+    <updated>2025-06-28T22:47:06+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -241,7 +241,7 @@
                 <blockquote>
 <p>Change log</p>
 <p>2025.06.25 - 어색한 문맥 수정, Reference 목록 추가</p>
-<p>2025.06.28 - Windows기반 벤치마크 상세옵션 명시</p>
+<p>2025.06.28 - Windows기반 벤치마크 상세옵션 명시, 그래프 오류 수정</p>
 </blockquote>
 <p> </p>
 <p>국내외를 불문하고 컴덕들을 위한 커뮤니티가 존재합니다. 그리고 커뮤니티에선 새로운 컴퓨터 부품에 대한 벤치마크가 여럿 올라옵니다.</p>
@@ -276,7 +276,13 @@
 </ul>
 </li>
 <li><a href="#mcetoc_1iueju0sm49b">How about eSSD Benchmarking?</a></li>
-<li><a href="#mcetoc_1iuek3eau49h">Benchmark Flow</a></li>
+<li><a href="#mcetoc_1iuek3eau49h">Benchmark Flow</a>
+<ul>
+<li><a href="#mcetoc_1iuqi92fd62">WSAT Test</a></li>
+<li><a href="#mcetoc_1iuqi92fd63">eSSD Test</a></li>
+<li><a href="#mcetoc_1iuqi92fd64">cSSD Test</a></li>
+</ul>
+</li>
 <li><a href="#mcetoc_1iuek3eau49h">Test Platform</a>
 <ul>
 <li><a href="#mcetoc_1iuek40fa49k">Hardware</a></li>
@@ -338,13 +344,13 @@
 <figure class="post__image" ><img loading="lazy" style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-6.png" alt="" width="1000" height="500">
 <figcaption >Fill Drive - BW/Time</figcaption>
 </figure>
-<figure class="post__image" ><img loading="lazy" style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-7.png" alt="" width="1000" height="500">
+<figure class="post__image" ><figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/31/Figure_1-5.png" alt="" width="1000" height="500"></figure>
 <figcaption >Fill Drive - LAT/Time</figcaption>
 </figure>
 <p>많은 곳에서 볼 수 있는 합성 벤치마크입니다. 국내에서는 나래온 더티테스트를 통해 이러한 벤치마크를 진행하는데, 개인적으로 나래온 더티테스트는 X축이 용량 단위이며, 기록 단위도 용량의 0.1% 단위라는 것이 꽤 큰 단점이라고 생각해 직접 진행하기로 했습니다.</p>
 <p>100ms단위로 측정하며, 워크로드는 SEQ 128kiB QD256입니다. 해당 벤치마크는 목적상 이례적으로 FOB상태에서 진행해 용량의 100%를 채우고 휴식을 부여합니다. 그리고 한 번 더 용량의 100%에 해당하는 쓰기를 가합니다. cSSD에선 이를 통해 SLC캐시의 형태를 대략적으로 파악할 수 있으리라 기대됩니다.</p>
-<p>그래프는 6가지가 제시됩니다. 미리 제시된 첫 번째 그래프는 직관적인 이해를 위해 제시했지만, 최신 cSSD처럼 SLC캐시를 적용해 시간이 지남에 따라 변화하는 성능이라면 해상도 분포가 다른 것이 상당한 단점입니다. 두 번째는 평균값에 대한 수평선을 추가했으며, 세 번째는 지연시간을 통해 안정적인 정도를 파악할 수 있습니다. </p>
-<p>이외에 추가될 그래프는 최대, 최소 SLC 캐시 사이즈와 평균 대역폭을 순서대로 정렬한 그래프입니다. 양식은 아래의 Sync Performance 파트에 사용된 막대 그래프와 같습니다.</p>
+<p>그래프는 여러 가지가 제시됩니다. 미리 제시된 첫 번째 그래프는 직관적인 이해를 위해 제시했지만, 최신 cSSD처럼 SLC캐시를 적용해 시간이 지남에 따라 변화하는 성능이라면 해상도 분포가 다른 것이 상당한 단점입니다. 두 번째는 평균값에 대한 수평선을 추가했으며, 세 번째는 지연시간을 통해 안정적인 정도를 파악할 수 있습니다. </p>
+<p>이외에 추가될 그래프는 전체 평균 대역폭을 순서대로 정렬한 그래프입니다. 양식은 아래의 Sync Performance 파트에 사용된 막대 그래프와 같습니다.</p>
 <h3 id="mcetoc_1iuejqi41495">Sync Performance</h3>
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/31/Figure_1.png" alt="" width="1000" height="200">
 <figcaption >Sync Performance - SEQ Write BW</figcaption>
@@ -478,12 +484,12 @@
 <hr>
 <h2 id="mcetoc_1iuek3eau49h">Benchmark Flow</h2>
 <p>방법을 정리하며 흐름을 살펴보겠습니다. 각 테스트 집합은 완전히 개별로 진행됩니다. </p>
-<h3>WSAT Test</h3>
+<h3 id="mcetoc_1iuqi92fd62">WSAT Test</h3>
 <p>FOB상태에서 진행되며, User Capacity의 4배 용량만큼 4kiB RND 쓰기를 가하는 것과 512B SEQ 쓰기를 가하는 것으로 진행됩니다. 후자는 RW 비율이 50:50로 진행됩니다.</p>
-<h3>eSSD Test</h3>
+<h3 id="mcetoc_1iuqi92fd63">eSSD Test</h3>
 <p>앞서 말한대로 SNIA의 SSS-PTS에 입각해 Purge를 진행한 후, WIPC(Workload Independent Pre-Conditioning)으로 128kiB SEQ 쓰기를 전체 용량에 대해 2번 진행하고 WDPC(Workload Dependent Pre-Conditioning)으로 벤치마크할 워크로드에 대해서 Steady State에 도달할 때까지 부하를 가합니다.</p>
 <p>Steady State에 도달하면 측정값을 수집하는데, 이러한 일련의 과정에는 휴식이 부여되지 않습니다.</p>
-<h3>cSSD Test</h3>
+<h3 id="mcetoc_1iuqi92fd64">cSSD Test</h3>
 <p>종류가 많으므로 단계를 나열하겠습니다.</p>
 <ol>
 <li>Purge</li>
@@ -548,23 +554,23 @@
 </tr>
 <tr>
 <td style="width: 17.2611%;"><strong>SW_Win</strong></td>
-<td style="width: 64.4789%;">Windows 11 Pro (24H2)</td>
+<td style="width: 64.4789%;">Windows 11 Pro (24H2 26100.4351)</td>
 <td style="width: 18.26%;"> </td>
 </tr>
 <tr>
 <td style="width: 17.2611%;"><strong>SW_Linux</strong></td>
 <td style="width: 64.4789%;">Rocky Linux 10 Minimal (6.12.0-55.12.1.el10_0)</td>
-<td style="width: 18.26%;">FIO 3.40</td>
+<td style="width: 18.26%;">FIO 3.36</td>
 </tr>
 </tbody>
 </table>
 <p>DUT(Device Under Test)가 될 SSD는 CPU레인에 직결하며, 최대 2-connector Topology까지 허용합니다. </p>
 <p>다시 말해, M.2 NVMe SSD는 CPU와 가장 가까운 PCIe 5.0 x4를 지원하는 M.2 슬롯에 장착하며, AIC타입과 2.5" NVMe SSD는 CPU와 가장 가까운 PCIe x16 슬롯에 장착하게 됩니다. 물론, 후자는 어댑터의 사용이 필수불가결하며, 여기엔 <span style="text-decoration: underline;"><em>UMC-PTU-2</em></span>라는 어댑터를 사용합니다.</p>
-<p>2.5" SATA SSD는 PROM21(B650 Chipset)에 내장된 SATA 컨트롤러에 의지해, 온보드 SATA 포트에 장착합니다.</p>
+<p>2.5" SATA SSD는 PROM21(B650 Chipset)에 내장된 SATA 컨트롤러에 의지해, 온보드 SATA 포트에 장착합니다. PCH 드라이버 버전은 <strong>7.03.21.2116</strong>입니다.</p>
 <p>기본적으로 이 시스템은 제 랩이 가동되는 랙에 마운트되어 있기에 원격으로 설정할 필요가 있습니다. 따라서, <em><span style="text-decoration: underline;">NanoKVM</span></em>을 사용해 OOBM(Out-of-band Management)기능을 더합니다.</p>
 <p>기본적으로 DUT는 Spot Cooling을 통해 Thermal Throttling을 방지합니다.</p>
 <h3 id="mcetoc_1iuek4g3749n">Software</h3>
-<p>Windows는 전원옵션에서 고성능을 설정하고 상세값을 그에 맞춰주었으며 Indexing Service, Scheduled Defragmentation, System Protection, Windows Defender, Windows Updates를 비활성화했습니다. 혹시 모를 백그라운드 작업을 대비해 네트워크는 연결하지 않고 벤치마크를 진행합니다.</p>
+<p>Windows는 전원옵션에서 고성능을 설정하고 상세값을 그에 맞춰주었으며 Indexing Service, Scheduled Defragmentation, System Protection, Windows Defender, Windows Updates를 비활성화했습니다. 혹시 모를 백그라운드 작업에 대비해 네트워크는 연결하지 않고 벤치마크를 진행합니다.</p>
 <pre class="language-batch"><code>start /wait Rundll32.exe advapi32.dll/ProcessIdleTasks</code></pre>
 <p>그에 더해 HWiNFO, 작업관리자, 벤치마크 도구를 실행시킨 뒤, 위 명령어를 입력하고 15분 뒤를 IDLE상태로 정의해 벤치마크를 진행했습니다.</p>
 <p>Windows는 Linux와 달리 NTFS의 기본값으로 포맷한 뒤에 벤치마크를 진행합니다. Rocky Linux는 Minimal 옵션으로 설치, 이후에 필요한 패키지만 추가해 사용하고 드라이버는 Windows와 Linux. 둘 다 Inbox Driver를 사용했습니다. </p>
@@ -580,7 +586,7 @@
 <h2 id="mcetoc_1iuel76km4a0">Closing</h2>
 <p>여기까지 오는데 많은 시간이 걸린 것 같습니다. 다만, 예시를 905P로 들게된 점은 약간 아쉽기도 합니다. 개인적인 이유로 제 손에서 떠날 물건이라 빠르게 진행했네요.</p>
 <p>우선, 지인들이 빌려준 cSSD들이 상당 수 있습니다. 얼른 벤치마크를 진행하고 돌려드리려 합니다. eSSD 밖에 없어서 첫 벤치마크 대상으로 고민하던 제게 희망을 제시한 지인분들께 감사를 전합니다.</p>
-<figure class="post__image align-center"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/31/seukeurinsyas-2025-06-24-ojeon-12.11.30.png" alt="" width="309" height="102"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/31/seukeurinsyas-2025-06-24-ojeon-12.11.30.png" alt="" width="309" height="102"></figure>
 <p>코드는 비공개 레포에서 개발했으며, 구성비율은 위와 같습니다. 앞으로 개선사항은 있더라도 코드 자체를 공개할 생각은 없습니다.</p>
 <p>모르는 부분이 많고 아는 것도 없지만 직접 벤치마크를 하려는 이유는 제가 궁금한 점을 중심으로 벤치마크를 진행한 곳이 없었기 때문입니다. 저와 비슷하게 궁금한 것이 있는 분들에게 제 벤치마크가 도움이 되었으면 합니다.</p>
 <p>컴퓨터에 관심을 가지게 된지 6년이 되어갑니다. 6년 뒤에도 벤치마크를 하고 있을지는 모르겠지만, 이렇게 공개적으로 하며 저도 성장해갔으면 좋겠네요.</p>
