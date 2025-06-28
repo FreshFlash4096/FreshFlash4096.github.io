@@ -3,12 +3,224 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-06-26T22:16:59+09:00</updated>
+    <updated>2025-06-28T14:59:06+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
     <id>https://freshflash4096.github.io</id>
 
+    <entry>
+        <title>못 다한 이야기 - 905P 960GB</title>
+        <author>
+            <name>Huie</name>
+        </author>
+        <link href="https://freshflash4096.github.io/the-product-behind-the-benchmarks-905p-960gb/"/>
+        <id>https://freshflash4096.github.io/the-product-behind-the-benchmarks-905p-960gb/</id>
+        <media:content url="https://freshflash4096.github.io/media/posts/32/905P_Box_3.jpg" medium="image" />
+            <category term="Benchmark"/>
+
+        <updated>2025-06-27T20:57:28+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://freshflash4096.github.io/media/posts/32/905P_Box_3.jpg" alt="" />
+                    본격적인 제 SSD 리뷰의 첫 글로 벤치마크 방법에 대해 작성했습니다. 하지만 이는&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://freshflash4096.github.io/media/posts/32/905P_Box_3.jpg" class="type:primaryImage" alt="" /></p>
+                <p>본격적인 제 SSD 리뷰의 <a href="https://freshflash4096.github.io/benchmark-method/">첫 글</a>로 벤치마크 방법에 대해 작성했습니다.</p>
+<p>하지만 이는 온전히 성능 벤치마크에 관한 글이었고, 이 때문에 제가 생각하던 리뷰의 원래 양식에는 맞추지 못했는데, 이 글을 통해 905P에 대한 내용을 약간 추가하고자 합니다.</p>
+<p>별거 없지만 시작해보죠.</p>
+<div class="post__toc">
+<h3>목차</h3>
+<ul>
+<li><a href="#mcetoc_1iup18slp5s">Appearance</a></li>
+<li><a href="#mcetoc_1iup1bg6i63">Internal Components</a>
+<ul>
+<li><a href="#mcetoc_1iup3oiobb2">Notable Points</a>
+<ul>
+<li><a href="#mcetoc_1iup50imcdg">Over Provisioning on 3D XPoint?</a></li>
+<li><a href="#mcetoc_1iup4vgr6dc">Performance Gudie</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#mcetoc_1iup47dknb5">Datasheet</a></li>
+<li><a href="#mcetoc_1iup4vgr6dd">SW Report</a></li>
+<li><a href="#mcetoc_1iup4vgr6dd">DUT Summary</a></li>
+<li><a href="#mcetoc_1iuqh3uem5o">Closing</a></li>
+</ul>
+</div>
+<hr>
+<h2 id="mcetoc_1iup18slp5s">Appearance</h2>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/32/gallery/905P_Box_1.jpg" data-size="4128x2580"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/32/gallery/905P_Box_1-thumbnail.jpg" alt="" width="768" height="480"></a>
+<figcaption>Outside Box</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/32/gallery/905P_Box_2.jpg" data-size="4128x2580"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/32/gallery/905P_Box_2-thumbnail.jpg" alt="" width="768" height="480"></a>
+<figcaption>Inside Box</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/32/gallery/905P_Box_3.jpg" data-size="4128x2580"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/32/gallery/905P_Box_3-thumbnail.jpg" alt="" width="768" height="480"></a>
+<figcaption>Product in Box</figcaption>
+</figure>
+</div></div>
+<p>제가 가진 것 중에서 유일하게 박스가 온전히 있는 SSD입니다. 박스를 열면 조심스레 포장된 SSD가 반겨줍니다. 기본으로 제공되는 LP 브라켓과 함께 말이죠.</p>
+<p>2018년 2분기에 출시되었고, 당시 가격이 $1,602라는 어마어마한 수치였네요. 단종된 지금도 동용량, 동세대 제품에 비해 중고시세가 더 높게 책정이 되어있습니다.</p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/32/gallery/905P_Product_Front.jpg" data-size="4128x2580"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/32/gallery/905P_Product_Front-thumbnail.jpg" alt="" width="768" height="480"></a>
+<figcaption>905P Front</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/32/gallery/905P_Product_Rear.jpg" data-size="4128x2580"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/32/gallery/905P_Product_Rear-thumbnail.jpg" alt="" width="768" height="480"></a>
+<figcaption>905P Rear</figcaption>
+</figure>
+</div></div>
+<p>본품 사진입니다. PCIe 슬롯에 직접 장착하는 AIC타입이며, 폼팩터는 HHHL입니다. 방열판과 백플레이트로 꼼꼼히 무장된 것을 확인할 수 있는데, AIC타입의 P4800X에 백플레이트가 없는 것과는 대조적입니다.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/32/905P_Teardown_Heatsink.jpg" alt="" width="4128" height="2580"><figcaption>905P Heatsink &amp; Backplate</figcaption></figure>
+<p>방열판엔 SW로 Blue-Red-Green 색상 조절이 가능한 LED가달려있으며, 방열판의 아랫면에서 관련 접점을 확인할 수 있습니다.</p>
+<p>그럼, 조금 더 자세하게 들어가보겠습니다. </p>
+<hr>
+<h2 id="mcetoc_1iup1bg6i63">Internal Components</h2>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/32/gallery/905P_Teardown_Front-2.jpg" data-size="4128x2580"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/32/gallery/905P_Teardown_Front-2-thumbnail.jpg" alt="" width="768" height="480"></a>
+<figcaption>905P Teardown Front</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/32/gallery/905P_Teardown_Rear.jpg" data-size="4128x2580"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/32/gallery/905P_Teardown_Rear-thumbnail.jpg" alt="" width="768" height="480"></a>
+<figcaption>905P Teardown Rear</figcaption>
+</figure>
+</div></div>
+<pre>문외한의 입장에서 일부 IC만 찾아보았으며, 제조시기 등에 따라 변경될 가능성이 있습니다.</pre>
+<table style="border-collapse: collapse; width: 100%; height: 303.625px;" border="1">
+<tbody>
+<tr style="height: 48.5625px;">
+<td style="width: 49.9287%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Intel Optane SSD 905P (960GB, HHHL)</span></td>
+<td style="width: 50.0713%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Package Date 2018. 04. 03</span></td>
+</tr>
+<tr style="height: 51.625px;">
+<td style="width: 49.9287%; height: 51.625px;"><strong><span style="color: #e03e2d;">Intel SLL3D</span></strong></td>
+<td style="width: 50.0713%; height: 51.625px;"><span style="color: #3598db;">Texas Instruments TPS53513</span></td>
+</tr>
+<tr style="height: 51.625px;">
+<td style="width: 49.9287%; height: 51.625px;"><strong><span style="color: #e67e23;">Intel 29P32B1AMDNF2 *(7+14)</span></strong></td>
+<td style="width: 50.0713%; height: 51.625px;"><span style="color: #c2e0f4;">Texas Instruments TPS62130</span></td>
+</tr>
+<tr style="height: 51.625px;">
+<td style="width: 49.9287%; height: 51.625px;"><strong><span style="color: #f1c40f;">Intel 29P64B1ANDNF3 *7</span></strong></td>
+<td style="width: 50.0713%; height: 51.625px;"><span style="color: #ff00fc;">Texas Instruments TPS62150</span></td>
+</tr>
+<tr style="height: 51.625px;">
+<td style="width: 49.9287%; height: 51.625px;"><span style="color: #2dc26b;">IDT P78001-50</span></td>
+<td style="width: 50.0713%; height: 51.625px;"><span style="color: #755127;">Texas Instruments TPS54240</span></td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 49.9287%; height: 48.5625px;">.</td>
+<td style="width: 50.0713%; height: 48.5625px;"><span style="color: #b96ad9;">Microchip PIC16F1829</span></td>
+</tr>
+</tbody>
+</table>
+<p>컨트롤러는 <span style="color: #e03e2d;">Intel SLL3D</span>를 사용합니다. Optane SSD 제품 중에서 900P, 905P, P4800X에 적용되었으며, ARM Cortex-R5 아키텍쳐에 7CH로 알려져있습니다.</p>
+<p>일반적인 NAND Flash가 아닌 3D XPoint로 홍보하는 PCM이 저장매체로 사용됩니다. 905P 960GB에서 사용된 파트는 <span style="color: #e67e23;">Intel 29P32BIAMDNF2</span>과 <span style="color: #f1c40f;">Intel 29P64B1ANDNF3</span>입니다. 전자는 128Gb Die에 DDP로 32GB 용량을, 후자는 동일한 Die에 QDP로 64GB 용량을 구현합니다. 총합의 원시용량은 1120GB입니다.</p>
+<p>PMIC는 Intel SSD에서 자주보이는 <span style="color: #2dc26b;">IDT P78001-50</span>이 채용되었습니다. PN에서 50이 뜻하는 바는 알 수 없지만, P78001 자체는 꽤 자주 보이는 친구로, 제가 보유했던 SSD 기준으로도 몇 번씩 확인할 수 있던 PN입니다. IDT사에서 Intel 맞춤형으로 만든 PMIC로 알려져있습니다.</p>
+<p>그외에 <span style="color: #b96ad9;">Microchip PIC16F1829</span>이라는 MCU도 볼 수 있었습니다.</p>
+<hr>
+<h3 id="mcetoc_1iup3oiobb2">Notable Points</h3>
+<h4 id="mcetoc_1iup50imcdg">Over Provisioning on 3D XPoint?</h4>
+<figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/32/seukeurinsyas-2025-06-28-ojeon-12.57.02.png" alt="" width="2210" height="1482">
+<figcaption >Source: <a href="https://community.intel.com/t5/Intel-Optane-Memory/Intel-800P-900P-and-over-provisioning/m-p/544089">Intel Community</a></figcaption>
+</figure>
+<p>3D XPoint는 NAND와 다르게 엄격한 Over-Provisioning이 필요없다고 알려져 있습니다. 이는 DRAM과 같은 byte-addressable이라는 특징 덕분에 write-in-place가 가능하기 때문입니다. 그럼에도 불구하고 실제로는 17%정도 여유가 있는 것을 확인할 수 있었는데, 가볍게 생각해보면 아래와 같은 가능성을 제시할 수 있습니다.</p>
+<ul>
+<li>예비 저장공간
+<ul>
+<li>몇몇 사람들이 알고있는 것과 다르게 3D XPoint엔 쓰기 수명이 존재합니다. 이에 대비한 예비 영역일 가능성이 제시됩니다.</li>
+</ul>
+</li>
+<li>ECC
+<ul>
+<li>3D XPoint Die에 ECC영역이 없을 가능성이 있습니다. </li>
+</ul>
+</li>
+</ul>
+<p>실제 사용 목적은 마지막까지 공개하지 않은 것으로 알고 있습니다. </p>
+<h4 id="mcetoc_1iup4vgr6dc">Performance Gudie</h4>
+<figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/32/seukeurinsyas-2025-06-28-ohu-2.45.30.png" alt="" width="1130" height="448">
+<figcaption >Source: Intel Optane Solid State Drives for Client - Evaluation Guide</figcaption>
+</figure>
+<p>벤치마크 방법을 소개하는 글에서 NAND기반 저장장치는 성능 변화가 발생하기에 Pre-Conditioning이 요구된다고 말했습니다. 3D XPoint는 NAND와 달리 이런 제약에서 자유롭지만 Evaluation Guide를 살펴보면 약간 특이한 사항이 있습니다.</p>
+<p>바로 성능 측정 전에 최소 3시간 동안 전원을 켜두라는 점입니다.</p>
+<p>이는 Background Data Refresh작업 때문인데요, NAND와 마찬가지로 3D XPoint 매체 또한 주기적인 Refresh가 필요합니다. 이러한 작업은 성능에 영향을 줄 수 있기 때문에 설계 기준으로 Refresh가 수행되는 3시간 동안 전원을 켜두라고 요구합니다.</p>
+<p>다만, 이는 1세대 3D XPoint 매체가 적용된 SSD, 900P 또는 P4800X에 대한 가이드이기에 2세대가 적용된 SSD는 다를 수도 있습니다. 이에 대해서는 언젠가 직접 실험해보도록 하겠습니다.</p>
+<hr>
+<h2 id="mcetoc_1iup47dknb5">Datasheet</h2>
+<p>소제목을 "Datasheet"라고 웅장하게 지은 것과 다르게, Optane SSD는 단 하나도 데이터시트가 공개되지 않았습니다. 기본적으로 Intel SSD를 종종 찾아보면 Intel Confidential이라고 적혀있는 문서가 가끔씩 널려있는게 보이는데... Optane SSD만큼은 예외입니다. </p>
+<p>몇 년 동안 찾아보려 노력했지만, Product Brief 이외엔 단 하나도 찾아볼 수 없었습니다. 엄격하게 관리되고 있단 뜻이겠죠. 대신 Product Brief를 제시합니다.</p>
+<figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/32/seukeurinsyas-2025-06-28-ojeon-1.43.56.png" alt="" width="1464" height="838">
+<figcaption >Intel Optane SSD 905P Series - Product Brief</figcaption>
+</figure>
+<p>905P 시리즈 중에서 <a href="https://www.intel.co.kr/content/www/kr/ko/products/sku/129833/intel-optane-ssd-905p-series-1-5tb-12-height-pcie-x4-20nm-3d-xpoint/specifications.html">1.5TB 모델</a>은 이후에 추가로 출시된 제품이라 이 이미지엔 960GB 모델이 최대입니다. 성능에 대해서 <em>Up to</em>를 명시해뒀기에 1.5TB 모델이 섞이면 960GB 모델의 성능이 가려지므로 이것으로 준비했습니다. <a href="https://freshflash4096.github.io/benchmark-method/">Intel ARK</a>에 명시된 부분과 다른게 없는 것을 확인할 수 있습니다.</p>
+<hr>
+<h2 id="mcetoc_1iup4vgr6dd">SW Report</h2>
+<figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/32/CDI_Before_Purge.png" alt="" width="1002" height="692">
+<figcaption >CrystalDiskInfo 9.7.0 - 905P 960GB</figcaption>
+</figure>
+<p>사람들에게 익숙한 CrystalDiskInfo입니다.</p>
+<p>0E의 <em>Media and Data Integrity Errors</em>가 눈에 띕니다. 이는 이전 주인이 PCIe 라이저 등을 이용해서 상당히 괴상한 시스템 빌드를 즐기시는 분이라 발생한 문제로 생각됩니다. 실제로 제가 받은 이후 해당 값은 변하지 않았고요.</p>
+<p>DUT의 정확한 PN은 INTEL SSDPED1D960GAY이며, FW의 버전은 <strong>E2010650</strong>입니다. PN의 마지막 글자가 조금 신경쓰이네요.</p>
+<p>smartmontools와 NVMe-CLI의 id-ctrl 결과는 <a href="https://github.com/FreshFlash4096/SSD-Report">GitHub</a>에 첨부하도록 하겠습니다.</p>
+<h2 id="mcetoc_1iup4vgr6dd">DUT Summary</h2>
+<p>벤치마크를 진행했던 SSD의 정보를 요약하자면 아래와 같습니다.</p>
+<table style="border-collapse: collapse; width: 100%; height: 339.938px;" border="1">
+<tbody>
+<tr style="height: 48.5625px;">
+<td style="width: 99.8573%; background-color: #34495e; height: 48.5625px;" colspan="4"><strong><span style="color: #ffffff;">INTEL SSDPED1D960GAY</span></strong></td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Link</span></td>
+<td style="width: 24.9643%; height: 48.5625px;">PCIe 3.0 x4</td>
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">NVMe Version</span></td>
+<td style="width: 24.9643%; height: 48.5625px;">NVMe 1.1</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Firmware</span></td>
+<td style="width: 24.9643%; height: 48.5625px;">E2010650</td>
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">LBA Size</span></td>
+<td style="width: 24.9643%; height: 48.5625px;">512B</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Controller</span></td>
+<td style="width: 24.9643%; height: 48.5625px;">Intel SLL3D</td>
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Warning Temp</span></td>
+<td style="width: 24.9643%; height: 48.5625px;">-</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Storage Media</span></td>
+<td style="width: 24.9643%; height: 48.5625px;">Intel 1st 3DXP</td>
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Critical Temp</span></td>
+<td style="width: 24.9643%; height: 48.5625px;">-</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Power State</span></td>
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Maximum Power</span></td>
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Entry Latency</span></td>
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Exit Latency</span></td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9643%; height: 48.5625px;">PS0</td>
+<td style="width: 24.9643%; height: 48.5625px;">18.00W</td>
+<td style="width: 24.9643%; height: 48.5625px;">0μs</td>
+<td style="width: 24.9643%; height: 48.5625px;">0μs</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="mcetoc_1iuqh3uem5o">Closing</h2>
+<p>이 정도가 제 SSD 리뷰에서 앞 부분에 올 정보입니다. 큰 내용은 없습니다만, 주(主)라고도 할 수 있는 성능 벤치마크에 앞선 전채요리라고 생각하시면 될 것 같네요.</p>
+<p>Intel MAS로 LED색을 바꾸는 장면도 찍어보려고 했는데 여건상 하기가 좀 곤란했던게 아쉽습니다. SCM급 SSD인데 cSSD 벤치마크만 수행한 것도 조금 한으로 남을 것 같네요. 실제로 Optane SSD 9 시리즈는 cSSD로 하이엔드 소비자가 타겟시장이었으니, eSSD 벤치마크는 P4800X로 한을 메우기로 합니다.</p>
+<p>905P는 슬슬 놓아주고, 현재 리뷰 대기 중인 SSD는 약 25개 정도 있습니다. 대부분이 eSSD라 시간이 상당히 걸릴 것 같네요. 곧 자취를 준비해야하기도 하고... 유튜브 영상으로도 리뷰를 만들어보려고 하는데, 가지고 있는 SSD만 하더라도 언제 끝날지 상상이 안 가네요.</p>
+<p>오늘도 더 열심히 살아야겠다고 다짐합니다.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>My SSD Benchmark Method</title>
         <author>
@@ -18,18 +230,18 @@
         <id>https://freshflash4096.github.io/benchmark-method/</id>
             <category term="Benchmark"/>
 
-        <updated>2025-06-22T02:20:11+09:00</updated>
+        <updated>2025-06-22T22:20:00+09:00</updated>
             <summary>
                 <![CDATA[
-                    Change log 6.25 - 어색한 문맥 수정, Reference 목록 추가 6.26 -&hellip;
+                    Change log 2025.06.25 - 어색한 문맥 수정, Reference 목록 추가 2025.06.28 -&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <blockquote>
 <p>Change log</p>
-<p>6.25 - 어색한 문맥 수정, Reference 목록 추가</p>
-<p>6.26 - Windows기반 벤치마크 상세옵션 명시</p>
+<p>2025.06.25 - 어색한 문맥 수정, Reference 목록 추가</p>
+<p>2025.06.28 - Windows기반 벤치마크 상세옵션 명시</p>
 </blockquote>
 <p> </p>
 <p>국내외를 불문하고 컴덕들을 위한 커뮤니티가 존재합니다. 그리고 커뮤니티에선 새로운 컴퓨터 부품에 대한 벤치마크가 여럿 올라옵니다.</p>
@@ -355,8 +567,7 @@
 <p>Windows는 전원옵션에서 고성능을 설정하고 상세값을 그에 맞춰주었으며 Indexing Service, Scheduled Defragmentation, System Protection, Windows Defender, Windows Updates를 비활성화했습니다. 혹시 모를 백그라운드 작업을 대비해 네트워크는 연결하지 않고 벤치마크를 진행합니다.</p>
 <pre class="language-batch"><code>start /wait Rundll32.exe advapi32.dll/ProcessIdleTasks</code></pre>
 <p>그에 더해 HWiNFO, 작업관리자, 벤치마크 도구를 실행시킨 뒤, 위 명령어를 입력하고 15분 뒤를 IDLE상태로 정의해 벤치마크를 진행했습니다.</p>
-<p>Windows는 Linux와 달리 NTFS의 기본값으로 포맷한 뒤에 벤치마크를 진행합니다. 이것이 Pre-Conditioning 단계를 구분해야했던 이유이기도 하고요.</p>
-<p>Rocky Linux는 Minimal 옵션으로 설치 이후에 필요한 패키지만 추가하였으며, 드라이버는 Windows, Linux 둘 다 Inbox Driver를 사용했습니다. </p>
+<p>Windows는 Linux와 달리 NTFS의 기본값으로 포맷한 뒤에 벤치마크를 진행합니다. Rocky Linux는 Minimal 옵션으로 설치, 이후에 필요한 패키지만 추가해 사용하고 드라이버는 Windows와 Linux. 둘 다 Inbox Driver를 사용했습니다. </p>
 <p>Latency는 IO 조각이 제출된 시점에서 완료될 때까지의 시간을 측정한 값을 사용합니다.</p>
 <h3 id="mcetoc_1iujejkk8bn">Future Improvements</h3>
 <p>자본은 유한합니다. 금전 뿐만 아니라 시간도 하나의 자본이죠.</p>
@@ -365,7 +576,7 @@
 <p>전력은 개인적으로 Quarch Technology사의 제품을 고민 중인데, 가격이 상당해 마음에만 담아두고 있는 상태입니다. ElmorLabs에도 PMD라는 전력측정 장비가 있긴하지만, cSSD의 유휴 전력을 제대로 측정할 수 있는지 약간 의문이 들어 보류했습니다.</p>
 <p>온도는 쉽게 측정하려면 S.M.A.R.T.를 쿼리하며 로그를 남기는 방식으로 아주 쉬울 수 있습니다. 하지만 제 환경에서는 여러 의미로 변인이 통제되지 않는데, 우선 테스트 시스템 자체가 별도의 시스템이 추가로 들어있는 랙 캐비닛에 수납되어 있기에 온도 통제에서 자유롭지 못합니다. 또한, SSD에 내장된 온도센서도 조금씩 차이가 있기에 외부 온도계를 사용해야 정확한 비교가 가능하다고 판단했습니다.</p>
 <p>추가로 HW측면에서는 이후 쿨링이나 편의성을 고려해 2U 케이스에서 3U 케이스로 변경할 생각이며, 2.5" NVMe SSD의 테스트에는 최소한 ReDriver가 사용된 어댑터를 사용하고자 합니다. 추가로 메인보드 또한 온보드 BMC가구현된 보드를 생각하고 있습니다.</p>
-<p>부팅용 SSD는 PM981a 256GB로 2개를 마련해놓은 상태이며, 각자 OS를 설치해 바꿔가며 벤치마크를 진행할 예정입니다.</p>
+<p>부팅용 SSD는 Samsung PM981a 256GB로 2개를 마련해놓은 상태이며, 각자 OS를 설치해 바꿔가며 벤치마크를 진행할 예정입니다. M.2 단자의 수명이 약간은 걱정되지만 이것이 자금을 생각할 때 가장 나은 방법이라고 판단했습니다.</p>
 <h2 id="mcetoc_1iuel76km4a0">Closing</h2>
 <p>여기까지 오는데 많은 시간이 걸린 것 같습니다. 다만, 예시를 905P로 들게된 점은 약간 아쉽기도 합니다. 개인적인 이유로 제 손에서 떠날 물건이라 빠르게 진행했네요.</p>
 <p>우선, 지인들이 빌려준 cSSD들이 상당 수 있습니다. 얼른 벤치마크를 진행하고 돌려드리려 합니다. eSSD 밖에 없어서 첫 벤치마크 대상으로 고민하던 제게 희망을 제시한 지인분들께 감사를 전합니다.</p>
@@ -767,119 +978,6 @@ SSD: Apple SSD AP0256Z</code></pre>
 <p>메모리는 쓰다보면 부족해져서 재부팅을 해주고 신경을 약간 써줘야 하는 것은 흠인 것 같다. 나만 그런건가? </p>
 <hr>
 <p>맥미니를 마지막으로 한동안 구매를 중단하다가 연말에 가서 UDM-Pro를 기반으로 네트워크를 재구성했는데, 이는 별도의 포스트로 남긴다.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>2022년을 되새겨보며</title>
-        <author>
-            <name>Huie</name>
-        </author>
-        <link href="https://freshflash4096.github.io/ruminate-2022/"/>
-        <id>https://freshflash4096.github.io/ruminate-2022/</id>
-            <category term="Homelab"/>
-            <category term="Archive"/>
-
-        <updated>2024-04-27T18:38:33+09:00</updated>
-            <summary>
-                <![CDATA[
-                    Home Network 구성 [2022. 01. 18.] UniFi Trio Homelab beginning Router: Ubiquiti&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h3>Home Network 구성 [2022. 01. 18.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/11/gallery/UniFi_1.png" data-size="2276x1280"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/11/gallery/UniFi_1-thumbnail.png" alt="UniFi Trio" width="768" height="432"></a>
-<figcaption>UniFi Trio</figcaption>
-</figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/11/gallery/UniFi_2.png" data-size="2276x1280"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/11/gallery/UniFi_2-thumbnail.png" alt="Homelab beginning" width="768" height="432"></a>
-<figcaption>Homelab beginning</figcaption>
-</figure>
-</div></div>
-<pre class="language-ini"><code>Router: Ubiquiti UniFi Security Gateway
-Switch: Ubiquiti UniFi Switch 8 PoE (60W)
-AP: Ubiquiti UniFi U6 Lite</code></pre>
-<p>사실상 홈랩의 시발점. UniFi 제품을 우연히 알게 되었는데 외부 디자인과 WebUI가 이뻐서 빠져들게 되었다. 컨트롤러는 DS620slim에 컨테이너로 올려서 굴렸다.</p>
-<hr>
-<h3>10" 9U Rack 구매 [2022. 01. 24.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/11/gallery/10-Rack-2.png" data-size="1280x2276"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/11/gallery/10-Rack-2-thumbnail.png" alt="10inch 9U Rack" width="768" height="1366"></a>
-<figcaption>10inch 9U Rack</figcaption>
-</figure>
-</div></div>
-<p>독일에서 직구한 랙. 모든 것을 랙에 채워넣고 깔끔하게 끝내려고 했는데 선반 자체의 크기를 고려하지 않아 DS215j는 들어가지 않고... 공간은 좁아서 정리도 힘들고...</p>
-<p>구매한지 일주일도 지나지 않아 19" 랙으로 다시 세팅하자고 마음을 먹었다.</p>
-<hr>
-<h3>Galaxy Book S 구매 [2022. 02. 11.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/11/gallery/Galaxy-Book-S.png" data-size="2276x1280"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/11/gallery/Galaxy-Book-S-thumbnail.png" alt="Samsung Galaxy Book S" width="768" height="432"></a>
-<figcaption>Samsung Galaxy Book S</figcaption>
-</figure>
-</div></div>
-<pre class="language-ini"><code>CPU: Intel Core i3-L13G4
-RAM: LPDDR4X 4267MHz 8GB
-SSD: UFS 3.0 256GB
-PSU: 42Wh (25W Charge)
-Display: 13.3" 1920x1080 60Hz IPS</code></pre>
-<p>통학을 하며 태블릿만 가지고 다녔는데 불편함이 꽤 있어서 가볍기만 한 노트북을 구매했다. 성능을 생각하면 싸진 않지만 가볍다는 것 하나만으로 굉장히 만족스럽다.</p>
-<p>성능이 필요한 것들은 원격으로 하면 되기도 하고 말이다.</p>
-<p>램은 좀 아쉽긴하지만... 이런 저런 이유보다는 Lakefield를 한번 써보고 싶기도 했다.</p>
-<hr>
-<h3>NUC 11 Pro 구매 [2022. 02. 12.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/11/gallery/NUC-11-Pro.png" data-size="2276x1280"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/11/gallery/NUC-11-Pro-thumbnail.png" alt="Intel NUC 11 Pro" width="768" height="432"></a>
-<figcaption>Intel NUC 11 Pro</figcaption>
-</figure>
-</div></div>
-<pre class="language-ini"><code>CPU: Intel Core i3-1115G4
-RAM: ESSENCORE KLEVV DDR4 3200MHz 16GB SODIMM *2
-SSD_1: Samsung PM981 256GB
-SSD_2: Transcend 430S 256GB</code></pre>
-<p>ESXi를 올려서 사용할 목적으로 구매했다. 부팅 드라이브로 사용하던 USB가 인식이 자주 떨어져나가 고생했던 기억이 있다.</p>
-<hr>
-<h3>1300 1TB 구매 [2022. 02. 22.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/11/gallery/1300-1TB.png" data-size="1442x810"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/11/gallery/1300-1TB-thumbnail.png" alt="Micron 1300 1TB" width="768" height="431"></a>
-<figcaption>Micron 1300 1TB</figcaption>
-</figure>
-</div></div>
-<p>DS620slim에 넣을 SSD로 구매했다. PLP라는 말에 낚여 구매한 것 같긴한데, 클라이언트 타겟 제품이라 크게 기대하진 않는다.</p>
-<hr>
-<h3>Elements 16TB 구매 [2022. 03. 19.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/11/gallery/WD-16TB.png" data-size="1681x945"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/11/gallery/WD-16TB-thumbnail.png" alt="Western Digital Elements 16TB" width="768" height="432"></a>
-<figcaption>Western Digital Elements 16TB</figcaption>
-</figure>
-</div></div>
-<p>백업을 위해서 구매한 드라이브. 무슨 일이 있더라도 이것만 가지고 도망치자! 라는 생각으로 구매했다. 모으는 데이터의 용량을 제한할 것이라 결심했다는 뜻이기도 하다.</p>
-<hr>
-<h3>900P 280GB *2 구매 [2022. 03. 31.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/11/gallery/900P.png" data-size="2276x1280"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/11/gallery/900P-thumbnail.png" alt="Intel Optane SSD 900P 280GB" width="768" height="432"></a>
-<figcaption>Intel Optane SSD 900P 280GB</figcaption>
-</figure>
-</div></div>
-<p>추후 ZFS로 넘어갈 때 SLOG로 사용하려고 구매했다. </p>
-<hr>
-<h3>P4800X 375GB 구매 [2022. 08. 16.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/11/gallery/P4800X.png" data-size="2276x1280"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/11/gallery/P4800X-thumbnail.png" alt="Intel Optane SSD DC P4800X 375GB" width="768" height="432"></a>
-<figcaption>Intel Optane SSD DC P4800X 375GB</figcaption>
-</figure>
-</div></div>
-<p>바로 위에서 구매했던 900P 두 개를 추가금을 받고 P4800X 하나와 교환했다. LP브라켓이 없어서 뭔가 못생긴 기분이다.</p>
-<hr>
-<h3>7300 MAX 3.2TB *2 구매 [2022. 08. 27.]</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/11/gallery/7300-MAX.png" data-size="2276x1280"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/11/gallery/7300-MAX-thumbnail.png" alt="Micron 7300 MAX 3.2TB" width="768" height="432"></a>
-<figcaption>Micron 7300 MAX 3.2TB</figcaption>
-</figure>
-</div></div>
-<p>이것도 위의 900P와 마찬가지로 ZFS에서 Mirror로 쓰려고 구매했다. </p>
-<hr>
-<p>2022년은 전반기에만 달리고 후반기엔 얌전히 돈을 저축하며 지냈다.</p>
-<p>서버를 업그레이드 하기 위해서 그랬는데, 아직도 완성하지 못했다.</p>
             ]]>
         </content>
     </entry>
