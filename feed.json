@@ -20,10 +20,11 @@
                 "name": "Huie"
             },
             "tags": [
+                   "Samsung",
                    "Benchmark"
             ],
             "date_published": "2025-06-29T15:42:36+09:00",
-            "date_modified": "2025-07-01T20:03:22+09:00"
+            "date_modified": "2025-07-01T23:20:21+09:00"
         },
         {
             "id": "https://freshflash4096.github.io/the-last-mlc-970-pro/",
@@ -36,10 +37,11 @@
                 "name": "Huie"
             },
             "tags": [
+                   "Samsung",
                    "Benchmark"
             ],
             "date_published": "2025-06-29T15:29:58+09:00",
-            "date_modified": "2025-07-01T23:15:54+09:00"
+            "date_modified": "2025-07-01T23:19:51+09:00"
         },
         {
             "id": "https://freshflash4096.github.io/the-product-behind-the-benchmarks-905p-960gb/",
@@ -52,10 +54,12 @@
                 "name": "Huie"
             },
             "tags": [
+                   "Optane",
+                   "Intel",
                    "Benchmark"
             ],
             "date_published": "2025-06-27T20:57:28+09:00",
-            "date_modified": "2025-06-28T14:59:06+09:00"
+            "date_modified": "2025-07-01T23:18:47+09:00"
         },
         {
             "id": "https://freshflash4096.github.io/benchmark-method/",
@@ -67,10 +71,12 @@
                 "name": "Huie"
             },
             "tags": [
+                   "Optane",
+                   "Intel",
                    "Benchmark"
             ],
             "date_published": "2025-06-22T22:20:00+09:00",
-            "date_modified": "2025-06-28T22:47:06+09:00"
+            "date_modified": "2025-07-01T23:19:24+09:00"
         },
         {
             "id": "https://freshflash4096.github.io/first-sale-of-lpcamm2-memory/",

@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-07-01T23:15:54+09:00</updated>
+    <updated>2025-07-01T23:20:21+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -17,6 +17,7 @@
         <link href="https://freshflash4096.github.io/samsungs-phoenix-cssdzip/"/>
         <id>https://freshflash4096.github.io/samsungs-phoenix-cssdzip/</id>
         <media:content url="https://freshflash4096.github.io/media/posts/37/PM981_Product_Front-2.jpg" medium="image" />
+            <category term="Samsung"/>
             <category term="Benchmark"/>
 
         <updated>2025-06-29T15:42:36+09:00</updated>
@@ -496,6 +497,7 @@
         <link href="https://freshflash4096.github.io/the-last-mlc-970-pro/"/>
         <id>https://freshflash4096.github.io/the-last-mlc-970-pro/</id>
         <media:content url="https://freshflash4096.github.io/media/posts/36/970-PRO-1TB-Product-Front.jpg" medium="image" />
+            <category term="Samsung"/>
             <category term="Benchmark"/>
 
         <updated>2025-06-29T15:29:58+09:00</updated>
@@ -935,6 +937,8 @@
         <link href="https://freshflash4096.github.io/the-product-behind-the-benchmarks-905p-960gb/"/>
         <id>https://freshflash4096.github.io/the-product-behind-the-benchmarks-905p-960gb/</id>
         <media:content url="https://freshflash4096.github.io/media/posts/32/905P_Box_3.jpg" medium="image" />
+            <category term="Optane"/>
+            <category term="Intel"/>
             <category term="Benchmark"/>
 
         <updated>2025-06-27T20:57:28+09:00</updated>
@@ -1146,6 +1150,8 @@
         </author>
         <link href="https://freshflash4096.github.io/benchmark-method/"/>
         <id>https://freshflash4096.github.io/benchmark-method/</id>
+            <category term="Optane"/>
+            <category term="Intel"/>
             <category term="Benchmark"/>
 
         <updated>2025-06-22T22:20:00+09:00</updated>
