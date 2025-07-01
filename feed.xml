@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-06-30T22:16:09+09:00</updated>
+    <updated>2025-07-01T23:15:54+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -341,7 +341,7 @@
 </figure>
 </div></div>
 <p>RND 읽기성능에서 병목현상이 관찰되었습니다. QD32에서 600MB/s를 넘지 못하는데, 저용량 SKU의 한계라고 예상됩니다. FOB상태와 75%가 채워져있는 부분에 대해선 성능 차이가 나지 않았습니다.</p>
-<p>첨언으로, 캡쳐시에 실수가 있어 75%가 채워진 상태에서 프로필이</p>
+<p>첨언으로, 캡쳐시에 실수가 있어 75%가 채워진 상태에서 프로필이 구분이 가지 않을 수 있으니 캡션을 보는 것을 권장드립니다.</p>
 <h3 id="mcetoc_1iuejmtca47a">CrystalDiskMark 9.0.1 - PM981a 256GB</h3>
 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
 <figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/37/gallery/seukeurinsyas-2025-06-27-151446.png" data-size="1002x547"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/37/gallery/seukeurinsyas-2025-06-27-151446-thumbnail.png" alt="" width="768" height="419"></a>
@@ -517,15 +517,7 @@
 <h3>목차</h3>
 <ul>
 <li><a href="#mcetoc_1iup18slp5s">Appearance</a></li>
-<li><a href="#mcetoc_1iup1bg6i63">Internal Components</a>
-<ul>
-<li><a href="#mcetoc_1iup3oiobb2">Notable Points</a>
-<ul>
-<li><a href="#mcetoc_1iup4vgr6dc">특이사항 제시</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#mcetoc_1iup1bg6i63">Internal Components</a></li>
 <li><a href="#mcetoc_1iup47dknb5">Datasheet</a></li>
 <li><a href="#mcetoc_1iup4vgr6dd">SW Report</a></li>
 <li><a href="#mcetoc_1iup4vgr6dd">DUT Summary</a>
