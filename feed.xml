@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-07-06T20:23:18+09:00</updated>
+    <updated>2025-07-07T22:16:11+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -33,7 +33,7 @@
                 <p>모든 것이 잘못되었습니다.</p>
 <p>아, 모든 것은 아닙니다. cSSD 벤치마크에 대해선 방법을 유지합니다. 그렇게 따지니 폐기해야할 데이터는 그렇게 많지 않군요.</p>
 <hr>
-<figure class="post__image" ><img loading="lazy" style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="file:///Users/huie/Documents/Publii/sites/memoria/input/media/posts/31/seukeurinsyas-2025-06-21-ohu-11.10.42.png" alt="" width="2290" height="1328">
+<figure class="post__image" ><img loading="lazy" src="file:///Users/huie/Documents/Publii/sites/memoria/input/media/posts/31/seukeurinsyas-2025-06-21-ohu-11.10.42.png" alt="" width="2290" height="1328">
 <figcaption >SSD Performace Change</figcaption>
 </figure>
 <p>이전에 <a href="https://freshflash4096.github.io/benchmark-method/">벤치마크 방법론</a>에서도 언급한 그래프입니다. SSD는 자극에 노출되며 그 성능이 변화하죠. 그리고 이에 대해서 정확한 성능, Steady State에서의 성능을 측정하기 위해선 올바른 Pre-Conditioning이 필요합니다. </p>
@@ -50,7 +50,6 @@
 <p>여기 두 가지 그래프가 있습니다. 왼쪽 그래프는 ezFIO를 참고해 128kiB 쓰기가 완료된 SSD에 추가로 4kiB 쓰기 자극을 가해 Pre-Conditioning을 진행한 모습입니다. 오른쪽 그래프는 ezFIO와 다르게 Random 성능 측정을 하기 전에 Purge를 하고 동일하게 Pre-Conditioning을 진행한 모습입니다.</p>
 <p>두 그래프의 형태는 상당히 다르지만, 막바지의 성능... Pre-Conditioning이 종료되어갈 때의 성능, Steady State라고 생각한 성능은 600k ~ 700k IOPS로 일치합니다. </p>
 <p>실제로 Purge의 여부에 상관없이 도출되는 Random 성능은 일치했습니다.</p>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="true" data-translation="이미지 추가"> </div></div>
 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
 <figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/38/gallery/4K-RND-W-IOPS.png" data-size="2085x1155"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/38/gallery/4K-RND-W-IOPS-thumbnail.png" alt="" width="768" height="425"></a>
 <figcaption>Random Write IOPS (ezFIO)</figcaption>
@@ -74,7 +73,31 @@
 <p>따라서 이전 <a href="https://freshflash4096.github.io/the-last-mlc-970-pro/">970 PRO 1TB 리뷰</a>에서 <em><span style="text-decoration: underline;">정말로 '안정적인 영역'에서의 성능</span></em>이라는 것은 틀린 표현이었던거죠. 해당 리뷰에선 Steady State를 측정한 것이 아니었기 때문입니다.</p>
 <p>다만, 이해가 가지 않는 부분은 남아있습니다. Purge를 진행하고 난 뒤의 Random Pre-Conditioning은 750초가 넘게 걸렸으며, 실제 로깅을 뜯어보니 끝자락까지 650k IOPS를 유지하고 있었습니다. 하지만 WSAT에서는 500초가 되기 이전부터 IOPS가 급격하게 하락하는 것을 관찰할 수 있었습니다.</p>
 <p>이는 벤치마크 개선 작업 중에 진행된 것이기에 제 실수를 빼놓을 수 없었을 가능성도 존재하는 만큼, 깊게 생각하지 않고 넘기려고 합니다. 증거를 찾으려고 해도 이미 벤치마크 실행 파일들을 덮어씌운 뒤라는 것도 문제고요.</p>
-<p>확실한 부분은, 제 eSSD 벤치마크가 개선을 필요로 한다는 부분입니다. 다행히도 FIO에는 Steady State의 감지와 관련된 옵션이 존재하는 것으로 알고있습니다. 이것을 적극 채용하여 확실하게 Steady State로 진입 이후에 성능 측정을 하는 것으로 개선할 예정입니다.</p>
+<p>확실한 부분은, 제 eSSD 벤치마크가 개선을 필요로 한다는 부분입니다. 희망적인 부분은 FIO에는 Steady State의 감지와 관련된 옵션이 존재한다는 것 입니다. 이것을 적극 채용하여 확실하게 Steady State로 진입 이후에 성능 측정을 하는 것으로 개선했습니다.</p>
+<hr>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/38/gallery/2-1-RND-PC-IOPS.png" data-size="3000x1500"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/38/gallery/2-1-RND-PC-IOPS-thumbnail.png" alt="" width="768" height="384"></a>
+<figcaption>Random Pre-Conditioning IOPS</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/38/gallery/2-2-RND-PC-LAT.png" data-size="3000x1500"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/38/gallery/2-2-RND-PC-LAT-thumbnail.png" alt="" width="768" height="384"></a>
+<figcaption>Random Pre-Conditioning Latency</figcaption>
+</figure>
+</div></div>
+<p>결과는 성공적입니다. 확실하게 Steady State로 진입을 하고 Pre-Conditioning이 종료되는 것을 확인할 수 있었습니다.</p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/38/gallery/2-1-RND-PC-IOPS-2.png" data-size="3000x1500"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/38/gallery/2-1-RND-PC-IOPS-2-thumbnail.png" alt="" width="768" height="384"></a>
+<figcaption>Random Pre-Conditioning IOPS (~2000s)</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/38/gallery/2-2-RND-PC-LAT-2.png" data-size="3000x1500"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/38/gallery/2-2-RND-PC-LAT-2-thumbnail.png" alt="" width="768" height="384"></a>
+<figcaption>Random Pre-Conditioning Latency (~2000s)</figcaption>
+</figure>
+</div></div>
+<p>X축의 범위를 0~2000초로 확대한 그래프입니다. FOB - Transition - Steady State 단계를 확실하게 확인할 수 있습니다.</p>
+<figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/38/2-9-RND-Write-QD-IOPS.png" alt="" width="3600" height="1800">
+<figcaption >Random Write IOPS (Steady State)</figcaption>
+</figure>
+<p>그리고 진실된 Steady State에서 Queue Depth에 따른 Random Write 성능 측정을 실시한 결과입니다. 위에서 봤던 그래프와 다르게 안정적으로, 하지만 더 낮은 성능을 확인할 수 있습니다.</p>
+<p>이것이 970 PRO가 안정적일 때의 성능 값이라고 할 수 있겠죠. </p>
 <hr>
 <p>여러 커뮤니티에 배포한 970 PRO 1TB 리뷰들을 이제와서 철회 및 수정하긴 어려운 만큼, 추후 새로운 리뷰에 해당 내용의 오류를 지적할 예정입니다. </p>
 <p> </p>
@@ -1487,7 +1510,7 @@
 <h2 id="mcetoc_1iuek3eau49h">Benchmark Flow</h2>
 <p>방법을 정리하며 흐름을 살펴보겠습니다. 각 테스트 집합은 완전히 개별로 진행됩니다. </p>
 <h3 id="mcetoc_1iuqi92fd62">WSAT Test</h3>
-<p>FOB상태에서 진행되며, User Capacity의 4배 용량만큼 <span style="text-decoration: line-through;">4kiB RND 쓰기를 가하는 것과</span> 512B SEQ 쓰기를 가하는 것으로 진행됩니다. 후자는 RW 비율이 50:50로 진행됩니다.</p>
+<p>FOB상태에서 진행되며, User Capacity의 4배 용량만큼<span style="text-decoration: line-through;"> </span>4kiB RND 쓰기를 가하는 것과 512B SEQ 쓰기를 가하는 것으로 진행됩니다. 후자는 RW 비율이 50:50로 진행됩니다.</p>
 <h3 id="mcetoc_1iuqi92fd63">eSSD Test</h3>
 <p>앞서 말한대로 SNIA의 SSS-PTS를 참고합니다. <span style="text-decoration: line-through;">Purge를 진행한 후, 128kiB SEQ 쓰기를 전체 용량에 대해 2번 진행하고 SEQ 벤치마크를 진행합니다. 그 이후로 4kiB RND 쓰기를 전체 용량에 대해 2번 진행하고 RND 벤치마크를 진행합니다.</span></p>
 <p>128kiB SEQ 쓰기를 전체 용량에 대해 Steady State에 도달할 때까지 진행하고 SEQ 벤치마크를 진행하고, 직후에 4kiB RND 쓰기를 전체 용량에 대해 Steady State에 도달할 때까지 진행하고 RND 벤치마크를 진행합니다. 성능 측정 시에는 SSD가 해당 워크로드에 적응할 수 있도록 일정 시간 이후에 데이터 집계를 진행합니다. </p>
