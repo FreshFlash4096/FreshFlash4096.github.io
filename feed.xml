@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-07-07T22:16:11+09:00</updated>
+    <updated>2025-07-07T23:52:01+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -33,7 +33,7 @@
                 <p>모든 것이 잘못되었습니다.</p>
 <p>아, 모든 것은 아닙니다. cSSD 벤치마크에 대해선 방법을 유지합니다. 그렇게 따지니 폐기해야할 데이터는 그렇게 많지 않군요.</p>
 <hr>
-<figure class="post__image" ><img loading="lazy" src="file:///Users/huie/Documents/Publii/sites/memoria/input/media/posts/31/seukeurinsyas-2025-06-21-ohu-11.10.42.png" alt="" width="2290" height="1328">
+<figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/38/seukeurinsyas-2025-06-21-ohu-11.10.42.png" alt="" width="2290" height="1328">
 <figcaption >SSD Performace Change</figcaption>
 </figure>
 <p>이전에 <a href="https://freshflash4096.github.io/benchmark-method/">벤치마크 방법론</a>에서도 언급한 그래프입니다. SSD는 자극에 노출되며 그 성능이 변화하죠. 그리고 이에 대해서 정확한 성능, Steady State에서의 성능을 측정하기 위해선 올바른 Pre-Conditioning이 필요합니다. </p>
