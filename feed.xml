@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-03T14:39:13+09:00</updated>
+    <updated>2025-08-03T22:39:59+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -193,7 +193,7 @@
 <hr>
 <h2 id="mcetoc_1iup3oiobb2">Notable Points</h2>
 <h3 id="mcetoc_1iup50imcdg">Power-Loss-Protection Time</h3>
-<p>cSSD와 다르게 eSSD에는 대부분 PLP를 위한 기술이 적용됩니다. 이는 이미 저장된 데이터뿐만이 아닌, 비휘발성인 DRAM, SRAM의 데이터까지 보호합니다. 쉽게말하자면 정전에 대비한 기술인거죠.</p>
+<p>cSSD와 다르게 eSSD에는 대부분 PLP를 위한 기술이 적용됩니다. 이는 이미 저장된 데이터뿐만이 아닌, 휘발성인 DRAM, SRAM의 데이터까지 보호합니다. 쉽게말하자면 정전에 대비한 기술인거죠.</p>
 <p>이를 위해 PM983 960GB는 <span style="color: #755127;"><span style="color: #c2e0f4;">Panasonic 35TQS47MEU</span></span>을 10개 실장했으며, 약 0.287875J의 에너지를 저장할 수 있습니다. 해당 값을 토대로, 데이터시트와 S.M.A.R.T.에 지정되어 있는 전력 소모를 버틸 수 있는 시간을 계산해보았습니다.</p>
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/41/PLP-Time.png" alt="" width="3000" height="900">
 <figcaption >PM983 960GB Backup Time</figcaption>
@@ -440,7 +440,7 @@
 <p>이러한 특성으로 인해 여러 사이트나 리뷰에서의 벤치마크 결과와 다른 특성을 보일 수 있는 점을 참고바랍니다.</p>
 <p> </p>
 <h3 id="mcetoc_1iuejqi41495">Sync Performance</h3>
-<p>동기 쓰기, fsync()의 성능을 확인합니다. 일반적으로 경험하는 워크로드는 비동기 쓰기인 경우가 대부분입니다. 하지만 Homelab에서 ZFS나 Ceph, DB 등을 사용하는 경우에는 동기 쓰기가 발생하기도 합니다. 하지만 eSSD용 벤치마크는 아닙니다. Steady State 성능이 아니며, Burst 성능이기 때문입니다. 따라서 cSSD 벤치마크로 분류하게 되었습니다.</p>
+<p>동기 쓰기, fsync()의 성능을 확인합니다. 일반적으로 경험하는 워크로드는 비동기 쓰기인 경우가 대부분입니다. 하지만, Homelab에서 ZFS나 Ceph, DB 등을 사용하는 경우에는 동기 쓰기가 발생하기도 합니다. eSSD용 벤치마크는 아닙니다. Steady State 성능이 아니며, Burst 성능이기 때문입니다. 따라서 cSSD 벤치마크로 분류하게 되었습니다.</p>
 <p>실질적으로 진행하고자 했던 이유는 동기 쓰기 성능은 라인업이나 세대에 무관하게 상당히 천차만별이기 때문이었습니다. 한 마디로, 다른 벤치마크들도 그렇지만 개인적인 궁금증을 해소하는 것이 목적입니다. </p>
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/41/3-1.-Sync-SEQ.png" alt="" width="3000" height="900">
 <figcaption >Sync Performance - SEQ Write</figcaption>
