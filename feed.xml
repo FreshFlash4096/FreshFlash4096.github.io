@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-03T22:39:59+09:00</updated>
+    <updated>2025-08-03T22:55:42+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -370,11 +370,11 @@
 <h2 id="mcetoc_1iuejnn4l47m">cSSD Benchmarking</h2>
 <h3 id="mcetoc_1iuejmtca47a">CrystalDiskMark 9.0.1</h3>
 <p>가장 대중적인 도구인 CrystalDiskMark입니다. 백엔드로는 MS의 diskspd를 활용하는데, 간단한 UI를 통해 성능을 측정할 수 있기에 널리퍼졌다고 생각합니다. 기존의 SATA 드라이브에 맞춘 Default 프로필을 우선 진행하고 충분한 휴식시간을 부여한 뒤, NVMe 드라이브에 한정해서 NVMe 프로필을 사용해서 벤치마크를 진행합니다.</p>
-<p>이후, 약간의 현실적인 상황을 연출하기 위해 드라이브의 75%를 1M QD8 순차쓰기로 채운 뒤에 벤치마크를 추가로 진행하지만, DUT와 비교군들은 FOB 상태와 유의미한 차이가 보이지 않는다면, 직접적인 CDM의 결과사진은 제시하지 않습니다.</p>
+<p>이후, 약간의 현실적인 상황을 연출하기 위해 드라이브의 75%를 1M QD8 순차쓰기로 채운 뒤에 벤치마크를 추가로 진행하지만, DUT와 비교군들은 FOB 상태와 유의미한 차이가 보이지 않는다면 직접적인 CDM의 결과사진은 제시하지 않습니다.</p>
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/41/0-1.-CDM.png" alt="" width="3600" height="1800">
 <figcaption >Crystal Disk Mark 9.0.1</figcaption>
 </figure>
-<p>PCIe 3.0 드라이브 답게 SEQ 읽기는 3000MB/s의 중반대에 걸립니다. 4-corners performance 모두 970 PRO에 밀리는 모습입니다. 특히 쓰기 값은 SEQ, RND 가릴 것 없이 PM981에도 밀리는 모습입니다.</p>
+<p>PCIe 3.0 드라이브답게 SEQ 읽기는 3000MB/s의 중반대에 걸립니다. 4-corners performance 모두 970 PRO에 밀리는 모습입니다. 특히 쓰기 값은 SEQ, RND 가릴 것 없이 PM981에도 밀리는 모습입니다.</p>
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/41/0-1.-CDM_.png" alt="" width="3600" height="1800">
 <figcaption >Crystal Disk Mark 9.0.1 - 4k QD1</figcaption>
 </figure>
@@ -399,7 +399,7 @@
 <figcaption >SPECworkstation - SPEC Ratio by Workload</figcaption>
 </figure>
 <p>각 워크로드에 대한 결과 값에서는 우수한 정도에 편차가 있습니다. 워크스테이션의 워크로드가 다양하다는 것을 대변해주는데, 각 워크로드에 대한 설명은 <a href="https://github.com/SPEC-GWPG-Dev/SPECgwpg-Docs/blob/main/SPECworkstation4/SPECworkstation4-Workload-Documentation.md#223-wpcstorage">공식 문서</a>를 참고하시기 바랍니다.</p>
-<p>깊게 파고들면, MandE 워크로드를 제외하고는 970 PRO에게 절대적으로 밀리는 상황이며, ccx, proddev 워크로드는 PM981에도 밀립니다. proddev 워크로드 같은 경우에는 970 PRO 또한 PM981에 밀리는 모습을 보아, SLC 캐시의 영향을 많이 받는 워크로드가 아닌가 싶습니다.</p>
+<p>깊게 파고들면 MandE 워크로드를 제외하고는 970 PRO에게 절대적으로 밀리는 상황이며, ccx, proddev 워크로드는 PM981에도 밀립니다. proddev 워크로드 같은 경우에는 970 PRO 또한 PM981에 밀리는 모습을 보아, SLC 캐시의 영향을 많이 받는 워크로드가 아닌가 싶습니다.</p>
 <p>물론, PM9E1은 최신 cSSD인 만큼 독보적이네요.</p>
 <p> </p>
 <h3 id="mcetoc_1iuejqi41494">Fill Drive</h3>
@@ -428,7 +428,7 @@
 <p> </p>
 <h3 id="mcetoc_1iuejqi41495">Pre-Conditioning</h3>
 <p><a href="https://freshflash4096.github.io/benchmark-method/">이전</a>에 언급한 방법과 같습니다만, 다시 이야기하도록 하겠습니다. </p>
-<p>SSD에서 FOB 성능은 유저가 실질적으로 체감하기 힘든 부분입니다. 그렇다면 SNIA SSS-PTS대로 WIPC(Workload Independent Pre-conditioning)과 WDPC(Workload Dependent Pre-conditioning)을 진행해 Steady State를 측정하는 것이 좋을까요? 전 조심스레 최신 cSSD에 대해서는무조건 긍정하긴 어려울 것 같다는 의견을 제시합니다. </p>
+<p>SSD에서 FOB 성능은 유저가 실질적으로 체감하기 힘든 부분입니다. 그렇다면 SNIA SSS-PTS대로 WIPC(Workload Independent Pre-conditioning)과 WDPC(Workload Dependent Pre-conditioning)을 진행해 Steady State를 측정하는 것이 좋을까요? 전 조심스레 최신 cSSD에 대해서는 무조건으로 긍정하긴 어려울 것 같다는 의견을 제시합니다. </p>
 <p>일반 소비자의 워크로드는 몇 가지 특징을 따르는데, 그중 눈여겨 볼 부분이 있습니다. 바로 <strong>유휴시간이 상당</strong>하다는 것과 <strong>일부영역에만 활발하게 엑세스</strong>한다는 것입니다. 저는 여러 자료를 읽고 실험을 하며 제 cSSD 벤치마크의 Pre-Conditioning 단계를 아래와 같이 정의했습니다.</p>
 <ol>
 <li>장치를 Purge</li>
@@ -446,17 +446,17 @@
 <figcaption >Sync Performance - SEQ Write</figcaption>
 </figure>
 <p>SEQ 동기 쓰기는 SEQ로만 작성된 영역에서 SEQ 128k QD1으로 500MiB를 작성합니다.</p>
-<p>앞서 말한대로 완전한 eSSD용 벤치마크는 아니지만, eSSD가 우위를 보여주는 벤치마크 입니다. 삼성 cSSD는 이 부분에서 대체로 다른 제조사의 제품들에 비해 뒤쳐지는 성능을 보여주지만, eSSD는 본연의 쓰기 성능이 잘 드러납니다. 이는 HW로 구현된 PLP 덕분인데, 갑작스러운 전원 차단에도 항상 대비되어 있기 때문에, 모든 쓰기 데이터를 받는 즉시 괜찮다고 호스트에 답변합니다.</p>
+<p>앞서 말한대로 완전한 eSSD용 벤치마크는 아니지만, eSSD가 우위를 보여주는 벤치마크입니다. 삼성 cSSD는 이 부분에서 대체로 다른 제조사의 제품들에 비해 뒤쳐지는 성능을 보여주지만, eSSD는 본연의 쓰기 성능이 잘 드러납니다. 이는 HW로 구현된 PLP 덕분인데, 갑작스러운 전원 차단에도 항상 대비되어 있기 때문에, 모든 쓰기 데이터를 받는 즉시 괜찮다고 호스트에 답변합니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/41/3-2.-Sync-RND.png" alt="" width="3000" height="900"></figure>
 <p>RND 동기 쓰기는 RND로만 작성된 영역에서 RND 4k QD1으로 500MiB를 작성합니다. </p>
-<p>앞서 말한대로, RND 성능도 비동기 쓰기와 다르지 않습니다. 이것이 바로 동기쓰기 워크로드가 보이는 Homelab에서 eSSD를 권장하는 이유라고 할 수 있겠습니다.</p>
+<p>앞서 말한대로, RND 성능도 비동기 쓰기와 다르지 않습니다. 이것이 바로 동기쓰기 워크로드가 있는 Homelab에서 eSSD를 권장하는 이유라고 할 수 있겠습니다.</p>
 <p>어떻게 보면 HW PLP를 하나의 치트키라고 볼 수도 있겠죠.</p>
 <p> </p>
 <h3 id="mcetoc_1iuejmtca47g">Low QD Performance by RW Ratio </h3>
 <h4 id="mcetoc_1j0k12uta9g">Performance versus QD</h4>
-<p>cSSD의 스펙시트는 SEQ RW, RND RW로 이루어진 4-corners performance만 제시합니다. 하지만 일반적인 NAND 기반의 SSD는 읽쓰기 작업이 혼합되어 있을 때 성능이 하락하며, 100% 읽기 또는 100% 쓰기의 작업이 발생하는 것은 드뭅니다. 따라서 읽쓰기 비율을 10% 단위로 변경하며 성능을 측정합니다. 각 테스트는 5번 반복되며 최대값과 최솟값을 제거한 뒤의 평균값을 나타냅니다.</p>
+<p>cSSD의 스펙시트는 SEQ RW, RND RW로 이루어진 4-corners performance만 제시합니다. 하지만 일반적인 NAND 기반의 SSD는 읽쓰기 작업이 혼합되어 있을 때 성능이 하락하며, 100% 읽기 또는 100% 쓰기의 작업이 발생하는 것은 드뭅니다. 따라서 읽쓰기 비율을 10% 단위로 변경하며 성능을 측정합니다. 각 테스트는 5번 반복되며 최대값과 최소값을 제거한 뒤의 평균값을 나타냅니다.</p>
 <p>또한, 제품의 스펙시트에서 언급하는 최대 성능을 보여주는 높은 QD가 아닌, 실제 컨슈머 워크로드의 대부분을 차지하는 낮은 QD에서의 성능을 살펴보겠습니다.</p>
-<p>동기쓰기 벤치마크와 마찬가지로 SEQ와 RND는 각각의 영역에서만 접근하며, 실질적인 컨슈머 워크로드의 대부분이 될 Burst 성능을 측정합니다. SLC캐시 영역을 넘어서는 작업이 일어나지 않도록 적은 양의 작업이 발생하기에 SLC캐시 용량이 작은 구형 저용량 SSD에서도 좋은 결과가 산출됩니다. 따라서 그러한 SSD에 대해서는 과장된 결과가 그려지지만, 최신의 대용량 SSD에서는 충분히 사용자가 체감하는 성능값이 보여질 것이라 기대됩니다.</p>
+<p>동기쓰기 벤치마크와 마찬가지로 SEQ와 RND는 각각의 영역에만 접근하며, 실질적인 컨슈머 워크로드의 대부분이 될 Burst 성능을 측정합니다. SLC캐시 영역을 넘어서는 작업이 일어나지 않도록 적은 양의 작업이 발생하기에 SLC캐시 용량이 작은 구형 저용량 SSD에서도 좋은 결과가 산출됩니다. 따라서 그러한 SSD에 대해서는 과장된 결과가 그려지지만, 최신의 대용량 SSD에서는 충분히 사용자가 체감하는 성능값이 보여질 것이라 기대됩니다.</p>
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/41/5-1.-RWW_SEQ.png" alt="" width="3600" height="1800">
 <figcaption >SEQ Performance on RW Ratio</figcaption>
 </figure>
@@ -466,8 +466,8 @@
 </figure>
 <p>RND 성능은 역시 QD가 깊어짐에 따라 잘 확장되는 모습이네요. 특히 쓰기에서 QD2와 QD4의 성능차이가 상당하게 보였습니다.</p>
 <h4 id="mcetoc_1j0k12uta9h">Weighted Graph </h4>
-<p>위에선 QD와 RW비율에 따라 변화하는 DUT의 성능을 확인할 수 있었습니다. 비교군들을 모두 집어넣게 된다면 그래프에 선이 너무 많아져 해석에 어려움이 발생할 것입니다.</p>
-<p>여기서 가중치를 부여합니다. QD1 70%, QD2 20%, QD4 10%으로 부여해 드라이브당 하나의 그래프를 그리며, 다음으로는 전체 RW비율의 성능에 대해 평균을 산출해 드라이브를 정렬합니다.</p>
+<p>위에선 QD와 RW비율에 따라 변화하는 DUT의 성능을 확인할 수 있었습니다. 비교군들을 모두 집어넣게 된다면 데이터가 너무 많아져 해석에 어려움이 발생할 것입니다.</p>
+<p>여기서 가중치를 부여합니다. QD1 70%, QD2 20%, QD4 10%로 부여해 드라이브당 하나의 그래프를 그리며, 다음으로는 전체 RW비율의 성능에 대해 평균을 산출해 드라이브를 정렬합니다.</p>
 <p>전체 RW비율의 성능을 평균낸다는 것이 실제 워크로드와 밀접한 워크로드가 있다고 말하기는 어렵습니다. 실제 컨슈머 워크로드는 쓰기보다 읽기 비율이 높으니까요. 하지만 별도의 가중치를 부여하기엔 상당한 고민이 되어 그저 평균으로만 정렬하기로 했습니다. 따라서, 실제 워크로드보다 쓰기 성능이 강조되었다고 판단하는 것이 좋을 것 같습니다.</p>
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/41/5-3.-RWW-SEQ-WF.png" alt="" width="3600" height="1800">
 <figcaption >SEQ Performance on RW Ratio - Weighted</figcaption>
@@ -626,7 +626,7 @@
 <figcaption >RND Mix IOPS (by QD)</figcaption>
 </figure>
 <p>Read 70%, Write 30%로 혼합된 워크로드입니다. </p>
-<p>혼합 성능은 앞서 본 것 중 가장 특이했습니다. QD1에선 PM983이 근소한 차이로 뒤쳐졌지만, QD4 부터는 970 PRO가 가장 뒤쳐지고, QD16에선 PM983이 우수했지만... QD32 이후로는 PM9E1이 가장 우수했습니다.</p>
+<p>혼합 성능은 가장 특이했습니다. QD1에선 PM983이 근소한 차이로 뒤쳐졌지만, QD4부터는 970 PRO가 가장 뒤쳐지고, QD16에선 PM983이 우수했지만... QD32 이후로는 PM9E1이 가장 우수했습니다.</p>
 <p>하지만 이는 단순한 IOPS일 뿐이며, 해당 값의 분포에 대한 데이터는 들어있지 않습니다. 그렇다면 아래의 QoS 그래프를 한 번 살펴봅시다.</p>
 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
 <figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/41/gallery/2-12-RND-Read-QoS_.png" data-size="3900x2100"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/41/gallery/2-12-RND-Read-QoS_-thumbnail.png" alt="" width="768" height="414"></a>
@@ -640,7 +640,7 @@
 </figure>
 </div></div>
 <p>QD1에서의 지연시간을 IO단위로 모두 분석해서 때려박았습니다. 0~90%까진 선형적이지만 이후로는 9가 늘어나는 로그 스케일입니다. X축도 마찬가지로 로그 스케일이고요.</p>
-<p>읽기에선 앞서 본 것 처럼 PM983이 가장 뒤쳐졌지만 쓰기에선 양상이 약간 달랐습니다. 99%까지는 똑같이 나빴지만, 99.99%부터는 가장 일관적인 성능을 보였습니다. 혼합 작업에서도 꽤 늘어지긴 했지만 하위 지연시간들만 본다면 PM983이 우수했습니다. 다만, 쓰기 작업 만큼의 일관성을 보이진 못했습니다.</p>
+<p>읽기에선 앞서 본 것 처럼 PM983이 가장 뒤쳐졌지만 쓰기에선 양상이 약간 달랐습니다. 99%까지는 똑같이 나빴지만, 99.99%부터는 가장 일관적인 성능을 보였죠. 혼합 작업에서도 꽤 늘어지긴 했지만 하위 지연시간들만 본다면 PM983이 우수했습니다. 다만, 쓰기 작업 만큼의 일관성을 보이진 못했습니다.</p>
 <p>데이터시트와의 비교는 표로 간단하게 진행해보겠습니다. 다만, 위 그래프의 데이터와 다르게 아래는 RTT(Round-Trip-Time) 데이터를 기반으로 산출된 값이기에 약간의 차이가 발생합니다.</p>
 <table style="border-collapse: collapse; width: 100%; height: 194.25px;" border="1">
 <tbody>
@@ -690,19 +690,19 @@
 </tr>
 </tbody>
 </table>
-<p>다들 데이터시트보다 우수한 결과를 보여주었습니다. 99%의 RND 읽기에선 스펙에 근접하는 결과였습니다.</p>
+<p>다들 데이터시트보다 우수한 결과를 보여주었습니다. RND 읽기의 99% 지연시간 값은 표기스펙에 근접하는 결과였습니다.</p>
 <hr>
 <h2 id="mcetoc_1iuqh3uem5o">Closing</h2>
-<p>PM983은 모델명도 그렇지만, 실제로 PM981과 동일한 컨트롤러, NAND를 적용하였습니다. FW의 차이가 만들어내는 성능 차이는 일부 영역에 한해 상당한 차이를 보였죠. 비교대상이었던 PM981이 동일용량이 아니라는 점이 아쉬웠지만, 970 PRO와의 비교를 통해 나름 eSSD의 매력을 볼 수 있었다고 생각합니다.</p>
+<p>다시 한 번 말하지만, PM983은 실제로 PM981과 동일한 컨트롤러, NAND를 적용하였습니다. FW의 차이가 만들어내는 성능 차이는 일부 영역에 한해 상당한 차이를 보였죠. 비교대상이었던 PM981이 동일용량이 아니라는 점이 아쉬웠지만, 970 PRO와의 비교를 통해 나름 eSSD의 매력을 볼 수 있었다고 생각합니다.</p>
 <p class="align-center"><em>"TLC는 정말 MLC보다 성능이 낮을까?"</em></p>
 <p>제목의 질문에 대한 답변은 약간 어정쩡합니다. 동일세대인 970 PRO와 PM983을 비교하기엔 너무나 큰 차이가 있기 때문입니다. FW의 작동방식은 물론이고, OP 비율도 다르니 말입니다.</p>
 <p>그럼 970 EVO와 970 PRO를 비교하면 될까요? 그렇지 않다고 생각합니다. SLC Cache의 존재가 이를 가려주기 때문이죠. 네, PM983과 SM983을 비교하면 올바르게 성능을 비교할 수 있을 것 입니다. 하지만 아쉽게도 SM983이란 제품은 존재하지 않는 것으로 알고 있습니다. 일부 기업의 특주 제품으로는 존재할 수 있겠지만 말이죠. 조금 더 구형으로 들어가 PM963과 SM963이라면 올바른 비교가 가능할 것으로 기대됩니다.</p>
 <p>물론, MLC가 채용된 SM963이 더 우수한 것이 당연할 것입니다. 하지만, 동일세대의 TLC라도 설정 방법과 경우에 따라 MLC보다 우수한 성능을 보여주는 것은 이번 리뷰로 확인할 수 있었습니다.</p>
-<p>요는, SSD의 성능은 단순하게 NAND의 종류에 따라 결정되는 것이 아니라는 것을 알 수 있습니다. SSD는 하나의 컴퓨터와 동일합니다. 상당히 복잡하며 최신 기술의 집약체라고 할 수 있죠.</p>
-<p>다시 PM983 얘기로 돌아갑시다. 데이터시트에 적힌 4-corners performance에선 성능인 3000/1050MBps, 400k/40k IOPS를 모두 충족하였으며, 읽쓰기의 QoS 지연시간도 충족하는 것을 확인할 수 있었습니다. 하지만, cSSD 워크로드에선 보람찬 결과를 내지 못하였습니다. </p>
-<p>eSSD 워크로드에서도 Bandwidth, IOPS만 놓고 본다면 그렇게까지 인상적인 성능은 아니었습니다. 970 PRO와 PM9E1에 밀리는 일이 많았죠. 하지만, Random Preconditioning 그래프를 본다면 굉장히 안정적인 성능임을 알 수 있었습니다. </p>
-<p>일반 소비자가 PM983을 살 이유가 있냐 물어본다면, 성능적인 면에서는 그렇지 않을 것입니다. PM983이 우수한 성능을 보여준 부분은 eSSD답게 소비자용 워크로드가 아니기 때문입니다. 가격적인 면에서도 eBay 기준으로 960GB 제품이 10만원이 안 되는 것을 볼 수 있는데, 이 돈이면 980 PRO를 중고로 사는게 더 현명해 보입니다.</p>
-<p>하지만, Homelab에서 동기 쓰기 워크로드가 필요하다면... 나름 합리적인 선택이라고 생각할 수 있겠습니다. 전작인 PM963과는 가격차이가 크지 않고, 후속작인 PM9A3과는 가격차이가 조금 발생하기 때문입니다. 이러한 가격에 구매가 가능한 것은 그레이 마켓인 만큼 보증이 없는 것을 염두에 두면 괜찮을 것 같습니다.</p>
+<p>요는, SSD의 성능은 단순하게 NAND의 종류에 따라 결정되는 것이 아니라는 것입니다. SSD는 하나의 컴퓨터와 동일합니다. 상당히 복잡하며 최신 기술의 집약체라고 할 수 있죠.</p>
+<p>다시 PM983 얘기로 돌아갑시다. 데이터시트에 적힌 4-corners performance에선 성능인 3000/1050MBps, 400k/40k IOPS를 모두 충족하였으며, 읽쓰기의 QoS 지연시간도 충족하는 것을 확인할 수 있었습니다. 하지만 cSSD 워크로드에선 보람찬 결과를 내지 못하였습니다. </p>
+<p>eSSD 워크로드에서도 Bandwidth, IOPS만 놓고 본다면 그렇게까지 인상적인 성능은 아니었습니다. 970 PRO와 PM9E1에 밀리는 일이 많았죠. 하지만, Random Preconditioning 그래프를 본다면 굉장히 <strong>안정적인</strong> 성능임을 알 수 있었습니다. </p>
+<p>일반 소비자가 PM983을 살 이유가 있냐 물어본다면, 성능적인 면에서는 그렇지 않다고 하고 싶습니다. PM983이 우수한 성능을 보여준 부분은 eSSD답게 소비자용 워크로드가 아니기 때문입니다. 가격적인 면에서도 eBay 기준으로 960GB 제품이 10만원이 안 되는 것을 볼 수 있는데, 이 돈이면 980 PRO를 중고로 사는게 더 현명해 보입니다.</p>
+<p>하지만 Homelab에서 동기 쓰기 워크로드가 필요하다면... 나름 합리적인 선택이라고 생각할 수 있겠습니다. 전작인 PM963과는 가격차이가 크지 않고, 후속작인 PM9A3과는 가격차이가 조금 발생하기 때문입니다. 이러한 가격에 구매가 가능한 것은 그레이 마켓인 만큼 보증이 없는 것을 염두에 두면 괜찮을 것 같습니다.</p>
 <p>긴 리뷰 읽어주셔서 감사합니다.</p>
 <p> </p>
 <blockquote>
