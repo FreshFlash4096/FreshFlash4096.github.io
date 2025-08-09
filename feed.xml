@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-10T00:02:22+09:00</updated>
+    <updated>2025-08-10T00:07:55+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -106,10 +106,9 @@
 </figure>
 <p>키오시아는 최근 발표한 LC9에 이어 CM9, CD9P등의 여러 SSD를 시연했습니다. 하지만 가장 주목받은 것은 LC9시리즈겠죠.</p>
 <p>LC9시리즈는 2.5"와 E3.S, E3.L 폼팩터로 제공되며 E3.S는 122.88TB까지 제공되지만 2.5"와 E3.L은 245.76TB까지 제공됩니다. PCIe 5.0 x4기반이며 IU는 16kB로 추정되는데요, BiCS 8 QLC 2Tb Die를 32개 적층해 칩당 8TB 용량을 구현했습니다. </p>
-<p> </p>
 <figure class="post__video"><a href="https://youtu.be/Vc-wG55KAsw"><iframe loading="lazy" width="560" height="314" src="https://www.youtube-nocookie.com/embed/Vc-wG55KAsw" allowfullscreen="allowfullscreen"></iframe></a></figure>
 <p>이 영상을 통해 BiCS 8 NAND의 구조가 직관적으로 파악될 것 같습니다.</p>
-<p>CM9과 CD9P도 BiCS 8 NAND를 사용해 TLC임에도 불구하고 61.44TB의 용량을 제공할 수 있습니다. 키오시아는 FMS에서 실제 제품의 시연과 BiCS 8에 대한 홍보를 본격적으로 진행한 것 같습니다. 마이크론과 비슷한 느낌이네요. 후속 포스트에서 다루겠지만 사실 마이크론은 재미난게 하나 더 있습니다.</p>
+<p>CM9과 CD9P도 BiCS 8 NAND를 사용해 TLC임에도 불구하고 61.44TB의 용량을 제공할 수 있습니다. 키오시아는 FMS에서 실제 제품의 시연과 BiCS 8에 대한 홍보를 본격적으로 진행한 것 같습니다. </p>
 <p> </p>
 <h3 id="mcetoc_1j2781git6i">SanDisk</h3>
 <p>샌디스크는 올해 초 Investor Day 발표에 대한 시연이라고 생각될 정도로 많은 연관이 있었습니다.</p>
