@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-10T00:07:55+09:00</updated>
+    <updated>2025-08-10T00:21:39+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -162,7 +162,6 @@
 <p>이외에도 RAID는 아니지만 관련 솔루션이라 할 수 있는 Pliops의 XDP와 관련된 시연은 물론이고, Neo Semiconductor의 3D X-DRAM을 이용한 <a href="https://neosemic.com/wp-content/uploads/2025/08/X-HBM-Brochure-1M-Final4.pdf">X-HBM</a>에 대한 언급도 있던 것으로 보입니다. </p>
 <hr>
 <h3 id="mcetoc_1j27jg7ake9">Closing</h3>
-<p> </p>
 <p>작년부터 FMS는 <em>Flash Memory Summit</em>이 아닌, <em>the Future of Memory and Storage</em>로 탈바꿈했습니다. Flash Memory 시장의 대다수를 차지하는 NAND 제조사 중 대형 3사가 DRAM 제조사이기도 하며, 최근에 세분화되고 있는 Storage Hierarchy를 생각해본다면 당연한 일이긴 합니다.</p>
 <p>테마도 약간의 변화가 생겨 CXL은 물론이고 Computational Storage를 비롯해 DRAM, HBM까지 다루게 되었습니다. 전시 및 시연에서도 HBM을 비롯한 여러 메모리가 있었지만, 본 글에서는 이를 생략했습니다.</p>
 <p>탈바꿈 한 이유에는 AI 워크로드에 대한 수요가 증가한 것도 하나의 이유라고 생각되는데, 현재도 수요는 계속해서 늘어나고 있습니다. SNIA에서 AI 워크로드와 관련된 표준 프로젝트인 <a href="https://www.snia.org/storage.ai">Storage.AI</a>를 만들었으니 중요성의 입증은 다루어진 것이라 봐도 되지 않을까요?</p>
