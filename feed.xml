@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-10T00:21:39+09:00</updated>
+    <updated>2025-08-10T00:22:29+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -150,7 +150,7 @@
 <figcaption >SmartRAID Series - © Microchip Technology Inc.</figcaption>
 </figure>
 <p>NVMe RAID부분은 번외로 묶었습니다. 우선, Microchip의 SmartRAID 4300 시리즈입니다. 당연한 흐름이라고 생각되지만, 기존 제품들과 다르게 NVMe SSD를 직접 연결하는 부분이 사라졌습니다. 그래서인지 "RAID Adapters"라는 단어 대신 "RAID Storage Solutoins"라는 단어를 채용한 것도 재밌네요.</p>
-<figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/42/seukeurinsyas-2025-08-09-ohu-10.54.49.png" alt="" width="708" height="428">
+<figure class="post__image" ><figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/42/seukeurinsyas-2025-08-09-ohu-10.54.49.png" alt="" width="1600" height="967"></figure>
 <figcaption ><a href="https://ww1.microchip.com/downloads/aemDocuments/documents/DCS/ProductDocuments/Brochures/Adaptec-SmartRAID-4300-Series-DS00005986.pdf">SmartRAID 4300 Series Mechanism</a></figcaption>
 </figure>
 <p>위 이미지는 작동 원리의 모식도입니다. IO의 직접적인 흐름은 CPU에서 NVMe 엔드포인트로 연결되지만, RAID 패리티 계산은 카드에 별도로 오프로딩됩니다. 그야말로 RAID 가속기라는 말이 어울리네요.</p>
