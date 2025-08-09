@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-09T23:44:31+09:00</updated>
+    <updated>2025-08-10T00:02:22+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -39,7 +39,7 @@
 <p>아무튼 이러한 행사들은 국외, 특히 FMS의 경우엔 미국의 산타클라라에서 열립니다. 학생의 신분이 아니라 일정 수입이 있는 사회인이더라도, 가볍게 놀러가기엔 너무 멀고 상당한 비용이 소모되죠. 고등학생 때 다녀온 수학여행도 정부의 지원을 받았지만 몇 백 만원이라는 돈이 들었다는 것을 생각하면... 쉽사리 가볼 만한 행사는 절대 아닙니다.</p>
 <p>결국 일반인의 입장에서는 여러 곳에서 보도하는 자료와 공식 자료를 가지고 간접 체험을 할 수 밖에 없죠. 그래도 한 번 정리해보도록 합시다. 이번 게시물은 발표가 아니라 전시에 집중을 하겠습니다. </p>
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/42/seukeurinsyas-2025-08-09-ohu-5.12.46.png" alt="" width="2298" height="2196">
-<figcaption >FMS 2025 Floor Plan</figcaption>
+<figcaption >FMS 2025 Floor Plan</figcaption>
 </figure>
 <p>SanDisk에서 제공하는 FMS 2025 부스 배치도입니다.</p>
 <p>여느 때와 다름없는 대형 NAND 공급자들인 Micron, SK hynix, KIOXIA(배치도에는 KIOIA로 오타가 나 있네요), Samsung, SanDisk가 보입니다. 이외의 대형 부스를 마련한 곳은 Silicon Motion, FADU 정도가 눈에 띕니다. </p>
@@ -72,7 +72,7 @@
 <figure class="post__image" ><figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/42/Hynix-FMS2025.png" alt="" width="1600" height="900"></figure>
 <figcaption >SK hynix booth - FMS 2025 © 2025 SK hynix Newsroom.</figcaption>
 </figure>
-<p><a href="https://news.skhynix.co.kr/fms-2025/">하이닉스 뉴스룸</a>에서부스의 사진을 공개했습니다. 최근 계속해서 밀고 있는 <em>Full Stack AI Memory Provider</em>라는 이미지를 유지하려는 모습이 눈에 들어오네요. 여러 행사에서 보였던 PIM 제품군인 AiMX는 물론이고, CXL 메모리와 Computational Storage Drive도 전시했다고 합니다. </p>
+<p><a href="https://news.skhynix.co.kr/fms-2025/">하이닉스 뉴스룸</a>에서 부스의 사진을 공개했습니다. 최근 계속해서 밀고 있는 <em>Full Stack AI Memory Provider</em>라는 이미지를 유지하려는 모습이 눈에 들어오네요. 여러 행사에서 보였던 PIM 제품군인 AiMX는 물론이고, CXL 메모리와 Computational Storage Drive도 전시했다고 합니다. </p>
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/42/hynix-fms2025-nand.png" alt="" width="1600" height="900">
 <figcaption >SK hynix SSD - FMS 2025 © 2025 SK hynix Newsroom.</figcaption>
 </figure>
