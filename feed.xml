@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-09T23:40:23+09:00</updated>
+    <updated>2025-08-09T23:44:31+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -108,7 +108,6 @@
 <p>LC9시리즈는 2.5"와 E3.S, E3.L 폼팩터로 제공되며 E3.S는 122.88TB까지 제공되지만 2.5"와 E3.L은 245.76TB까지 제공됩니다. PCIe 5.0 x4기반이며 IU는 16kB로 추정되는데요, BiCS 8 QLC 2Tb Die를 32개 적층해 칩당 8TB 용량을 구현했습니다. </p>
 <p> </p>
 <figure class="post__video"><a href="https://youtu.be/Vc-wG55KAsw"><iframe loading="lazy" width="560" height="314" src="https://www.youtube-nocookie.com/embed/Vc-wG55KAsw" allowfullscreen="allowfullscreen"></iframe></a></figure>
-<p> </p>
 <p>이 영상을 통해 BiCS 8 NAND의 구조가 직관적으로 파악될 것 같습니다.</p>
 <p>CM9과 CD9P도 BiCS 8 NAND를 사용해 TLC임에도 불구하고 61.44TB의 용량을 제공할 수 있습니다. 키오시아는 FMS에서 실제 제품의 시연과 BiCS 8에 대한 홍보를 본격적으로 진행한 것 같습니다. 마이크론과 비슷한 느낌이네요. 후속 포스트에서 다루겠지만 사실 마이크론은 재미난게 하나 더 있습니다.</p>
 <p> </p>
@@ -863,7 +862,7 @@
 <p>제목의 질문에 대한 답변은 약간 어정쩡합니다. 동일세대인 970 PRO와 PM983을 비교하기엔 너무나 큰 차이가 있기 때문입니다. FW의 작동방식은 물론이고, OP 비율도 다르니 말입니다.</p>
 <p>그럼 970 EVO와 970 PRO를 비교하면 될까요? 그렇지 않다고 생각합니다. SLC Cache의 존재가 이를 가려주기 때문이죠. 네, PM983과 SM983을 비교하면 올바르게 성능을 비교할 수 있을 것 입니다. 하지만 아쉽게도 SM983이란 제품은 존재하지 않는 것으로 알고 있습니다. 일부 기업의 특주 제품으로는 존재할 수 있겠지만 말이죠. 조금 더 구형으로 들어가 PM963과 SM963이라면 올바른 비교가 가능할 것으로 기대됩니다.</p>
 <p>물론, MLC가 채용된 SM963이 더 우수한 것이 당연할 것입니다. 하지만, 동일세대의 TLC라도 설정 방법과 경우에 따라 MLC보다 우수한 성능을 보여주는 것은 이번 리뷰로 확인할 수 있었습니다.</p>
-<p>요는, SSD의 성능은 단순하게 NAND의 종류에 따라 결정되는 것이 아니라는 것입니다. SSD는 하나의 컴퓨터와 동일합니다. 상당히 복잡하며 최신 기술의 집약체라고 할 수 있죠.</p>
+<p>요지는, SSD의 성능은 단순하게 NAND의 종류에 따라 결정되는 것이 아니라는 것입니다. SSD는 하나의 컴퓨터와 동일합니다. 상당히 복잡하며 최신 기술의 집약체라고 할 수 있죠.</p>
 <p>다시 PM983 얘기로 돌아갑시다. 데이터시트에 적힌 4-corners performance에선 성능인 3000/1050MBps, 400k/40k IOPS를 모두 충족하였으며, 읽쓰기의 QoS 지연시간도 충족하는 것을 확인할 수 있었습니다. 하지만 cSSD 워크로드에선 보람찬 결과를 내지 못하였습니다. </p>
 <p>eSSD 워크로드에서도 Bandwidth, IOPS만 놓고 본다면 그렇게까지 인상적인 성능은 아니었습니다. 970 PRO와 PM9E1에 밀리는 일이 많았죠. 하지만, Random Preconditioning 그래프를 본다면 굉장히 <strong>안정적인</strong> 성능임을 알 수 있었습니다. </p>
 <p>일반 소비자가 PM983을 살 이유가 있냐 물어본다면, 성능적인 면에서는 그렇지 않다고 하고 싶습니다. PM983이 우수한 성능을 보여준 부분은 eSSD답게 소비자용 워크로드가 아니기 때문입니다. 가격적인 면에서도 eBay 기준으로 960GB 제품이 10만원이 안 되는 것을 볼 수 있는데, 이 돈이면 980 PRO를 중고로 사는게 더 현명해 보입니다.</p>
