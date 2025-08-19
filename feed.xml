@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-19T18:52:06+09:00</updated>
+    <updated>2025-08-19T19:41:32+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -365,7 +365,7 @@
 <figcaption >Fill Drive - TP/Time 1st</figcaption>
 </figure>
 <p>처참한 모습을 보여주기 위해 X축을 시간축으로 변경해 하나의 그래프에 비교군을 쑤셔넣었습니다. 가장 용량이 낮음에도 불구하고 제일 오래 걸리는 것을 확인할 수 있었습니다. Green의 불안정한 속도도 눈에 띄네요.</p>
-<figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/44/Multi-Fill-Drive_2PassTime.png" alt="" width="3000" height="1500">
+<figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/44/Multi-Fill-Drive_2PassTime-2.png" alt="" width="3000" height="1500">
 <figcaption >Fill Drive - TP/Time 2nd</figcaption>
 </figure>
 <p>두 번째 패스의 그래프입니다. 동일하게 SLC캐시가 적용되지 않은 X25-M G2와 PRO Ultimate입니다만, 사뭇 다른 양상을 확인할 수 있습니다. 그것보다는 중국산의 처참함이 눈에 띄겠지만요.</p>
