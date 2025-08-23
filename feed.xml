@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-23T18:24:50+09:00</updated>
+    <updated>2025-08-23T18:57:08+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -31,7 +31,7 @@
             <![CDATA[
                     <p><img src="https://freshflash4096.github.io/media/posts/45/PM1725_Front.jpg" class="type:primaryImage" alt="" /></p>
                 <p>비교적 빠르게 돌아온 리뷰입니다. 중요한 것은 아니지만, 이번 리뷰부터는 극도로 간추린 버전만 커뮤니티에 배포될 예정입니다. 블로그에 이미 작성한 내용을 각 커뮤니티에 맞추어 재편집하는게 너무 비생산적이기 때문에 어쩔 수 없는 결정이었습니다. </p>
-<p>배포한 곳은 무반응인 곳도 있었고, 좋았던 곳도 있었습니다. 다만, 제 궁극적인 목표는 실제로 광고를 받고 벤치마크를 진행하는 리뷰어들의 변화였습니다. 유튜버는 제가 보지도 않으며, 유튜버들이 제 리뷰를 읽을 일은 없을 것 같고... 일반 커뮤니티들은 큰 진전이 없는 것으로 보입니다. 어쩌겠습니까? 우물은 목마른 놈이 파야하는 법이겠죠. 알려지지 않기도 했지만, 이런 리뷰를 진행하는 사람에게 대여해줄 제조사가 있지도 않을테니, 계속해서 제 사비로 리뷰를 해나가겠습니다. </p>
+<p>배포한 곳은 무반응인 곳도 있었고, 좋았던 곳도 있었습니다. 다만, 제 궁극적인 목표는 실제로 광고를 받고 벤치마크를 진행하는 리뷰어들의 변화였습니다. 유튜버는 제가 보지도 않으며, 유튜버들이 제 리뷰를 읽을 일은 없을 것 같고... 일반 커뮤니티들은 큰 진전이 없는 것으로 보입니다. 어쩌겠습니까? 우물은 목마른 놈이 파야하는 법이겠죠. 알려지지 않기도 했지만, 이런 리뷰를 진행하는 사람에게 제품을 대여해줄 제조사가 있지도 않을테니, 계속해서 제 사비로 리뷰를 해나가겠습니다. </p>
 <p>이번에도 잡담이 길어졌네요. 본제로 넘어갑시다. 이번에도 삼성 SSD입니다.</p>
 <p>삼성을 그렇게 막 좋아하는 것은 아닌데, 어쩌다보니 삼성 SSD의 리뷰가 몰렸네요. 가지고 있는 제품들을 싹 한 번 돌아야지 새로운 친구를 리뷰할 수 있을텐데, 가난한 학생은 SSD에 현금 박치기를 하기 힘겹습니다...</p>
 <p>아무튼 삼성의 PM1725입니다. 이전에 <a href="https://freshflash4096.github.io/is-tlc-really-lower-in-performance-than-mlc-pm983-960gb/">리뷰했던 PM983</a>과는 네이밍 방식이 다른 것을 확인할 수 있습니다. 이에 대해서 간단히 설명하자면, 삼성의 eSSD는 "Datacenter SSD"와 "Enterprise SSD"로 나뉩니다. <br>전자는 보통 cSSD와 동일한 컨트롤러, 8채널 급이 채용됩니다. PM983과 같은 친구죠. PCIe 5.0 시대에 돌입하며 전략이 바뀐 것으로 예상되는데, 정말로 꼭... 나중에 다시 다루어 보도록 하겠습니다. <br>후자는 진짜 엔터프라이즈라고 할만한 컨트롤러가 채용됩니다. M.2 폼팩터에 담기 무리가 있을 정도로 말이죠. PM1725가 그 예시입니다.</p>
@@ -91,15 +91,14 @@
 <figcaption>PM1725 Rear</figcaption>
 </figure>
 </div></div>
-<p>외관은 그 당시 삼성의 HHHL폼팩터 SSD와 크게 다르지 않습니다. 개인적으로 저 푸른빛이 도는 방열판이 참 이쁘다고 생각합니다. 살짝 보이는 커패시터도 귀엽죠?</p>
-<p> </p>
+<p>외관은 해당 제품 출시 이후로 당분간 사용되었던 삼성의 HHHL폼팩터 SSD와 크게 다르지 않습니다. 개인적으로 저 푸른빛이 도는 방열판이 참 이쁘다고 생각합니다. 살짝 보이는 커패시터도 귀엽죠?</p>
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/45/PM1725_Heatsink.jpg" alt="" width="4128" height="2580">
 <figcaption >PM1725 Heat sink</figcaption>
 </figure>
 <p>위쪽은 백플레이트, 아래는 전면에 부착된 방열판의 모습입니다. 써멀패드가 잘 부착되어 있는 모습입니다. 칩의 자국이 남을 정도로 말이죠.</p>
 <hr>
 <h2 id="mcetoc_1iup1bg6i63">Internal Components</h2>
-<pre>문외한의 입장에서 일부 IC만 찾아보았으며, 제조시기 등에 따라 변경될 가능성이 있습니다.<br>맞지 않을 확률이 상당히 높으니 재미로만 읽어주세요.<br>근데 소자 진짜 드릅게 많네용</pre>
+<pre>문외한의 입장에서 일부 IC만 찾아보았으며, 제조시기 등에 따라 변경될 가능성이 있습니다.<br>맞지 않을 확률이 상당히 높으니 재미로만 읽어주세요. <br>근데 소자 진짜 드릅게 많네용</pre>
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/45/w_PM1725_Teardown_Front-2.jpg" alt="" width="4128" height="2580">
 <figcaption >PM1725 3.2TB Teardown (Front)</figcaption>
 </figure>
@@ -134,7 +133,7 @@
 <p>컨트롤러는 <span style="color: #e03e2d;">Samsung EPIC</span>을 사용합니다. Cortex-R7@750MHz 듀얼 코어와 MPU(Memory Protection Unit)을 채용했으며, 삼성의 28nm 공정을 사용했습니다. 16채널을 지원하는, 그야말로 엔터프라이즈에 걸맞는 컨트롤러라고 할 수 있겠네요. 구형이지만요.</p>
 <p>DRAM은 <span style="color: #e67e23;">Samsung K4B8G1646Q-MCMA</span>를 5개 실장했습니다. DDR3 1866MT/s 1GB, 총합 5GB이지만, 공간의 일부가 ECC용으로 예약되어 실질적인 사용 가능한 메모리는 4GB일 확률이 높습니다. 그렇게 계산한다면, 일반적인 L2P 테이블에 알맞는 용량이라고 할 수 있겠네요. </p>
 <p>NAND는 <span style="color: #f1c40f;">Samsung K9DMGB8S7C-DCK0</span>를 사용했습니다. 삼성의 V2 32L TLC이며, 128Gb Die를 16개 패키징하여 칩당 2048Gb=256GB를 구현했습니다. 해당 칩은 전면에 4개 실장되어 2TB의 Raw Capacity를 구현했습니다. 부족한 용량은 후면의 NAND로 채워지겠죠?</p>
-<p>PLP를 위한 Capacitor는 <span style="color: #2dc26b;"><span style="color: #ff00fc;"><span style="color: #3598db;"><span style="color: #ff00fc;"><span style="color: #2dc26b;">Nippon Chemi-Con HHXA350ARA271MJA0G</span></span></span></span></span>를 사용했으며, 35V 270µF의 스펙으로 8개가 실장되었습니다. 이놈을 찾는데 제일 오래 걸린 것 같네요...</p>
+<p>PLP를 위한 Capacitor는 <span style="color: #2dc26b;"><span style="color: #ff00fc;"><span style="color: #3598db;"><span style="color: #ff00fc;"><span style="color: #2dc26b;">Nippon Chemi-Con HHXA350ARA271MJA0G</span></span></span></span></span>를 사용했으며, 35V 270µF의 스펙으로 8개가 실장되었습니다. 이놈을 찾는데 제일 오래 걸린 것 같아요...</p>
 <p>통합된 PMIC는 별도로 없었습니다.</p>
 <p><span style="color: #755127;"><span style="color: #c2e0f4;"><span style="color: #2dc26b;"><span style="color: #ff00fc;"><span style="color: #3598db;"><span style="color: #ff00fc;"><span style="color: #2dc26b;"><span style="color: #755127;"><span style="color: #c2e0f4;">Texas Instruments TPS53315</span></span></span></span></span></span></span></span></span>는 12-A Step-Down Regulator with Integrated Switcher라고 합니다. 나는 왜 하나도 모르면서 소자를 분석하고 있을까?</p>
 <p><span style="color: #b96ad9;">Adesto Technologies AT25DL081</span>는 1MB의 SPI NOR 플래시입니다. 100k P/E Cycle과 20년의 데이터 보존기간을 자랑합니다. 당연하지만, 사용자가 엑세스할 수 있는 공간은 아닙니다. </p>
@@ -189,7 +188,7 @@
 <p>위에서 외관의 사진을 자세히 보신 분이나 eSSD 중고 시장을 자주 보시는 분이라면 짐작하셨겠지만, 이 PM1725는 리테일 버전이 아니라 오라클 버전입니다.</p>
 <p>Oracle Flash Accelerator F320이라는 제품으로, 오라클 서버에서 쓰이는 제품이죠. 일단 데이터시트는 F320 버전으로 가져왔습니다.</p>
 <p>UBER과 MTBF, Data Retention은 일반적인 eSSD의 수치인만큼 넘어가고, 내구성은 5 DWPD, 29.2 PBW를 자랑합니다. </p>
-<p>성능은 순차, 랜덤을 가리지 않고 QD32 TC16일 때를 나타내고 있습니다. 랜덤 성능의 경우에는 4k뿐만 아니라 8k 수치도 명시되어 있는데, 아쉽게도 이 리뷰는 업계 표준으로 받아들여지는 순차 128k와 랜덤 4k의 성능만 보여드릴 예정입니다. 다음 eSSD 리뷰에선 약간 달라질 수도?</p>
+<p>성능은 순차, 랜덤을 가리지 않고 QD32 TC16일 때를 나타내고 있습니다. 랜덤 성능의 경우에는 4k뿐만 아니라 8k 수치도 명시되어 있는데, 아쉽게도 이 리뷰는 업계 표준으로 받아들여지는 순차 128k와 랜덤 4k의 성능만 보여드릴 예정입니다. </p>
 <hr>
 <h2 id="mcetoc_1iup3oiobb2">Notable Points</h2>
 <h3 id="mcetoc_1iup50imcdg">Power-Loss-Protection Time</h3>
@@ -202,7 +201,7 @@
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/45/PM1725_CDI.png" alt="" width="1504" height="1298">
 <figcaption >CrystalDiskInfo 9.7.0 - PM1725 3.2TB</figcaption>
 </figure>
-<p>읽쓰기량이 상당한 중고입니다. 그래도 97%라면 아직 살 날이 많이 남은 아저씨입니다. PCIe 3.0 x8로 제대로 링크되어 있는 것을 확인할 수 있습니다.</p>
+<p>읽쓰기량이 상당한 중고입니다. 그래도 97%라면 아직 건강한 아저씨네요. PCIe 3.0 x8로 제대로 링크되어 있는 것을 확인할 수 있습니다.</p>
 <p>smartmontools와 NVMe-CLI의 id-ctrl 결과는 <a href="https://github.com/FreshFlash4096/SSD-Report">GitHub</a>에 첨부하도록 하겠습니다.</p>
 <hr>
 <h2 id="mcetoc_1iup4vgr6dd">DUT Summary</h2>
@@ -312,9 +311,9 @@
 <h3 id="mcetoc_1iuejmtca47b">SPECworkstation 4.0</h3>
 <p>3DM이 종료된 드라이브에 휴식을 부여하고 진행됩니다. 75%의 공간이 이미 사용 중인 셈이죠.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/1-2.-SPECworkstation.png" alt="" width="3000" height="750"></figure>
-<p>LBA=4096B인 드라이브들은 이 벤치마크에서 이상할 정도로 낮은 성능을 보여줍니다. 아예 실행이 불가능해 중간에 취소되는 경우도 있을만큼 말이죠. 이는 PM1725의 문제가 아니라 다른 드라이브에서도 발견되었습니다. <br>따라서 LBA=512B로 통일해 종합 Ratio를 제시합니다. 의외로 PM1725가 PM983에 비해 약간 더 우수한 모습입니다. 이러한 결과를 상세하게 들여다 보겠습니다.</p>
+<p>LBA=4096B인 드라이브들은 이 벤치마크에서 이상할 정도로 낮은 성능을 보여줍니다. 아예 실행이 불가능해 중간에 실패되는 경우도 있을만큼 말이죠. 이는 PM1725의 문제가 아니라 다른 드라이브에서도 발견되었습니다. <br>따라서 LBA=512B로 통일해 종합 Ratio를 제시합니다. 의외로 PM1725가 PM983에 비해 약간 더 우수한 모습입니다. 이러한 결과를 상세하게 들여다 보겠습니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/1-2-5.-SPECworkstation-detail.png" alt="" width="3900" height="2100"></figure>
-<p>LBA=4096B의 SSD는 대체로 512B보다 낮은 성능을 보이지만, 특히 mcad와 proddev 워크로드의 경우엔 실행 중 실패했습니다. <br>어쩔 수 없는 현상으로 받아들이고, 다른 걸 봅시다.</p>
+<p>LBA=4096B의 SSD는 대체로 512B보다 낮은 성능을 보이지만, 특히 mcad와 proddev 워크로드의 경우엔 실패했습니다. <br>어쩔 수 없는 현상으로 받아들이고, 다른 걸 봅시다.</p>
 <p>많은 워크로드에서 PM983보단 우수하지만 PM9A1에는 뒤떨어지는 모습을 보였습니다. mozillaVS 워크로드에선 가장 뒤떨어지는 모습을 보였지만, cfd워크로드에서는 PM1725가 비교적 우수한 모습을 보였습니다. </p>
 <p>가지각색이죠?</p>
 <p> </p>
@@ -326,11 +325,11 @@
 <p>가득 채워진 드라이브에서 다시 쓰기를 가할 때에는 평균 1684MiB/s의 속도를 확인할 수 있었습니다. eSSD들이 다 그렇지만 재미는 없어요. 위랑 다른게 별로 없거든요.</p>
 <p>LBA=4096B의 경우엔 512B와 상당히 유사했기에 아래에서 함께 보도록 하겠습니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/Multi-Fill-Drive_1PassTime.png" alt="" width="3000" height="1500"></figure>
-<p>이전과 다르게 X축은 시간축입니다. 이전 PM9A1도 나름 더러웠는데, 이 친구도 만만치 않습니다. 비교군으로 970 PRO도 포함할까 고민했는데, 제외한게 다행인 것 같네요.</p>
+<p>이전과 다르게 X축은 시간축입니다. PM9A1 때문에 Y축의 최대치가 상승합니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/Multi-Fill-Drive_2PassTime.png" alt="" width="3000" height="1500"></figure>
 <p>2패스도 별 다른 모습은 안 보입니다. 다만, 1400초 이전에 땅으로 떨어지는 값이 좀 이상하네요.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/2-7.-Fill-Drive-AVG-Speed.png" alt="" width="3000" height="900"></figure>
-<p>전체에 대한 평균 쓰기 속도입니다. 위 그래프에서 볼 수 있던 것처럼 전체적인 SLC 캐시 영역을 제외하더라도 PM9A1이 가장 우수한 모습을 보였습니다. PM983과 비교하자면, 더 구형인 NAND가 사용되었지만, 더 많은 Die 개수로 더 높은 쓰기 성능을 보였습니다. <br>PM983의 고용량 모델이라면 16채널의 PM1725가 무색하게 이를 넘는 속도를 보여줄 수 있을 것이라고 예상되네요.</p>
+<p>전체에 대한 평균 쓰기 속도입니다. 위 그래프에서 볼 수 있던 것처럼 SLC 캐시 영역을 제외하더라도 PM9A1이 가장 우수한 모습을 보였습니다. PM983과 비교하자면, 더 구형인 NAND가 사용되었지만, 더 많은 Die 개수와 채널 덕분에 더 우수한 쓰기 성능을 보였습니다. <br>PM983의 고용량 모델이라면 16채널의 PM1725가 무색하게 이를 넘는 속도를 보여줄 수 있을 것이라고 예상되네요.</p>
 <p> </p>
 <h3 id="mcetoc_1iuejqi41495">Sync Performance</h3>
 <p>순차와 랜덤 성능은 자체 Pre-Conditioning 이후에 해당 영역에 한해서 측정됩니다.</p>
@@ -340,7 +339,7 @@
 <p> </p>
 <h3 id="mcetoc_1iuejmtca47g">Low QD Performance by RW Ratio </h3>
 <h4 id="mcetoc_1j0k12uta9g">Performance versus QD</h4>
-<p>이전과 마찬가지로 Pre-Conditioning 이후에 측정하며, 데이터의 양은 GB단위가 되지 않습니다.</p>
+<p>이전과 마찬가지로 Pre-Conditioning 이후에 측정하며, 데이터의 양은 올바른 Burst 성능을 측정하기 위해서 GB단위가 되지 않습니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/4-1.-RWW_RND.png" alt="" width="3600" height="1800"></figure>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/4-1.-RWW_RND_.png" alt="" width="3600" height="1800"></figure>
 <p>QD=1, 2인 상황에서는 LBA에 따른 성능 차이가 거의 나지 않았지만, QD=4에서 쓰기에 가까워질수록 약간의 성능 향상이 있었습니다. </p>
@@ -350,7 +349,6 @@
 <p>가중치를 부여한 그래프에서는가장 낮은 성능을 보여주었습니다. 나이를 많이 먹긴했죠.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/4-3.-RWW-RND-order.png" alt="" width="3000" height="900"></figure>
 <p>평균값도 역시 세대순으로 정렬되었습니다. PM1725와 비교할만한 동일 세대의 SSD가 없던게 아쉬울 따름이네요.</p>
-<p> </p>
 <hr>
 <h2 id="mcetoc_1iuejnn4l47m">eSSD Benchmarking</h2>
 <p>일부 워크로드에 대한 Steady State를 측정해봅시다. 벤치마크 방법에 대한 것은 마찬가지로 <a href="https://freshflash4096.github.io/is-tlc-really-lower-in-performance-than-mlc-pm983-960gb/">이전 리뷰</a>를 참고해주시기 바랍니다.</p>
@@ -367,13 +365,13 @@
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/Multi-SEQ-PC_LAT.png" alt="" width="3000" height="1500"></figure>
 <p>비교는 지연시간을 기준으로 합니다. 이에 대한 이유는 RND Pre-Conditioning 섹션에서 설명하겠습니다. LBA=4096B일 때 , 최대 지연 시간이 튀는 것을 확인할 수 있었습니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/Multi-SEQ-PC_LAT_.png" alt="" width="3000" height="1500"></figure>
-<p>비교가능한 영역으로 확대한 그래프입니다. 언뜻보면 PM9A1이 가장 우수할 수 있다고 생각할 수도 있으나, 일관성에서는 가장 밀리는 것처럼 보입니다. 일관성에 대한 정확한 계산은 다음 리뷰부터 도입될 하나의 측정을 기대해주세요.</p>
+<p>비교가능한 영역으로 확대한 그래프입니다. 언뜻보면 PM9A1이 가장 우수할 수 있다고 생각할 수도 있으나, 일관성에서는 가장 밀리는 것처럼 보입니다. </p>
 <p> </p>
 <h3 id="mcetoc_1j0lrhcjo1ci">SEQ Performance</h3>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/1-3-SEQ-Read.png" alt="" width="3600" height="1800"></figure>
-<p>이번 리뷰부터 새롭게 도입된 그래프입니다. QD에 따른 지연시간과 그에 대응하는 TP / IOPS를 나타내는 방식입니다. 측정하는 QD는 256이 최대이나, 그전에 한계에 도달하게 되면 지연시간만 늘어나는 양상으로, 그래프의 해석에 어려움을 겪습니다. 이에 따라, 적절하게 지연시간을 잘라낸 그래프를 제시합니다. </p>
+<p>이번 리뷰부터 새롭게 도입된 그래프입니다. QD에 따른 TP / IOPS와 그에 따른 지연시간을 나타내는 방식입니다. 측정하는 QD는 256이 최대이나, 그전에 한계에 도달하게 되면 지연시간만 늘어나기에 그래프의 해석에 어려움을 겪습니다. 이에 따라, 적절하게 지연시간을 잘라낸 그래프를 제시합니다. </p>
 <p>낮은 QD에서는 PM1725가 가장 못난 모습을 보였지만, 깊어질수록 성능 자체는 증가하는 것을 확인할 수 있었습니다. PM9A1이 가장 좋아보이긴 하지만요.</p>
-<p>LBA=512B가 LBA=4096B에 비해서 낮은 QD(1~2)에선 약간 밀리지만, 깊은 QD(8~32)에서는 더욱 우세한 모습이었습니다.</p>
+<p>LBA=512B가 LBA=4096B에 비해서 낮은 QD(1~2)에선 약간 밀리지만, 깊은 QD(8~32)에서는 우세한 모습이었습니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/1-4-SEQ-Write.png" alt="" width="3600" height="1800"></figure>
 <p>순차 쓰기에선 PM1725가 약간 이상한 양상을 보였습니다. QD가 깊어짐에 따라 성능 향상을 보일 것 같더니, 그렇지 않고 되려 후퇴하는 모습도 관찰되었습니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/1-4-SEQ-Write_.png" alt="" width="3600" height="1800"></figure>
@@ -388,15 +386,15 @@
 <figcaption>RND PC(LAT/Time)</figcaption>
 </figure>
 </div></div>
-<p>RND Pre-Conditioning은 4시간이 걸리지 않았습니다. 다만, SEQ과 같이 일부 지연시간이 급증하는 모습을 보였습니다. </p>
+<p>RND Pre-Conditioning은 4시간이 걸리지 않았습니다. 다만, SEQ Pre-Conditioning과 같이 일부 지연시간이 급증하는 모습을 보였습니다. </p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/2-2-RND-PC-LAT.png" alt="" width="3000" height="1500"></figure>
-<p>이것이 실제 모습입니다. 이전 PM983 리뷰를 보셨던 분들은 익숙하실지도 모르겠습니다. 그 친구도 똑같이 지연시간이 급등했거든요. 한 번 비교해볼까요?</p>
+<p>이것이 실제 모습입니다. 이전 PM983 리뷰를 보셨던 분들은 데자뷰를 느끼실지도 모르겠습니다. 그 친구도 지연시간이 급등했거든요. 한 번 비교해볼까요?</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/Multi-RND-PC_IOPS.png" alt="" width="3000" height="1500"></figure>
 <p>우선, IOPS입니다. PM1725와 같이 eSSD에 속하지만 PM983이 훨씬 깔끔한 그래프를 보여주고 있습니다. 하지만, PM1725는 PM9A1과 크게 다를 것이 없어보이기도 합니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/Multi-RND-PC_LAT_.png" alt="" width="3000" height="1500"></figure>
-<p>그렇기에, 지연시간 비교에는 그래프를 사용합니다. 지연시간을 보면 PM9A1은 PM1725와 비교도 되지 않을만큼 굉장히 더러운 모습을 보여줍니다. <br>더럽다고 하니 생각나는데, 진짜 Dirty Test란, 이런게 아닐까요? ㅎㅎ</p>
+<p>그렇기에 비교에는 지연시간 그래프를 사용합니다. 지연시간의 관점에서는 PM9A1이 PM1725와 비교도 되지 않을만큼 굉장히 더러운 모습을 보여줍니다. <br>더럽다고 하니 생각나는데, 이것이 좀 더 Dirty Test에 부합한다고 말할 수 있지 않을까요? 물론, 강력하게 주장할 생각은 없습니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/Multi-RND-PC_LAT.png" alt="" width="3000" height="1500"></figure>
-<p>다만, Pre-Conditioning 중의 최대 지연시간은 eSSD에서 나타났습니다. 위 그래프를 보면 LBA크기에 상관없이 PM1725는 물론이고 PM983에서도 발생했습니다.</p>
+<p>RND Pre-Conditioning 중의 최대 지연시간은 의외로 cSSD가 아닌, eSSD에서 나타났습니다. <br>위 그래프를 보면 LBA크기에 상관없이 PM1725는 물론이고 PM983은 더욱 심하게 발생했습니다. 다른 eSSD도 그러한지는 다음에 확인해보도록 하고, 집중해야할 Steady State로 넘어갑시다.</p>
 <p> </p>
 <h3 id="mcetoc_1j0lrhcjo1ck">RND Performance</h3>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/2-3-RND-Read.png" alt="" width="3600" height="1800"></figure>
@@ -405,12 +403,13 @@
 <p>쓰기는 읽기처럼 QD=1에서는 가장 성능이 나빴지만, QD=2 이후부터는 성능이 급증해 QD=4에서 100k IOPS를 초과해 QD=8에서 IOPS가 포화된 모습을 보여주었습니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/2-5-RND-Mix.png" alt="" width="3600" height="1800"></figure>
 <p>혼합 성능도 낮은 QD에선 좋은 성적을 거두지 못했지만, QD=32이상에서는 가장 좋은 모습을 보여주었습니다.</p>
+<p> </p>
 <h3 id="mcetoc_1j0lrhcjo1ck">Quality of Service</h3>
 <p>QD1에서의 지연시간을 IO단위로 모두 분석해서 때려박았습니다.</p>
 <figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://freshflash4096.github.io/media/posts/45/2-6-RND-Read-QoS.png" alt="" width="3900" height="2100"></figure>
 <p>읽기에서는 앞서 본 것 처럼 PM1725가 가장 뒤쳐졌습니다. </p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/2-8-RND-Write-QoS.png" alt="" width="3900" height="2100"></figure>
-<p>쓰기도 PM1725가 가장 뒤쳐졌지만, 그래프 위쪽으로 갈수록 PM9A1의 지연시간이 늘어지는 것을 확인할 수 있습니다. </p>
+<p>쓰기도 PM1725가 가장 뒤쳐졌지만, 그래프 위쪽으로 갈수록 PM9A1의 지연시간이 늘어나 PM1725를 넘어버리는 것을 확인할 수 있습니다. </p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/2-7-RND-Mix-QoS-2.png" alt="" width="3900" height="2100"></figure>
 <p>혼합 작업은 조금 재밌습니다. 99%에서는 PM1725가 가장 좋은 지연시간을 보여주었으나, 99.9%로 올라가자말자 가장 뒤쳐졌씁니다.</p>
 <p>데이터시트와의 비교는 표로 간단하게 진행해보겠습니다. </p>
