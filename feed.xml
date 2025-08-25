@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-23T21:40:53+09:00</updated>
+    <updated>2025-08-25T22:16:44+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -193,7 +193,7 @@
 <h2 id="mcetoc_1iup3oiobb2">Notable Points</h2>
 <h3 id="mcetoc_1iup50imcdg">Power-Loss-Protection Time</h3>
 <p>많은 eSSD는 PLP를 위한 기술이 적용됩니다. 갑작스러운 전원 차단에 대해 어느 정도의 백업 시간을 가질 수 있는지 알아봅시다.</p>
-<p>소자 분석에서 언급되었지만, PM1725 3.2TB는 <span style="color: #2dc26b;"><span style="color: #ff00fc;"><span style="color: #3598db;"><span style="color: #ff00fc;"><span style="color: #2dc26b;">Nippon Chemi-Con HHXA350ARA271MJA0G</span></span></span></span></span>을 10개 실장했으며, 약 <strong>1.323J</strong>의 에너지를 저장할 수 있습니다. 해당 값을 토대로, 데이터시트와 S.M.A.R.T.에 지정되어 있는 전력 소모를 버틸 수 있는 시간을 비교해보겠습니다.</p>
+<p>소자 분석에서 언급되었지만, PM1725 3.2TB는 <span style="color: #2dc26b;"><span style="color: #ff00fc;"><span style="color: #3598db;"><span style="color: #ff00fc;"><span style="color: #2dc26b;">Nippon Chemi-Con HHXA350ARA271MJA0G</span></span></span></span></span>을 8개 실장했으며, 약 <strong>1.323J</strong>의 에너지를 저장할 수 있습니다. 해당 값을 토대로, 데이터시트와 S.M.A.R.T.에 지정되어 있는 전력 소모를 버틸 수 있는 시간을 비교해보겠습니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/PLP-Time.png" alt="" width="3000" height="900"></figure>
 <p>갑작스러운 전원 차단에도 50ms 이상의 시간은 확보할 수 있다고 볼 수 있겠습니다. 상당히 긴 시간입니다.</p>
 <hr>
