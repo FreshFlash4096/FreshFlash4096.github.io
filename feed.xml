@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-25T22:16:44+09:00</updated>
+    <updated>2025-08-26T11:07:39+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -346,7 +346,7 @@
 <h4 id="mcetoc_1j0k12uta9h">Weighted Graph </h4>
 <p>QD1 70%, QD2 20%, QD4 10%로 가중치를 부여해 보기 쉽게 나타냅니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/4-2.-RWW-RND-WF.png" alt="" width="3600" height="1800"></figure>
-<p>가중치를 부여한 그래프에서는가장 낮은 성능을 보여주었습니다. 나이를 많이 먹긴했죠.</p>
+<p>가중치를 부여한 그래프에서는 가장 낮은 성능을 보여주었습니다. 나이를 많이 먹긴했죠.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/45/4-3.-RWW-RND-order.png" alt="" width="3000" height="900"></figure>
 <p>평균값도 역시 세대순으로 정렬되었습니다. PM1725와 비교할만한 동일 세대의 SSD가 없던게 아쉬울 따름이네요.</p>
 <hr>
@@ -464,7 +464,7 @@
 <p>PM983과 다르게 데이터시트를 만족하지 못하고 더 늘어지는 부분도 있는 것이 확인되었습니다.</p>
 <hr>
 <h2 id="mcetoc_1iuqh3uem5o">Closing</h2>
-<p>PM1725는 여러 의미에서 나름 의미있다고 볼 수 있습니다. 우선, 삼성의 NVMe eSSD 중 최초로 TLC가 적용되었습니다. V2 32L TLC라고 말씀드렸는데, V1에서는 24L MLC가 전부였으니, 첫 3D TLC라고 말해도 무방하겠죠.</p>
+<p>PM1725는 여러 포인트에서 나름 의미있다고 볼 수 있습니다. 우선, 삼성의 NVMe eSSD 중 최초로 TLC가 적용되었습니다. V2 32L TLC라고 말씀드렸는데, V1에서는 24L MLC가 전부였으니, 첫 3D TLC라고 말해도 무방하겠죠.</p>
 <p>컨트롤러도 의미있습니다. 삼성에서 내놓은 첫 NVMe eSSD는 XS1715였습니다만, In-House 컨트롤러가 아닌, PMC-Sierra사의 컨트롤러를 사용했습니다. SM1715도 마찬가지였고요. 하지만, PM1725에서는 삼성의 In-House 컨트롤러를 사용했습니다. 소자 분석 섹션에서도 다루었지만, EPIC이죠. <br>이후, V3 TLC를 적용한 PM1725a와 V4 TLC를 적용한 PM1725b까지 EPIC 컨트롤러를 꾸준하게 사용했습니다.</p>
 <p>제가 리뷰한 것은 삼성의 리테일 PM1725가 아니라 오라클 F320입니다. 펌웨어에 어떠한 수정이 가해졌을 가능성이 있습니다. 하지만 그럼에도 불구하고, F320 데이터시트의 스펙에 부합하지 못하는 모습이 종종 보였습니다. 주로 쓰기 부분이 말이죠. <br>스펙에 부합하지 못하고 가장 오래되었음에도 불구하고, 비교군에서는 제일 뛰어난 최대 랜덤 쓰기 성능을 보여주기도 했습니다. 이 부분은 Over-Provisioning이 가장 많이 적용된 이유가 클 것입니다.</p>
 <p>그렇지만 PM983과 비교하였을 때, 쓰기의 Consistency가 약간 뒤쳐진다는 느낌은 확실히 있었습니다. 동일한 세대의 NAND를 사용한 PM1725b라면 달랐을까... 라는 아쉬움도 남습니다.<br>더 아쉬운 것은 이 리뷰에서는 Consistency에 대한 것을 수치로 나타낼 수 없어 그래프를 통한 비교만 진행한 부분입니다. 이 부분에 대해서는 개선이 필요하다고 인식하였으며, 추후 다른 eSSD 리뷰에서 한 방법을 제시하고자 합니다.</p>
