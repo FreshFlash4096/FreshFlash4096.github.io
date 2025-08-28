@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-28T14:59:44+09:00</updated>
+    <updated>2025-08-28T20:33:06+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -29,8 +29,8 @@
         <content type="html">
             <![CDATA[
                 <p>새로운 태그, "Article"의 첫 투고글입니다. 이 태그는 벤치마크의 결과를 진행하는 글은 아니지만, 기술에 대한 정리, 리뷰를 진행하는 글을 모아놓을 예정입니다. <br>Chip and Cheese의 저장장치 버전! ...은 전혀 아닙니다. 심도 깊은 리뷰는 아니에요. <br>그렇다고 초보자를 위한 쉬운 글은 아닐 것이라 생각됩니다. 어쨌거나 제 블로그는 기억할 만한 것들을 위해서 운영하는 것이니까요.</p>
-<p>리뷰에서 간간히 "나중에 다루어보겠다"라고 했던 부분을 이 태그가 달린 투고글에서 다룰 예정입니다. 언젠가 말이죠....</p>
-<p>어쨌든, 첫 주제는 삼성의 Z-NAND입니다. <a href="https://freshflash4096.github.io/fms-2025-product/">FMS 2025</a>에서 삼성이 Z-NAND의 부활을 선언했는데, 저도 SZ983과 983 ZET를 리뷰할 예정이기에 첫 주제로 선택하였습니다.</p>
+<p>리뷰에서 간간히 "나중에 다루어보겠다"라고 했던 부분을 이 태그가 달린 투고글에서 다룰 예정입니다. <br>언젠가 말이죠....</p>
+<p>어쨌든, 첫 주제는 삼성의 Z-NAND입니다.<a href="https://freshflash4096.github.io/fms-2025-product/">FMS 2025</a>에서 삼성이 Z-NAND의 부활을 선언했는데, 저도 SZ983과 983 ZET를 리뷰할 예정이기에 첫 주제로 선택하였습니다.</p>
 <p> </p>
 <div class="post__toc">
 <h3>목차</h3>
@@ -47,9 +47,9 @@
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/46/Z-SSD_3.jpg" alt="" width="2000" height="1415">
 <figcaption >Samsung, Z-SSD</figcaption>
 </figure>
-<p>Intel과 Micron이 공동으로 발표한 3D XPoint Technology. 이는 DRAM과 NAND의 격차를 해소할 기술로 제시되었습니다. 그리고 1년 뒤, FMS 2016 기조연설에서 삼성은 Z-SSD를 공개했습니다. </p>
+<p>Intel과 Micron이 공동으로 발표한 3D XPoint Technology. 이는 DRAM과 NAND의 격차를 해소할 기술로 제시되었습니다.<br>그리고 1년 뒤, FMS 2016 기조연설에서 삼성은 Z-SSD를 공개했습니다. </p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/46/seukeurinsyas-2025-08-24-ohu-11.34.09.png" alt="" width="2474" height="1390"></figure>
-<p>더 자세한 내용은 다음해의 FMS 2017에서 공유되었습니다. 프레젠테이션에서 보이는대로, 기존 NAND를 사용한 SSD와 비교하였을 때, 지연 시간의 상당한 개선이 있었습니다.</p>
+<p>더 자세한 내용은 다음해의 FMS 2017에서 공개되었습니다. 프레젠테이션에서 보이는대로 기존 NAND를 사용한 SSD와 비교하였을 때, 지연 시간의 상당한 개선이 있었습니다.</p>
 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
 <figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/46/gallery/Z-NAND-Caching.png" data-size="2672x1502"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/46/gallery/Z-NAND-Caching-thumbnail.png" alt="" width="768" height="432"></a>
 <figcaption>Caching</figcaption>
@@ -160,7 +160,7 @@
 <p>슬프게도, 2세대 Z-NAND에 대한 연구 결과는 세상에 나올 일이 없었습니다.</p>
 <p> </p>
 <h2 id="mcetoc_1iuqh3uem5o">What is Z-NAND?</h2>
-<p>아무튼, 이런 NAND임에도 불구하고 획기적인 성능을 제공하는 핵심이었던 Z-NAND는 대체 어떤 기술일까요?</p>
+<p>아무튼, NAND임에도 불구하고 이런 획기적인 성능을 제공하는데 핵심이었던 Z-NAND는 대체 어떤 친구일까요?</p>
 <p>많은 사람들이 NAND가 이러한 성능을 달성하기 위해서는 SLC일 것이라 예상하였습니다. 어떻게 보면 NAND에서 고성능을 추구하기 위해선 SLC이어야 한다는 것이 당연한 사고 과정이죠.</p>
 <figure class="post__image align-center"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal); outline: 3px solid rgba(var(--color-primary-rgb), 0.55) !important;" src="https://freshflash4096.github.io/media/posts/46/seukeurinsyas-2025-08-25-ohu-6.22.19.png" alt="" width="358" height="440"></figure>
 <p>실제로, 삼성에서는 Z-NAND가 48L 64Gb SLC NAND라고 밝힌 적이 있습니다. 그렇다면, 기존 개발된 V-NAND의 단순한 SLC모드일까요?</p>
@@ -183,7 +183,7 @@
 <p>삼성에서 개발한 48L의 V3 NAND는 위와 같이 세 종류의 Die가 존재합니다. 셋 모두 SLC로 작동할 때의 용량은 64Gb 이상입니다.</p>
 <p>평범하게 SLC로 작동하는 기존의 V-NAND였다면 64Gb라는 용량은 너무 작은 용량인거죠.</p>
 <p>삼성은 대체 뭘 한걸까요?</p>
-<p>여느 때와 다름없이 Tech Insights는 이에 대한 인사이트를 제공했습니다. 물론, 공<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">식적인 보고서는 구독이 필요해서 저는 접근하지 못합니다만...</span></p>
+<p>여느 때와 다름없이 Tech Insights는 이에 대한 인사이트를 제공했습니다. 물론, 공<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">식적인 보고서는 구독이 필요해서 접근하지 못합니다만...</span></p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/46/Z-NAND-Technology.png" alt="" width="2672" height="1496"></figure>
 <p>FMS 2019에서의 발표에 따르면, 기존 48L V-NAND와 다르게 8개의 Plane이 적용됩니다. </p>
 <p>네, 그렇습니다. <strong>Z-NAND는 기존 V-NAND의 회로를 수정하여 Plane의 개수를 늘린 SLC NAND</strong>입니다.</p>
@@ -265,10 +265,10 @@
 <p>삼성은 t_DMA를 줄이기 위한 2가지 기술을 제안했습니다.</p>
 <h3>Split DMA</h3>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/46/seukeurinsyas-2025-08-25-ohu-8.25.40.png" alt="" width="1954" height="826"></figure>
-<p>Split DMA입니다. 서로 다른 채널에 위치한 두 NAND에서 두 페이지에 접근해 일반적인 4kB가 아닌, 2kB의 데이터를 동시에 전송합니다. 이렇게하면 위 이미지처럼 t_DMA를 절반으로 줄이기가 가능합니다.</p>
-<p>일반적인 SSD에서는 PPN(Physical Page Number)이 하나의 물리적인 NAND page를 가리키지만, 이 방식을 위해서는 두 page를 하나의 PPN으로 관리합니다. 두 개의 NAND channel을 super channel로 결합하면, 기존 방식과 동일한 map table 용량을 유지할 수 있습니다.</p>
+<p>Split DMA입니다. 서로 다른 채널에 위치한 두 NAND에서 두 페이지에 접근해 일반적인 4kB가 아닌, 2kB의 데이터를 동시에 전송합니다. 이렇게하면 위 이미지처럼 t_DMA를 절반으로 줄이는 것이 가능합니다.</p>
+<p>일반적인 SSD에서는 PPN(Physical Page Number)이 하나의 물리적인 NAND page를 가리키지만, 이 방식은 두 page를 하나의 PPN으로 관리합니다. 두 개의 NAND channel을 super channel로 결합하면, 기존 방식과 동일한 map table 용량을 유지할 수 있습니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/46/seukeurinsyas-2025-08-25-ohu-8.35.02.png" alt="" width="1944" height="674"></figure>
-<p>하지만 이 방식이 마냥 좋은 것은 아닙니다. super channel에서 한 쪽만 bad block이 발생하거나, 각 channel의 데이터가 다른 시각에 도착하면 문제가 발생합니다.</p>
+<p>하지만 Split DMA가 마냥 좋은 것은 아닙니다. super channel의 한 쪽만 bad block이 발생하거나, 각 channel의 데이터가 다른 시각에 도착하면 문제가 발생합니다.</p>
 <p>이를 위해서 Split DMA Management Engine이 존재하고, Engine 내부의 Remap Checker가 PBA(Physical Block Address)를 받아 각 channel에 bad block이 있는지 검증합니다. bad block이 있다면 예비로 아껴두던 good block으로 remap을 진행합니다.<br>다른 문제였던 데이터의 도착 시각에 대해서도 두 데이터를 한 패킷으로 묶는 방법을 통해 해결했습니다.</p>
 <h3>Suspend / Resume DMA</h3>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/46/seukeurinsyas-2025-08-25-ohu-8.44.06.png" alt="" width="1938" height="1032"></figure>
