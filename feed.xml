@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-28T20:33:06+09:00</updated>
+    <updated>2025-08-28T23:09:27+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -16,6 +16,7 @@
         </author>
         <link href="https://freshflash4096.github.io/samsung-z-nand/"/>
         <id>https://freshflash4096.github.io/samsung-z-nand/</id>
+        <media:content url="https://freshflash4096.github.io/media/posts/46/samsung-electronics-launches-800_3.webp" medium="image" />
             <category term="Z-NAND"/>
             <category term="Samsung"/>
             <category term="Article"/>
@@ -23,11 +24,13 @@
         <updated>2025-08-24T11:40:41+09:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://freshflash4096.github.io/media/posts/46/samsung-electronics-launches-800_3.webp" alt="" />
                     새로운 태그, "Article"의 첫 투고글입니다. 이 태그는 벤치마크의 결과를 진행하는 글은 아니지만,&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://freshflash4096.github.io/media/posts/46/samsung-electronics-launches-800_3.webp" class="type:primaryImage" alt="" /></p>
                 <p>새로운 태그, "Article"의 첫 투고글입니다. 이 태그는 벤치마크의 결과를 진행하는 글은 아니지만, 기술에 대한 정리, 리뷰를 진행하는 글을 모아놓을 예정입니다. <br>Chip and Cheese의 저장장치 버전! ...은 전혀 아닙니다. 심도 깊은 리뷰는 아니에요. <br>그렇다고 초보자를 위한 쉬운 글은 아닐 것이라 생각됩니다. 어쨌거나 제 블로그는 기억할 만한 것들을 위해서 운영하는 것이니까요.</p>
 <p>리뷰에서 간간히 "나중에 다루어보겠다"라고 했던 부분을 이 태그가 달린 투고글에서 다룰 예정입니다. <br>언젠가 말이죠....</p>
 <p>어쨌든, 첫 주제는 삼성의 Z-NAND입니다.<a href="https://freshflash4096.github.io/fms-2025-product/">FMS 2025</a>에서 삼성이 Z-NAND의 부활을 선언했는데, 저도 SZ983과 983 ZET를 리뷰할 예정이기에 첫 주제로 선택하였습니다.</p>
