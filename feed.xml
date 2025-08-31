@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-31T11:48:14+09:00</updated>
+    <updated>2025-08-31T12:11:53+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -221,7 +221,7 @@
 </figure>
 <p>983 ZET은 Warranty 조건이 약간 특이합니다. 960GB 모델은 10DWPD인 반면, 480GB 모델은 8.5DWPD입니다.<br>다만, 삼성의 eSSD임을 생각해보면 보증이고 뭐고 아무것도 없으니 사용하는 개인에게 있어 큰 의미있는 수치는 아닙니다.</p>
 <p>순차 성능은 특출난 것이 없지만, SCM(Storage Class Memory)를 표방하는 Z-SSD답게 랜덤성능이 우수해... 보이나요? 용량을 생각하면 확실히 우수하지만, 당시 TLC를 사용했던 PM983의 고용량 모델과 크게 차이나지 않는 것 같습니다.</p>
-<figure class="post__image" ><img loading="lazy" src="file:///Users/huie/Documents/Publii/sites/memoria/input/media/posts/46/SZ985-Specification.png" alt="" width="1312" height="720">
+<figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/47/SZ985-Specification-2.png" alt="" width="1312" height="720">
 <figcaption >Z-NAND SSD Technology Brief</figcaption>
 </figure>
 <p>SZ983은 대외적으로 공개되지 않았습니다. 하지만 SZ985는 있었죠. 랜덤 쓰기에서 983 ZET보다 더 우수한 것을 볼 수 있으며, 내구성 또한 30DWPD에 달합니다. OP가 더 할당된 것이라 생각되네요.</p>
