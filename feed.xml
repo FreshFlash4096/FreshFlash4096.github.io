@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-08-31T11:39:56+09:00</updated>
+    <updated>2025-08-31T11:48:14+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -16,6 +16,7 @@
         </author>
         <link href="https://freshflash4096.github.io/aa-jugineun-nandda-983-zet-960gb/"/>
         <id>https://freshflash4096.github.io/aa-jugineun-nandda-983-zet-960gb/</id>
+        <media:content url="https://freshflash4096.github.io/media/posts/47/w_SZ983_Front-2.jpg" medium="image" />
             <category term="Z-NAND"/>
             <category term="Samsung"/>
             <category term="Benchmark"/>
@@ -23,11 +24,13 @@
         <updated>2025-08-26T23:03:05+09:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://freshflash4096.github.io/media/posts/47/w_SZ983_Front-2.jpg" alt="" />
                     이전에 말한 것과 같이 Z-NAND를 사용하는 Z-SSD를 가져왔습니다. 이 SSD는 제게 나름&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://freshflash4096.github.io/media/posts/47/w_SZ983_Front-2.jpg" class="type:primaryImage" alt="" /></p>
                 <p>이전에 말한 것과 같이 Z-NAND를 사용하는 Z-SSD를 가져왔습니다. 이 SSD는 제게 나름 인상깊은 SSD이기도 합니다. 제 돈으로 처음 구입해본 SSD였거든요. </p>
 <p>물론 처음 사용해본 SSD는 아닙니다. 그냥 제가 처음으로 돈 주고 샀던 SSD입니다. 이전에도 사용하던 컴퓨터에 SSD는 달려있었지만, 제 돈으로 구입하지 않은 노트북에 달려있던 것이라서 말이죠.</p>
 <p>아무튼 이러저러한 이유로 이 친구는 제가 좀 아끼는 친구이기도 합니다. 그런데 SSD 아껴뒀다 뭐합니까? 팍팍 써야죠. 앞으로는 더 좋은게 많이 나올건데...</p>
