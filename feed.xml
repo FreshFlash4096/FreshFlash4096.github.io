@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-11-12T15:32:33+09:00</updated>
+    <updated>2025-11-16T21:21:05+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -24,13 +24,17 @@
             <summary>
                 <![CDATA[
                         <img src="https://freshflash4096.github.io/media/posts/52/IMG_20251107_154953_184.png" alt="" />
-                     부랴부랴 급하게 벤치마크 방법에 대한 글을 썼던 것이 4개월 전입니다. 1년은 된&hellip;
+                    Change log 2025.11.16 - Performance by RW Ratio/Weighted Graph에서 order graph 정의&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://freshflash4096.github.io/media/posts/52/IMG_20251107_154953_184.png" class="type:primaryImage" alt="" /></p>
-                <p> 부랴부랴 급하게 <a href="https://freshflash4096.github.io/benchmark-method/" target="_blank" rel="noopener noreferrer">벤치마크 방법에 대한 글</a>을 썼던 것이 4개월 전입니다. 1년은 된 기분인데 말이죠.</p>
+                <blockquote>
+<p>Change log</p>
+<p>2025.11.16 - Performance by RW Ratio/Weighted Graph에서 order graph 정의 수정</p>
+</blockquote>
+<p> 부랴부랴 급하게 <a href="https://freshflash4096.github.io/benchmark-method/" target="_blank" rel="noopener noreferrer">벤치마크 방법에 대한 글</a>을 썼던 것이 4개월 전입니다. 1년은 된 기분인데 말이죠.</p>
 <p> <a href="https://freshflash4096.github.io/optane-p4800x-review/" target="_blank" rel="noopener noreferrer">보드의 바이오스 버전도 강제로 바뀌었고</a>, P5800X를 약식으로 테스트한 결과, 벤치마크 방법에 한계가 있다는 것을 인지해 수정을 가했습니다. 이렇게 된 김에 그냥 아예 새로 진행하기로 마음먹었죠. 다만, 여태 올라온 SSD들에 대해서는 다시 게시물을 올리지 않고, 처분하지 않고 남아있는 SSD에 한하여 재측정을 진행해 개인적으로 데이터를 쌓을 생각입니다.</p>
 <p> 최근 리뷰에선 벤치마크 방법 등에 대해 생략하였는데, 독자가 제 리뷰를 계속해서 읽어온 것이 아닐 확률이 더 높은 만큼, 앞으로는 매 게시물에 간단하게라도 포함하려고 합니다.</p>
 <p> 그럼, 새롭게 바뀐 벤치마크 방법에 대해서 마음을 잡고 이전보다 더 자세하게 작성하고자 합니다. 약간은 공격적으로 말이죠. 내용이 상당히 많으니 주의해 주세요.</p>
@@ -454,8 +458,8 @@
 <h4 id="mcetoc_1j0k12uta9h">Weighted Graph</h4>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/4.-RWW_RND_WF-2.png" alt="" width="3600" height="1800"></figure>
 <p> 비교군들의 성능을 한눈에 보기 위해 가중치를 적용한 그래프를 제시합니다. 이전에는 QD1 70%, QD2 20%, QD4 10%로 가중치를 부여했지만, 이 비율을 변경해 QD1 80%, QD2 15%, QD4 5%로 진행합니다. </p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/4.-RWW_RND_WF_order-2.png" alt="" width="3000" height="900"></figure>
-<p> 순위를 매길 때에는 가중치를 부여한 값의 평균을 이용합니다. 일반적인 소비자 워크로드에서 쓰기보다 읽기가 많이 발생한다는 것을 고려하면, 위 막대그래프의 값은 쓰기 성능이 조금 더 강조되어 있다고 볼 수 있겠습니다.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/4.-RWW_RND_WF_order.png" alt="" width="3000" height="900"></figure>
+<p> 순위를 매길 때에는 가중치를 부여한 값의 평균을 이용합니다. 단, 여기서는 <strong>100% 읽쓰기 값을 제외</strong>하고 처리합니다. 다시 말해, 혼합된 작업에 대해서만 평균을 내는 것이죠. <span style="text-decoration: underline;"><em>(2025.11.16 변경)</em></span><br> 일반적인 소비자 워크로드에서 쓰기보다 읽기가 많이 발생한다는 것을 고려하면, 위 막대그래프의 값은 쓰기 성능이 조금 더 강조되어 있다고 볼 수 있겠습니다.</p>
 <h3 id="mcetoc_1j8trjd883td">Performance by Active Range</h3>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/5.-AR_RND_Read-2.png" alt="" width="3600" height="1800"></figure>
 <p> SSD에서 DRAM은 NAND의 물리적 주소와 OS가 인식하는 LBA를 변환하는 Mapping Table(L2P Table)의 사본을 저장합니다. 다시 말해, <strong>Caching</strong>을 수행합니다. DRAMless SSD도 컨트롤러의 SRAM이나 HMB(Host Memory Buffer)를 통해 사본을 저장하죠. <a href="https://freshflash4096.github.io/fms-2025/">HMB의 구현도 계속해서 발전</a>하고는 있지만, 그 영역의 크기가 작아 결국 전체 사본을 저장하지는 못합니다.</p>
