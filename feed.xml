@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-11-19T21:00:00+09:00</updated>
+    <updated>2025-11-20T00:58:29+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -20,11 +20,12 @@
             <category term="cSSD"/>
             <category term="Review"/>
             <category term="QLC"/>
+            <category term="Phison"/>
             <category term="Micron"/>
             <category term="DRAMless"/>
 
         <updated>2025-11-19T21:00:00+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://freshflash4096.github.io/media/posts/53/w_P3P_fr-2.jpg" alt="" />
                      며칠 전, 커뮤니티 두 곳에는 벤치마크 방법론에 대한 요약본을, 한 곳에는 블로그&hellip;
@@ -330,7 +331,7 @@
 <p> 고민을 좀 해봤지만, 답을 떠올릴 수 없는 문제였습니다. 아쉽지만 넘깁시다. 확실한 것은, 2분의 휴식 시간이 부여되면 80GB 이상의 SLC Cache를 회복하며, 이는 QLC로 곧 320GB 이상을 뜻합니다. <br> 50%가 채워진 상태에서도 남아있는 공간을 최대한 SLC Cache로 활용하려는지는 모르겠지만, 만약 그렇다고 한다면, 2분은 조금 모자랐던 시간이었을 수도 있겠네요.</p>
 <p> 뭐, SLC Cache의 구현에 대한 자세한 내용은 대부분 내부 문서로 존재해 일반 소비자는 확인할 수 없지만요. 비교적 자세히 알고 있는 것은 SanDisk의 nCache인데, 나중에 한 번 풀어보겠습니다.</p>
 <hr>
-<h2 id="mcetoc_1iuejnn4l47m">cSSD Benchmarking</h2>
+<h2 id="mcetoc_1iuejnn4l47m">eSSD Benchmarking</h2>
 <h3 id="mcetoc_1j8trjd883to">Boot Workload (OCP BootBench)</h3>
 <p> eSSD 벤치마크는 Steady State를 측정하는 것이 목표입니다. 하지만, 고성능의 cSSD를 제외하면 Steady State에 진입하는 시간 자체가 굉장히 오래 걸리며, 진입하지 못할 수도 있습니다.</p>
 <p> 따라서, <strong>비교적</strong> 가벼운 OCP BootBench를 통해 eSSD 테스트의 수행 여부를 결정합니다. 하이퍼스케일에서 Boot SSD를 위해 정의된 테스트이며, 동기 쓰기와 TRIM, 읽기가 동시에 진행됩니다. 결과의 IOPS는 읽기이며, 60k IOPS를 넘겨야 통과입니다. 물론, 지정된 TRIM, 쓰기 속도를 달성하지 못해 테스트 자체가 실패할 수 있습니다.</p>
@@ -360,7 +361,7 @@
             <category term="Method"/>
 
         <updated>2025-11-12T15:30:00+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://freshflash4096.github.io/media/posts/52/IMG_20251107_154953_184.png" alt="" />
                     Change log 2025.11.16 - Performance by RW Ratio/Weighted Graph에서 order graph 정의&hellip;
@@ -372,6 +373,7 @@
                 <blockquote>
 <p>Change log</p>
 <p>2025.11.16 - Performance by RW Ratio/Weighted Graph에서 order graph 정의 수정</p>
+<p>2025.11.20 - 일부 오타 수정 및 OCP BootBench ioengine=libaio 명시</p>
 </blockquote>
 <p> 부랴부랴 급하게 <a href="https://freshflash4096.github.io/benchmark-method/" target="_blank" rel="noopener noreferrer">벤치마크 방법에 대한 글</a>을 썼던 것이 4개월 전입니다. 1년은 된 기분인데 말이죠.</p>
 <p> <a href="https://freshflash4096.github.io/optane-p4800x-review/" target="_blank" rel="noopener noreferrer">보드의 바이오스 버전도 강제로 바뀌었고</a>, P5800X를 약식으로 테스트한 결과, 벤치마크 방법에 한계가 있다는 것을 인지해 수정을 가했습니다. 이렇게 된 김에 그냥 아예 새로 진행하기로 마음먹었죠. 다만, 여태 올라온 SSD들에 대해서는 다시 게시물을 올리지 않고, 처분하지 않고 남아있는 SSD에 한하여 재측정을 진행해 개인적으로 데이터를 쌓을 생각입니다.</p>
@@ -798,7 +800,7 @@
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/4.-RWW_RND_WF-2.png" alt="" width="3600" height="1800"></figure>
 <p> 비교군들의 성능을 한눈에 보기 위해 가중치를 적용한 그래프를 제시합니다. 이전에는 QD1 70%, QD2 20%, QD4 10%로 가중치를 부여했지만, 이 비율을 변경해 QD1 80%, QD2 15%, QD4 5%로 진행합니다. </p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/4.-RWW_RND_WF_order.png" alt="" width="3000" height="900"></figure>
-<p> 순위를 매길 때에는 가중치를 부여한 값의 평균을 이용합니다. 단, 여기서는 <strong>100% 읽쓰기 값을 제외</strong>하고 처리합니다. 다시 말해, 혼합된 작업에 대해서만 평균을 내는 것이죠. <span style="text-decoration: underline;"><em>(2025.11.16 변경)</em></span><br> 일반적인 소비자 워크로드에서 쓰기보다 읽기가 많이 발생한다는 것을 고려하면, 위 막대그래프의 값은 쓰기 성능이 조금 더 강조되어 있다고 볼 수 있겠습니다.</p>
+<p> 순위를 매길 때에는 가중치를 부여한 값의 평균을 이용합니다. 단, 여기서는 <strong>100% 읽쓰기 값을 제외</strong>하고 처리합니다. 다시 말해, 혼합된 작업에 대해서만 평균을 내는 것이죠. <span style="text-decoration: underline;"><em>(2025.</em>11.16<em> 변경)</em></span><br> 일반적인 소비자 워크로드에서 쓰기보다 읽기가 많이 발생한다는 것을 고려하면, 위 막대그래프의 값은 쓰기 성능이 조금 더 강조되어 있다고 볼 수 있겠습니다.</p>
 <h3 id="mcetoc_1j8trjd883td">Performance by Active Range</h3>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/5.-AR_RND_Read-2.png" alt="" width="3600" height="1800"></figure>
 <p> SSD에서 DRAM은 NAND의 물리적 주소와 OS가 인식하는 LBA를 변환하는 Mapping Table(L2P Table)의 사본을 저장합니다. 다시 말해, <strong>Caching</strong>을 수행합니다. DRAMless SSD도 컨트롤러의 SRAM이나 HMB(Host Memory Buffer)를 통해 사본을 저장하죠. <a href="https://freshflash4096.github.io/fms-2025/">HMB의 구현도 계속해서 발전</a>하고는 있지만, 그 영역의 크기가 작아 결국 전체 사본을 저장하지는 못합니다.</p>
@@ -820,9 +822,9 @@
 <hr>
 <h2 id="mcetoc_1j8r33qjos">eSSD Benchmarking</h2>
 <pre>// Normal<br>01. Linux Boot<br>02. Purge<br>03. SEQ Pre-Conditioning (128k QD256)<br>04. SEQ Performance Measure (R/W/RI)<br>05. RND Pre-Conditioning (4k QD256)<br>06. RND Performance Measure (R/W/Mainstream/WI/AI)<br>07. Purge<br>08. OCP BootBench<br><br>// IUs &gt; 4k<br>01. Purge<br>02. SEQ Pre-Conditioning (IU QD256)<br>03. SEQ Performance Measure (R/W)<br>04. RND Pre-Conditioning (IU QD256)<br>05. RND Performance Measure (R/W)</pre>
-<p> eSSD의 테스트 과정은 위와 같습니다. cSSD와 다르게 Purge 직후를 제외한 모든 단계 사이에는 휴식 시간이 부여되지 않습니다. Pre-Conditioning은 드라이브 용량의 2배를 쓰고나서도 Steady State에 진입할 때까지 이를 계속 진행합니다. <br> Steady State는 SEQ의 경우엔 대역폭의 기울기가 ±10%인 상태를 30초간 유지하는 것을 기준으로 하며, RND의 경우에는 IOPS의 기울기가 ±10%인 상태를 30초간 유지하는 것을 기준으로 합니다. 이를 달성할 수 없을 땐 드라이브 용량의 23배까지 쓰기를 진행합니다.</p>
+<p> eSSD의 테스트 과정은 위와 같습니다. cSSD와 다르게 Purge 직후를 제외한 모든 단계 사이에는 휴식 시간이 부여되지 않습니다. Pre-Conditioning은 User Capacity의 2배를 쓰고나서도 Steady State에 진입할 때까지 이를 계속 진행합니다. <br> Steady State는 SEQ의 경우엔 대역폭의 기울기가 ±10%인 상태를 30초간 유지하는 것을 기준으로 하며, RND의 경우에는 IOPS의 기울기가 ±10%인 상태를 30초간 유지하는 것을 기준으로 합니다. 이를 달성할 수 없을 땐 드라이브 용량의 23배까지 쓰기를 진행합니다.</p>
 <p> 모든 워크로드는 User Capacity의 전체 영역에 대해서 진행하며, 각각 30초의 적응 시간을 가진 후에 5분 동안 성능측정을 진행합니다. 다시 말해, 128k Read 성능을 측정한다면 QD1 ~ QD256까지 총 9개의 작업이 있으며, 모든 작업이 30초의 적응 시간과 5분의 측정시간이 부여됩니다.</p>
-<p> Pre-Conditioning을 제외하더라도 하나의 SSD가 이 벤치마크를 수행하는 데 걸리는 시간은 6시간 이상으로, Pre-Conditioning을 포함한다면 더욱 길어집니다. cSSD는 기본적으로 플래그십 제품이나 나름 성능이 괜찮다고 판단된 제품에만 모든 벤치마크를 진행합니다. </p>
+<p> Pre-Conditioning을 제외하더라도 하나의 SSD가 이 벤치마크를 수행하는 데 걸리는 시간은 6시간 이상으로, Pre-Conditioning을 포함한다면 더욱 길어집니다. cSSD는 기본적으로 플래그십 제품이나 OCP BootBench를 통과하는 등, 나름 성능이 괜찮다고 판단된 제품에서만 벤치마크를 진행합니다. </p>
 <h3 id="mcetoc_1j8trjd883tg">2-in-1 Graph</h3>
 <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
 <figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/52/gallery/X-4c-SEQ-Write-QD-BW.png" data-size="3600x1800"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/gallery/X-4c-SEQ-Write-QD-BW-thumbnail.png" alt="" width="768" height="384"></a>
@@ -922,10 +924,11 @@
 <p> 워크로드는 Solidigm의 "Understanding Workload and Solution Requirements for PCIe Gen 4 SSDs"를 참고해 구분했습니다.</p>
 <h4 id="mcetoc_1j8trjd883to">Boot Workload (OCP BootBench)</h4>
 <figure class="post__image"><img loading="lazy"  style="font-size: inherit;" src="https://freshflash4096.github.io/media/posts/52/OCP-BootBench-2.png" alt="" width="3000" height="900"></figure>
-<p> OCP BootBench는 Linux에서 실행되는 벤치마크 중 유일하게 다른 곳에서 가져온 것입니다. 이름 그대로 Boot 드라이브로서 기대할 만한 성능을 측정합니다. <br> 단, 이때의 Boot 드라이브는 우리가 기대하는 Windows의 C드라이브 같은 것이 아닌, Google이나 Meta와 같은 Hyperscale에서의 Boot 드라이브입니다. 실제로 "OCP HyperScale NVMe Boot SSD Specification"은 성능, 내구성, 기능 등 여러 조건을 담고 있습니다.<strong> 비교적</strong> 테스트하기 쉬운 성능 부분에서도 Steady State에서의 Bandwidth와 IOPS는 물론이고, 특정 워크로드에 대한 QoS 요구사항도 있습니다. </p>
+<p> OCP BootBench는 Linux에서 실행되는 벤치마크 중 유일하게 다른 곳에서 가져온 것입니다. 제가 만든 것이 아니라는 뜻입니다. 이 벤치마크는 이름 그대로 Boot 드라이브로서 기대할 만한 성능을 측정합니다. <br> 단, 이때의 Boot 드라이브는 우리가 기대하는 Windows의 C드라이브 같은 것이 아닌, Google이나 Meta와 같은 Hyperscale에서의 Boot 드라이브입니다. 실제로 "OCP HyperScale NVMe Boot SSD Specification"은 성능, 내구성, 기능 등 여러 조건을 담고 있습니다.<strong> 비교적</strong> 테스트하기 쉬운 성능 부분에서도 Steady State에서의 Bandwidth와 IOPS는 물론이고, 특정 워크로드에 대한 QoS 요구사항도 있습니다. </p>
 <p> 모든 테스트를 하는 것은 시간적으로도 무리가 있고, 필요성이 떨어집니다. 특정한 워크로드가 있는 것은 좋지만, 모든 것을 테스트할 시간이라면 그냥 어지간한 Block Size에 대해 10% 단위의 R/W성능을 전부 측정하는 것이 더 끌리네요.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/seukeurinsyas-2025-11-05-ohu-11.42.11.png" alt="" width="1074" height="290"></figure>
-<p> 하지만 친절하게도 BootBench라는 벤치마크 도구가 있습니다. 저는 이를 이용해서 최종적으로 출력되는 IOPS를 기준으로 내림차순 정렬을 합니다. 명시된 대로 60k IOPS가 합격 기준입니다.</p>
+<p> 하지만, 친절하게도 BootBench라는 벤치마크 도구가 있습니다. 저는 이를 이용해서 최종적으로 출력되는 IOPS를 기준으로 내림차순 정렬을 합니다. 명시된 대로 60k IOPS가 합격 기준입니다.</p>
+<p> 참고로, eSSD 벤치마크 중에서 유일하게 libaio를 사용하기에, polling을 이용하지 않는 테스트입니다. <span style="text-decoration: underline;"><em>(11.20 추가)</em></span></p>
 <h4 id="mcetoc_1j8trjd883tp">Read Intensive Workload (SEQ 128k R95:W05)</h4>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/3-2-SEQ-9505.png" alt="" width="3600" height="1800"></figure>
 <p> 읽기 집약 워크로드는 SEQ 128k Mix 95/5로 세팅했습니다. CDN이나 VOD와 같은 서비스를 가정합니다.</p>
@@ -1104,7 +1107,7 @@
             <category term="Kioxia"/>
 
         <updated>2025-11-10T22:33:00+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://freshflash4096.github.io/media/posts/50/black-words-under.jpeg" alt="" />
                      원래 이 글은 P4800X 리뷰를 업로드하기 이전에 작성할 예정이었는데, 일이 꼬였습니다. 중간고사는&hellip;
@@ -1295,7 +1298,7 @@
             <category term="Intel"/>
 
         <updated>2025-10-13T22:22:00+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://freshflash4096.github.io/media/posts/48/w_P4800X_fr.jpg" alt="" />
                     계획(이었던 것) 이전 리뷰의 업로드 날짜 자체는 8월이었습니다. 9월에는 리뷰는 물론이고 별다른&hellip;
@@ -1823,7 +1826,7 @@
             <category term="Review"/>
 
         <updated>2025-08-31T11:03:00+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://freshflash4096.github.io/media/posts/47/w_SZ983_Front-2.jpg" alt="" />
                     이전에 말한 것과 같이 Z-NAND를 사용하는 Z-SSD를 가져왔습니다. 이 SSD는 제게 나름&hellip;
@@ -1910,7 +1913,7 @@
 <figcaption>983 ZET Rear</figcaption>
 </figure>
 </div></div>
-<p>HHHL 타입인 983 ZET입니다. <a href="https://freshflash4096.github.io/pm1725-32tb-oracle-f320-review/">PM1725 리뷰</a>에서도 볼 수 있었습니다만, 외관상으로는 큰 차이가 없어보이기도 합니다. </p>
+<p>HHHL 타입인 983 ZET입니다. <a href="https://freshflash4096.github.io/pm1725-oracle-f320-review/">PM1725 리뷰</a>에서도 볼 수 있었습니다만, 외관상으로는 큰 차이가 없어보이기도 합니다. </p>
 <figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/47/w_983-ZET_td_cv.jpg" alt="" width="4128" height="2580">
 <figcaption >983 ZET Teardown (Heat Sink)</figcaption>
 </figure>
@@ -2439,7 +2442,7 @@
             <category term="Article"/>
 
         <updated>2025-08-24T11:40:41+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://freshflash4096.github.io/media/posts/46/samsung-electronics-launches-800_3.webp" alt="" />
                     새로운 태그, "Article"의 첫 투고글입니다. 이 태그는 벤치마크의 결과를 진행하는 글은 아니지만,&hellip;
@@ -2738,8 +2741,8 @@
         <author>
             <name>Huie</name>
         </author>
-        <link href="https://freshflash4096.github.io/pm1725-32tb-oracle-f320-review/"/>
-        <id>https://freshflash4096.github.io/pm1725-32tb-oracle-f320-review/</id>
+        <link href="https://freshflash4096.github.io/pm1725-oracle-f320-review/"/>
+        <id>https://freshflash4096.github.io/pm1725-oracle-f320-review/</id>
         <media:content url="https://freshflash4096.github.io/media/posts/45/PM1725_Front.jpg" medium="image" />
             <category term="eSSD"/>
             <category term="TLC"/>
@@ -2747,7 +2750,7 @@
             <category term="Review"/>
 
         <updated>2025-08-20T00:13:48+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://freshflash4096.github.io/media/posts/45/PM1725_Front.jpg" alt="" />
                     비교적 빠르게 돌아온 리뷰입니다. 중요한 것은 아니지만, 이번 리뷰부터는 극도로 간추린 버전만&hellip;
@@ -3212,11 +3215,13 @@
         <media:content url="https://freshflash4096.github.io/media/posts/44/China_Front.jpg" medium="image" />
             <category term="cSSD"/>
             <category term="TLC"/>
+            <category term="SpecTek"/>
             <category term="Review"/>
+            <category term="Realtek"/>
             <category term="DRAMless"/>
 
         <updated>2025-08-18T22:27:27+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://freshflash4096.github.io/media/posts/44/China_Front.jpg" alt="" />
                     이전에 삼성의 eSSD(enterprise SSD)인 PM983을 리뷰하였고 일부 커뮤니티에 배포했습니다. 다음 리뷰 대상으로&hellip;
@@ -3707,7 +3712,7 @@
             <category term="Method"/>
 
         <updated>2025-08-17T15:14:34+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     많은 데이터를 제시해도 눈에 들어오지 않거나 쉽게 읽을 수 없다면 자료에는 가치가&hellip;
                 ]]>
@@ -3746,7 +3751,7 @@
             <category term="FADU"/>
 
         <updated>2025-08-09T20:18:27+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://freshflash4096.github.io/media/posts/42/black-words-under.jpeg" alt="" />
                     올해의 FMS도 종료되었습니다. ISSCC, IEDM, IMW 등의 IEEE Conference나 USENIX FAST등 에서도&hellip;
