@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-11-20T09:03:03+09:00</updated>
+    <updated>2025-11-23T16:30:24+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -16,7 +16,7 @@
         </author>
         <link href="https://freshflash4096.github.io/add-comment-functoin/"/>
         <id>https://freshflash4096.github.io/add-comment-functoin/</id>
-            <category term="Ramblings"/>
+            <category term="(＊´ｖ&#x60;＊)ノ"/>
 
         <updated>2025-11-20T09:02:00+09:00</updated>
             <summary type="html">
@@ -397,8 +397,7 @@
                     <p><img src="https://freshflash4096.github.io/media/posts/52/IMG_20251107_154953_184.png" class="type:primaryImage" alt="" /></p>
                 <blockquote>
 <p>Change log</p>
-<p>2025.11.16 - Performance by RW Ratio/Weighted Graph에서 order graph 정의 수정</p>
-<p>2025.11.20 - 일부 오타 수정 및 OCP BootBench ioengine=libaio 명시</p>
+<p>2025.11.16 - Performance by RW Ratio/Weighted Graph에서 order graph 정의 수정2025.11.20 - 일부 오타 수정 및 OCP BootBench ioengine=libaio 명시<br>2025.11.23 - Performance by RW Ratio 조건 오기입 수정</p>
 </blockquote>
 <p> 부랴부랴 급하게 <a href="https://freshflash4096.github.io/benchmark-method/" target="_blank" rel="noopener noreferrer">벤치마크 방법에 대한 글</a>을 썼던 것이 4개월 전입니다. 1년은 된 기분인데 말이죠.</p>
 <p> <a href="https://freshflash4096.github.io/optane-p4800x-review/" target="_blank" rel="noopener noreferrer">보드의 바이오스 버전도 강제로 바뀌었고</a>, P5800X를 약식으로 테스트한 결과, 벤치마크 방법에 한계가 있다는 것을 인지해 수정을 가했습니다. 이렇게 된 김에 그냥 아예 새로 진행하기로 마음먹었죠. 다만, 여태 올라온 SSD들에 대해서는 다시 게시물을 올리지 않고, 처분하지 않고 남아있는 SSD에 한하여 재측정을 진행해 개인적으로 데이터를 쌓을 생각입니다.</p>
@@ -510,13 +509,13 @@
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/PM9E1_CDM_FOB_Default.png" alt="" width="1504" height="819"></figure>
 <p> <a href="https://crystalmark.info/en/software/crystaldiskmark/">CrystalDiskMark</a>, 흔히 CDM이라고 부르는 이것은 가장 흔하게 볼 수 있는 저장장치 벤치마크 도구입니다. Microsoft의 <a href="https://github.com/microsoft/diskspd">diskspd</a>를 백엔드로 하여 GUI를 씌운 도구이며, 굉장히 사용하기 편리해 많은 사람이 애용합니다. 드라이브의 성능을 확인하기 아주 좋은 도구 중 하나이기 때문이죠.</p>
 <p>그럼, 여기서 최대 성능이 <strong>'실제 성능'</strong>일까요?</p>
-<figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/PM9E1_NDT.png" alt="" width="1045" height="762">
-<figcaption >Samsung PM9E1 - Naraeon Dirty Test 6.0.4</figcaption>
+<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/PM9E1_NDT.png" alt="" width="1045" height="762">
+<figcaption>Samsung PM9E1 - Naraeon Dirty Test 6.0.4</figcaption>
 </figure>
 <p> 저장장치에 관심이 조금 더 많은 국내 사용자가 사용하는 <a href="https://www.naraeon.net/latest-dirty-test/">나래온 더티 테스트</a>라는 도구입니다. 앞에서는 14GB/s에 달하는 최대속도를 보여주었는데, 여기선 앞부분만 그러한 속도에 대응하고 절반 이상은 2GiB/s 주변에서 노는 것을 볼 수 있습니다. SLC 캐시 범위에서 벗어난 쓰기를 진행하기 때문에 발생하는 상황입니다.</p>
 <p> 그럼, 이 뒷부분에 해당하는 성능이야말로 <strong>'실제 성능'</strong>일까요?</p>
-<figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/WSAT-WI-IOPS-2.png" alt="" width="3000" height="1500">
-<figcaption >970 PRO WSAT Test</figcaption>
+<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/WSAT-WI-IOPS-2.png" alt="" width="3000" height="1500">
+<figcaption>970 PRO WSAT Test</figcaption>
 </figure>
 <p> 저장장치에 관심을 더 오랫동안 가졌다면, MLC를 사용한 마지막 SSD인 <a href="https://freshflash4096.github.io/the-last-mlc-970-pro/">970 PRO</a>에 대해서 들어보셨을 것입니다. MLC라는 이유로 <em>'불변의 성능' </em>을 보여준다고 말하는 분들이 계시는데, 위는 RND 4k Write를 계속해서 가한 결과입니다. 이 그래프에서 뒤쪽에 위치하는, 속도가 변하지 않는 안정적인 상태를 <strong>Steady State</strong>라고 합니다.</p>
 <p> 그럼, 이 Steady State의 성능이 <strong>'실제 성능'</strong>일까요?</p>
@@ -530,7 +529,7 @@
 </blockquote>
 <p> 아쉽게도 현실은 쉽지 않습니다. SSS-PTS의 내용은 약간의 난도가 있기도 하며, 수행하는 데 시간도 굉장히 오래 걸립니다. 이를 완전히 따라 벤치마크를 진행하는 리뷰어는 제가 아는 한 <strong>없습니다</strong>. 힌트를 얻어 벤치마크를 진행하는 리뷰어는 소수 존재하지만 말이죠. <br> 더 큰 문제는 SSS-PTS가 Steady State의 성능을 측정한다는 것입니다. Steady State는 말 그대로 변하지 않는 안정적인 상태로, SSD에 있어서는 유사 최악의 상황을 가정합니다. 진정한 의미로 성능을 비교하기엔 알맞겠지만, 일반 소비자의 워크로드와는 상당히 다릅니다. </p>
 <p> 조금 시각을 바꾸어 봅시다. <strong>체감 성능(體感 性能)</strong>이란 무엇일까요? 말 그대로 우리가 느낄 수 있는 성능일 것입니다. 이를 파악하기 위해서는 평상시 우리가 사용하는 SSD에 어떤 부하가 가해지는지 알아야 합니다.</p>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
 <figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/52/gallery/PM9E1_CDM_FOB_Default.png" data-size="1504x819"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/gallery/PM9E1_CDM_FOB_Default-thumbnail.png" alt="" width="768" height="418"></a>
 <figcaption>Default Profile</figcaption>
 </figure>
@@ -616,7 +615,7 @@
 <p> 이외에, ASPM(Active-State Power Management)과 관련된 옵션은 BIOS에서 모두 껐으며, SMT(Simultaneous Multithreading)는 켜두었습니다. 예상할 수 있고 일관된 결과를 얻기 위해서 SMT나 Hyper-Threading은 끄는 것이 권장되지만, SMT를 끈 9600X로는 QD가 높은 상황에서 모든 성능을 못 끌어내는 상황을 발견했기 때문에 어쩔 수 없이 SMT를 통해 CPU의 성능을 보완합니다. </p>
 <h2 id="mcetoc_1j8r33qjor">Software Platform</h2>
 <h3 id="mcetoc_1j8trjd883t4">Windows</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
 <figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/52/gallery/25H2.png" data-size="536x472"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/gallery/25H2-thumbnail.png" alt="" width="536" height="472"></a>
 <figcaption>W11 25H2</figcaption>
 </figure>
@@ -770,7 +769,7 @@
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/1.-SPECworkstation-detail-2.png" alt="" width="3900" height="2100"></figure>
 <p> SPEC Ratio를 기준으로, 내림차순으로 정렬해 제시하며, 개별 워크로드에 대한 SPEC Ratio도 별도의 그래프로 제시합니다.</p>
 <h3 id="mcetoc_1j8trjd883t9">Fill Drive</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
 <figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/52/gallery/2.-Fill-Drive-TGBW-1st.png" data-size="3600x1800"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/gallery/2.-Fill-Drive-TGBW-1st-thumbnail.png" alt="" width="768" height="384"></a>
 <figcaption>Pass_1</figcaption>
 </figure>
@@ -804,8 +803,8 @@
 <p> 사람마다, 그리고 SSD의 용량이나 특성 등에 따라 제가 진행하는 Pre-Conditioning은 전혀 현실을 반영하지 않을 수도 있습니다. 하지만 모든 것을 고려하기엔 시간과 예산, 그리고 지식이 턱없이 부족하여 이 정도로 마무리하고자 합니다. 물론 여기까지만 해도, 어떤 상태인지도 모르는 상태의 SSD와 벤치마크 방법을 상세하게 명시하지 않는 많은 국내 리뷰보다는 훨씬 현실을 반영하는 것이 아닌가 생각합니다.</p>
 <h3 id="mcetoc_1j8trjd883tb">Sync Write</h3>
 <div style="text-align: center;">
-<figure class="post__image" ><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/fig2bedit.png" alt="" width="445" height="434">
-<figcaption ><a href="https://learn.microsoft.com/ko-kr/windows/win32/fileio/synchronous-and-asynchronous-i-o">Synchronous I/O vs Asynchronous I/O</a></figcaption>
+<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/fig2bedit.png" alt="" width="445" height="434">
+<figcaption><a href="https://learn.microsoft.com/ko-kr/windows/win32/fileio/synchronous-and-asynchronous-i-o">Synchronous I/O vs Asynchronous I/O</a></figcaption>
 </figure>
 </div>
 <p> 동기(Synchronous) I/O의 성능을 확인합니다. 동기 I/O를 수행하는 Thread는 I/O 작업을 시작하고 요청이 완료될 때까지 대기 상태로 진입합니다. 비동기(Asynchronous) I/O에서는 이와 다르게 I/O 요청이 완료될 때까지 다른 작업을 처리할 수 있습니다.</p>
@@ -816,7 +815,7 @@
 <h3 id="mcetoc_1j8trjd883tc">Performance by RW Ratio</h3>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/4.-RWW_RND.png" alt="" width="3600" height="1800"></figure>
 <p> cSSD의 스펙 시트는 SEQ RW, RND RW로 이루어진 4-corners performance만 제시합니다. 하지만 일반적인 NAND 기반의 SSD는 읽쓰기 작업이 혼합되어 있을 때 성능이 하락하며, Real World Workloads에서도 혼합된 작업이 발생하는 경우가 많습니다.</p>
-<p> Real World Workload를 고려해 QD=1, 2, 4에 대해서만 진행되며, 읽쓰기 비율은 10% 단위로 변경하며 성능을 측정합니다. 각 단계 사이에는 휴식 시간이 부여되어 온전한 성능을 나타낼 수 있도록 했습니다. 앞서 동기 쓰기와 마찬가지로 Pre-Conditioning이 완료된 영역에만 완전히 무작위로 접근합니다. 발생하는 I/O의 양은 하나의 단계에서 1GB로, 굉장히 가벼운 cSSD 워크로드를 염두에 두었습니다. 하지만, 아주 느린 저장장치가 있을 수도 있으니, 테스트 시간은 단계별로 최대 30초 제한을 부여합니다. <br> 또한, 동일한 워크로드를 여러 번 실행하여 값을 결정합니다. 값의 결정에는 Intel의 권장 사항을 반영해 중앙값과 상대 표준 오차를 이용합니다. </p>
+<p> Real World Workload를 고려해 QD=1, 2, 4에 대해서만 진행되며, 읽쓰기 비율은 10% 단위로 변경하며 성능을 측정합니다. 각 단계 사이에는 휴식 시간이 부여되어 온전한 성능을 나타낼 수 있도록 했습니다. 앞서 동기 쓰기와 마찬가지로 Pre-Conditioning이 완료된 영역에만 완전히 무작위로 접근합니다. 발생하는 I/O의 양은 하나의 단계에서 <strong>1GB 이하</strong>로, 굉장히 가벼운 cSSD 워크로드를 염두에 두었습니다. <span style="text-decoration: underline;"><em>(2025.11.23 수정)</em></span> 하지만, 아주 느린 저장장치가 있을 수도 있으니, 테스트 시간은 단계별로 최대 30초 제한을 부여합니다. <br> 또한, 동일한 워크로드를 여러 번 실행하여 값을 결정합니다. 값의 결정에는 Intel의 권장 사항을 반영해 중앙값과 상대 표준 오차를 이용합니다. </p>
 <h4 id="mcetoc_1j9294eeq4g1">Median and Relative Standard Error</h4>
 <p> Intel은 데이터 세트의 실제 값을 보고할 때 중앙값(median)의 사용을 권장합니다. 평균값(average)는 계산을 통해 도출되기 때문입니다. </p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/seukeurinsyas-2025-11-02-ohu-9.15.31.png" alt="" width="2884" height="218"></figure>
@@ -825,7 +824,7 @@
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/4.-RWW_RND_WF-2.png" alt="" width="3600" height="1800"></figure>
 <p> 비교군들의 성능을 한눈에 보기 위해 가중치를 적용한 그래프를 제시합니다. 이전에는 QD1 70%, QD2 20%, QD4 10%로 가중치를 부여했지만, 이 비율을 변경해 QD1 80%, QD2 15%, QD4 5%로 진행합니다. </p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/4.-RWW_RND_WF_order.png" alt="" width="3000" height="900"></figure>
-<p> 순위를 매길 때에는 가중치를 부여한 값의 평균을 이용합니다. 단, 여기서는 <strong>100% 읽쓰기 값을 제외</strong>하고 처리합니다. 다시 말해, 혼합된 작업에 대해서만 평균을 내는 것이죠. <span style="text-decoration: underline;"><em>(2025.</em>11.16<em> 변경)</em></span><br> 일반적인 소비자 워크로드에서 쓰기보다 읽기가 많이 발생한다는 것을 고려하면, 위 막대그래프의 값은 쓰기 성능이 조금 더 강조되어 있다고 볼 수 있겠습니다.</p>
+<p> 순위를 매길 때에는 가중치를 부여한 값의 평균을 이용합니다. 단, 여기서는 <strong>100% 읽쓰기 값을 제외</strong>하고 처리합니다. 다시 말해, 혼합된 작업에 대해서만 평균을 내는 것이죠. <span style="text-decoration: underline;"><em>(2025.11.16 수정)</em></span><br> 일반적인 소비자 워크로드에서 쓰기보다 읽기가 많이 발생한다는 것을 고려하면, 위 막대그래프의 값은 쓰기 성능이 조금 더 강조되어 있다고 볼 수 있겠습니다.</p>
 <h3 id="mcetoc_1j8trjd883td">Performance by Active Range</h3>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/5.-AR_RND_Read-2.png" alt="" width="3600" height="1800"></figure>
 <p> SSD에서 DRAM은 NAND의 물리적 주소와 OS가 인식하는 LBA를 변환하는 Mapping Table(L2P Table)의 사본을 저장합니다. 다시 말해, <strong>Caching</strong>을 수행합니다. DRAMless SSD도 컨트롤러의 SRAM이나 HMB(Host Memory Buffer)를 통해 사본을 저장하죠. <a href="https://freshflash4096.github.io/fms-2025/">HMB의 구현도 계속해서 발전</a>하고는 있지만, 그 영역의 크기가 작아 결국 전체 사본을 저장하지는 못합니다.</p>
@@ -835,7 +834,7 @@
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/6.-SLC-cache-reclaim-TGBW_Bar.png" alt="" width="3000" height="1350"></figure>
 <p> SLC 캐시의 회복에 대해서 알아보기 위해 진행하는 벤치마크입니다. Purge를 수행하고 User Capacity의 50%를 SEQ 128k QD256로 채운 뒤, 잠깐의 휴식을 취하고 다시 SEQ 128k QD256 쓰기를 1분간 진행합니다. 그리고 휴식 시간을 늘려가며 이를 반복합니다.<br> 휴식 시간은 5초, 10초, 15초, 30초, 60초, 120초, 240초로, 총 7회의 Purge - 50% Write - 1min Write의 사이클을 거칩니다. Purge 이후의 휴식 시간도 고려하면 굉장히 오래 걸리고 좀 귀찮죠.</p>
 <p> 리뷰에서 직접 제시되는 것은 휴식 뒤 1분간 작성한 총 용량만 나타낸 위의 그래프입니다. </p>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
 <figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/52/gallery/6.-SLC-cache-reclaim-TGBW.png" data-size="3600x1800"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/gallery/6.-SLC-cache-reclaim-TGBW-thumbnail.png" alt="" width="768" height="384"></a>
 <figcaption>TGBW - Time</figcaption>
 </figure>
@@ -851,7 +850,7 @@
 <p> 모든 워크로드는 User Capacity의 전체 영역에 대해서 진행하며, 각각 30초의 적응 시간을 가진 후에 5분 동안 성능측정을 진행합니다. 다시 말해, 128k Read 성능을 측정한다면 QD1 ~ QD256까지 총 9개의 작업이 있으며, 모든 작업이 30초의 적응 시간과 5분의 측정시간이 부여됩니다.</p>
 <p> Pre-Conditioning을 제외하더라도 하나의 SSD가 이 벤치마크를 수행하는 데 걸리는 시간은 6시간 이상으로, Pre-Conditioning을 포함한다면 더욱 길어집니다. cSSD는 기본적으로 플래그십 제품이나 OCP BootBench를 통과하는 등, 나름 성능이 괜찮다고 판단된 제품에서만 벤치마크를 진행합니다. </p>
 <h3 id="mcetoc_1j8trjd883tg">2-in-1 Graph</h3>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
 <figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/52/gallery/X-4c-SEQ-Write-QD-BW.png" data-size="3600x1800"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/gallery/X-4c-SEQ-Write-QD-BW-thumbnail.png" alt="" width="768" height="384"></a>
 <figcaption>SEQ 128k Write (TP-QD)</figcaption>
 </figure>
@@ -869,7 +868,7 @@
 <p> 이 그래프가 나오게 된 이유와 읽는 법에 대해 알게 되었으니, 이제 아래에서 제시하는 그래프들을 읽는 데 큰 문제가 없을 것으로 생각합니다. 그래도 4-Corners Performance에서 제시되는 그래프들은 함께 해석해 보기로 하죠.</p>
 <h3 id="mcetoc_1j8trjd883tg">4-Corners Performance</h3>
 <h4 id="mcetoc_1j8trjd883th">SEQ Pre-Conditioning</h4>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
 <figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/52/gallery/1-1-SEQ-PC-BW.png" data-size="3000x1500"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/gallery/1-1-SEQ-PC-BW-thumbnail.png" alt="" width="768" height="384"></a>
 <figcaption>SEQ PC TP [PM9E1 1TB]</figcaption>
 </figure>
@@ -890,7 +889,7 @@
 <p> 순차 쓰기에서는 983 ZET가 가장 우수합니다. PM981a도 눈에 띄네요. 포인트가 2개인 것으로 보아, QD1 - QD2를 끝으로 QD4부터는 지연시간이 1ms를 초과하여 그래프에 반영되지 않은 모습입니다. <br> P4800X와 PM9E1은 QD1에서는 PM9E1의 성능이 좋았지만, QD2 이후로는 P4800X가 더 우수한 모습을 보였습니다. PM9E1은 QD4와 QD8에서 성능이 오히려 약간 후퇴된 것을 확인할 수 있었습니다.</p>
 </blockquote>
 <h4 id="mcetoc_1j8trjd883tk">RND Pre-Conditioning</h4>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
 <figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/52/gallery/2-1-RND-PC-IOPS.png" data-size="3000x1500"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/52/gallery/2-1-RND-PC-IOPS-thumbnail.png" alt="" width="768" height="384"></a>
 <figcaption>RND PC IOPS [PM9E1 1TB]</figcaption>
 </figure>
@@ -953,7 +952,7 @@
 <p> 모든 테스트를 하는 것은 시간적으로도 무리가 있고, 필요성이 떨어집니다. 특정한 워크로드가 있는 것은 좋지만, 모든 것을 테스트할 시간이라면 그냥 어지간한 Block Size에 대해 10% 단위의 R/W성능을 전부 측정하는 것이 더 끌리네요.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/seukeurinsyas-2025-11-05-ohu-11.42.11.png" alt="" width="1074" height="290"></figure>
 <p> 하지만, 친절하게도 BootBench라는 벤치마크 도구가 있습니다. 저는 이를 이용해서 최종적으로 출력되는 IOPS를 기준으로 내림차순 정렬을 합니다. 명시된 대로 60k IOPS가 합격 기준입니다.</p>
-<p> 참고로, eSSD 벤치마크 중에서 유일하게 libaio를 사용하기에, polling을 이용하지 않는 테스트입니다. <span style="text-decoration: underline;"><em>(11.20 추가)</em></span></p>
+<p> 참고로, eSSD 벤치마크 중에서 유일하게 libaio를 사용하기에, polling을 이용하지 않는 테스트입니다. <span style="text-decoration: underline;"><em>(2025.11.20 추가)</em></span></p>
 <h4 id="mcetoc_1j8trjd883tp">Read Intensive Workload (SEQ 128k R95:W05)</h4>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/3-2-SEQ-9505.png" alt="" width="3600" height="1800"></figure>
 <p> 읽기 집약 워크로드는 SEQ 128k Mix 95/5로 세팅했습니다. CDN이나 VOD와 같은 서비스를 가정합니다.</p>
@@ -3733,7 +3732,6 @@
         <link href="https://freshflash4096.github.io/cuga-teseuteu-doib/"/>
         <id>https://freshflash4096.github.io/cuga-teseuteu-doib/</id>
             <category term="Review"/>
-            <category term="Ramblings"/>
             <category term="Method"/>
 
         <updated>2025-08-17T15:14:34+09:00</updated>
