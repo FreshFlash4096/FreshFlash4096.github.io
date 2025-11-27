@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-11-27T22:42:20+09:00</updated>
+    <updated>2025-11-27T22:56:26+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -318,10 +318,10 @@
 <hr>
 <h3 id="mcetoc_1iut5akj520">Test Platform</h3>
 <div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="file:///Users/huie/Documents/Publii/sites/memoria/input/media/posts/53/gallery/25H2.png" data-size="536x472"><img loading="lazy" src="file:///Users/huie/Documents/Publii/sites/memoria/input/media/posts/53/gallery/25H2-thumbnail.png" alt="" width="536" height="472"></a>
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/54/gallery/25H2.png" data-size="536x472"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/54/gallery/25H2-thumbnail.png" alt="" width="536" height="472"></a>
 <figcaption>Windows</figcaption>
 </figure>
-<figure class="gallery__item"><a href="file:///Users/huie/Documents/Publii/sites/memoria/input/media/posts/53/gallery/Linux.png" data-size="1532x1610"><img loading="lazy" src="file:///Users/huie/Documents/Publii/sites/memoria/input/media/posts/53/gallery/Linux-thumbnail.png" alt="" width="768" height="807"></a>
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/54/gallery/Linux.png" data-size="1532x1610"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/54/gallery/Linux-thumbnail.png" alt="" width="768" height="807"></a>
 <figcaption>Linux</figcaption>
 </figure>
 </div></div>
@@ -450,7 +450,7 @@
 <hr>
 <h2 id="mcetoc_1iuqh3uem5o">Closing</h2>
 <p> 4-Corners Performance는 스펙시트에 비해 다들 우수한 성능을 보여주었습니다. 특히 랜덤 쓰기 성능은 명시된 것보다 무려 40% 좋아서 눈을 의심할 정도였죠. 하지만, 낮은 QD에서의 성능은 기대보다 낮아서 아쉬웠습니다. 특히 랜덤 읽기에서 PM1725에 밀리는 것이 많이 아쉬웠습니다.</p>
-<p> 하지만, 저렴하다면 OK입니다. 솔직히 7300 PRO를 구해서 직접 Over Provisioning을 가한 뒤 테스트, Micron의 Flex Capacity 기능을 이용해 Over Provisioning을 설정한 뒤 테스트를 진행해 보고 싶지만, 이제 와서 구매하기는 좀 꺼려지네요.</p>
+<p> 하지만, 저렴하다면 OK입니다. 솔직히 7300 PRO를 구해서 직접 Over Provisioning을 가한 뒤 테스트, Micron의 Flex Capacity 기능을 이용해 Over Provisioning을 설정한 뒤 테스트를 진행해 보고 싶지만, 이제 와서 구매하기는 좀 꺼려지네요. 솔직히 말하자면, 낮은 QD의 성능이 별로 멋지지 않았습니다. 슬프지만, 제목처럼 누군가 축복을 내려주었으면 하네요.</p>
 <p> 읽어주셔서 감사합니다.</p>
 <blockquote>
 <p>이 리뷰를 올린 것은 다른 리뷰를 위한 준비 단계입니다. 그래서 최대한 빠르고 가볍게 마무리해 버렸네요.</p>
