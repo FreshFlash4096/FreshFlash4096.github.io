@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-12-06T14:43:18+09:00</updated>
+    <updated>2025-12-07T20:05:55+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -26,13 +26,17 @@
             <summary type="html">
                 <![CDATA[
                         <img src="https://freshflash4096.github.io/media/posts/59/w_7450_fr.jpg" alt="" />
-                     벤치마크 방법을 새로고침하고 처음 올린 eSSD 리뷰는 7300 MAX 3.2TB 였습니다. 하지만,&hellip;
+                    Change log 2025.12.07 - SEQ 128k Write Consistency 그래프 Y축 수정 벤치마크&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://freshflash4096.github.io/media/posts/59/w_7450_fr.jpg" class="type:primaryImage" alt="" /></p>
-                <p> <a href="https://freshflash4096.github.io/refresh-ssd-benchmark-method/" target="_blank" rel="noopener noreferrer">벤치마크 방법을 새로고침</a>하고 처음 올린 eSSD 리뷰는 <a href="https://freshflash4096.github.io/micron-7300-max-review/" target="_blank" rel="noopener noreferrer">7300 MAX 3.2TB</a> 였습니다. 하지만, 기존의 데이터들을 비교군으로 활용하기 위해 새로운 테스트 집합을 보여드리진 못했습니다. </p>
+                <blockquote>
+<p>Change log</p>
+<p>2025.12.07 - SEQ 128k Write Consistency 그래프 Y축 수정</p>
+</blockquote>
+<p> <a href="https://freshflash4096.github.io/refresh-ssd-benchmark-method/" target="_blank" rel="noopener noreferrer">벤치마크 방법을 새로고침</a>하고 처음 올린 eSSD 리뷰는 <a href="https://freshflash4096.github.io/micron-7300-max-review/" target="_blank" rel="noopener noreferrer">7300 MAX 3.2TB</a> 였습니다. 하지만, 기존의 데이터들을 비교군으로 활용하기 위해 새로운 테스트 집합을 보여드리진 못했습니다. </p>
 <figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/seukeurinsyas-2025-11-30-ohu-5.15.01.png" alt="" width="1952" height="172">
 <figcaption>Excuse from 7300 MAX 3.2TB Review</figcaption>
 </figure>
@@ -425,7 +429,7 @@
 <p> 순차 쓰기를 제외하고는 다들 90% 이상의 Consistency를 보여줍니다. 순차 쓰기에서는 QD2와 QD4에서 이상한 하락이 있었는데, 밑에서 한 번 더 보겠습니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/4-1-SEQ-Read-Consistency.png" alt="" width="3600" height="1800"></figure>
 <p> 랜덤 읽쓰기는 7300 MAX와 큰 차이가 없었지만, 순차 영역에선 상당한 차이가 있었습니다. 순차 읽기는 전작의 Low QD에서의 일관성을 멋지게 개선한 모습입니다.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/4-2-SEQ-Write-Consistency.png" alt="" width="3600" height="1800"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/4-2-SEQ-Write-Consistency-3.png" alt="" width="3600" height="1800"></figure>
 <p> 순차 쓰기는 읽기와 다르게 7300 MAX보다 뒤떨어지는 모습을 보였습니다.</p>
 <p> 특이한 점은, 초기 펌웨어인 E2MU110에서는 QD2와 QD4에서 Consistency의 하락이 발견되지 않았다는 것 입니다. 초기와 최신 펌웨어의 유일한 성능 지표 차이는 이 순차 쓰기의 일관성에서 발생했습니다.</p>
 <h3 id="mcetoc_1j8trjd883tn">Specific Workload Performance</h3>
