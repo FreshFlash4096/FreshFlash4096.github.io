@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-12-23T23:26:19+09:00</updated>
+    <updated>2025-12-23T23:33:07+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -109,7 +109,7 @@
 <h3 id="mcetoc_1iup50imcdg">HMB (Host Memory Buffer)</h3>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/58/HMB-2.png" alt="" width="1350" height="630"></figure>
 <p> DRAM은 실장되지 않았지만, HMB(Host Memory Buffer) 기능은 지원합니다. Linux에서 <code>nvme get-feature</code> 명령어를 사용하면, <code>Host Memory Buffer Size (HSIZE): 16384</code>임을 확인할 수 있습니다.</p>
-<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/58/NVMe-spec-HMB.png" alt="" width="1262" height="460">
+<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/58/NVMe-spec-HMB-3.png" alt="" width="1262" height="460">
 <figcaption>NVM Express Base Specification</figcaption>
 </figure>
 <p> NVMe 표준 사양에 의하면 이 <span style="text-decoration: underline;">HSIZE</span>는 곧바로 용량을 나타내는 것이 아닌, <span style="text-decoration: underline;">memory page size units</span>를 통해 계산할 수 있습니다. 일반적으로 이는 4kiB이기에 16384를 곱해주면, <strong>64MiB</strong>가 HMB로 할당되었다고 할 수 있겠습니다.</p>
