@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-12-23T23:33:07+09:00</updated>
+    <updated>2025-12-24T00:17:07+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -329,6 +329,8 @@
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/58/5.-AR_RND_Read_.png" alt="" width="3600" height="1800"></figure>
 <p> 그럴 리가 없죠. DRAM SSD라면 일관된 고성능을 보여주었을 것이지만, C910은 일관된 저성능을 보여주고 있습니다. P3 Plus와 비교하면 그 차이가 드러납니다.</p>
 <p> HMB가 활성화된 것은 확인했는데, 제대로 사용하지 못하는 것일까요? 하필 속도도 500MB/s 이하라 블라인드 테스트를 진행하면 870 EVO로 오해하는 것이 아닐까 싶습니다. 생각해 보니 Fill Drive의 평균 속도까지 가져오면 정말 870 EVO라고 해도 속지 않을까요?</p>
+<p> 지금으로써는 Linux에서 발생하는 문제라고 생각됩니다. 생각해보면 위에서 CDM으로 진행한 1GiB에 대한 랜덤 읽기 성능은 스펙대로 잘 나왔거든요.</p>
+<p> Windows만 편애하는 것 같네요.</p>
 <h3 id="mcetoc_1j8trjd883te">SLC Cache Reclaim</h3>
 <p> SLC Cache의 회복에 대해서 알아보기 위해 설계되었습니다. Purge를 수행하고, User Capacity의 50%를 SEQ 128k QD256로 채운 뒤, 잠깐의 휴식을 취합니다. 이후, SEQ 128k QD256 쓰기를 1분간 진행합니다. <br> 이 휴식 시간을 늘리며 테스트를 7회 진행합니다. 그래프들은 휴식 이후 1분간의 I/O에 대한 결과입니다.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/58/6.-SLC-cache-reclaim-TGBW_Bar.png" alt="" width="3000" height="1350"></figure>
