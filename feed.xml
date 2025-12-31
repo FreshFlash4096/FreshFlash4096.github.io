@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2025-12-31T21:57:21+09:00</updated>
+    <updated>2025-12-31T22:14:23+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -35,7 +35,7 @@
 <p> 상담하니 떠오르는데, 또 다른 교수님과 졸업 과제 상담을 진행했습니다. 1년의 휴학을 거치지만, 제가 직접 주제를 제시하고 싶어 연락을 드렸고, 제시했던 주제에 대해 몇 가지 지적을 받았습니다. 단순히 공부해 보고 싶던 spdk와 CSAL을 가지고 어떻게든 꿰맞춘 주제라 예상했던 부분이었습니다. 교수님께서 따로 연락을 주신다면, 아마 휴학 중에도 꾸준히 학교에 찾아가 이런저런 것들을 시도할 예정입니다. 왕복에 4시간 가까이 걸려서 피곤할 것이 분명하지만요...<br> 아무튼, 이러한 이유로 spdk와 CSAL에 대해서는 내년 중으로 블로그를 통해 찾아뵐 수 있을 것 같습니다. 큰 기대는 하지 않고 기다려주시길 바랍니다.</p>
 <hr>
 <p> 그럼, 두서 없는 서론은 마무리하고, 이 블로그를 찾아주시는 대부분의 독자께서는 SSD 리뷰를 읽으러 오실 테니, 그 부분에 대한 이야기를 해보겠습니다. <br> 일단, 아직 리뷰하지 못한 데이터들이 꽤 많이 남아있습니다. 2026년에는 이 데이터들을 최대한 소모할 예정이며, 애초 마음만 먹었던 논문들의 리뷰는 조금 미룰 것 같습니다. 마이너한 편이 아니라면 TPU를 비롯한 여러 커뮤니티에 소개되기도 하니 말이죠.</p>
-<p> 그럼, 여기서부터는 2025년에 진행한 리뷰들의 그래프를 종합하여 보여드리겠습니다. 별도의 설명은 붙지 않습니다.</p>
+<p> 여기서부터는 2025년에 진행한 리뷰들의 그래프를 종합하여 보여드리겠습니다. 별도의 설명은 붙지 않습니다.</p>
 <h3>cSSD Benchmarking</h3>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/60/0.-CDM.png" alt="" width="3600" height="2700"></figure>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/60/0.-CDM_4k.png" alt="" width="3600" height="2700"></figure>
