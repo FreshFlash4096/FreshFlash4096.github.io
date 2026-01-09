@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2026-01-09T17:11:13+09:00</updated>
+    <updated>2026-01-09T17:49:54+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -197,7 +197,7 @@
 </tr>
 </tbody>
 </table>
-<p> DRAM인 <span style="color: #e67e23;">Micron MT41K512M8DA-107:P</span>는 전면에서 봤던 것과 개수까지 동일합니다. 다시 말해, RMS-200에 실장된 4Gb(512MB)의 칩은 총합 18개로, 약 9GB의 용량을 이루고 있습니다. 용도에 대해선 여러 가지 추정이 가능하나, 데이터시트를 통해 ECC를 위한 용량인 것으로 확신할 수 있습니다.</p>
+<p> DRAM인 <span style="color: #e67e23;">Micron MT41K512M8DA-107:P</span>는 전면에서 봤던 것과 개수까지 동일합니다. 다시 말해, RMS-200에 실장된 4Gb(512MB)의 칩은 총합 18개로, 약 9GB의 용량을 이루고 있습니다. 용도에 대해선 여러 가지 추정이 가능하나, 데이터시트를 통해 ECC를 위한 용량인 것으로 생각할 수 있습니다.</p>
 <p>NAND, <span style="color: #f1c40f;">Toshiba TH58TEG6H2HBA4C</span>는 전면에서 확인했던 것과 동일합니다. 의문점이라면, 이것으로 총합 16GB의 NAND가 SSD에 있다는 것입니다. 실제 데이터를 저장하는 공간은 8GB인데 말이죠. 자세한 것은 아래에서 다시 다루겠습니다.</p>
 <p> <span style="color: #f1c40f;"><span style="color: #2dc26b;"><span style="color: #ff00fc;"><span style="color: #f8cac6;">Linear Technology LT3755</span></span></span></span>는 45V 입력과 75V 출력의 LED 컨트롤러라고 합니다. 고전류의 LED를 사용할 때 투입되는 것으로 보이는데, RMS-200에는 후면에 깜빡이는 4개의 LED밖에 없습니다. <br> 사용사례에서는 High Power LED도 있지만, Battery Chargers도 기재되어 있습니다. 아마 후자의 사례로 활용된 것이 아닌가 생각됩니다. </p>
 <p> <span style="color: #90b9e0;">STMicroelectronics M24M02-DR</span>은 2Mb의 EEPROM입니다. </p>
@@ -214,7 +214,7 @@
 <p> 우선, 용량입니다. 2GB, 4GB, 8GB의 용량이 존재한다고 하지만, <a href="https://www.radianmemory.com/nvram-accelerator/">홈페이지</a>에서는 16GB의 용량을 옵션으로 선택 가능하다고 합니다. 아마 아래의 최대 32GB NAND Flash라는 것은 16GB의 RMS-200에 대한 이야기로 보입니다.</p>
 <p> 분해를 진행했을 때, 확인할 수 있던 것은 Micron사의 DDR3L 1866MT/s 9GB 메모리였습니다. DRAM ECC 부분에서 64bits + 8bits의 구조에 의해 SECDED(Single Error Correction Double Error Detection)가 가능하며, 1GB에 해당하는 메모리는 이를 위해 저장공간에서 제외될 수 있는 것을 생각할 수 있습니다. <br> 하나 더 보자면, NVRAM에서 DDR3 @ 1,600MHz라고 명시된 부분입니다. SSD에서 갖가지 이유로 DRAM이나 NAND의 모든 성능을 활용하지 못하는 경우는 많으며, RMS-200에서도 이를 관찰할 수 있었습니다.</p>
 <p> NAND ECC 부분의 BCH 엔진은 RMS-200에 탑재된 컨트롤러의 제품군에서 기본적으로 지원하는 기능입니다. 후속작이라고 볼 수 있는 Flashtec G2 플랫폼부터는 BCH가 아닌 LDPC를 사용합니다.</p>
-<p> 파워 요구 사항(12V)는 섭씨 55도에서 15.5W로 평가됩니다. 단, 울트라 커패시터가 충전 중일 때는 최대 25W인데, 충전 시간은 57초로 명시되어 있습니다. 다시 말해, 전원이 인가되고 약 1분 동안은 소모할 수 있는 최대 전력이 아닌가 생각됩니다.</p>
+<p> 파워 요구 사항(12V)는 섭씨 55도에서 15.5W로 평가됩니다. 단, 울트라 커패시터가 충전 중일 때는 최대 25W인데, 충전 시간은 57초로 명시되어 있습니다. 충전은 전원이 켜지면서 시작될 것으로 생각되는데, 그렇다면 전원이 켜진 직후가 가장 전력을 많이 소모한다고도 볼 수 있겠습니다. 25W는 RW작업과 경쟁하는 상태라고는 하지만, NAND의 내용을 DRAM에 올릴 필요도 있을테니 말이죠.</p>
 <p> 마지막으로는 엔터프라이즈답지 않은 MTBF도 눈에 띕니다.</p>
 <p> 그 외에도 데이터시트에서 언급하는 재미난 기능이 많으나, 제조사의 소프트웨어 지원이 있어야 사용할 수 있는 것으로 보입니다. 이를 위해서는 당연히 NDA 계약 체결이 필요하고요.</p>
 <hr>
