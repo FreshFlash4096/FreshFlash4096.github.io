@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2026-01-18T23:55:06+09:00</updated>
+    <updated>2026-01-20T21:57:24+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -2428,7 +2428,7 @@
                     <p><img src="https://freshflash4096.github.io/media/posts/52/IMG_20251107_154953_184.png" class="type:primaryImage" alt="" /></p>
                 <blockquote>
 <p>Change log</p>
-<p>2025.11.16 - Performance by RW Ratio/Weighted Graph에서 order graph 정의 수정<br>2025.11.20 - 일부 오타 수정 및 OCP BootBench ioengine=libaio 명시<br>2025.11.23 - Performance by RW Ratio 조건 오기입 수정<br>2025.12.01 - DUT ~ 4-Corners Consistency 단계 추가 및 Fill Drive P99 명칭 수정<br>2025.12.23 - 하이퍼링크 오류 수정</p>
+<p>2025.11.16 - Performance by RW Ratio/Weighted Graph에서 order graph 정의 수정<br>2025.11.20 - 일부 오타 수정 및 OCP BootBench ioengine=libaio 명시<br>2025.11.23 - Performance by RW Ratio 조건 오기입 수정<br>2025.12.01 - DUT ~ 4-Corners Consistency 단계 추가 및 Fill Drive P99 명칭 수정<br>2025.12.23 - 하이퍼링크 오류 수정<br>2026.01.20 - SATA SSD의 테스트에 대한 내용을 전반적으로 추가</p>
 </blockquote>
 <p> 부랴부랴 급하게 <a href="https://freshflash4096.github.io/benchmark-method/" target="_blank" rel="noopener noreferrer">벤치마크 방법에 대한 글</a>을 썼던 것이 4개월 전입니다. 1년은 된 기분인데 말이죠.</p>
 <p> <a href="https://freshflash4096.github.io/optane-p4800x-review/" target="_blank" rel="noopener noreferrer">보드의 바이오스 버전도 강제로 바뀌었고</a>, P5800X를 약식으로 테스트한 결과, 벤치마크 방법에 한계가 있다는 것을 인지해 수정을 가했습니다. 이렇게 된 김에 그냥 아예 새로 진행하기로 마음먹었죠. 다만, 여태 올라온 SSD들에 대해서는 다시 게시물을 올리지 않고, 처분하지 않고 남아있는 SSD에 한하여 재측정을 진행해 개인적으로 데이터를 쌓을 생각입니다.</p>
@@ -2642,7 +2642,7 @@
 </table>
 <p> 모든 것은 자기 부담으로 이루어졌습니다. 부품은 물론이고 제가 테스트하는 SSD들도 모두 스스로의 돈이나 지인들의 도움으로 이루어집니다. 그런 면에서 보았을 때, 금전은 상당히 부담되는 요소입니다. Thunderbolt 컨트롤러가 내장된 Intel CPU가 아닌 AMD CPU를 선택한 것도 그러한 이유이며, 상위 등급인 9950X가 아니라 9600X이라는 CPU를 선택한 것도 같은 이유입니다.</p>
 <p> OS를 담아놓을 SSD는 2개로, 전면 M.2 슬롯에는 Windows가 설치된 PM981a를, 후면 M.2 슬롯에는 Linux가 설치된 PM981a를 장착합니다. 참고로 두 M.2 슬롯 모두 CPU 직결 슬롯입니다. </p>
-<p> DUT가 될 NVMe SSD는 PCIe 5.0 x16을 지원하는 PEG 슬롯에 연결하며, 최대 2-connector Topology까지 허용합니다. CPU와 DUT 사이 물리적인 거리가 멀어지거나 커넥터가 자주 등장할수록 신호의 세기는 약해지기 때문입니다. <a href="https://freshflash4096.github.io/fms-2025/">실제로 3-connector Topology부터는 최신 기술의 적용에 있어서 슬슬 무리가 있죠.</a><br> M.2 NVMe 드라이브의 경우에는 Z790 APEX에 동봉되는 <span style="text-decoration: underline;">ASUS ROG PCIE 5.0 M.2 CARD</span>를, 2.5" NVMe 드라이브의 경우에는 <span style="text-decoration: underline;">UMC-PTU-2</span>를 이용합니다. 돈도 없는데 Z790 APEX를 어디서 구했냐 하면, 해당 부품만 중고로 구매했습니다.<br> SATA SSD는 PROM21(B850 Chipset)에 내장된 SATA 컨트롤러에 의존해 온보드 SATA 포트에 장착합니다. SAS SSD를 테스트할 일이 생긴다면, 별도로 HBA를 구매해 SATA / SAS SSD의 테스트 방법을 통일할까, 생각도 하고 있습니다.</p>
+<p> DUT가 될 NVMe SSD는 PCIe 5.0 x16을 지원하는 PEG 슬롯에 연결하며, 최대 2-connector Topology까지 허용합니다. CPU와 DUT 사이 물리적인 거리가 멀어지거나 커넥터가 자주 등장할수록 신호의 세기는 약해지기 때문입니다. <a href="https://freshflash4096.github.io/fms-2025/">실제로 3-connector Topology부터는 최신 기술의 적용에 있어서 슬슬 무리가 있죠.</a><br> M.2 NVMe 드라이브의 경우에는 Z790 APEX에 동봉되는 <span style="text-decoration: underline;">ASUS ROG PCIE 5.0 M.2 CARD</span>를, 2.5" NVMe 드라이브의 경우에는 <span style="text-decoration: underline;">UMC-PTU-2</span>를 이용합니다. 돈도 없는데 Z790 APEX를 어디서 구했냐 하면, 해당 부품만 중고로 구매했습니다.<br> SATA SSD는 PROM21(B850 Chipset)에 내장된 SATA 컨트롤러에 의존해 <span style="text-decoration: underline;">SATA6G_1</span> 포트에 장착합니다. SAS SSD를 테스트할 일이 생긴다면, HBA를 구매해 SATA / SAS SSD의 테스트 방법을 통일할까, 생각도 하고 있습니다.</p>
 <p> 별도의 언급이 없는 이상, SSD에 전력 제한은 시행하지 않으며, 과열로 인한 성능 제한을 방지하기 위해 Noctua NF-A8 PWM으로 직접 냉각을 진행합니다.</p>
 <p> 이외에, ASPM(Active-State Power Management)과 관련된 옵션은 BIOS에서 모두 껐으며, SMT(Simultaneous Multithreading)는 켜두었습니다. 예상할 수 있고 일관된 결과를 얻기 위해서 SMT나 Hyper-Threading은 끄는 것이 권장되지만, SMT를 끈 9600X로는 QD가 높은 상황에서 모든 성능을 못 끌어내는 상황을 발견했기 때문에 어쩔 수 없이 SMT를 통해 CPU의 성능을 보완합니다. </p>
 <h2 id="mcetoc_1j8r33qjor">Software Platform</h2>
@@ -2690,7 +2690,7 @@
 </tr>
 <tr>
 <td style="width: 26.9615%;"><strong>hipri=1</strong></td>
-<td style="width: 73.0385%;">polled I/O completion을 시도합니다.</td>
+<td style="width: 73.0385%;">polled I/O completion을 시도합니다. (SATA SSD는 제외)</td>
 </tr>
 <tr>
 <td style="width: 26.9615%;"><strong>registerfiles=1</strong></td>
@@ -2707,14 +2707,14 @@
 <hr>
 <h2 id="mcetoc_1j8r33qjos">cSSD Benchmarking </h2>
 <p> 그럼, cSSD 벤치마크 방법부터 제시해 보겠습니다.</p>
-<pre>// NVMe SSD<br>sudo nvme format -f /dev/nvmeXn1<br><br>// SATA SSD<br>sudo hdparm --user-master u --security-erase p </pre>
+<pre>// NVMe SSD<br>sudo nvme format -f /dev/nvmeXn1<br><br>// SATA SSD<br>sudo hdparm --user-master u --security-set-pass p /dev/sdX<br>sudo hdparm --user-master u --security-erase p /dev/sdX</pre>
 <p> Purge는 위 명령어를 이용해 Linux에서 수행하고 휴식 시간을 부여한 뒤, 아무것도 기록되지 않은 FOB 상태로 진입합니다. 간혹 제조사 도구를 이용해서 Purge를 수행하는 경우도 있으나, 그러한 경우에는 직접 명시합니다.</p>
 <pre>01. Linux Boot<br>02. Purge<br>03. Fill Drive<br>04. Performance by Active Range<br>05. Pre-Conditioning<br>06. Sync Write<br>07. Performance by RW Ratio<br>08. SLC Cache Reclaim<br>09. Purge<br>10. Windows Boot + IDLE State<br>11. CDM, 3DMark, SPEC<br>12. 75% Fill<br>13. 3DMark, SPEC</pre>
 <p> cSSD의 테스트 과정은 위와 같습니다. 리뷰 순서와 약간은 다른 것을 확인할 수 있습니다. 모든 단계 사이에는 최소 5분부터 최대 15분까지 충분한 휴식 시간이 부여 되며, SSD에 따라 일부 테스트는 제외됩니다. 예를 들어, 고용량의 eSSD는 SLC Cache Reclaim 같은 테스트를 진행할 의미가 없고 시간과 전기와 수명만 소모될 뿐이니 제외합니다. </p>
 <h3 id="mcetoc_1j8trjd883t6">CrystalDiskMark 9.0.1</h3>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/PM9E1-CDM.png" alt="" width="1002" height="547"></figure>
 <p> 시작은 무난하게 가장 대중적인 도구인 CrystalDiskMark입니다. 앞에서 말씀드린 대로, <a href="https://github.com/microsoft/diskspd">diskspd</a>를 백엔드로 하여 간단한 사용을 위해 GUI가 씌워진 도구입니다. 국내외로 많은 사람들이 이 도구를 사용하며, 핵심이 되는 옵션을 쉽게 변경할 수 있습니다.</p>
-<p> 저는 FOB 상태에서만 이 도구를 사용하여 성능을 측정하고, NVMe SSD라면 NVMe 설정에 맞춰서, 높은 QD를 지원하지 않는 SATA SSD라면 Defulat 설정으로 진행합니다. 그 외의 옵션은 기본값입니다.<br> 신경 쓰이는 부분이 있는 경우에는 간단하게 보여드리기 위해, 일부 옵션을 조정해 추가로 테스트를 진행합니다. </p>
+<p> 저는 FOB 상태에서만 이 도구를 사용하여 성능을 측정하고, 높은 QD로 설정되어 있는 NVMe 설정으로 진행합니다. 그 외의 옵션은 기본값입니다.<br> 신경 쓰이는 부분이 있는 경우에는 간단하게 보여드리기 위해, 일부 옵션을 조정해 추가로 테스트를 진행합니다. </p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/0.-CDM-3.png" alt="" width="3600" height="1560"></figure>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/0.-CDM_4k-3.png" alt="" width="3600" height="1560"></figure>
 <p> 그래프는 SEQ 128k QD32를 제외하고 SEQ Read를 기준으로 비교군을 내림차순 정렬해 제시합니다. RND 4k QD1 성능은 다른 항목들에 비해 성능이 굉장히 낮기 때문에 별도로 제시하는데, 이때의 기준은 읽기입니다.</p>
@@ -3052,11 +3052,11 @@
 <h2 id="mcetoc_1j8r33qjos">Closing</h2>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/52/T-RND-4k-Read-QD-QOS.png" alt="" width="3600" height="2100"></figure>
 <p> 사실, 개인적으로 사용하는 내부용 그래프는 조금 더 있습니다. 그 중 하나가 바로 위의 QoS 그래프입니다. QD별로 50%, 90%, ... 99.9999%에 대응하는 지연시간을 나타내죠. 하지만, 아마 리뷰에서는 제시할 일이 없지 싶네요.</p>
-<p> 일반적으로 개인 리뷰어보다 더 많은 양의 내용과 그래프가 담긴 것이 제 리뷰의 특징이 아닌가 싶습니다. 그런데도 시행하고 싶은 벤치마크가 더 많은데 시간, 자본, 지식이 부족하다는 것이 많이 느껴져 너무나 아쉽습니다. <br> 혹시라도 모든 것이 충족되는 분들을 위해 제가 고민했던 것들과 수행하지 못한 것들을 몇 가지 소개하고자 합니다.</p>
+<p> 일반적으로 다른 리뷰과 비교한다면, 보다 더 많은 양의 내용과 그래프가 담긴 것이 제 리뷰의 특징이 아닌가 싶습니다. 그런데도 시행하고 싶은 벤치마크가 더 많은데 시간, 자본, 지식이 부족하다는 것이 느껴져 너무나 아쉽습니다. <br> 혹시라도 모든 것이 충족되는 분들을 위해 제가 고민했던 것들과 수행하지 못한 것들을 몇 가지 소개하고자 합니다.</p>
 <ol>
 <li> 특정하게 주어진 IOPS에 따른 지연시간을 측정 및 비교하기.
 <ul>
-<li>Tail Latency 측정에서의 한계를 느끼고 고안되었던 벤치마크입니다.</li>
+<li>Tail Latency 측정에서 한계를 느끼고 고안되었던 벤치마크입니다.</li>
 <li>다만, 주어질 IOPS 값에 대한 아이디어가 부족해 미루게 되었습니다.</li>
 </ul>
 </li>
@@ -3104,7 +3104,7 @@
 </ol>
 <p> 이것이 당장 떠오르는 전부입니다. 이번 주 로또에 당첨되면 전력 측정 장비를 바로 구해오겠습니다.</p>
 <hr>
-<p> 뜬금없지만, 현재 NAND 공급의 상당수를 대한민국 기업이 담당하는 것에 대해서 저는 어느 정도 뿌듯함이 있습니다. (SK hynix가 Solidigm을 매각한다고 해도) 그런데, 커뮤니티를 둘러보면 정작 NAND를 이용한 제품인 SSD의 리뷰가 좀 아쉽다고 해야 할까요.<br> 그렇다고 제가 하는 방법이 답이며 다른 리뷰들은 잘못되었다고 주장할 생각은 없습니다. 인지하고 있는 한계점도 명확하게 존재하고, 저 자신이 잘 안다고도 말할 수 없으니 말이죠. 또한, 대부분은 광고를 받아와야 할 테니 광고주의 의향도 존재할 것이고 이는 필드 테스트나 개인 광고를 받는 리뷰어, 유튜버들도 해당할 것입니다. 그 부분을 감안하더라도, 상세함이 부족하고, 고려하지 않은 통제 사항, 기존에 있는 여러 유명한 도구만을 이용해 도출되는 결과로 리뷰를 진행하는 것은 마음이 아픕니다.<br> 물론, 다른 사람들이 관심도 크게 안 가지는데 시간이랑 돈을 스스로 축내는 제가 이상한 쪽이 아닐까, 가끔 생각은 합니다.</p>
+<p> 뜬금없지만, 현재 NAND 공급의 상당수를 대한민국 기업이 담당하는 것에 대해서 저는 어느 정도 뿌듯함이 있습니다. (SK hynix가 Solidigm을 매각한다고 해도) 그런데, 커뮤니티를 둘러보면 정작 NAND를 이용한 제품인 SSD의 리뷰가 좀 아쉽다고 해야 할까요.<br> 제가 하는 방법이 답이며 다른 리뷰들은 잘못되었다고 주장할 생각은 없습니다. 인지하고 있는 한계점도 명확하게 존재하고, 저 자신이 잘 안다고도 말할 수 없으니 말이죠. 또한, 대부분은 광고를 받아와야 할 테니 광고주의 의향도 존재할 것이고, 이는 필드 테스트나 개인 광고를 받는 리뷰어, 유튜버들도 해당할 것입니다. 그 부분을 감안하더라도, 상세함이 부족하고, 고려하지 않은 통제 사항, 기존에 있는 여러 유명한 도구만을 이용해 도출되는 결과로 리뷰를 진행하는 것은 마음이 아픕니다.<br> 물론, 다른 사람들이 관심도 크게 안 가지는데 시간이랑 돈을 스스로 축내는 제가 이상한 쪽이 아닐까, 가끔 생각은 합니다.</p>
 <p> Steady State를 측정하라는 말은 아닙니다. 이건 엄연히 엔터프라이즈 워크로드이니까요. cSSD에 Steady State를 요구하는 쪽이 이상한 것이죠. 그저, FOB상태에서 진행했는가, 벤치마크 도구를 여럿 사용하는데 이 사이에는 충분한 휴식 시간을 부여했는가, Purge는 수행하였는가, 벤치마크의 순서는 어떻게 되는가 등의 설명이 전혀 없다는 것이 아쉬웠습니다. 하드웨어 플랫폼만 명시해 둔 게 대부분이었으니 말이죠. 그래프를 그릴 때 축의 의미를 명시하지 않는 것도 참 안타까웠습니다.</p>
 <p> 시작은 제 리뷰가 국내 저장장치 리뷰어에게 자극이 될 수도 있지 않을까, 라는 기고만장한 생각이 계기였습니다. 이제는 그냥 자기만족과 호기심일 뿐이지만요. 그래도 누군가는 제 리뷰를 재미나게 읽을 것으로 생각합니다.</p>
 <p> 지금까지 길고 길었던 제 벤치마크 방법론이었습니다. 업로드 주기는 길 것 같지만, 앞으로도 많은 리뷰 기대해 주세요.</p>
