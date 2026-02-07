@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2026-02-07T14:44:54+09:00</updated>
+    <updated>2026-02-07T14:56:37+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -150,9 +150,13 @@
 <hr>
 <h2 id="mcetoc_1iup4vgr6dd">SW Report</h2>
 <figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/62/CDI_P51_FOB.png" alt="" width="1002" height="963">
-<figcaption>CrystalDiskInfo 9.7.2</figcaption>
+<figcaption>CrystalDiskInfo 9.7.2 - FOB</figcaption>
 </figure>
 <p> 진짜진짜 FOB의 SSD입니다. 새 집 냄새나요. 온도 센서는 2개가 달려있으며, 1번 온도 센서의 값이 대표 온도로 읽힙니다.</p>
+<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/62/CDI_P51.png" alt="" width="1002" height="963">
+<figcaption>CrystalDiskInfo 9.7.2</figcaption>
+</figure>
+<p> 벤치마크가 완전히 종료된 후의 CDI입니다. 100%가 깨져버렸어요.</p>
 <p> smartmontools와 NVMe-CLI의 id-ctrl 결과는 <a href="https://github.com/FreshFlash4096/SSD-Report">GitHub</a>에 첨부하도록 하겠습니다.</p>
 <hr>
 <h2 id="mcetoc_1iup4vgr6dd">DUT Summary</h2>
@@ -269,10 +273,10 @@
 <hr>
 <h3 id="mcetoc_1iut5akj520">Test Platform</h3>
 <div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="file:///Users/huie/Documents/Publii/sites/memoria/input/media/posts/51/gallery/25H2.png" data-size="536x472"><img loading="lazy" src="file:///Users/huie/Documents/Publii/sites/memoria/input/media/posts/51/gallery/25H2-thumbnail.png" alt="" width="536" height="472"></a>
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/62/gallery/25H2.png" data-size="536x472"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/62/gallery/25H2-thumbnail.png" alt="" width="536" height="472"></a>
 <figcaption>Windows</figcaption>
 </figure>
-<figure class="gallery__item"><a href="file:///Users/huie/Documents/Publii/sites/memoria/input/media/posts/51/gallery/Linux.png" data-size="1532x1610"><img loading="lazy" src="file:///Users/huie/Documents/Publii/sites/memoria/input/media/posts/51/gallery/Linux-thumbnail.png" alt="" width="768" height="807"></a>
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/62/gallery/Linux.png" data-size="1532x1610"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/62/gallery/Linux-thumbnail.png" alt="" width="768" height="807"></a>
 <figcaption>Linux</figcaption>
 </figure>
 </div></div>
