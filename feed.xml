@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2026-02-07T14:56:37+09:00</updated>
+    <updated>2026-02-07T22:48:12+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -600,16 +600,18 @@
         <id>https://freshflash4096.github.io/radian-memory-systems-rms-200-review/</id>
         <media:content url="https://freshflash4096.github.io/media/posts/55/w_RMS-200_fr.jpg" medium="image" />
             <category term="eSSD"/>
+            <category term="Toshiba"/>
             <category term="SLC"/>
             <category term="Review"/>
             <category term="RAM Disk"/>
+            <category term="Micron"/>
             <category term="Microchip"/>
 
         <updated>2026-01-09T16:55:00+09:00</updated>
             <summary type="html">
                 <![CDATA[
                         <img src="https://freshflash4096.github.io/media/posts/55/w_RMS-200_fr.jpg" alt="" />
-                    Change log 2026.01.10 - Microchip 태그 추가 컴퓨터는 계층 구조를 이루고 있습니다.
+                    Change log 2026.01.10 - Microchip 태그 추가 (컨트롤러 제조사) 2026.02.07 - Micron&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -617,7 +619,7 @@
                     <p><img src="https://freshflash4096.github.io/media/posts/55/w_RMS-200_fr.jpg" class="type:primaryImage" alt="" /></p>
                 <blockquote>
 <p>Change log</p>
-<p>2026.01.10 - Microchip 태그 추가</p>
+<p>2026.01.10 - Microchip 태그 추가 (컨트롤러 제조사)<br>2026.02.07 - Micron 태그 및 Toshiba 태그 추가 (DRAM 및 NAND 제조사)</p>
 </blockquote>
 <p> </p>
 <p> 컴퓨터는 계층 구조를 이루고 있습니다. CPU를 다룰 때는 메모리가 그렇게 느리지만, 보조 기억장치를 다룰 때는 메모리가 굉장히 빠른 물건이 되어버리죠. 따라서 다음과 같은 생각을 할 수 있습니다.</p>
@@ -1202,6 +1204,7 @@
         <media:content url="https://freshflash4096.github.io/media/posts/58/w_C910_fr-2.jpg" medium="image" />
             <category term="cSSD"/>
             <category term="TLC"/>
+            <category term="SK hynix"/>
             <category term="Review"/>
             <category term="Realtek"/>
             <category term="DRAMless"/>
@@ -1210,7 +1213,7 @@
             <summary type="html">
                 <![CDATA[
                         <img src="https://freshflash4096.github.io/media/posts/58/w_C910_fr-2.jpg" alt="" />
-                    Change log 2025.12.31 - Gone Brain-dead on Linux 부분 내용 추가 Microsoft&hellip;
+                    Change log 2025.12.31 - Gone Brain-dead on Linux 부분 내용 추가 2026.02.07&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -1218,7 +1221,7 @@
                     <p><img src="https://freshflash4096.github.io/media/posts/58/w_C910_fr-2.jpg" class="type:primaryImage" alt="" /></p>
                 <blockquote>
 <p>Change log</p>
-<p>2025.12.31 - Gone Brain-dead on Linux 부분 내용 추가</p>
+<p>2025.12.31 - Gone Brain-dead on Linux 부분 내용 추가<br>2026.02.07 - SK hynix 태그 추가 (NAND 제조사)</p>
 </blockquote>
 <p> Microsoft Windows! 많은 사람이 쓰고 있으며, 앞으로도 상당한 점유율을 차지할 것으로 생각되는 PC용 OS입니다. 하지만, 저장장치 애호가이자 리뷰어의 입장으로 볼 때는, 제약도 상당한 OS입니다. 당장 Linux와 비교하면 불투명하고, 측정할 수 있는 최대 성능도 비교적 낮기 때문이죠. </p>
 <figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/58/seukeurinsyas-2025-12-23-ohu-4.28.18.png" alt="" width="1870" height="206">
