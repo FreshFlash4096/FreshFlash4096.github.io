@@ -257,12 +257,12 @@
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "8842e58d1d3f78ecfd57f1d13ec3a340"
+        "md5": "d413b86e07ae5ff1e18980280b1a521c"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "c9bfae96826145d67799eacbb8b22651"
+        "md5": "6180737a8d88ce54c7219247f2a6daf0"
     },
     {
         "path": "first-page",
@@ -6475,6 +6475,11 @@
         "md5": "92b7c4c9aa8c39921e31f5bbef444fd0"
     },
     {
+        "path": "/media/posts/61/04-3.-Fill-Drive-AVG.png",
+        "type": "file",
+        "md5": "9c6fe95bd53be08bd787eef5784830e8"
+    },
+    {
         "path": "/media/posts/61/1-1-SEQ-PC-BW.png",
         "type": "file",
         "md5": "740b70093f3c5a7e0422b2a9c8ea666a"
@@ -6533,11 +6538,6 @@
         "path": "/media/posts/61/2-4-RND-Write.png",
         "type": "file",
         "md5": "a3f77d6417a9ef5a2c1a0f646ed02c8e"
-    },
-    {
-        "path": "/media/posts/61/2.-Fill-Drive-AVG-Speed-2.png",
-        "type": "file",
-        "md5": "b08572fac9d3c017a7564fa4b3cfee0d"
     },
     {
         "path": "/media/posts/61/2.-P99_Throughput_Compare-2.png",
@@ -7197,7 +7197,7 @@
     {
         "path": "/micron-1300-review/index.html",
         "type": "file",
-        "md5": "2e99127340bc5832b80e300e31029e16"
+        "md5": "681694fc5d56a87b3136c3d748060379"
     },
     {
         "path": "micron-7300-max-review",
@@ -7482,7 +7482,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "facb5c841f3cad18a42e5d687ef1ec2f"
+        "md5": "0235b352246c88df3e6232b64955b29a"
     },
     {
         "path": "sitemap.xsl",

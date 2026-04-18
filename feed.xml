@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2026-04-18T15:17:27+09:00</updated>
+    <updated>2026-04-18T16:07:23+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -286,7 +286,7 @@
 <p> 2차 Fill Drive는 겨우 5초의 시간이 늘었으나, 확실하게 1회차보다 덜 일관된 속도를 보여줍니다. 단순한 Garbage Collection이라도 확실하게 패널티가 된다는 뜻이죠.</p>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/61/Multi-FD_cap-2.png" alt="" width="3600" height="1800"></figure>
 <p> 비교군의 1차 Fill Drive를 모아봤습니다. 단, 가로축이 쓰기량이란 것에 유의해주세요. </p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/61/2.-Fill-Drive-AVG-Speed-2.png" alt="" width="3000" height="750"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/61/04-3.-Fill-Drive-AVG.png" alt="" width="2985" height="846"></figure>
 <figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/61/2.-P99_Throughput_Compare-2.png" alt="" width="3000" height="750"></figure>
 <p> 첫 번째와 두 번째의 Fill Drive에 대한 전체 평균값과 첫 번째 Fill Drive에 대한 하위 1% 속도는 DUT인 1300 1TB가 가장 우수했습니다.</p>
 <h3 id="mcetoc_1iuejqi41495">Sync Performance</h3>
