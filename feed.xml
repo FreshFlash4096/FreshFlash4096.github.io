@@ -3,12 +3,468 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2026-05-02T21:38:32+09:00</updated>
+    <updated>2026-05-10T20:03:41+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
     <id>https://freshflash4096.github.io</id>
 
+    <entry>
+        <title>캐싱, 그만둡니다 ~다음 직장은 NVMe SSD~ [Optane Memory 32GB]</title>
+        <author>
+            <name>Huie</name>
+        </author>
+        <link href="https://freshflash4096.github.io/optane-memory-32gb-review/"/>
+        <id>https://freshflash4096.github.io/optane-memory-32gb-review/</id>
+        <media:content url="https://freshflash4096.github.io/media/posts/66/Optane-Memory_Teardown.jpg" medium="image" />
+            <category term="cSSD"/>
+            <category term="Review"/>
+            <category term="Optane"/>
+            <category term="Intel"/>
+
+        <updated>2026-05-10T20:01:00+09:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://freshflash4096.github.io/media/posts/66/Optane-Memory_Teardown.jpg" alt="" />
+                     Intel의 Optane SSD는 저장장치에 관심이 있다면, 한 번쯤은 써보고 싶은 물건이라고 확신합니다.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://freshflash4096.github.io/media/posts/66/Optane-Memory_Teardown.jpg" class="type:primaryImage" alt="" /></p>
+                <p> Intel의 Optane SSD는 저장장치에 관심이 있다면, 한 번쯤은 써보고 싶은 물건이라고 확신합니다.</p>
+<p> 가격이 굉장히 비싼 것으로 유명하지만, 용량이 한참 작은 친구라면, 장난감을 구매하는 느낌으로 도전할 수 있습니다.</p>
+<p> </p>
+<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/66/seukeurinsyas-2026-05-09-ohu-11.28.51.png" alt="" width="3840" height="2160">
+<figcaption>AliExpress - Intel Optane Memory Search</figcaption>
+</figure>
+<p> 이런식으로 말이죠. </p>
+<p> Optane Memory 제품군은 Optane SSD와 동일하게 3D XPoint를 기반으로 제작된 드라이브입니다. 제품의 의도는 저장용이 아닌 가속용이지만요. 그럼에도 불구하고, 다행히 NVMe 프로토콜을 지원하기에, Windows나 Linux에서 Plug-and-Play로 사용이 가능합니다.</p>
+<p> 오늘은 이러한 Optane Memory를 평범하게 NVMe SSD로 취급하여 성능을 측정해보겠습니다. </p>
+<p> </p>
+<div class="post__toc">
+<h3>목차</h3>
+<ul>
+<li><a href="#mcetoc_1iup18slp5s">Appearance &amp; Internal Components</a></li>
+<li><a href="#mcetoc_1iup47dknb5">Datasheet</a></li>
+<li><a href="#mcetoc_1iup3oiobb2">Notable Points</a>
+<ul>
+<li><a href="#mcetoc_1iup50imcdg">Optane Memory Lineup</a></li>
+</ul>
+</li>
+<li><a href="#mcetoc_1iup4vgr6dd">SW Report</a></li>
+<li><a href="#mcetoc_1iup4vgr6dd">DUT Summary</a>
+<ul>
+<li><a href="#mcetoc_1iut5akj520">Comparison Device</a></li>
+<li><a href="#mcetoc_1iut5akj520">Test Platform</a></li>
+</ul>
+</li>
+<li><a href="#mcetoc_1iuejnn4l47m">cSSD Benchmarking</a>
+<ul>
+<li><a href="#mcetoc_1iuejmtca47a">CrystalDiskMark 9.0.1</a></li>
+<li><a href="#mcetoc_1iuejmtca47b">3DMark Storage Benchmark</a></li>
+<li><a href="#mcetoc_1iuejmtca47b">SPECworkstation 4.0</a></li>
+<li><a href="#mcetoc_1iuejqi41494">Fill Drive</a></li>
+<li><a href="#mcetoc_1iuejqi41495">Sync Performance</a></li>
+<li><a href="#mcetoc_1iuejmtca47g">Low QD Performance by RW Ratio </a>
+<ul>
+<li><a href="#mcetoc_1j0k12uta9h">Weighted Graph </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#mcetoc_1iuejnn4l47m">eSSD Benchmarking</a>
+<ul>
+<li><a href="#mcetoc_1j8trjd883tg">4-Corners Performance</a>
+<ul>
+<li><a href="#mcetoc_1j8trjd883th">SEQ Pre-Conditioning</a></li>
+<li><a href="#mcetoc_1j8trjd883ti">SEQ 128k Performance</a></li>
+<li><a href="#mcetoc_1j8trjd883tk">RND Pre-Conditioning</a></li>
+<li><a href="#mcetoc_1j8trjd883tl">RND 4k Performance</a></li>
+</ul>
+</li>
+<li><a href="#mcetoc_1j8trjd883tg">4-Corners Consistency</a></li>
+<li><a href="#mcetoc_1j8trjd883tn">Specific Workload Performance</a>
+<ul>
+<li><a href="#mcetoc_1j8trjd883to">Boot Workload (OCP BootBench)</a></li>
+<li><a href="#mcetoc_1j8trjd883tp">Read Intensive Workload (SEQ 128k R95:W05)</a></li>
+<li><a href="#mcetoc_1j8trjd883tq">Mainstream Workload (RND 4k R70:W30)</a></li>
+<li><a href="#mcetoc_1j8trjd883tr">Write Intensive Workload (RND 4k R50:W50)</a></li>
+<li><a href="#mcetoc_1j8trjd883ts">AI Workload (RND 512B Read)</a></li>
+</ul>
+</li>
+<li><a href="#mcetoc_1j8trjd883tt">Random 4k QD1 Tail Latency</a></li>
+</ul>
+</li>
+<li><a href="#mcetoc_1iuqh3uem5o">Closing</a></li>
+</ul>
+</div>
+<h2 id="mcetoc_1iup18slp5s">Appearance &amp; Internal Components</h2>
+<pre>문외한의 입장에서 일부 IC만 찾아보았으며, 제조시기 등에 따라 변경될 가능성이 있습니다.<br>맞지 않을 확률이 상당히 높으니 재미로만 읽어주세요. </pre>
+<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/66/Optane-Memory_Teardown-2.jpg" alt="" width="4128" height="2580">
+<figcaption>Optane Memory 32GB (Front)</figcaption>
+</figure>
+<table style="border-collapse: collapse; width: 100%; height: 107.125px;" border="1">
+<tbody>
+<tr style="height: 48.5625px;">
+<td style="width: 49.9287%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Intel Optane Memory (32GB, M.2 2280)</span></td>
+<td style="width: 50.0713%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">20XX. 0X.</span></td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 49.9287%; height: 48.5625px;"><strong><span style="color: #e03e2d;">Intel SLLXT</span></strong></td>
+<td style="width: 50.0713%; height: 48.5625px;"><span style="color: #f1c40f;"><span style="color: #2dc26b;">RT5064A</span></span></td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 49.9287%; height: 10px;"><strong><span style="color: #f1c40f;">Intel 29P16B1BLDNF2 *2</span></strong></td>
+<td style="width: 50.0713%; height: 10px;"><span style="color: #c2e0f4;">4L652 0E369V</span></td>
+</tr>
+</tbody>
+</table>
+<p> 바로 내부 부품부터 확인해보죠.</p>
+<p> 컨트롤러는 <span style="color: #e03e2d;">Intel SLLXT</span>를 사용했습니다. In-house 컨트롤러로, PCIe 3.0 x2 인터페이스를 지원합니다.</p>
+<p> 저장매체는 <span style="color: #f1c40f;">Intel 29P16B1BLDNF2</span>이며, 128Gb인 1세대 3D XPoint가 SDP(Single Die Package)로 구성되었습니다. 다시 말해, 칩 하나가 128Gb = 16GB이며, 2개의 칩이 총합 32GB의 용량을 구현합니다.</p>
+<p> <a href="https://freshflash4096.github.io/the-product-behind-the-benchmarks-905p-960gb/" target="_blank" rel="noopener noreferrer">905P 960GB</a>와 <a href="https://freshflash4096.github.io/optane-p4800x-review/" target="_blank" rel="noopener noreferrer">P4800X 750GB</a>의 리뷰를 통해 Optane SSD에는 생각보다 상당한 양의 OP가 적용되었다는 것을 말씀드린적이 있습니다. 32GB라고 홍보하는 이 SSD도 실제로는 엄밀히 따지면, 17%의 OP가 적용되어 상당한 용량을 User Capacity로 사용할 수 없습니다.</p>
+<p> PMIC는 <span style="color: #f1c40f;"><span style="color: #2dc26b;">RT5064A</span></span>인데, 제조사는 Richtek으로 보입니다.</p>
+<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/66/Optane-Memory_Rear.jpg" alt="" width="4128" height="2580">
+<figcaption>Optane Memory 32GB (Rear)</figcaption>
+</figure>
+<p> 후면에 실장된 소자는 없습니다. 푸른색의 PCB나 보고 가시죠.</p>
+<hr>
+<h2 id="mcetoc_1iup47dknb5">Datasheet</h2>
+<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/66/Specsheet_Capture.png" alt="" width="1284" height="846">
+<figcaption>Intel Optane Memory - Product Brief</figcaption>
+</figure>
+<p> Product Brief는 성능과 여러 요소를 보여주고 있습니다. 일단 소비자용 저장장치인데, 지연시간과 성능의 기준점(QD4)을 자세하게 제시해 주었다는 것은 상당히 맘에 듭니다.</p>
+<p> Enduranec Rating은 100GB/Day이며, 단순히 환산한다면 약 3DWPD로 볼 수 있습니다. 이는 Write Intensive eSSD와 유사하다고 볼만한 등급입니다. 물론, 용량이 32GB로 작기에 보증 TBW는 182TB에 불과하지만요.</p>
+<p> 지원하는 것은 7세대 이상의 Intel Core 기반 플랫폼이라고 지정되어 있습니다. 물론, 앞에서 말씀드린 것처럼, 일반적인 NVMe SSD로 취급할 수 있습니다. Supported Platforms의 내용은 본래 Optane Memory 시리즈의 의도인 가속 기능을 의미하며, 이는 공식적으로 7세대부터 11세대까지 지원합니다. <a href="https://www.intel.com/content/www/us/en/support/articles/000057951/memory-and-storage/intel-optane-memory.html">12세대부터는 지원이 중단</a>되었거든요.</p>
+<hr>
+<h2 id="mcetoc_1iup3oiobb2">Notable Points</h2>
+<h3 id="mcetoc_1iup50imcdg">Optane Memory Lineup</h3>
+<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/66/Intel-H10-architecture.webp" alt="" width="850" height="428">
+<figcaption>Intel Optane Memory H Series Structure</figcaption>
+</figure>
+<p> Optane Memory 제품군은 크게 두 종류로 볼 수 있습니다.</p>
+<p> 첫 번째는 Hybird 형태로, NAND 기반의 SSD와 Optane Memory가 하나의 기판에 실장된 H시리즈입니다. (H10, H20) Optane Memory가 NAND SSD를 가속하는 형태인데, 이는 전적으로 Intel RST에 의해 이루어집니다. 다시 말해, 하드웨어가 아닌 호스트에 설치된 소프트웨어에 의존한다는 것입니다. 이로 인한 장단점은 존재하겠으나, 저는 CPU 리소스 측면에서 맘에 들지 않네요.</p>
+<p> 공식적인 지원은 역시 종료되었으며, 최신 플랫폼에선 본래 의도대로 사용은 할 수 없습니다. 다만, H10과 H20 시리즈는 그 특유의 구조에 의해 호스트에 개별 SSD로 노출됩니다. 이에 PCIe Lane을 x2x2로 분기한다면 최신 플랫폼에서도 정상적으로 두 영역을 인식할 수 있습니다.</p>
+<p> 하지만, 이러한 분기는 우리가 일반적으로 사용하는 CPU에서는 지원하지 않습니다. 이러한 분기를 지원하는 비교적 흔한 CPU는 ADL-N 시리즈 아닐까요? ADL-N은 보유한 PCIe Lane을 전부 개별로 사용할 수 있거든요. 적절하게 구성한다면 두 영역을 별개의 SSD로 사용이 가능할 것으로 보입니다.</p>
+<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/66/Intel-Optane-Memory-Slide.jpeg" alt="" width="1920" height="1080">
+<figcaption>Intel Optane Memory Marketing Slide</figcaption>
+</figure>
+<p> 두 번째는 순전히 다른 드라이브나 시스템의 가속을 위해 Optane Memory만 실장된 M 시리즈입니다. 여기서도 세부 라인업은 크게 2가지인데, 먼저 출시된 Intel Optane Memory 시리즈와 이후에 출시된 Intel Optane Memory M10 시리즈가 있습니다.</p>
+<p> M10은 전작과 다르게 M.2 2242 폼팩터나 비교적 고용량의 SKU를 보유하고 있습니다. 32GB를 기준으로 비교해보겠습니다. 아래 표는 <a href="https://www.intel.co.kr/content/www/kr/ko/products/compare.html?productIds=135454,99742" target="_blank" rel="noopener noreferrer">Intel Ark</a>를 참고했습니다.</p>
+<table style="border-collapse: collapse; width: 100%; height: 337.938px;" border="1">
+<tbody>
+<tr style="height: 46.5625px;">
+<td style="width: 33.3809%; height: 46.5625px; background-color: #34495e;"><strong><span style="color: #ffffff;">Product (32GB SKU)</span></strong></td>
+<td style="width: 33.3809%; height: 46.5625px; background-color: #34495e;"><strong><span style="color: #ffffff;">Intel Optane Memory</span></strong></td>
+<td style="width: 33.2382%; height: 46.5625px; background-color: #34495e;"><strong><span style="color: #ffffff;">Intel Optane Memory M10</span></strong></td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><strong><span style="color: #ffffff;">Release Date</span></strong></td>
+<td style="width: 33.3809%; height: 48.5625px;">Q1'17</td>
+<td style="width: 33.2382%; height: 48.5625px;">Q1'18</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><strong><span style="color: #ffffff;">SEQ RW [MB/s]</span></strong></td>
+<td style="width: 33.3809%; height: 48.5625px;"><span style="color: #b96ad9;">1350</span> / 290</td>
+<td style="width: 33.2382%; height: 48.5625px;"><span style="color: #b96ad9;">1200</span> / 290</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 33.3809%; background-color: #34495e; height: 48.5625px;"><strong><span style="color: #ffffff;">RND RW [IOPS]</span></strong></td>
+<td style="width: 33.3809%; height: 48.5625px;">240k / 65k</td>
+<td style="width: 33.2382%; height: 48.5625px;">240k / 65k</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 33.3809%; background-color: #34495e; height: 48.5625px;"><strong><span style="color: #ffffff;">Active / IDLE [W]</span></strong></td>
+<td style="width: 33.3809%; height: 48.5625px;"><span style="color: #b96ad9;">3.5W / 1W</span></td>
+<td style="width: 33.2382%; height: 48.5625px;"><span style="color: #b96ad9;">2.5W / L1.2: 8mW</span></td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 33.3809%; background-color: #34495e; height: 48.5625px;"><strong><span style="color: #ffffff;">Operating Temp [°C]</span></strong></td>
+<td style="width: 33.3809%; height: 48.5625px;">0 - <span style="color: #b96ad9;">70</span></td>
+<td style="width: 33.2382%; height: 48.5625px;">0 - <span style="color: #b96ad9;">85</span></td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 33.3809%; background-color: #34495e; height: 48.5625px;"><strong><span style="color: #ffffff;">Endurance</span></strong></td>
+<td style="width: 33.3809%; height: 48.5625px;"><span style="color: #b96ad9;">182.5 TB</span></td>
+<td style="width: 33.2382%; height: 48.5625px;"><span style="color: #b96ad9;">365 TB</span></td>
+</tr>
+</tbody>
+</table>
+<p> M10 시리즈에는 PCIe L1 Sub-states를 지원하도록 개선된 컨트롤러가 있으며, 이 덕분에 확연하게 낮아진 IDLE 전력을 확인할 수 있습니다. 2배로 증가한 TBW도 눈에 띄는데, TBW는 M10 시리즈가 모두 365TB라는 값을 공유하고 있습니다. </p>
+<p> 제가 오늘 리뷰할 친구는 M10이 아닌, 먼저 출시된 Intel Optane Memory 시리즈입니다.</p>
+<hr>
+<h2 id="mcetoc_1iup4vgr6dd">SW Report</h2>
+<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/66/Optane-Memory-CDI.png" alt="" width="1002" height="963">
+<figcaption>CrystalDiskInfo 9.7.2</figcaption>
+</figure>
+<p> 수명이 6%나 닳았네요.</p>
+<p> smartmontools와 NVMe-CLI의 id-ctrl 결과는 <a href="https://github.com/FreshFlash4096/SSD-Report">GitHub</a>에 첨부하도록 하겠습니다.</p>
+<hr>
+<h2 id="mcetoc_1iup4vgr6dd">DUT Summary</h2>
+<p>벤치마크를 진행할 SSD에 관한 요약입니다.</p>
+<table style="border-collapse: collapse; width: 100%; height: 301.375px;" border="1">
+<tbody>
+<tr style="height: 48.5625px;">
+<td style="width: 99.8573%; background-color: #34495e; height: 48.5625px;" colspan="4">
+<div>
+<div><strong><span style="color: #ffffff;">INTEL MEMPEK1W032GA [Intel Optane Memory]</span></strong></div>
+</div>
+</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Link</span></td>
+<td style="width: 25.8203%; height: 48.5625px;">PCIe 3.0 x2</td>
+<td style="width: 24.1084%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">NVMe Version</span></td>
+<td style="width: 24.9643%; height: 48.5625px;">NVMe 1.1</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Firmware</span></td>
+<td style="width: 25.8203%; height: 48.5625px;">
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>K3110310</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td style="width: 24.1084%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">LBA Size</span></td>
+<td style="width: 24.9643%; height: 48.5625px;">512B</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Controller</span></td>
+<td style="width: 25.8203%; height: 48.5625px;">Intel SLLXT</td>
+<td style="width: 24.1084%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Warning Temp</span></td>
+<td style="width: 24.9643%; height: 48.5625px;">X °C</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Storage Media</span></td>
+<td style="width: 25.8203%; height: 48.5625px;">Intel 3DXP G1</td>
+<td style="width: 24.1084%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Critical Temp</span></td>
+<td style="width: 24.9643%; height: 48.5625px;">X °C</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Power State</span></td>
+<td style="width: 25.8203%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Maximum Power</span></td>
+<td style="width: 24.1084%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Entry Latency</span></td>
+<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Exit Latency</span></td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 24.9643%; height: 10px;">PS0</td>
+<td style="width: 25.8203%; height: 10px;">4.50 W</td>
+<td style="width: 24.1084%; height: 10px;">0 μs</td>
+<td style="width: 24.9643%; height: 10px;">0 μs</td>
+</tr>
+</tbody>
+</table>
+<p> 참고로, Optane Memory M10 시리즈의 PN은 MEMPEK1<span style="text-decoration: underline;"><strong>J</strong></span>~로 시작하며, 비교할 때 본 것과 같이 더 많은 Power State를 지원합니다.</p>
+<p> </p>
+<h3 id="mcetoc_1iut5akj520">Comparison Device</h3>
+<p> 비교군은 아래와 같습니다.</p>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 36.0907%; background-color: #34495e;"><span style="color: #ffffff;">Name</span></td>
+<td style="width: 63.9093%; background-color: #34495e;"><span style="color: #ffffff;">Why?</span></td>
+</tr>
+<tr>
+<td style="width: 36.0907%;"><a href="https://freshflash4096.github.io/p4800x-375gb-review/" target="_blank" rel="noopener noreferrer"><strong>P4800X 375GB</strong> [E2010650<span style="font-size: inherit;">]</span></a></td>
+<td style="width: 63.9093%;">동일하게 3D XPoint 1세대를 사용한 저장장치</td>
+</tr>
+<tr>
+<td style="width: 36.0907%;"><strong>PM981a 256GB </strong>[EXH7201Q<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">]</span></td>
+<td style="width: 63.9093%;">저용량의 NAND 기반 NVMe SSD</td>
+</tr>
+</tbody>
+</table>
+<p> PM981a 256GB을 비교군으로 삼는게 사실 애매한데, 그래프 뽑은 김에 후딱 끝내도록 하겠습니다.</p>
+<p> 쌓인 데이터가 다 녹아내린다면, 비교군을 늘려 NAND SSD와 Optane SSD를 다시 비교해보도록 하겠습니다.</p>
+<hr>
+<h3 id="mcetoc_1iut5akj520">Test Platform</h3>
+<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/66/gallery/25H2.png" data-size="536x472"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/66/gallery/25H2-thumbnail.png" alt="" width="536" height="472"></a>
+<figcaption>Windows</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/66/gallery/Linux.png" data-size="1532x1610"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/66/gallery/Linux-thumbnail.png" alt="" width="768" height="807"></a>
+<figcaption>Linux</figcaption>
+</figure>
+</div></div>
+<p> 테스트 환경은 위와 같습니다. Windows 25H2(26200.6899)에 종속되는 도구들을 제외하고는 모두 FIO 3.41을 통해 Rocky Linux 10(6.12.0-55.12.1.el10_0)에서 실행되며, io_uring과 Polling을 적극적으로 활용합니다. 또한, 양쪽 다 기본 Inbox Driver를 사용합니다.</p>
+<p> HW 사양에 대해서는 상단 우측의 fastfetch를 통해서 확인할 수 있지만, 다시 언급하자면, AMD의 9600X를 사용하고 있습니다. DUT는 5.0 x16 연결이 가능한 PEG 슬롯에 장착됩니다.</p>
+<p><strong> 추가로, Intel의 Evaluation Guide를 따라, 모든 성능 측정 전에는 3시간 동안 전원을 켜두었습니다.</strong></p>
+<p> 자세한 벤치마크 방법론에 대해서는 이전에 작성한 <a href="https://freshflash4096.github.io/refresh-ssd-benchmark-method/" target="_blank" rel="noopener noreferrer">Refresh Benchmark</a>를 참고해 주시길 바랍니다.</p>
+<hr>
+<h2 id="mcetoc_1iuejnn4l47m">cSSD Benchmarking</h2>
+<pre class="language-batch"><code>start /wait Rundll32.exe advapi32.dll/ProcessIdleTasks</code></pre>
+<p> Windows에서는 위의 명령어를 실행하고 15분 뒤를 IDLE 상태로 정의해 벤치마크를 진행합니다. 각 벤치마크 사이에는 5분의 휴식 시간이 부여되며, Purge는 Linux에서 <code>nvme format</code> 명령어를 통해 수행했습니다. <strong>다만, Optane SSD의 특성상, 시간 초과를 방지하기 위해 timeout 값을 길게 주었습니다.</strong></p>
+<h3 id="mcetoc_1iuejmtca47a">CrystalDiskMark 9.0.1</h3>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/Optane-Memory-CDM.png" alt="" width="1002" height="547"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/01-1.-CDM.png" alt="" width="3524" height="2093"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/01-2.-CDM_4K_QD1.png" alt="" width="3579" height="1796"></figure>
+<p> 명시된 스펙은 SEQ과 RND을 가리지 않고 초과하여 달성하는 모습입니다. 제품의 출시일을 생각하면 당연하지만요.</p>
+<p> 특히, RND 4k QD1 읽기 성능이 300MB/s를 초과해, 그 어떤 쓰기 성능보다 우수한 것도 살짝 재밌는 현상입니다.</p>
+<h3 id="mcetoc_1iuejmtca47b">3DMark Storage Benchmark</h3>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/02-1.-3DMark_Score.png" alt="" width="3579" height="846"></figure>
+<p> 3DMark Storage Benchmark는 Windows 기준으로 비어있는 공간이 30GB가 되어야합니다. CDM의 실행 사진에서 확인할 수 있지만, Windows는 이 SSD를 27GB로 인식합니다. 따라서 실행이 불가능하므로 패스합니다.</p>
+<h3 id="mcetoc_1iuejmtca47b">SPECworkstation 4.0</h3>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/03-1.-SPECworkstation.png" alt="" width="3579" height="846"></figure>
+<p> SPECworkstation에서도 종합적인 SPEC Ratio를 산출하는 것은 불가능합니다.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/03-2.-SPECworkstation_Detail.png" alt="" width="3876" height="2093"></figure>
+<p> 7zip 워크로드의 요구사항에 대해 용량을 불만족하기 때문인데, 나머지 워크로드에 대해서는 실행이 가능한 것을 확인할 수 있습니다. </p>
+<h3 id="mcetoc_1iuejqi41494">Fill Drive</h3>
+<p> 나래온 더티테스트와 비슷한 벤치마크입니다. FOB상태로 시작하여, SEQ 128k QD256으로 드라이브 전체를 2회 채우며, 0.1s 단위로 값을 측정합니다. 1회차와 2회차 사이의 휴식은 충분히 부여됩니다.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/04-1.-Fill-Drive-Time-1st.png" alt="" width="3579" height="1796"></figure>
+<p> 드라이브를 채우는 중, 40초와 70초 경에 쓰기 성능이 튀어오르는 것을 볼 수 있습니다. P4800X 750GB에 이어 이 친구도 뽑기를 잘못한걸까요?</p>
+<p> FOB상태에서 진행했을 때, 재현이 가능한 현상이었습니다. 다만, Windows의 CDM에서는 정상적으로 높은 속도가 측정된 것을 생각할 때, Linux에서의 테스트 조건이 영향을 주었을 가능성도 있습니다.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/04-2.-Fill-Drive-Time-2nd.png" alt="" width="3579" height="1796"></figure>
+<p> 휴식을 부여하고 2회차로 들어서면, 1회차와 다르게 안정된 모습을 보입니다. 높은 속도로 말이죠.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/04-3.-Fill-Drive-AVG.png" alt="" width="2985" height="846"></figure>
+<p> 첫 번째와 두 번째의 Fill Drive에 대한 전체 평균값은 위와 같습니다. PCIe 3.0 x2의 인터페이스에 대한 병목이 아닌, 컨트롤러에 걸린 제한으로 인해 Optane Memory의 쓰기 성능은 최대 300MB/s로 제한됩니다.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/04-4.-Fill-Drive-P99-2.png" alt="" width="2985" height="846"></figure>
+<p> 첫 번째 Fill Drive에 대한 하위 1% 속도입니다. 하위 1% 값은 평균값과 가까운 편이나, 쓰기 속도의 절대적인 값이 느려 비교군 중 가장 나쁜 결과를 보였습니다. </p>
+<h3 id="mcetoc_1iuejqi41495">Sync Performance</h3>
+<p> 자체적인 Pre-Conditioning 이후, 해당 영역에 한해서 측정됩니다. 쓰기량은 총 500MiB이며, 최대 소모 시간은 2분으로 제한합니다. <code>sync=1</code> 옵션을 활용했습니다.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/05-1.-Sync-Performance.png" alt="" width="2985" height="845"></figure>
+<p> 이전에도 말씀드렸지만, 제대로된 eSSD에선 동기와 비동기 쓰기의 성능에 차이가 발생하지 않습니다. Optane Memory는 일단 cSSD로 분류되지만, 3D XPoint 기반의 저장장치라는 점에서 SCM급이라고도 볼 수 있습니다. </p>
+<p> 절대적인 쓰기 성능은 낮지만요.</p>
+<h3 id="mcetoc_1iuejmtca47g">Low QD Performance by RW Ratio </h3>
+<p> 이전과 마찬가지로 Pre-Conditioning 이후에 측정하며, Burst 성능을 측정하기 위해서 각 단계에서 가해지는 I/O의 양은 GB 단위가 되지 않습니다. 다시 말해, 매우 가벼운 부하입니다. 전체 용량의 75%는 이미 채워져 있지만요.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/06-1.-RWW_RND.png" alt="" width="3579" height="1796"></figure>
+<p> 이 또한 NAND SSD에선 볼 수 없는 그래프의 개형입니다. 쓰기 속도가 제한되어 NAND SSD의 그래프와는 완전히 다른 모습이죠.</p>
+<p> 특히, 쓰기 비율이 높아질수록 QD2와 QD4의 성능 차이가 굉장히 줄어든 것도 있습니다. Polling 환경에서의 쓰기는 QD2가 사실상 포화되는 지점이었습니다.</p>
+<p> 그래프를 유심히 보셨다면 QD1의 읽기 성능도 상당히 놀라울 것 입니다. 여태껏 그 어떤 드라이브에서도 볼 수 없었던 700MB/s에 가까운 수치를 보여주니까요. 이는 전적으로 Linux 기반의 테스트에서 Polling을 활용하기에 도달 가능한 수치입니다. Windows에서는 아직 보기 힘든 수치죠.</p>
+<h4 id="mcetoc_1j0k12uta9h">Weighted Graph </h4>
+<p> QD1 80%, QD2 15%, QD4 5%로 가중치를 부여해 보기 쉽게 나타냅니다.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/06-2.-RWW_RND_WF.png" alt="" width="3579" height="1796"></figure>
+<p> 동일하게 3D XPoint를 사용하였지만, P4800X와 그래프의 모양이 다릅니다. 이유는 역시 Optane Memory의 쓰기 제한입니다. </p>
+<p> 다만, 읽기 성능은 P4800X가 밀리는 것도 볼 수 있는데, 이상하게 905P와 P4800X 시리즈는 Polling의 효과가 크지 않더라고요. 제가 테스트해본 Optane 제품 중에서 유일하게 10µs를 달성하지 못한 이유와도 엮여있다고 생각합니다. <br> 지금은 Intel 기반으로 테스트 시스템을 변경했는데, 테스트 가능한 P4800X가 없다는게 아쉬울 따름입니다.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/06-3.-RWW_RND_WF_order.png" alt="" width="2985" height="846"></figure>
+<p> 완전한 읽쓰기를 제외하고 산출한 평균값입니다. Low QD에서의 뛰어난 성능을 잘 보여주네요.</p>
+<hr>
+<h2 id="mcetoc_1iuejnn4l47m">eSSD Benchmarking</h2>
+<p> Purge 직후를 제외한 모든 단계 사이에는 휴식 시간이 부여되지 않습니다. Pre-Conditioning은 User Capacity의 2배를 쓰고나서도 Steady State에 진입할 때까지 이를 계속 진행합니다. <br> Steady State는 SEQ의 경우엔 대역폭의 기울기가 ±10%인 상태를 30초간 유지하는 것을 기준으로 하며, RND의 경우에는 IOPS의 기울기가 ±10%인 상태를 30초간 유지하는 것을 기준으로 합니다. 이를 달성할 수 없을 땐 User Capacity의 <strong>23배</strong>까지 쓰기를 진행합니다.</p>
+<p> 모든 워크로드는 User Capacity의 전체 영역에 대해서 진행하며, 각각 30초의 적응 시간을 가진 후에 5분 동안 성능측정을 진행합니다. 다시 말해, 128k Read 성능을 측정한다면 QD1 ~ QD256까지 총 9개의 작업이 있으며, 모든 작업이 30초의 적응 시간과 5분의 측정시간이 부여됩니다.</p>
+<p> 역시 자세한 벤치마크 방법론에 대해서는 이전에 작성한 <a href="https://freshflash4096.github.io/refresh-ssd-benchmark-method/" target="_blank" rel="noopener noreferrer">Refresh Benchmark</a>를 참고해주시길 바랍니다.</p>
+<h3 id="mcetoc_1j8trjd883tg">4-Corners Performance</h3>
+<h4 id="mcetoc_1j8trjd883th">SEQ Pre-Conditioning</h4>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/1-1-SEQ-PC-TP.png" alt="" width="3576" height="1797"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/1-2-SEQ-PC-LAT.png" alt="" width="3576" height="1797"></figure>
+<p> SEQ Pre-Conditioning에는 약 4분이 소모되었으며, 287MB/s의 속도로 Steady State에 진입했습니다. 앞서 Fill Drive에서 살펴본 것처럼, FOB 상태에서 128k 쓰기를 가할 때, 특정 지점이 튀는 모습을 확인할 수 있습니다.<br> 아니, 정확하게 말한다면, 특정 지점을 제외하고 성능이 저하된 모습이라 해야겠죠. </p>
+<p> 지연시간 그래프에서는 P4800X보다 약간 불안정한 모습을 보입니다. PM981a보단 낫다고 할 수 있겠지만요.</p>
+<h4 id="mcetoc_1j8trjd883ti">SEQ 128k Performance</h4>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/1-3-SEQ-Read.png" alt="" width="3579" height="1797"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/1-4-SEQ-Write.png" alt="" width="3579" height="1797"></figure>
+<p> SEQ 읽기는 QD2에서 1412MB/s@184µs로 포화되었고, SEQ 쓰기는 QD1에서 291MB/s@441µs, QD2에서 296MB/s@881µs로 최대치를 보였습니다.</p>
+<h4 id="mcetoc_1j8trjd883tk">RND Pre-Conditioning</h4>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/2-1-RND-PC-IOPS.png" alt="" width="3579" height="1797"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/2-2-RND-PC-LAT.png" alt="" width="3579" height="1797"></figure>
+<p> RND Pre-Conditioning도 SEQ와 비슷하게 약 4분이 소모되었으며, 64.8k IOPS로 Steady State에 진입합니다. </p>
+<h4 id="mcetoc_1j8trjd883tl">RND 4k Performance</h4>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/2-3-RND-Read.png" alt="" width="3579" height="1797"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/2-4-RND-Write.png" alt="" width="3579" height="1797"></figure>
+<p> RND 읽기는 QD4에서 330k IOPS@11µs로 포화되었습니다. 참고로, P4800X도 QD4에서 327k IOPS@15µs의 성능을 보여, 그래프가 교차하는 점과 서로의 QD4는 가까운 포인트였습니다.</p>
+<p> QD1의 성능은 168k IOPS@6µs의 성능을 보였는데, 이는 688MB/s라는 속도에 대응합니다.</p>
+<p> RND 쓰기는 QD2에서 69k IOPS@25µs로 포화되는 모습이었습니다. 283MB/s에 대응하며, 역시 300MB/s를 넘기지 못합니다.</p>
+<h3 id="mcetoc_1j8trjd883tg">4-Corners Consistency</h3>
+<p> QD에 따른 4-Corners Performance의 안정적인 정도를 제시합니다. 상위 99.9%값과 평균을 이용하는데, SEQ 128k에서는 Bandwidth를 기준으로, RND 4k에서는 IOPS를 기준으로 계산합니다. 참고로, RND 4k에서 QD1에 대한 값은 이후 Tail Latency에서 자세히 살펴보기에 제외됩니다.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/4-0.-Consistency.png" alt="" width="3579" height="1797"></figure>
+<p> 모든 지점에서 95% 이상의 Consistency를 보였습니다. </p>
+<h3 id="mcetoc_1j8trjd883tn">Specific Workload Performance</h3>
+<p> 4-Corners Performance가 아닌 워크로드를 분리했습니다. 단, 워크로드 이름은 편의상 붙인 것뿐이며, 실제 환경에서는 다양한 Block Size와 RW 비율이 나타난다는 것을 명심해야 합니다. Block Size들의 정확한 비율과 RW 비율을 결정하기 힘들어 대략 분류한, 가상의 워크로드입니다.</p>
+<h4 id="mcetoc_1j8trjd883to">Boot Workload (OCP BootBench)</h4>
+<p> Hyperscale에서의 Boot Drive로 사용될 때의 성능을 측정하는 벤치마크입니다. SEQ Write로 User Capacity가 2번 채워지면, 동기 쓰기, TRIM, 읽기가 동시에 가해지며, 결과의 지표는 읽기 IOPS입니다. 60k IOPS를 통과하면 합격입니다.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/10.-OCP-BootBench.png" alt="" width="2985" height="846"></figure>
+<p> Jobs가 151일 때, 약 41k IOPS가 측정되었습니다. </p>
+<h4 id="mcetoc_1j8trjd883tp">Read Intensive Workload (SEQ 128k R95:W05)</h4>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/3-1-SEQ-9505.png" alt="" width="3579" height="1797"></figure>
+<p> Read Intensive 워크로드에서는 QD2에서 최대 1144MB/s@186µs의 성능이 측정되었습니다.</p>
+<h4 id="mcetoc_1j8trjd883tq">Mainstream Workload (RND 4k R70:W30)</h4>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/3-2-RND-7030.png" alt="" width="3579" height="1797"></figure>
+<p> Mainstream 워크로드는 QD4에서 141k IOPS@24µs가, QD8은 지연시간이 2배로 늘어났지만, IOPS가 미미하게 증가하여 145k IOPS@51µs의 최대 성능을 보였습니다.</p>
+<h4 id="mcetoc_1j8trjd883tr">Write Intensive Workload (RND 4k R50:W50)</h4>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/3-3-RND-5050.png" alt="" width="3579" height="1797"></figure>
+<p> Write Intensive 워크로드는 QD4에서 105k IOPS@36µs의 성능이 측정되었습니다. 아무래도 쓰기 비율이 높아짐에 따라 P4800X에 밀리는 모습입니다.</p>
+<h4 id="mcetoc_1j8trjd883ts">AI Workload (RND 512B Read)</h4>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/3-4-RR-512B.png" alt="" width="3579" height="1797"></figure>
+<p> RND 512B 읽기에서는 RND 4k 읽기와 다르게 QD32까지 도달해야 1371k IOPS@22µs라는 최대 성능을 볼 수 있었습니다. RND 4k 읽기의 최대 성능이 330k IOPS라는 것을 생각하면, 꽤 놀라운 수치입니다.</p>
+<p> P4800X와 다르게 4k에 비해 512B 워크로드에서 굉장한 성능을 보였는데, 개인적으로는 P4800X 쪽이 아쉽네요. Optane의 장점을 다 못 살렸으니 말이죠.</p>
+<p> 정확한 성능을 비교하자면, P4800X는 QD8에서 580k IOPS를 약간 넘기는 성능을 보였지만, Optane Memory는 QD4에서 778k IOPS의 성능을 보였습니다. 오타가 아니라 QD8의 P4800X가 QD4의 Optane Memory에게 밀린 것이 맞습니다.</p>
+<p> Optane Memory의 지연시간은 QD1 3µs, QD2 4µs, QD4 5µs라는 아주 이쁜 결과가 나왔습니다. 50% 값이란 것에 유의해주세요.</p>
+<h3 id="mcetoc_1j8trjd883tt">Random 4k QD1 Tail Latency</h3>
+<p> Latency에서 가장 느린 구간을 의미합니다. 그렇기 때문에 QoS(Quality of Service)에 큰 영향을 미치고, 실제로 eSSD의 데이터시트에서는 QoS를 명시하고 있습니다. </p>
+<p> 여기에선 100ms나 10ms 단위가 아닌, 모든 개별 I/O에 대한 지연시간을 카운트하여 그래프를 그립니다. 그렇기 때문에 데이터가 상당히 방대해, 이 항목은 RND 4k QD1에 대해서만 진행합니다.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/5-1-RND-Read-TL.png" alt="" width="3875" height="2094"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/5-2-RND-Write-TL.png" alt="" width="3875" height="2094"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/5-3-RND-7030-TL.png" alt="" width="3875" height="2094"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/5-4-RND-5050-TL.png" alt="" width="3875" height="2094"></figure>
+<table style="border-collapse: collapse; width: 100%; height: 107.125px;" border="1">
+<tbody>
+<tr style="height: 48.5625px;">
+<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">RND Read</span></td>
+<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">Datasheet</span></td>
+<td style="width: 33.2382%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">Benchmark Result</span></td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 33.3809%; height: 10px; background-color: #34495e;"><span style="color: #ffffff;">Typical Value [Burst]</span></td>
+<td style="width: 33.3809%; height: 10px;">7 µs</td>
+<td style="width: 33.2382%; height: 10px;">6 µs</td>
+</tr>
+<tr>
+<td style="width: 33.3809%; height: 10px; background-color: #34495e;"><span style="color: #ffffff;">Typical Value [Steady]</span></td>
+<td style="width: 33.3809%; height: 10px;">- µs</td>
+<td style="width: 33.2382%; height: 10px;">6 µs</td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">QoS (99.999%)</span></td>
+<td style="width: 33.3809%; height: 48.5625px;">- ms</td>
+<td style="width: 33.2382%; height: 48.5625px;">72 µs</td>
+</tr>
+</tbody>
+</table>
+<table style="border-collapse: collapse; width: 100%; height: 107.125px;" border="1">
+<tbody>
+<tr style="height: 48.5625px;">
+<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">RND Write</span></td>
+<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">Datasheet</span></td>
+<td style="width: 33.2382%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">Benchmark Result</span></td>
+</tr>
+<tr style="height: 48.5625px;">
+<td style="width: 33.3809%; height: 10px; background-color: #34495e;"><span style="color: #ffffff;">Typical Value [Burst]</span></td>
+<td style="width: 33.3809%; height: 10px;">18 µs</td>
+<td style="width: 33.2382%; height: 10px;">19 µs</td>
+</tr>
+<tr>
+<td style="width: 33.3809%; height: 10px; background-color: #34495e;"><span style="color: #ffffff;">Typical Value [Steady]</span></td>
+<td style="width: 33.3809%; height: 10px;">- µs</td>
+<td style="width: 33.2382%; height: 10px;">18 µs</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 33.3809%; height: 10px; background-color: #34495e;"><span style="color: #ffffff;">QoS (99.999%)</span></td>
+<td style="width: 33.3809%; height: 10px;"> - ms</td>
+<td style="width: 33.2382%; height: 10px;">94 µs</td>
+</tr>
+</tbody>
+</table>
+<p> Optane SSD는 3D XPoint가 사용되어 Burst 성능과 Steady State의 성능이 동일합니다. 다만, 위의 표에서 Typical Value는 Burst와 Steady State에 다른 기준을 적용하였는데, 이는 Optane Memory 제품의 지연시간 스펙이 평균값에다가 SEQ 워크로드 기준이기 때문입니다. <br> Steady State에서는 평소대로 RND 50% 값을 기입했습니다. 그런데 별 차이 없죠?</p>
+<p> QoS도 굉장히 우수한 편입니다. 물론, P4800X가 더 우수했지만, 비교가 가능하다는 시점에서 상당히 우수하다고 할 수 있죠.</p>
+<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/66/C-8-RR-512B.png" alt="" width="3579" height="2094"></figure>
+<p> 99.999%를 기준으로 둔다면, 위 그래프의 3개 포인트를 제외하고는 모두 P4800X가 더 우수했습니다. </p>
+<hr>
+<h2 id="mcetoc_1iuqh3uem5o">Closing</h2>
+<p> 이제는 단종된 Optane이지만, 아직 여러 이유로 찾는 사람들은 존재합니다. Thrid Party SW를 이용해 드라이브의 원래 목적인 Caching으로 활용할 수도 있으며, 저용량의 OS를 담기 위한 Boot SSD, 용량대비 뛰어난 TBW를 활용한 Logging, ZFS에서는 저렴한 SLOG로도 활용할 수도 있습니다. </p>
+<p> 특별한 목적이 있다면, 하나 정도는 구해두시는 것도 나쁘지 않을 것 같습니다. 생산은 진작에 종료되었으니, 재고가 남아있을 때가 찬스라고도 할 수 있겠죠?</p>
+<p> 아슬하게 이번주 리뷰를 마무리했습니다. 당분간은 시험에 집중을 하기 위해 조금 템포를 늦춰볼게요. </p>
+<blockquote>
+<p>이 친구는 홈네트워크의 라우터에 들어가, Logging 용도로 일하고 있는 중 입니다.</p>
+</blockquote>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>그날 본 SSD의 이름을 우리는 아직 모른다 [960GB]</title>
         <author>
@@ -2862,529 +3318,6 @@
 <p> 읽어주셔서 감사합니다.</p>
 <blockquote>
 <p>C910 4TB 제품을 빌려주신 지인분께 이 글로 감사 인사를 전합니다. P3 Plus 2TB를 빌려주신 분인데, 다른 리뷰들 때문에 조금 늦어버렸네요.</p>
-</blockquote>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>순차 읽기의 잘못된 사용법 [7450 MAX 1.6TB]</title>
-        <author>
-            <name>Huie</name>
-        </author>
-        <link href="https://freshflash4096.github.io/micron-7450-max-review/"/>
-        <id>https://freshflash4096.github.io/micron-7450-max-review/</id>
-        <media:content url="https://freshflash4096.github.io/media/posts/59/w_7450_fr.jpg" medium="image" />
-            <category term="eSSD"/>
-            <category term="TLC"/>
-            <category term="Review"/>
-            <category term="Micron"/>
-
-        <updated>2025-12-04T23:25:00+09:00</updated>
-            <summary type="html">
-                <![CDATA[
-                        <img src="https://freshflash4096.github.io/media/posts/59/w_7450_fr.jpg" alt="" />
-                    Change log 2025.12.07 - SEQ 128k Write Consistency 그래프 Y축 수정 2025.12.19&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://freshflash4096.github.io/media/posts/59/w_7450_fr.jpg" class="type:primaryImage" alt="" /></p>
-                <blockquote>
-<p>Change log</p>
-<p>2025.12.07 - SEQ 128k Write Consistency 그래프 Y축 수정<br>2025.12.19 - Internal Components 표 오타 수정</p>
-</blockquote>
-<p> <a href="https://freshflash4096.github.io/refresh-ssd-benchmark-method/" target="_blank" rel="noopener noreferrer">벤치마크 방법을 새로고침</a>하고 처음 올린 eSSD 리뷰는 <a href="https://freshflash4096.github.io/micron-7300-max-review/" target="_blank" rel="noopener noreferrer">7300 MAX 3.2TB</a> 였습니다. 하지만, 기존의 데이터들을 비교군으로 활용하기 위해 새로운 테스트 집합을 보여드리진 못했습니다. </p>
-<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/seukeurinsyas-2025-11-30-ohu-5.15.01.png" alt="" width="1952" height="172">
-<figcaption>Excuse from 7300 MAX 3.2TB Review</figcaption>
-</figure>
-<p> 이전에 마무리하며 위와 같은 변명을 했기에, 이번 리뷰는 빠르게 작성을 시작했습니다. 본격적인 시험기간에 들어서면 또 밀릴 것이 분명하니까요.</p>
-<p> 오늘의 DUT는 7300 MAX의 후속작인 7450 MAX입니다. 진짜 후속이라고 한다면 7400 MAX도 있지만, 7300 MAX와 동일한 96L TLC가 적용되었습니다. 컨트롤러만 교체된 것이죠. 그렇기 때문에 7300 MAX에 비해 확실하게 개선된 모습을 7450 MAX가 보여줄 것으로 기대합니다.</p>
-<p> </p>
-<div class="post__toc">
-<h3>목차</h3>
-<ul>
-<li><a href="#mcetoc_1iup18slp5s">Appearance</a></li>
-<li><a href="#mcetoc_1iup1bg6i63">Internal Components</a></li>
-<li><a href="#mcetoc_1iup47dknb5">Datasheet</a></li>
-<li><a href="#mcetoc_1iup3oiobb2">Notable Points</a>
-<ul>
-<li><a href="#mcetoc_1iup50imcdg">Power-Loss-Protection Time</a></li>
-<li><a href="#mcetoc_1iup50imcdg">Namespace</a></li>
-<li><a href="#mcetoc_1iup50imcdg">Endurance</a></li>
-<li><a href="#mcetoc_1iup50imcdg">Power Limit</a></li>
-<li><a href="#mcetoc_1iup50imcdg">QoS</a></li>
-</ul>
-</li>
-<li><a href="#mcetoc_1iup4vgr6dd">SW Report</a></li>
-<li><a href="#mcetoc_1iup4vgr6dd">DUT Summary</a>
-<ul>
-<li><a href="#mcetoc_1iut5akj520">Comparison Device</a></li>
-<li><a href="#mcetoc_1iut5akj520">Test Platform</a></li>
-</ul>
-</li>
-<li><a href="#mcetoc_1iuejnn4l47m">cSSD Benchmarking</a>
-<ul>
-<li><a href="#mcetoc_1iuejmtca47a">CrystalDiskMark 9.0.1</a></li>
-<li><a href="#mcetoc_1iuejmtca47b">3DMark Storage Benchmark</a></li>
-<li><a href="#mcetoc_1iuejmtca47b">SPECworkstation 4.0</a></li>
-<li><a href="#mcetoc_1iuejqi41494">Fill Drive</a></li>
-<li><a href="#mcetoc_1iuejmtca47g">Low QD Performance by RW Ratio </a>
-<ul>
-<li><a href="#mcetoc_1j0k12uta9h">Weighted Graph </a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#mcetoc_1iuejnn4l47m">eSSD Benchmarking</a>
-<ul>
-<li><a href="#mcetoc_1j8trjd883tg">4-Corners Performance</a>
-<ul>
-<li><a href="#mcetoc_1j8trjd883th">SEQ Pre-Conditioning</a></li>
-<li><a href="#mcetoc_1j8trjd883ti">SEQ 128k Read</a></li>
-<li><a href="#mcetoc_1j8trjd883ti">SEQ 128k Write</a></li>
-<li><a href="#mcetoc_1j8trjd883tk">RND Pre-Conditioning</a></li>
-<li><a href="#mcetoc_1j8trjd883tl">RND 4k Read</a></li>
-<li><a href="#mcetoc_1j8trjd883ti">RND 4k Write</a></li>
-</ul>
-</li>
-<li><a href="#mcetoc_1j8trjd883tg">4-Corners Consistency</a></li>
-<li><a href="#mcetoc_1j8trjd883tn">Specific Workload Performance</a>
-<ul>
-<li><a href="#mcetoc_1j8trjd883to">Boot Workload (OCP BootBench)</a></li>
-<li><a href="#mcetoc_1j8trjd883tp">Read Intensive Workload (SEQ 128k R95:W05)</a></li>
-<li><a href="#mcetoc_1j8trjd883tq">Mainstream Workload (RND 4k R70:W30)</a></li>
-<li><a href="#mcetoc_1j8trjd883tr">Write Intensive Workload (RND 4k R50:W50)</a></li>
-<li><a href="#mcetoc_1j8trjd883ts">AI Workload (RND 512B Read)</a></li>
-</ul>
-</li>
-<li><a href="#mcetoc_1j8trjd883tt">Random 4k QD1 Tail Latency</a></li>
-</ul>
-</li>
-<li><a href="#mcetoc_1iuqh3uem5o">Closing</a></li>
-</ul>
-</div>
-<hr>
-<h2 id="mcetoc_1iup18slp5s">Appearance</h2>
-<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/w_7450_fr.jpg" data-size="4128x2580"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/w_7450_fr-thumbnail.jpg" alt="" width="768" height="480"></a>
-<figcaption>7450 MAX Front</figcaption>
-</figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/w_7450_rr.jpg" data-size="4128x2580"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/w_7450_rr-thumbnail.jpg" alt="" width="768" height="480"></a>
-<figcaption>7450 MAX Rear</figcaption>
-</figure>
-</div></div>
-<p> 첫인상은 조금 더 세련되었다는 느낌이었습니다. 7300 MAX에 비해 조금은 가볍지만, 후면의 파란색 플라스틱이 포인트를 만들어 귀엽다는 느낌도 드네요.</p>
-<p> 7300 MAX와 다르게 U.3 SSD이지만, U.2 호스트에 장착할 수 있기에 크게 신경 쓸 부분은 아닙니다. 단, U.3 호스트에는 U.2 SSD의 일반적인 장착이 힘들기에 유의해 주세요.</p>
-<p> 그 외에 전작과 다른 부분은 디버그용 포트가 외부로 돌출되어 있지 않았다는 부분일까요?</p>
-<hr>
-<h2 id="mcetoc_1iup1bg6i63">Internal Components</h2>
-<pre>문외한의 입장에서 일부 IC만 찾아보았으며, 제조시기 등에 따라 변경될 가능성이 있습니다.<br>맞지 않을 확률이 상당히 높으니 재미로만 읽어주세요. </pre>
-<figure class="post__image">
-<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/7450_td_fr.jpeg" data-size="2770x3610"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/7450_td_fr-thumbnail.jpeg" alt="" width="768" height="1001"></a>
-<figcaption>7450 MAX 1.6TB Teardown (Front)</figcaption>
-</figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/7450_td_rr.jpeg" data-size="2524x3518"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/7450_td_rr-thumbnail.jpeg" alt="" width="768" height="1070"></a>
-<figcaption>7450 MAX 1.6TB Teardown (Rear)</figcaption>
-</figure>
-</div></div>
-</figure>
-<table style="border-collapse: collapse; width: 100%; height: 107.125px;" border="1">
-<tbody>
-<tr style="height: 48.5625px;">
-<td style="width: 49.9287%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Micron 7450 MAX (1.6TB, U.3 7mm)</span></td>
-<td style="width: 50.0713%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">2022. 09.</span></td>
-</tr>
-<tr style="height: 48.5625px;">
-<td style="width: 49.9287%; height: 48.5625px;"><strong><span style="color: #e03e2d;">Micron MTCBCV0AA:C</span></strong></td>
-<td style="width: 50.0713%; height: 48.5625px;"><strong><span style="color: #f1c40f;">Micron MT29F4T08EULEEM4-QK:E *4</span></strong></td>
-</tr>
-<tr style="height: 10px;">
-<td style="width: 49.9287%; height: 10px;"><strong><span style="color: #e67e23;">Micron MT40A512M16TB-062E:R *2</span></strong></td>
-<td style="width: 50.0713%; height: 10px;"><span style="color: #f1c40f;"><span style="color: #2dc26b;">Rubycon 35ZLH47MEFC5X11 *7</span></span></td>
-</tr>
-</tbody>
-</table>
-<p> 제가 직접적인 분해를 하지 않고, 대여해주신 분께서 촬영하신 이미지를 그대로 사용했습니다.</p>
-<p> 컨트롤러는 <span style="color: #e03e2d;">Micron </span><span style="color: #e03e2d;">MTCBCV0AA:C</span>를 사용했습니다. Micron의 in-house controller로, 상세한 정보는 공개되어 있지 않습니다. 10여 년 전에 인수한 Tidal Systems를 계속해서 유효하게 굴리는 모습이네요.</p>
-<p> DRAM은 <span style="color: #e67e23;">Micron MT40A512M16TB-062E:R</span>이 실장되었습니다. DDR4 3200MT/s CL22 8Gb의 스펙을 가지고 있으며, 후면에도 실장되어 총 2GB의 용량을 가집니다.</p>
-<p> NAND는<strong> </strong><span style="color: #f1c40f;">Micron MT29F4T08EULEEM4-QK:E</span>이며, 전면에만 4개 실장되었습니다. 각 칩은 B47R 또는 176L TLC라고도 불리는 Micron의 G5 TLC 512Gb Die가 8개씩 패키징되어 2048Gb = 512GB를 보유합니다. 이렇게 Raw Capacity는 2TB를 구현하나, 28%의 OP가 가해져 User Capacity는 1.6TB에 불과합니다.</p>
-<p> PLP를 위한 Capacitor는 <span style="color: #f1c40f;"><span style="color: #2dc26b;">Rubycon 35ZLH47MEFC5X11</span></span>이 채용되었습니다. 35V 47μF의 스펙을 가지며, 7개를 실장했습니다.</p>
-<p> 참고로, 12.8TB 모델과 동일한 하드웨어를 공유하리라 생각되는 7450 PRO 15.36TB의 PCB는 완전히 다른 형태로, 내부를 가득 채운 형태를 하고 있습니다.</p>
-<hr>
-<h2 id="mcetoc_1iup47dknb5">Datasheet</h2>
-<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/Perf-Spec.png" alt="" width="1548" height="1788">
-<figcaption>7450 Technical Product Specification</figcaption>
-</figure>
-<p> 순차 읽기 성능은 용량에 따라 차이가 나지 않습니다만, 쓰기 성능은 차이가 납니다. 1.6TB 제품의 순차 쓰기 성능은 2700MB/s로, 최대 용량 모델의 성능인 5600MB/s의 약 절반 정도 되는 모습입니다. </p>
-<p> 동시에, M.2 폼팩터를 동일한 용량의 U.3나 E1.S와 비교하면 절대적으로 성능에 제한이 걸린 것을 확인할 수 있습니다.</p>
-<hr>
-<h2 id="mcetoc_1iup3oiobb2">Notable Points</h2>
-<h3 id="mcetoc_1iup50imcdg">Power-Loss-Protection Time</h3>
-<p> 대부분의 eSSD는 PLP를 위한 기술이 적용됩니다. 갑작스러운 전원 차단에 대해 어느 정도의 백업 시간을 가질 수 있는지 알아봅시다.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/PLP-Time.png" alt="" width="3000" height="2100"></figure>
-<p> 7개의 <span style="color: #f1c40f;"><span style="color: #2dc26b;">Rubycon 35ZLH47MEFC5X11</span></span>은 약 0.2J을 저장할 수 있으며, 이에 따라 IDLE 상태에서는 약 40ms를 버틸 수 있습니다. 하지만, 부하가 가해진다면 여태까지 리뷰를 진행한 <a href="https://freshflash4096.github.io/tags/essd/" target="_blank" rel="noopener noreferrer">eSSD</a>들에 비해 30ms 이하라는 비교적 짧은 시간을 보여줍니다. </p>
-<p> 참고로, 워크로드에 따른 전력 소모량은 Technical Product Specification에 명시된 RMS 값을 이용했습니다.</p>
-<h3 id="mcetoc_1iup50imcdg">Namespace</h3>
-<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/Namespace_PB.png" data-size="1748x612"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/Namespace_PB-thumbnail.png" alt="" width="768" height="269"></a>
-<figcaption>Namespace from Product Brief</figcaption>
-</figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/Namespace_TP.png" data-size="924x596"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/Namespace_TP-thumbnail.png" alt="" width="768" height="495"></a>
-<figcaption>Namespace from Technical Product Specification</figcaption>
-</figure>
-</div></div>
-<p> Product Brief에는 최대 128개의 Namespaces를 지원한다고 하였지만, Technical Product Specification에서는 132개라고 보고합니다. 개인 입장에선 100개가 넘는 Namespace를 전부 다룰 일은 적기에 크게 상관은 없지만, 무엇이 옳은지는 궁금한 법이죠.</p>
-<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/Namespace_Real.png" alt="" width="3976" height="2246">
-<figcaption><a href="https://github.com/FreshFlash4096/SSD-Report/blob/8d77429fcfd2ef17f2a6af6a6b2a6de4924df3af/Micron/Micron%207450%20MAX%201.6TB%20(U.3%207mm%20NVMe)/7450%20MAX%201.6TB%20nvme_id_ctrl.log#L190" target="_blank" rel="noopener noreferrer">Namespace from FreshFlash4096/SSD-Report</a></figcaption>
-</figure>
-<p> 위 이미지는 제 <a href="https://github.com/FreshFlash4096/SSD-Report">Repository</a>의 캡처본입니다. CDI 이미지를 보여주며 항상 말하는 그곳이죠. 아무튼, 7450이 지원하는 최대 Namespaces 개수는 132개로 확인되었습니다.</p>
-<h3 id="mcetoc_1iup50imcdg">Endurance</h3>
-<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/Endurance.png" alt="" width="1978" height="1114">
-<figcaption>7450 Technical Product Specification</figcaption>
-</figure>
-<p> SSD의 내구성 측정은 JEDEC의 JESD218과 JESD219에서 잘 다루고 있습니다. SSD들은 대개 이 워크로드를 기준으로 TBW를 보증하는데, Micron의 eSSD는 이전부터 약간 다른 기준을 적용합니다. 100% RND 4k Write죠.</p>
-<p> 실제로 JESD219에서 명시된 엔터프라이즈 워크로드는 67%가 4k 크기로 이루어져 있으니, 큰 차이가 없을 수도 있겠습니다만, 7450이 특이했던 부분은 순차 128k 쓰기에 대한 TBW도 다루고 있다는 점입니다.</p>
-<p> 그렇게 흥미롭거나 재미난 부분은 아니지만, 워크로드에 따라 TBW는 차이가 꽤 난다는 부분을 언급하기 위해서 들고 왔습니다. 국내 일부 사용자분들께서 수행하는 수명 테스트에 대한 조그만 반박입니다. 더 엄격하게 들어가자면 WAF의 이해와 JESD218의 독파를 권장해 드리고 싶네요.</p>
-<h3 id="mcetoc_1iup50imcdg">Power Limit</h3>
-<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/PL.png" alt="" width="1978" height="1086">
-<figcaption>7450 Technical Product Specification</figcaption>
-</figure>
-<p> 위에서 보여드렸던 성능표를 기억하시나요? U.3는 7mm와 15mm 모델이 있지만, 성능 차이는 언급되지 않았습니다. 대신, 7mm는 15W로 전력 제한이 되었다는 언급이 있었죠. 실제로 전력 소모를 언급하는 표에서 7mm 모델은 전력 소모가 15W로 제한되는 것을 확인했습니다. <span style="font-size: inherit;">전력 차이는 발생하지만, 성능은 동일하다... 직관적이지 않은 결과네요.</span></p>
-<p> 반면, E1.S 모델은 순차 쓰기 성능이 차이가 났습니다. 성능표에서 E1.S 5.9mm 모델은 12W로 전력 제한된 상태라고 언급하였고, 이 표에서도 12W의 제한이 걸린 것을 확인할 수 있었습니다.</p>
-<p> 어느 쪽이든 1.6TB 모델은 상관없는 이야기지만요.</p>
-<h3 id="mcetoc_1iup50imcdg">QoS</h3>
-<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/QoS.png" alt="" width="906" height="320">
-<figcaption>7450 Product Brief</figcaption>
-</figure>
-<p> Technical Product Specification에는 언급되지 않았지만, Product Brief에는 2ms 이하의 99.9999% 읽기 지연시간을 보여준다고 자랑합니다. </p>
-<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/QoS-Condition.png" alt="" width="1506" height="848">
-<figcaption>7450 Product Brief</figcaption>
-</figure>
-<p> 더 자세히 들여다보면 워크로드를 파악할 수 있습니다. Read가 70%인 RND 4k환경인데, 다행히도 제 리뷰에선 이 조건의 99.9999%를 다룰 수 있습니다. 꼭 확인해 보도록 하죠.</p>
-<hr>
-<h2 id="mcetoc_1iup4vgr6dd">SW Report</h2>
-<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/CDI_7450.png" alt="" width="1002" height="992">
-<figcaption>CrystalDiskInfo 9.7.0</figcaption>
-</figure>
-<p> 온도 센서는 3개가 있는 것으로 보입니다. 그외에 특별한 점은 보이지 않네요.</p>
-<p> smartmontools와 NVMe-CLI의 id-ctrl 결과는 <a href="https://github.com/FreshFlash4096/SSD-Report">GitHub</a>에 첨부하도록 하겠습니다.</p>
-<hr>
-<h2 id="mcetoc_1iup4vgr6dd">DUT Summary</h2>
-<p>벤치마크를 진행할 SSD에 관한 요약입니다.</p>
-<table style="border-collapse: collapse; width: 100%; height: 301.375px;" border="1">
-<tbody>
-<tr style="height: 48.5625px;">
-<td style="width: 99.8573%; background-color: #34495e; height: 48.5625px;" colspan="4">
-<div>
-<div><strong><span style="color: #ffffff;">Micron_7450_MTFDKCB1T6TFS [7450 MAX 1.6TB]</span></strong></div>
-</div>
-</td>
-</tr>
-<tr style="height: 48.5625px;">
-<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Link</span></td>
-<td style="width: 25.8203%; height: 48.5625px;">PCIe 4.0 x4</td>
-<td style="width: 24.1084%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">NVMe Version</span></td>
-<td style="width: 24.9643%; height: 48.5625px;">NVMe 1.4</td>
-</tr>
-<tr style="height: 48.5625px;">
-<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Firmware</span></td>
-<td style="width: 25.8203%; height: 48.5625px;">
-<div>
-<div>
-<div>
-<div>E2MU300</div>
-</div>
-</div>
-</div>
-</td>
-<td style="width: 24.1084%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">LBA Size</span></td>
-<td style="width: 24.9643%; height: 48.5625px;"><strong>512B</strong> / 4096B</td>
-</tr>
-<tr style="height: 48.5625px;">
-<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Controller</span></td>
-<td style="width: 25.8203%; height: 48.5625px;">MTCBCV0AA:C</td>
-<td style="width: 24.1084%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Warning Temp</span></td>
-<td style="width: 24.9643%; height: 48.5625px;">77 °C</td>
-</tr>
-<tr style="height: 48.5625px;">
-<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Storage Media</span></td>
-<td style="width: 25.8203%; height: 48.5625px;">Micron G5 TLC</td>
-<td style="width: 24.1084%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Critical Temp</span></td>
-<td style="width: 24.9643%; height: 48.5625px;">85 °C</td>
-</tr>
-<tr style="height: 48.5625px;">
-<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Power State</span></td>
-<td style="width: 25.8203%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Maximum Power</span></td>
-<td style="width: 24.1084%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Entry Latency</span></td>
-<td style="width: 24.9643%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">Exit Latency</span></td>
-</tr>
-<tr style="height: 10px;">
-<td style="width: 24.9643%; height: 10px;">PS0</td>
-<td style="width: 25.8203%; height: 10px;">15.00 W</td>
-<td style="width: 24.1084%; height: 10px;">0 μs</td>
-<td style="width: 24.9643%; height: 10px;">0 μs</td>
-</tr>
-<tr>
-<td style="width: 24.9643%; height: 10px;">PS1</td>
-<td style="width: 25.8203%; height: 10px;">13.00 W</td>
-<td style="width: 24.1084%; height: 10px;">0 μs</td>
-<td style="width: 24.9643%; height: 10px;">0 μs</td>
-</tr>
-<tr>
-<td style="width: 24.9643%; height: 10px;">PS2</td>
-<td style="width: 25.8203%; height: 10px;">11.00 W</td>
-<td style="width: 24.1084%; height: 10px;">0 μs</td>
-<td style="width: 24.9643%; height: 10px;">0 μs</td>
-</tr>
-<tr>
-<td style="width: 24.9643%; height: 10px;">PS3</td>
-<td style="width: 25.8203%; height: 10px;">10.00 W</td>
-<td style="width: 24.1084%; height: 10px;">0 μs</td>
-<td style="width: 24.9643%; height: 10px;">0 μs</td>
-</tr>
-<tr>
-<td style="width: 24.9643%; height: 10px;">PS4</td>
-<td style="width: 25.8203%; height: 10px;">8.25 W</td>
-<td style="width: 24.1084%; height: 10px;">0 μs</td>
-<td style="width: 24.9643%; height: 10px;">0 μs</td>
-</tr>
-</tbody>
-</table>
-<p> 7300 MAX에 비해 PS가 조금 더 현실적으로 변했습니다. Warning, Critical Temperature도 상승한 것이 눈에 띄네요.</p>
-<p> 펌웨어는 25년 11월 기준, 최신 버전인 <span style="text-decoration: underline;">E2MU300</span>으로 업그레이드를 진행했습니다. 업그레이드 전후에 모두 테스트를 진행하였지만, 유의미한 차이는 보이지 않았습니다. 따라서 최신 펌웨어에 대한 결과만을 제시합니다.</p>
-<h3 id="mcetoc_1iut5akj520">Comparison Device</h3>
-<p> 비교군은 아래와 같습니다.</p>
-<table style="border-collapse: collapse; width: 100%;" border="1">
-<tbody>
-<tr>
-<td style="width: 38.0878%; background-color: #34495e;"><span style="color: #ffffff;">Name</span></td>
-<td style="width: 61.9122%; background-color: #34495e;"><span style="color: #ffffff;">Why?</span></td>
-</tr>
-<tr>
-<td style="width: 38.0878%;"><a href="https://freshflash4096.github.io/micron-7300-max-review/" target="_blank" rel="noopener noreferrer"><strong>7300 MAX 3.2TB </strong>[95420100]</a></td>
-<td style="width: 61.9122%;">DUT의 전작. 전체적으로 새로운 부품이 적용되었습니다.</td>
-</tr>
-<tr>
-<td style="width: 38.0878%;"><a href="https://freshflash4096.github.io/the-last-mlc-970-pro/" target="_blank" rel="noopener noreferrer"><strong>970 PRO 1TB </strong>[1B2QEXP7<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">]</span></a></td>
-<td style="width: 61.9122%;">비교대상으로 만만한 MLC cSSD.</td>
-</tr>
-</tbody>
-</table>
-<p> 전작의 7300 MAX는 당연히 포함했습니다. 그 외에 970 PRO도 비교군으로 제시하겠습니다. 뭐랄까요, 970 PRO는 제게 있어서 좀 만만한 비교군 중 하나입니다. 다른 SSD들의 데이터가 좀 적기도 하고요.</p>
-<p> 물론, PCIe 4.0 x4나 PCIe 3.0 x8을 지원하는 SSD였다면 좋았겠죠. 하지만, <a href="https://freshflash4096.github.io/pm1725-oracle-f320-review/" target="_blank" rel="noopener noreferrer">PM9A1이나 PM1725</a> 등의 테스트 데이터들은 이전 테스트 방법을 채용하기에 직접적인 비교가 불가능합니다.</p>
-<hr>
-<h3 id="mcetoc_1iut5akj520">Test Platform</h3>
-<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/25H2.png" data-size="536x472"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/25H2-thumbnail.png" alt="" width="536" height="472"></a>
-<figcaption>Windows</figcaption>
-</figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/Linux.png" data-size="1532x1610"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/Linux-thumbnail.png" alt="" width="768" height="807"></a>
-<figcaption>Linux</figcaption>
-</figure>
-</div></div>
-<p> 테스트 환경은 위와 같습니다. Windows 25H2(26200.6899)에 종속되는 도구들을 제외하고는 모두 FIO 3.41을 통해 Rocky Linux 10(6.12.0-55.12.1.el10_0)에서 실행되며, io_uring과 Polling을 적극적으로 활용합니다. 또한, 양쪽 다 기본 Inbox Driver를 사용합니다.</p>
-<p> HW 사양에 대해서는 상단 우측의 fastfetch를 통해서 확인할 수 있지만, 다시 언급하자면, AMD의 9600X를 사용하고 있습니다. DUT는 5.0 x16 연결이 가능한 PEG 슬롯에 장착됩니다.</p>
-<p> 자세한 벤치마크 방법론에 대해서는 이전에 작성한 <a href="https://freshflash4096.github.io/refresh-ssd-benchmark-method/" target="_blank" rel="noopener noreferrer">Refresh Benchmark</a>를 참고해 주시길 바랍니다.</p>
-<hr>
-<h2 id="mcetoc_1iuejnn4l47m">cSSD Benchmarking</h2>
-<pre class="language-batch"><code>start /wait Rundll32.exe advapi32.dll/ProcessIdleTasks</code></pre>
-<p> Windows에서는 위의 명령어를 실행하고 15분 뒤를 IDLE 상태로 정의해 벤치마크를 진행합니다. 각 벤치마크 사이에는 5분의 휴식 시간이 부여되며, Purge는 Linux에서 <code>nvme format</code> 명령어를 통해 수행했습니다. </p>
-<h3 id="mcetoc_1iuejmtca47a">CrystalDiskMark 9.0.1</h3>
-<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/CDM_7450.png" alt="" width="1002" height="547">
-<figcaption>CrystalDiskMark 9.0.1</figcaption>
-</figure>
-<p> Windows에서 인식하는 용량은 1490GiB임을 확인할 수 있습니다. 높은 QD의 랜덤쓰기는 순차쓰기와 동일함도 확인할 수 있었습니다.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/0.-CDM.png" alt="" width="3600" height="1800"></figure>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/0.-CDM_4k.png" alt="" width="3600" height="1800"></figure>
-<p> QD1에서의 RND 4k Read를 제외하고는 모두 7450 MAX가 가장 우수했습니다. 특히, 7300 MAX에 비해 저용량임에도 불구하고 모든 부하에서 앞지르고 있는 것은 나름 만족스럽네요.</p>
-<h3 id="mcetoc_1iuejmtca47b">3DMark Storage Benchmark</h3>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/1.-3DMark.png" alt="" width="3000" height="750"></figure>
-<p> CDM에서 보여준 우수한 결과와 다르게, 3DMark에서는 970 PRO에 상당히 뒤처졌습니다. </p>
-<h3 id="mcetoc_1iuejmtca47b">SPECworkstation 4.0</h3>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/1.-SPECworkstation.png" alt="" width="3000" height="750"></figure>
-<p> SPECworkstation에서는 비교군 중 가장 뒤처졌습니다. CDM을 제외한 2개의 벤치마크 모음집만 진행했는데, 워크로드에 따라 성능은 매우 달라질 수 있다는 것을 아주 잘 보여주네요.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/1.-SPECworkstation-detail.png" alt="" width="3900" height="2100"></figure>
-<p> 세부적인 워크로드에 따른 성능은 위와 같습니다. 천차만별이죠?</p>
-<p> 7zip이나 mozillaVS 워크로드에서는 7450 MAX가 독보적인 성능을 보여주었지만, MayaVenice나 proddev와 같은 경우에는 가장 나쁜 성능을 보여주었습니다.</p>
-<p> 간단하게 끝내지 말고, 더 살펴보죠. MandE 워크로드에서는 7450 MAX와 970 PRO의 성능이 유사했지만, 7300 MAX가 독보적이었으며, maya 워크로드에서는 7300 MAX와 970 PRO의 성능이 유사하고 7450 MAX가 가장 뒤떨어졌습니다.</p>
-<p> 파고들수록 평소보다 더욱 복잡해 보이네요. 아직 볼 그래프가 많이 남았으니 여기서 짧게 마무리하고 넘어갑시다.</p>
-<h3 id="mcetoc_1iuejqi41494">Fill Drive</h3>
-<p> 나래온 더티테스트와 비슷한 벤치마크입니다. FOB상태로 시작하여, SEQ 128k QD256으로 드라이브 전체를 2회 채우며, 0.1s 단위로 값을 측정합니다. 1회차와 2회차 사이의 휴식은 충분히 부여됩니다.</p>
-<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/2.-Fill-Drive-TGBW-1st.png" data-size="3600x1800"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/2.-Fill-Drive-TGBW-1st-thumbnail.png" alt="" width="768" height="384"></a>
-<figcaption>Fill Drive 1st (TGBW)</figcaption>
-</figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/2.-Fill-Drive-TGBW-2nd.png" data-size="3600x1800"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/2.-Fill-Drive-TGBW-2nd-thumbnail.png" alt="" width="768" height="384"></a>
-<figcaption>Fill Drive 2nd (TGBW)</figcaption>
-</figure>
-</div></div>
-<p> 엔터프라이즈 SSD는 평화롭습니다. 심심하니 조금 더 자세히 들여다보죠.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/Multi-Fill-Drive-Time-2.png" alt="" width="3600" height="1800"></figure>
-<p> 1회차 Fill Drive를 시간 축을 이용해 나타냈습니다. 가장 높은 빈도로 나타난 포인트는 2949MB/s 였으며, 그보다 위쪽은 평균적으로 2956MB/s가 계산되었습니다. 아래쪽에서는 일부 이상치로 간주할 수 있는 포인트를 제외하고는 평균적으로 2793MB/s를 보였습니다.</p>
-<p> 빨간 네모로 구역을 표시하였지만, 전체 구간에 대해 계산을 진행했습니다.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/2.-Fill-Drive-TGBW-1st_Histogram_Line.png" alt="" width="3600" height="1800"></figure>
-<p> 시험적으로 보여드리는 히스토그램입니다. 기존에 Fill Drive 그래프에 대한 코드를 Gemini에 입력하고 히스토그램을 그리는 코드를 요구한 결과물인데, 꽤 만족스럽네요. 언젠가 그래프 출력 코드를 Refactoring 할 때 잘 써먹을 수 있을 것 같습니다. <br> 참고로 <span style="font-size: inherit;"><code>bins='auto'</code>를 사용하였고, 값으로는 80이 선택된 것을 확인했습니다.</span></p>
-<p> 히스토그램의 의미 있는 사용 방법은 아직 고민 중입니다.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/2.-Fill-Drive-AVG-Speed.png" alt="" width="3000" height="750"></figure>
-<p> 첫 번째와 두 번째의 Fill Drive에 대한 전체 평균값은 2858MB/s로, 970 PRO 보다 앞서는 모습입니다. </p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/2.-P1_Throughput_Compare-4.png" alt="" width="3000" height="750"></figure>
-<p> 다만, 첫 번째 Fill Drive에 대한 상위 99% 속도는 970 PRO에 뒤처졌습니다. 매번 비교군으로 띄울 때마다 느끼지만, 순차 워크로드에 있어 970 PRO는 여전히 상당한 성능을 보여줍니다.</p>
-<h3 id="mcetoc_1iuejmtca47g">Low QD Performance by RW Ratio </h3>
-<p> 이전과 마찬가지로 Pre-Conditioning 이후에 측정하며, Burst 성능을 측정하기 위해서 각 단계에서 가해지는 I/O의 양은 GB 단위가 되지 않습니다. 다시 말해, 매우 가벼운 부하입니다. 전체 용량의 75%는 이미 채워져 있지만요.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/4.-RWW_RND.png" alt="" width="3600" height="1800"></figure>
-<p> 7300 MAX와 다르게 랜덤 쓰기가 제대로 확장되는 모습을 보입니다.</p>
-<h4 id="mcetoc_1j0k12uta9h">Weighted Graph </h4>
-<p> QD1 80%, QD2 15%, QD4 5%로 가중치를 부여해 보기 쉽게 나타냅니다.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/4.-RWW_RND_WF.png" alt="" width="3600" height="1800"></figure>
-<p> 7300 MAX에 비하면 모든 위치에서 우위이지만, 970 PRO와 비교하면 쓰기에 가까울 때를 제외하고는 밀리는 모습입니다.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/4.-RWW_RND_WF_order.png" alt="" width="3000" height="750"></figure>
-<p> 완전한 읽쓰기를 제외하고 산출한 평균값입니다. 예상할 수 있던 순위입니다. </p>
-<hr>
-<h2 id="mcetoc_1iuejnn4l47m">eSSD Benchmarking</h2>
-<p> Purge 직후를 제외한 모든 단계 사이에는 휴식 시간이 부여되지 않습니다. Pre-Conditioning은 User Capacity의 2배를 쓰고나서도 Steady State에 진입할 때까지 이를 계속 진행합니다. <br> Steady State는 SEQ의 경우엔 대역폭의 기울기가 ±10%인 상태를 30초간 유지하는 것을 기준으로 하며, RND의 경우에는 IOPS의 기울기가 ±10%인 상태를 30초간 유지하는 것을 기준으로 합니다. 이를 달성할 수 없을 땐 User Capacity의 23배까지 쓰기를 진행합니다.</p>
-<p> 모든 워크로드는 User Capacity의 전체 영역에 대해서 진행하며, 각각 30초의 적응 시간을 가진 후에 5분 동안 성능측정을 진행합니다. 다시 말해, 128k Read 성능을 측정한다면 QD1 ~ QD256까지 총 9개의 작업이 있으며, 모든 작업이 30초의 적응 시간과 5분의 측정시간이 부여됩니다.</p>
-<p> 역시 자세한 벤치마크 방법론에 대해서는 이전에 작성한 <a href="https://freshflash4096.github.io/refresh-ssd-benchmark-method/" target="_blank" rel="noopener noreferrer">Refresh Benchmark</a>를 참고해주시길 바랍니다.</p>
-<h3 id="mcetoc_1j8trjd883tg">4-Corners Performance</h3>
-<h4 id="mcetoc_1j8trjd883th">SEQ Pre-Conditioning</h4>
-<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/1-1-SEQ-PC-BW.png" data-size="3600x1800"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/1-1-SEQ-PC-BW-thumbnail.png" alt="" width="768" height="384"></a>
-<figcaption>SEQ PC TP [7450 MAX 1.6TB]</figcaption>
-</figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/1-2-SEQ-PC-LAT.png" data-size="3600x1800"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/1-2-SEQ-PC-LAT-thumbnail.png" alt="" width="768" height="384"></a>
-<figcaption>SEQ PC LAT [7450 MAX 1.6TB]</figcaption>
-</figure>
-</div></div>
-<p> Sequential Pre-Conditioning은 1160초에 걸쳐 수행되었으며, 2802MB/s로 Steady State에 진입하였습니다.</p>
-<h4 id="mcetoc_1j8trjd883ti">SEQ 128k Read</h4>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/1-3-SEQ-Read.png" alt="" width="3600" height="1800"></figure>
-<p> 먼저 최대치를 보자면, 스펙 시트에서는 최대 6800MB/s를 명시하였고, QD32에서 6805MB/s, QD64에서 6872MB/s가 측정되었습니다. 다만, QD64의 경우엔 평균 지연시간 1.2ms와 50% 지연시간 1.1ms로, 그래프에 나타나진 않았습니다. 어쨌든, 최대 성능 자체는 충족합니다.</p>
-<p> 하지만, 넓게 퍼진 그래프에서 알 수 있듯, Low QD의 순차 읽기 성능이 상당히 낮습니다. 7300 MAX도 Low QD의 순차 읽기 성능이 기대보다 상당히 낮아 실망하였는데, 7450 MAX는 더 심한 모습입니다. QD8까지 전작에 밀리는 모습은 참 아쉽네요.</p>
-<h4 id="mcetoc_1j8trjd883ti">SEQ 128k Write</h4>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/1-4-SEQ-Write.png" alt="" width="3600" height="1800"></figure>
-<p> 순차 쓰기는 읽기와 달랐습니다. 전작은 QD1에서 꽤 낮은 성능을 보였지만, 7450 MAX는 스펙시트의 2700 MB/s를 QD1에서부터 2865MB/s로 초과하는 모습을 보였습니다. </p>
-<h4 id="mcetoc_1j8trjd883tk">RND Pre-Conditioning</h4>
-<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="이미지 추가" data-columns="3">
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/2-1-RND-PC-IOPS-2.png" data-size="3600x1800"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/2-1-RND-PC-IOPS-2-thumbnail.png" alt="" width="768" height="384"></a>
-<figcaption>RND PC IOPS [7450 MAX 1.6TB]</figcaption>
-</figure>
-<figure class="gallery__item"><a href="https://freshflash4096.github.io/media/posts/59/gallery/2-2-RND-PC-LAT-2.png" data-size="3600x1800"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/gallery/2-2-RND-PC-LAT-2-thumbnail.png" alt="" width="768" height="384"></a>
-<figcaption>RND PC LAT [7450 MAX 1.6TB]</figcaption>
-</figure>
-</div></div>
-<p> Random Pre-Conditioning은 약 2500초에 걸쳐 진행되었으며, 290k IOPS로 Steady State에 진입했습니다. 상당히 깔끔해 기분이 좋네요.</p>
-<h4 id="mcetoc_1j8trjd883tl">RND 4k Read</h4>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/2-3-RND-Read.png" alt="" width="3600" height="1800"></figure>
-<p> 랜덤 읽기는 모든 구간에서 7300 MAX보다 우수하였으며, QD32 이후로는 970 PRO보다 우수한 모습도 보였습니다. 하지만, 스펙 시트의 800k IOPS와 다르게 측정된 평균값은 781k IOPS였습니다. 양쪽 모두 QD256 환경이며, 측정된 값의 최대치도 791k IOPS로, 스펙시트에는 도달하지 못하였습니다.</p>
-<h4 id="mcetoc_1j8trjd883ti">RND 4k Write</h4>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/2-4-RND-Write.png" alt="" width="3600" height="1800"></figure>
-<p> 랜덤 쓰기는 7300 MAX가 스펙시트를 훨씬 상회하는 값으로 놀라움을 주었습니다. 7450 MAX도 이에 질세라 스펙시트의 250k IOPS를 QD8 환경에서 290k IOPS로 상당히 상회하는 모습을 보여주었습니다.</p>
-<p> 7300 MAX가 QD에 따라 확장되었던 것을 생각하면, QD8에서 최대치를 보여주는 것은 상당히 인상적입니다.</p>
-<h3 id="mcetoc_1j8trjd883tg">4-Corners Consistency</h3>
-<p> QD에 따른 4-Corners Performance의 안정적인 정도를 제시합니다. 상위 99.9%값과 평균을 이용하는데, SEQ 128k에서는 Bandwidth를 기준으로, RND 4k에서는 IOPS를 기준으로 계산합니다. 참고로, RND 4k에서 QD1에 대한 값은 이후 Tail Latency에서 자세히 살펴보기에 제외됩니다.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/4-0-Consistency-2.png" alt="" width="3600" height="1800"></figure>
-<p> 순차 쓰기를 제외하고는 다들 90% 이상의 Consistency를 보여줍니다. 순차 쓰기에서는 QD2와 QD4에서 이상한 하락이 있었는데, 밑에서 한 번 더 보겠습니다.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/4-1-SEQ-Read-Consistency.png" alt="" width="3600" height="1800"></figure>
-<p> 랜덤 읽쓰기는 7300 MAX와 큰 차이가 없었지만, 순차 영역에선 상당한 차이가 있었습니다. 순차 읽기는 전작의 Low QD에서의 일관성을 멋지게 개선한 모습입니다.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/4-2-SEQ-Write-Consistency-3.png" alt="" width="3600" height="1800"></figure>
-<p> 순차 쓰기는 읽기와 다르게 7300 MAX보다 뒤떨어지는 모습을 보였습니다.</p>
-<p> 특이한 점은, 초기 펌웨어인 E2MU110에서는 QD2와 QD4에서 Consistency의 하락이 발견되지 않았다는 것 입니다. 초기와 최신 펌웨어의 유일한 성능 지표 차이는 이 순차 쓰기의 일관성에서 발생했습니다.</p>
-<h3 id="mcetoc_1j8trjd883tn">Specific Workload Performance</h3>
-<p> 4-Corners Performance가 아닌 워크로드를 분리했습니다. 단, 워크로드 이름은 편의상 붙인 것뿐이며, 실제 환경에서는 다양한 Block Size와 RW 비율이 나타난다는 것을 명심해야 합니다. Block Size들의 정확한 비율과 RW 비율을 결정하기 힘들어 대략 분류한, 가상의 워크로드입니다.</p>
-<h4 id="mcetoc_1j8trjd883to">Boot Workload (OCP BootBench)</h4>
-<p> Hyperscale에서의 Boot Drive로 사용될 때의 성능을 측정하는 벤치마크입니다. SEQ Write로 User Capacity가 2번 채워지면, 동기 쓰기, TRIM, 읽기가 동시에 가해지며, 결과의 지표는 읽기 IOPS입니다. 60k IOPS를 통과하면 합격입니다.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/OCP-BootBench.png" alt="" width="3000" height="750"></figure>
-<p> 가벼운 쓰기와 TRIM이 진행될 때, 7450 MAX는 상당한 읽기 성능을 발휘합니다. 물론, 이는 QD256에서 측정되었습니다. </p>
-<p> 아무튼, 부팅용으로 사용하기엔 넘치는 성능이네요.</p>
-<h4 id="mcetoc_1j8trjd883tp">Read Intensive Workload (SEQ 128k R95:W05)</h4>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/3-2-SEQ-9505.png" alt="" width="3600" height="1800"></figure>
-<p> Read Intensive 워크로드는 QD32에서 5125MB/s가 측정되었습니다. 순차 읽기와 마찬가지로 QD64가 5336MB/s로 더 높은 Throughput을 보여주었으나, 평균 지연시간 1.6ms, 50% 지연시간 1.4ms로 그래프에 포함되진 않았습니다.</p>
-<h4 id="mcetoc_1j8trjd883tq">Mainstream Workload (RND 4k R70:W30)</h4>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/3-3-RND-7030.png" alt="" width="3600" height="1800"></figure>
-<p> Mainstream 워크로드는 처음부터 끝까지 비교군 중 가장 우수했으며, QD64에서 307k IOPS가 측정되었습니다. 스펙 시트에는 290k IOPS가 기입되어있던 것을 생각하면 초과하는 값입니다.</p>
-<h4 id="mcetoc_1j8trjd883tr">Write Intensive Workload (RND 4k R50:W50)</h4>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/3-4-RND-5050.png" alt="" width="3600" height="1800"></figure>
-<p> Write Intensive 워크로드도 비교군 중 가장 우수했으며, QD32에서 264k IOPS가 측정되었습니다.</p>
-<h4 id="mcetoc_1j8trjd883ts">AI Workload (RND 512B Read)</h4>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/3-1-RND-512B.png" alt="" width="3600" height="1800"></figure>
-<p> AI 워크로드는 QD256에서 782k IOPS가 측정되었는데, RND 4k Read와 크게 차이 나지 않는 수치입니다. 대부분의 SSD는 차이가 나지 않지만요.</p>
-<p> RND 4k Read의 그래프와 약간 다르게 보이는 것은, 970 PRO의 성능이 약간 하락한 탓입니다.</p>
-<h3 id="mcetoc_1j8trjd883tt">Random 4k QD1 Tail Latency</h3>
-<p> Latency에서 가장 느린 구간을 의미합니다. 그렇기 때문에 QoS(Quality of Service)에 큰 영향을 미치고, 실제로 eSSD의 데이터시트에서는 QoS를 명시하고 있습니다. </p>
-<p> 여기에선 100ms나 10ms 단위가 아닌, 모든 개별 I/O에 대한 지연시간을 카운트하여 그래프를 그립니다. 그렇기 때문에 데이터가 상당히 방대해, 이 항목은 RND 4k QD1에 대해서만 진행합니다.</p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/5-1-RND-Read-TL.png" alt="" width="3900" height="2100"></figure>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/5-2-RND-Write-TL.png" alt="" width="3900" height="2100"></figure>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/5-3-RND-7030-TL.png" alt="" width="3900" height="2100"></figure>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/5-4-RND-5050-TL.png" alt="" width="3900" height="2100"></figure>
-<p> 대부분 7300 MAX보다 더 뛰어난 지연시간을 보여줍니다. 다만, 랜덤 읽기에서 위쪽 끝부분이 딱딱하게 이어져 있는 것을 확인할 수 있는데, 이는 보통 표본이 부족할 때 발생하는 현상입니다. 이 그래프를 99.999%(5-nines)로 제한하여 다루어야 할지 다시 검토할 필요가 있어 보입니다.</p>
-<table style="border-collapse: collapse; width: 100%; height: 107.125px;" border="1">
-<tbody>
-<tr style="height: 48.5625px;">
-<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">RND Read</span></td>
-<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">Datasheet</span></td>
-<td style="width: 33.2382%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">Benchmark Result</span></td>
-</tr>
-<tr style="height: 10px;">
-<td style="width: 33.3809%; height: 10px; background-color: #34495e;"><span style="color: #ffffff;">Typical Value</span></td>
-<td style="width: 33.3809%; height: 10px;">80 µs</td>
-<td style="width: 33.2382%; height: 10px;">67 µs</td>
-</tr>
-<tr>
-<td style="width: 33.3809%; background-color: #34495e;"><span style="color: #ffffff;">QoS (99%)</span></td>
-<td style="width: 33.3809%;">90 µs</td>
-<td style="width: 33.2382%;">79 µs</td>
-</tr>
-</tbody>
-</table>
-<table style="border-collapse: collapse; width: 100%; height: 145.688px;" border="1">
-<tbody>
-<tr style="height: 48.5625px;">
-<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">RND Write</span></td>
-<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">Datasheet</span></td>
-<td style="width: 33.2382%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">Benchmark Result</span></td>
-</tr>
-<tr style="height: 48.5625px;">
-<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">Typical Value</span></td>
-<td style="width: 33.3809%; height: 48.5625px;">15 µs</td>
-<td style="width: 33.2382%; height: 48.5625px;">12 µs</td>
-</tr>
-<tr style="height: 48.5625px;">
-<td style="width: 33.3809%; background-color: #34495e; height: 48.5625px;"><span style="color: #ffffff;">QoS (99%)</span></td>
-<td style="width: 33.3809%; height: 48.5625px;">65 µs</td>
-<td style="width: 33.2382%; height: 48.5625px;">24 µs</td>
-</tr>
-</tbody>
-</table>
-<p> 스펙시트에서 언급된 지연시간보다 약간 더 우수한 모습을 보였습니다. 특히, 랜덤 쓰기에서 99% 지연시간을 65µs 라고 표기한 것에 비해 24µs 라는 우수한 결과를 보여주었습니다. 9가 2배로 늘어나는 99.99%에서의 지연시간도 60µs 로 측정되었습니다. </p>
-<figure class="post__image"><img loading="lazy"  src="https://freshflash4096.github.io/media/posts/59/T-RND-7030-QD-QOS-2.png" alt="" width="3600" height="2100"></figure>
-<table style="border-collapse: collapse; width: 100%; height: 58.5625px;" border="1">
-<tbody>
-<tr style="height: 48.5625px;">
-<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">RND Mix (70:30) @ QD32</span></td>
-<td style="width: 33.3809%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">Datasheet</span></td>
-<td style="width: 33.2382%; height: 48.5625px; background-color: #34495e;"><span style="color: #ffffff;">Benchmark Result</span></td>
-</tr>
-<tr style="height: 10px;">
-<td style="width: 33.3809%; height: 10px; background-color: #34495e;"><span style="color: #ffffff;">Read QoS (99.9999%)</span></td>
-<td style="width: 33.3809%; height: 10px;">&lt; 2 ms</td>
-<td style="width: 33.2382%; height: 10px;">1.893 ms</td>
-</tr>
-</tbody>
-</table>
-<p> 리뷰의 시작 부분에서 언급했던 99.9999%(6-nines) 지연시간입니다. 중요한 점은 "읽기 지연시간"을 다룬다는 것이죠. 혼합 작업에서 읽기 작업의 지연시간만을 따로 측정할 필요가 있습니다. 예상할 수 있듯, FIO를 통해 가능합니다.</p>
-<p> RND 4k Read 70% QD32 환경에서 99.9999%(6-nines)의 읽기 지연시간은 1.893ms로, 2ms 이하가 측정되었습니다. QD16 까지는 99.99999%(7-nines)의 읽기 지연시간도 2ms 이하를 보여줍니다. 아주 깔끔한 처리입니다.</p>
-<hr>
-<h2 id="mcetoc_1iuqh3uem5o">Closing</h2>
-<p> 7450 MAX는 7300 MAX에 비해 성능 측면에서 개선을 이루었습니다. 일단, 후속작이니 당연한 일이라고도 할 수 있죠. 7300 MAX의 특징도 그대로 계승한 것처럼 보였습니다. 낮은 QD의 순차 읽기는 상당히 저성능이었으며, 랜덤 쓰기는 스펙시트를 크게 상회하였습니다. <br> 특히, 랜덤 쓰기의 99% 지연시간은 너무 우수하여 다른 리뷰와 비교해 보려고 검색을 시도했지만, QoS에 대한 분석은 진행하지 않는 TweakTown의 7450 PRO 리뷰만 찾을 수 있었습니다. Pre Conditioning 그래프에서의 분산만 보고 QoS가 우수하다고 평가하는 것은 아쉽네요.</p>
-<p> QoS라고 하니, 99.9999%의 읽기 지연시간을 검증할 수 있어서 기뻤습니다. <a href="https://freshflash4096.github.io/refresh-ssd-benchmark-method/" target="_blank" rel="noopener noreferrer">Refresh Benchmark</a>에서 제시할 일이 없을 것 같다고 한 그래프가 바로 등장할 필요가 있을 줄은 예상하지 못했습니다.</p>
-<p> 중간고사를 마무리한 지 얼마 되지 않은 것 같은데, 벌써 기말고사 주간이네요. 기말고사를 마무리하면 바로 다음 리뷰를 준비하려고 합니다.</p>
-<figure class="post__image"><img loading="lazy" src="https://freshflash4096.github.io/media/posts/59/seukeurinsyas-2025-12-01-ohu-8.20.56.png" alt="" width="1882" height="178">
-<figcaption>Excuse from P3 Plus 2TB Review</figcaption>
-</figure>
-<p> 다음 리뷰는 <a href="https://freshflash4096.github.io/micron-crucial-p3-plus-2tb-review/" target="_blank" rel="noopener noreferrer">P3 Plus 리뷰</a>에서 언급한 cSSD가 될 것 같네요. 안 그래도 데이터 수집을 마무리한 뒤, 제품을 돌려드린 지 몇 주가 지난 상황이라 올해 안으로는 꼭 투고할 예정입니다.</p>
-<p> 읽어주셔서 감사합니다.</p>
-<blockquote>
-<p>7450 MAX 1.6TB 제품을 대여해주신 디시인사이드 저장장치 갤러리 고닉임? 님께 이 리뷰로 감사 인사를 전합니다.</p>
 </blockquote>
             ]]>
         </content>
