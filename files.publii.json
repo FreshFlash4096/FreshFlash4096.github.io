@@ -317,12 +317,12 @@
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "a60cd50286eb76f0c9d97cbcc08919e8"
+        "md5": "82e6d0b7a92244f56eab5cd1d06bcec0"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "242dd6012c7e4b07ae07fc9e3c593161"
+        "md5": "9fb4c3049f7bc03a423b6694921622b0"
     },
     {
         "path": "first-page",
@@ -10417,7 +10417,7 @@
     {
         "path": "/western-digital-sn850x-4tb-review/index.html",
         "type": "file",
-        "md5": "125fadabc7a530ac0b4007b22a87ed9f"
+        "md5": "0d5fb35da344c275e861c39e69ca0de1"
     },
     {
         "path": "z-ssd-983-zet-sz983-review",

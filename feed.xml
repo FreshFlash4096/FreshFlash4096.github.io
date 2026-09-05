@@ -3,7 +3,7 @@
     <title>Memoria</title>
     <link href="https://freshflash4096.github.io/feed.xml" rel="self" />
     <link href="https://freshflash4096.github.io" />
-    <updated>2026-09-05T20:18:16+09:00</updated>
+    <updated>2026-09-05T21:23:49+09:00</updated>
     <author>
         <name>Huie</name>
     </author>
@@ -637,7 +637,7 @@
 <hr>
 <h2 id="mcetoc_1iuqh3uem5o">Closing</h2>
 <p> SN850X 4TB에서 가장 눈에 띄었던 것은 역시 무작위 접근에 대한 성능이겠죠. 특히, 아직 공개하지 않은 데이터들을 포함하더라도 I/O가 완전히 멈추는 현상은 처음입니다. 그렇지만, 이는 DRAMless SSD에서 더 확실하게 보일 것으로 예상됩니다. 이것이 제가 OCP BootBench의 결과를  eSSD Benchmarking의 시행여부로 삼은 것이라고도 할 수 있습니다. </p>
-<p> 어쩌면 이번 성능 측정의 결과가 "eSSD에는 왜 DRAMless SSD가 존재하지 않으며, 어째서 항상 차고 넘치는 DRAM이 실장되었는가?" 에 대한 질문도 어느정도 해결했으리라 생각합니다. </p>
+<p> 어쩌면 이번 성능 측정의 결과가 "eSSD에는 왜 DRAMless SSD가 존재하지 않으며, 어째서 대부분 차고 넘치는 DRAM이 실장되었는가?" 에 대한 질문도 어느정도 해결했으리라 생각합니다. </p>
 <p> SN850X 4TB의 데이터분석은 꽤 시간이 걸렸는데, 분석의 과정에서 <em>Performance by Active Range</em> 단락은 제외하게 되었습니다. 측정은 여러 번 진행하였고, 접근 범위가 넓어질수록 성능이 하락하는 것도 관찰하였지만, 이번 측정에서는 충분한 I/O가 발생하지 못한 것으로 판단했거든요.</p>
 <p> 추후 기회가 된다면 다시 도전함과 동시에 더 세밀한 방법론을 고민하고자 합니다. 당장은 가격이 좀 부담되어서 힘들겠고 몇 년 후에나 가능할 것 같네요 ㅎㅎ;; 제 졸업과 취업이 빠르겠습니다.</p>
 <p> 이번 리뷰는 임시 테스트 시스템을 통해 진행되었는데, 당분간은 9600X 시스템에서 측정한 데이터를 전부 소모하고 270K Plus 기반의 시스템을 소개해보도록 하겠습니다. 이 시스템에서는 더 발전된 새로운 방법론을 적용하고자 계획 중입니다. </p>
@@ -645,6 +645,7 @@
 <figcaption>A 512Gb 3-bit/Cell 3D Flash Memory on 128-Wordline- Layer with 132MB/s Write Performance Featuring Circuit- Under-Array Technology @ ISSCC 2019</figcaption>
 </figure>
 <p> 별도로, BiCS5 4 Plane이 등장한 논문에는 더 재밌는 기술들도 많이 소개되었습니다. 나중에 언젠가 소개해보고 싶은데, 정말 쓰고 싶은 주제만 계속 늘어나고 있네요. 졸업과제도 준비하며 블로그에 정리해야하는데 말이죠.</p>
+<p> 그럼, 다음은 9600X 시스템 기반의 SN8100 2TB의 리뷰로 찾아뵙겠습니다.</p>
 <blockquote>
 <p>제품을 빌려주신 ZOD의 애뽀님께 다시 한 번 감사인사와 지연에 대해 죄송하다는 말씀을 전합니다.</p>
 </blockquote>
