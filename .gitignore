@@ -1,0 +1,8 @@
+# Operating-system metadata only. Generated site files are intentionally tracked.
+.DS_Store
+._*
+Thumbs.db
+thumbs.db
+Desktop.ini
+desktop.ini
+__MACOSX/
