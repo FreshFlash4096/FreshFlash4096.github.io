@@ -7,7 +7,7 @@
     {
         "path": "/2025-08/index.html",
         "type": "file",
-        "md5": "3a65900a171f499167304cebfbca8e13"
+        "md5": "629735f67db01a327dd3a34537a2b134"
     },
     {
         "path": "2025-zip",
@@ -17,12 +17,12 @@
     {
         "path": "/2025-zip/index.html",
         "type": "file",
-        "md5": "a307acc525e0aca532af09513771aca2"
+        "md5": "6b7eae9d744c463665eb0c22e8fa5b01"
     },
     {
         "path": "404.html",
         "type": "file",
-        "md5": "b6bbc52edc3ca8afac63636aef073d3e"
+        "md5": "674ade7eb6515a8af125fbb301fe79fb"
     },
     {
         "path": "about-this-blog",
@@ -32,7 +32,7 @@
     {
         "path": "/about-this-blog/index.html",
         "type": "file",
-        "md5": "9325d292f4fa7fb6558d9064cd31f173"
+        "md5": "4993277480aa71a45d7065236cf6b099"
     },
     {
         "path": "add-comment-functoin",
@@ -42,7 +42,7 @@
     {
         "path": "/add-comment-functoin/index.html",
         "type": "file",
-        "md5": "c7b6001221577380d43d6869daefd304"
+        "md5": "5a57ed5b67d315200f0b5c2b256c0187"
     },
     {
         "path": "ambrose-server-platform-evt3",
@@ -52,7 +52,7 @@
     {
         "path": "/ambrose-server-platform-evt3/index.html",
         "type": "file",
-        "md5": "a9023ea89271611597fbf3d6b16b88c1"
+        "md5": "5a2a247604bc00b57f970bd664488eb9"
     },
     {
         "path": "apology",
@@ -62,7 +62,7 @@
     {
         "path": "/apology/index.html",
         "type": "file",
-        "md5": "522a1546ea1b3f6055657113e4b71966"
+        "md5": "4b5aaee121fefd8a584cccf768b45431"
     },
     {
         "path": "assets",
@@ -87,7 +87,7 @@
     {
         "path": "/assets/css/style.css",
         "type": "file",
-        "md5": "718aae81932e4c098df8d1ab1b2b0158"
+        "md5": "d835704b2f7467bd482407474d94ad68"
     },
     {
         "path": "assets/dynamic",
@@ -167,7 +167,7 @@
     {
         "path": "/authors/huie/index.html",
         "type": "file",
-        "md5": "a98e99c8e10ab0c8bafb6253736c4371"
+        "md5": "d8558d0c7f3aef60a52da7847a2fe118"
     },
     {
         "path": "authors/huie/page",
@@ -182,7 +182,7 @@
     {
         "path": "/authors/huie/page/2/index.html",
         "type": "file",
-        "md5": "93844633a61d5f39611df70fb54696e4"
+        "md5": "d0a9169cb303cc9797908cd9fe9cde01"
     },
     {
         "path": "authors/huie/page/3",
@@ -192,7 +192,7 @@
     {
         "path": "/authors/huie/page/3/index.html",
         "type": "file",
-        "md5": "53b0f0255a3a5c8c3118d405d22d7f57"
+        "md5": "8f6de4f4f1820bcd85975853c7375913"
     },
     {
         "path": "authors/huie/page/4",
@@ -202,7 +202,7 @@
     {
         "path": "/authors/huie/page/4/index.html",
         "type": "file",
-        "md5": "53a03fda5e7fca8bfc2d866ae6e4246b"
+        "md5": "8b010519988663c892528dd0d9b4e3d6"
     },
     {
         "path": "authors/huie/page/5",
@@ -212,7 +212,7 @@
     {
         "path": "/authors/huie/page/5/index.html",
         "type": "file",
-        "md5": "d64b825f322be56473457ae4556621c7"
+        "md5": "5b67f3c6fa9c3e77385aad068c391acc"
     },
     {
         "path": "authors/huie/page/6",
@@ -222,7 +222,7 @@
     {
         "path": "/authors/huie/page/6/index.html",
         "type": "file",
-        "md5": "11d4ab1490c06d2adda9d7d8117111d7"
+        "md5": "af62d0908794c2f146219a121e27d8a5"
     },
     {
         "path": "authors/huie/page/7",
@@ -232,7 +232,7 @@
     {
         "path": "/authors/huie/page/7/index.html",
         "type": "file",
-        "md5": "a10d22908344873eabb3b90524b1f8e3"
+        "md5": "ab2e065ac4ceb10956b46e9a83c9e611"
     },
     {
         "path": "benchmark-method",
@@ -242,7 +242,7 @@
     {
         "path": "/benchmark-method/index.html",
         "type": "file",
-        "md5": "4a8131f4bb2a7fef33bbca99eee013e9"
+        "md5": "47a8b7cf1164de63ff818ba36dc47587"
     },
     {
         "path": "buy-more-p5800x",
@@ -252,7 +252,7 @@
     {
         "path": "/buy-more-p5800x/index.html",
         "type": "file",
-        "md5": "04203a288cf764b696bd0817ff4d2d6c"
+        "md5": "406c64b60e7879903529d2756cdcb0b3"
     },
     {
         "path": "cheyenne-auctions",
@@ -262,7 +262,7 @@
     {
         "path": "/cheyenne-auctions/index.html",
         "type": "file",
-        "md5": "aed4669de3ac553e2423e020f211813f"
+        "md5": "f1a8ef334d51a4f44fd3a35560c6ab7b"
     },
     {
         "path": "china-960gb-ssd-review",
@@ -272,7 +272,7 @@
     {
         "path": "/china-960gb-ssd-review/index.html",
         "type": "file",
-        "md5": "411c0055a1ca48d3d56f345ef4e8eff2"
+        "md5": "7f486534f98f3483217355cd077e58c9"
     },
     {
         "path": "complete-copprlink-spec",
@@ -282,7 +282,7 @@
     {
         "path": "/complete-copprlink-spec/index.html",
         "type": "file",
-        "md5": "2e3ae36e5cb8dc50c0548862fc454a77"
+        "md5": "709ff5412188d330665f09fa0457ce5c"
     },
     {
         "path": "computex-2026",
@@ -292,7 +292,7 @@
     {
         "path": "/computex-2026/index.html",
         "type": "file",
-        "md5": "83d9c78d694d1ae2f1213349db3d9bb1"
+        "md5": "da9c5cf25e28bdc4dbf30ca598b3f143"
     },
     {
         "path": "cryogenic-3d-nand-etching",
@@ -302,7 +302,7 @@
     {
         "path": "/cryogenic-3d-nand-etching/index.html",
         "type": "file",
-        "md5": "0867a96dfe062c1abba59f112153c545"
+        "md5": "2d7d7ccafcfdc700a7a41d442df3239a"
     },
     {
         "path": "cuga-teseuteu-doib",
@@ -312,17 +312,17 @@
     {
         "path": "/cuga-teseuteu-doib/index.html",
         "type": "file",
-        "md5": "df0d20a0b7e85a129db5cbb522e0706a"
+        "md5": "258729d7a5dd73b822d855fd47c667c2"
     },
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "f8d1dfb9c27d3b6200cdd7815f7fddc5"
+        "md5": "c53d979a84cba111d1f149a63f61d207"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "6da6c50cf8c94fecce2388d955f0f137"
+        "md5": "eab6531e1cb9a0650c0eeb5ce1ca2c1e"
     },
     {
         "path": "first-page",
@@ -332,7 +332,7 @@
     {
         "path": "/first-page/index.html",
         "type": "file",
-        "md5": "594929b148c0ea58b7b3aa8c4cef8557"
+        "md5": "ca480d3e2b4d6f87f333a01dca9b86ef"
     },
     {
         "path": "first-sale-of-lpcamm2-memory",
@@ -342,7 +342,7 @@
     {
         "path": "/first-sale-of-lpcamm2-memory/index.html",
         "type": "file",
-        "md5": "0db298eb959e07e4d8c8f569ec5ebdd8"
+        "md5": "b89879d56f81bcb88192e8f609a4bc9e"
     },
     {
         "path": "fix-essd-benchmark",
@@ -352,7 +352,7 @@
     {
         "path": "/fix-essd-benchmark/index.html",
         "type": "file",
-        "md5": "7afb47baba0631d4b4e255e841a9472d"
+        "md5": "6a9f13133a236fc32cb9cfbbf6230f0d"
     },
     {
         "path": "fms-2025",
@@ -362,7 +362,7 @@
     {
         "path": "/fms-2025/index.html",
         "type": "file",
-        "md5": "e26447fd4374a8b60214bb2bc7979a17"
+        "md5": "c12392a7624bc4f1d7f413bbeee541fc"
     },
     {
         "path": "fms-2025-product",
@@ -372,7 +372,7 @@
     {
         "path": "/fms-2025-product/index.html",
         "type": "file",
-        "md5": "e6bd401deef74102d27a2a359e821f62"
+        "md5": "22ae5ecd3623580cdd46ec79622a495c"
     },
     {
         "path": "imverysad",
@@ -382,12 +382,12 @@
     {
         "path": "/imverysad/index.html",
         "type": "file",
-        "md5": "dc86d49b8430067f96ec460cdb4167ad"
+        "md5": "755a4aef28b79a1f9924401b05e57cfc"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "9cd19f11c86afa723fa4cb8e5ed10d96"
+        "md5": "75e273e90864a6ad8ebf9f2a26612ddf"
     },
     {
         "path": "intel-optane-ssd-p1600x-118gb-review",
@@ -397,7 +397,7 @@
     {
         "path": "/intel-optane-ssd-p1600x-118gb-review/index.html",
         "type": "file",
-        "md5": "cfa834a8b666ec1094b1e15f6b00052e"
+        "md5": "9804cf79186b8bd40880481506621ca8"
     },
     {
         "path": "intel-p4608-review",
@@ -407,7 +407,17 @@
     {
         "path": "/intel-p4608-review/index.html",
         "type": "file",
-        "md5": "8a20f03fbb415f462b4ed78f255b662c"
+        "md5": "674d05b7c69f7b76193f600b05192eaf"
+    },
+    {
+        "path": "intel-solidigm-p5430-review",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/intel-solidigm-p5430-review/index.html",
+        "type": "file",
+        "md5": "6db65601224a4c6d8bf0c50ffb48c9c4"
     },
     {
         "path": "is-macos-support-host-memory-buffer",
@@ -417,7 +427,7 @@
     {
         "path": "/is-macos-support-host-memory-buffer/index.html",
         "type": "file",
-        "md5": "5ac7d8bdabbedb6ae8aabb8255cd3f18"
+        "md5": "baacce3f0540705255a1d3e851ae569b"
     },
     {
         "path": "is-tlc-really-lower-in-performance-than-mlc-pm983-960gb",
@@ -427,7 +437,7 @@
     {
         "path": "/is-tlc-really-lower-in-performance-than-mlc-pm983-960gb/index.html",
         "type": "file",
-        "md5": "ca80185f52893a1f21b309577b236829"
+        "md5": "51b940ecf27f3b26536b0b9312ca6b52"
     },
     {
         "path": "jeongbotongsingisa",
@@ -437,7 +447,7 @@
     {
         "path": "/jeongbotongsingisa/index.html",
         "type": "file",
-        "md5": "9b95d3ab773efbf9bdd5064ba040c2ad"
+        "md5": "111fdc4298788b6ce63c1facee5092b4"
     },
     {
         "path": "klevv-c910-4tb-review",
@@ -447,7 +457,7 @@
     {
         "path": "/klevv-c910-4tb-review/index.html",
         "type": "file",
-        "md5": "841fd881242ce1f76afac40cb45e96ff"
+        "md5": "2e98342c04fd7a1c5b46c0ef63f45fe6"
     },
     {
         "path": "media",
@@ -10155,6 +10165,371 @@
         "md5": "b6917d7d0b586ac157830aae74fcf20e"
     },
     {
+        "path": "media/posts/78",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/78/01-1.-CDM.png",
+        "type": "file",
+        "md5": "316d1d9fa0e6eee9e9b067b6ddcf2a74"
+    },
+    {
+        "path": "/media/posts/78/01-2.-CDM_4K_QD1.png",
+        "type": "file",
+        "md5": "0dafc8ae8cb682aefcde2e19bbf57b32"
+    },
+    {
+        "path": "/media/posts/78/02-1.-3DMark_Score.png",
+        "type": "file",
+        "md5": "28058b6192a68b641bc9806901e1c825"
+    },
+    {
+        "path": "/media/posts/78/03-1.-SPECworkstation.png",
+        "type": "file",
+        "md5": "41e79718dbfd40a6bc2e34fedb092875"
+    },
+    {
+        "path": "/media/posts/78/03-2.-SPECworkstation_Detail.png",
+        "type": "file",
+        "md5": "2693db7d4ca01624ffb5c6f3f28e182c"
+    },
+    {
+        "path": "/media/posts/78/04-1.-Fill-Drive-Time-1st.png",
+        "type": "file",
+        "md5": "4fe8f8a3ad6c722b1f3027ede9cc7d5d"
+    },
+    {
+        "path": "/media/posts/78/04-3.-Fill-Drive-AVG.png",
+        "type": "file",
+        "md5": "6cd4594220ba40a86cb5df1011c45c9e"
+    },
+    {
+        "path": "/media/posts/78/04-4.-Fill-Drive-P99.png",
+        "type": "file",
+        "md5": "c7ccd8bfed572296aed11e77b0722e3e"
+    },
+    {
+        "path": "/media/posts/78/06-1.-RWW_RND_3.84T.png",
+        "type": "file",
+        "md5": "958711093f4ca249f6af597e96cc15d3"
+    },
+    {
+        "path": "/media/posts/78/06-1.-RWW_RND_6.4T.png",
+        "type": "file",
+        "md5": "e3eccb311e487e1015546ddeec2cf87f"
+    },
+    {
+        "path": "/media/posts/78/06-1.-RWW_RND_7.68T.png",
+        "type": "file",
+        "md5": "77a8548115ab751c744b43f4a5eb67e1"
+    },
+    {
+        "path": "/media/posts/78/06-2.-RWW_RND_WF.png",
+        "type": "file",
+        "md5": "df9bd06e23a95168844af762b9ab62fd"
+    },
+    {
+        "path": "/media/posts/78/06-3.-RWW_RND_WF_order.png",
+        "type": "file",
+        "md5": "4be74f5be15a64279ea21a2239d41c75"
+    },
+    {
+        "path": "/media/posts/78/1-1-SEQ-PC-TP.png",
+        "type": "file",
+        "md5": "5440a4f1c3638b2727948ad28bf67597"
+    },
+    {
+        "path": "/media/posts/78/1-2-SEQ-PC-LAT.png",
+        "type": "file",
+        "md5": "4def211facfcb8945d66f54c6d91f63e"
+    },
+    {
+        "path": "/media/posts/78/1-3-SEQ-Read.png",
+        "type": "file",
+        "md5": "289ae7fb3fcdff4a4b318d4c15b4bdd7"
+    },
+    {
+        "path": "/media/posts/78/1-4-SEQ-Write.png",
+        "type": "file",
+        "md5": "c06bc11a46d5996beea9188420ab14a8"
+    },
+    {
+        "path": "/media/posts/78/10.-OCP-BootBench.png",
+        "type": "file",
+        "md5": "082045eccfe28839b458be088bfa77b2"
+    },
+    {
+        "path": "/media/posts/78/192L-PLC.png",
+        "type": "file",
+        "md5": "f57e4228a240d7fca1cd523a1730c575"
+    },
+    {
+        "path": "/media/posts/78/2-1-RND-PC-IOPS.png",
+        "type": "file",
+        "md5": "1a601d87f6f7184484fcea1c56c7c07e"
+    },
+    {
+        "path": "/media/posts/78/2-2-RND-PC-LAT-2.png",
+        "type": "file",
+        "md5": "9a7c0f557f9bd62136be14aef3e54096"
+    },
+    {
+        "path": "/media/posts/78/2-2-RND-PC-LAT_.png",
+        "type": "file",
+        "md5": "88aa1f5b7e1f04206cfbf5e18bdcccdf"
+    },
+    {
+        "path": "/media/posts/78/2-3-RND-Read.png",
+        "type": "file",
+        "md5": "e8ec5ecf7d3e214f5beceb9e35e0bf73"
+    },
+    {
+        "path": "/media/posts/78/2-4-RND-Write.png",
+        "type": "file",
+        "md5": "0b5c45c9123d49d75e48a940e3725853"
+    },
+    {
+        "path": "/media/posts/78/3-1-SEQ-9505.png",
+        "type": "file",
+        "md5": "e599163b484e44dd380cade20f16db3b"
+    },
+    {
+        "path": "/media/posts/78/3-2-RND-7030.png",
+        "type": "file",
+        "md5": "9086d368d5c560a3bd7e268ec4424d9c"
+    },
+    {
+        "path": "/media/posts/78/3-3-RND-5050.png",
+        "type": "file",
+        "md5": "0793d09cf2797614b51ee38f8fe0a306"
+    },
+    {
+        "path": "/media/posts/78/4-0.-Consistency_3.84T-2.png",
+        "type": "file",
+        "md5": "b0bffe73e108727db6624ffdb2f2902e"
+    },
+    {
+        "path": "/media/posts/78/4-0.-Consistency_6.4T.png",
+        "type": "file",
+        "md5": "cdeae63e62e2ef29d9c96d7a5d093635"
+    },
+    {
+        "path": "/media/posts/78/4-0.-Consistency_7.68T.png",
+        "type": "file",
+        "md5": "7eac789c80a5bd811d1c6ede8e9f89a8"
+    },
+    {
+        "path": "/media/posts/78/5-1-RND-Read-TL.png",
+        "type": "file",
+        "md5": "030015ab31a735c1a2d9ef2016308997"
+    },
+    {
+        "path": "/media/posts/78/5-2-RND-Write-TL.png",
+        "type": "file",
+        "md5": "3b21f4fa12eed7c433ece222fa8886a9"
+    },
+    {
+        "path": "/media/posts/78/5-3-RND-7030-TL.png",
+        "type": "file",
+        "md5": "a0462926bd41b31bc33220a911143a5f"
+    },
+    {
+        "path": "/media/posts/78/5-4-RND-5050-TL.png",
+        "type": "file",
+        "md5": "364cf19fec045b2b821e09e00ba92851"
+    },
+    {
+        "path": "/media/posts/78/CDM_P5430_3.84T.png",
+        "type": "file",
+        "md5": "255537ab818012a1b13d2ce5f1fc7dab"
+    },
+    {
+        "path": "/media/posts/78/CDM_P5430_7.68T.png",
+        "type": "file",
+        "md5": "13b7b2082a384161716ec0608fb00c9f"
+    },
+    {
+        "path": "/media/posts/78/IU-options.png",
+        "type": "file",
+        "md5": "9721dbc66013ac46b6e7065e1de15770"
+    },
+    {
+        "path": "/media/posts/78/P5430-Position.png",
+        "type": "file",
+        "md5": "5202f11f2f591b1e172ad6a06ebaaa9f"
+    },
+    {
+        "path": "/media/posts/78/P5430-Spec-Sheet_26.10.15-ResSQ.png",
+        "type": "file",
+        "md5": "39522e67cc453d40f8544ff5f53f0b4c"
+    },
+    {
+        "path": "/media/posts/78/PLP-Time_3.84T.png",
+        "type": "file",
+        "md5": "e50472222b3ed234a725fa5eb15bc4c0"
+    },
+    {
+        "path": "/media/posts/78/PLP-Time_7.68T.png",
+        "type": "file",
+        "md5": "71179e818e7558722c6adde6eb8b15eb"
+    },
+    {
+        "path": "/media/posts/78/X-1-SEQ-Read-QD-TP.png",
+        "type": "file",
+        "md5": "87514e1e0b922ddbb00fc729c9f248d9"
+    },
+    {
+        "path": "/media/posts/78/X-7-RND-5050-QD-IOPS.png",
+        "type": "file",
+        "md5": "bf5db68798f3ec39325078aec083fcc1"
+    },
+    {
+        "path": "media/posts/78/gallery",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/78/gallery/04-1.-Fill-Drive-Time-1st_3.84T-thumbnail.png",
+        "type": "file",
+        "md5": "faf84939545f0fbcba6d5f57f526c159"
+    },
+    {
+        "path": "/media/posts/78/gallery/04-1.-Fill-Drive-Time-1st_3.84T.png",
+        "type": "file",
+        "md5": "6be2628f958afc460a8f11dea93875fa"
+    },
+    {
+        "path": "/media/posts/78/gallery/04-1.-Fill-Drive-Time-1st_6.4T-thumbnail.png",
+        "type": "file",
+        "md5": "bc88484b76ac3d914a5e658667feaffe"
+    },
+    {
+        "path": "/media/posts/78/gallery/04-1.-Fill-Drive-Time-1st_6.4T.png",
+        "type": "file",
+        "md5": "89e05515a0071303fe6f2c08cec1f7b6"
+    },
+    {
+        "path": "/media/posts/78/gallery/04-1.-Fill-Drive-Time-1st_7.68T-thumbnail.png",
+        "type": "file",
+        "md5": "a9140ed60beed1aa324fdb6fa2bfdf57"
+    },
+    {
+        "path": "/media/posts/78/gallery/04-1.-Fill-Drive-Time-1st_7.68T.png",
+        "type": "file",
+        "md5": "5b495675fcb398f778db1d59f454f84f"
+    },
+    {
+        "path": "/media/posts/78/gallery/04-2.-Fill-Drive-Time-2nd_3.84T-thumbnail.png",
+        "type": "file",
+        "md5": "10d7547a05eb95ae0dba078cebab04d8"
+    },
+    {
+        "path": "/media/posts/78/gallery/04-2.-Fill-Drive-Time-2nd_3.84T.png",
+        "type": "file",
+        "md5": "00c4dca072cdc91f044f313a3b9fb946"
+    },
+    {
+        "path": "/media/posts/78/gallery/04-2.-Fill-Drive-Time-2nd_6.4T-thumbnail.png",
+        "type": "file",
+        "md5": "f76c4bcb81d7e6bc4157c8febefc0e8a"
+    },
+    {
+        "path": "/media/posts/78/gallery/04-2.-Fill-Drive-Time-2nd_6.4T.png",
+        "type": "file",
+        "md5": "400bf4460a4bc51630c1a5e17f3c5cb3"
+    },
+    {
+        "path": "/media/posts/78/gallery/04-2.-Fill-Drive-Time-2nd_7.68T-thumbnail.png",
+        "type": "file",
+        "md5": "2b4b393a60a4f6e689b2c60742979706"
+    },
+    {
+        "path": "/media/posts/78/gallery/04-2.-Fill-Drive-Time-2nd_7.68T.png",
+        "type": "file",
+        "md5": "2c0966ec9a8500811f99259cf61426cc"
+    },
+    {
+        "path": "/media/posts/78/gallery/25H2-thumbnail.png",
+        "type": "file",
+        "md5": "c3d6d1bd5e73a4af31908d45b32d14f6"
+    },
+    {
+        "path": "/media/posts/78/gallery/25H2.png",
+        "type": "file",
+        "md5": "0abf20421c71060c22a9cf41c27b3845"
+    },
+    {
+        "path": "/media/posts/78/gallery/CDI_P5430_3.84T-thumbnail.png",
+        "type": "file",
+        "md5": "f2c3aa62fd79767eee77936686b0d628"
+    },
+    {
+        "path": "/media/posts/78/gallery/CDI_P5430_3.84T.png",
+        "type": "file",
+        "md5": "58050fec6c7262570ad52546f060de37"
+    },
+    {
+        "path": "/media/posts/78/gallery/CDI_P5430_7.68T-thumbnail.png",
+        "type": "file",
+        "md5": "3cbb4b8f3d188ebdff2187dccad4460e"
+    },
+    {
+        "path": "/media/posts/78/gallery/CDI_P5430_7.68T.png",
+        "type": "file",
+        "md5": "2d7d8b8b0bb38bcedbbb137e7b2c29c6"
+    },
+    {
+        "path": "/media/posts/78/gallery/Linux-thumbnail.png",
+        "type": "file",
+        "md5": "d4b75532b9fc53afb83df0dc93498622"
+    },
+    {
+        "path": "/media/posts/78/gallery/Linux.png",
+        "type": "file",
+        "md5": "dbe7457907b717cc56de859e3c20e6ab"
+    },
+    {
+        "path": "/media/posts/78/w_P5430_4T_fr.jpg",
+        "type": "file",
+        "md5": "32be6854ed5c22230fb448365aa8d472"
+    },
+    {
+        "path": "/media/posts/78/w_P5430_4T_rr.jpg",
+        "type": "file",
+        "md5": "bfeeb61a83f9161d0ea8f5e1d4d1049a"
+    },
+    {
+        "path": "/media/posts/78/w_P5430_4T_td_cs.jpg",
+        "type": "file",
+        "md5": "a45ebd84a0c4f2fc54bcea08b84d489a"
+    },
+    {
+        "path": "/media/posts/78/w_P5430_4T_td_fr.jpg",
+        "type": "file",
+        "md5": "bef68706b72baf38fd309b80cff8af22"
+    },
+    {
+        "path": "/media/posts/78/w_P5430_4T_td_rr.jpg",
+        "type": "file",
+        "md5": "c85fd3981d7216b504909151d61a09c1"
+    },
+    {
+        "path": "/media/posts/78/w_P5430_8T_fr.jpg",
+        "type": "file",
+        "md5": "619d8041e693d11aa167d108f1096d1f"
+    },
+    {
+        "path": "/media/posts/78/w_P5430_8T_td_fr.jpg",
+        "type": "file",
+        "md5": "e0fa9138950d61217ed63c772596aa78"
+    },
+    {
+        "path": "/media/posts/78/w_P5430_8T_td_rr.jpg",
+        "type": "file",
+        "md5": "46d588b33a4bb9a7880abd2554a05a6d"
+    },
+    {
         "path": "media/posts/8",
         "type": "directory",
         "md5": false
@@ -10182,7 +10557,7 @@
     {
         "path": "/micron-1300-review/index.html",
         "type": "file",
-        "md5": "969e2db78a4a2dbb8ff6ecfebf51ec2a"
+        "md5": "80b2261720b1dbc4a559fc940ebe3558"
     },
     {
         "path": "micron-7300-max-review",
@@ -10192,7 +10567,7 @@
     {
         "path": "/micron-7300-max-review/index.html",
         "type": "file",
-        "md5": "901d6beca28862d2851d6f3c6ccf28da"
+        "md5": "655f464326bf9a5a9474fde3813e9990"
     },
     {
         "path": "micron-7450-max-review",
@@ -10202,7 +10577,7 @@
     {
         "path": "/micron-7450-max-review/index.html",
         "type": "file",
-        "md5": "c755ab0111c07488760a16735fa04c02"
+        "md5": "010cc641a1d43f47bbd67fbb50e4ccd9"
     },
     {
         "path": "micron-crucial-p3-plus-2tb-review",
@@ -10212,7 +10587,7 @@
     {
         "path": "/micron-crucial-p3-plus-2tb-review/index.html",
         "type": "file",
-        "md5": "49ae900ea67d15fc9d3c15c3977144fb"
+        "md5": "b3061bfe95998982cf2c253c5b0b7868"
     },
     {
         "path": "optane-memory-32gb-review",
@@ -10222,7 +10597,7 @@
     {
         "path": "/optane-memory-32gb-review/index.html",
         "type": "file",
-        "md5": "7c4ceafd1b44a7f3fd169d64136f2aae"
+        "md5": "7f714b290079b847365d2ac2e57cc7ea"
     },
     {
         "path": "optane-p4800x-review",
@@ -10232,7 +10607,7 @@
     {
         "path": "/optane-p4800x-review/index.html",
         "type": "file",
-        "md5": "3c7342cb0eea9898ba5e7c955543efcb"
+        "md5": "46c3caa0efcd2bbab040e5defb05c034"
     },
     {
         "path": "oss-hib732",
@@ -10242,7 +10617,7 @@
     {
         "path": "/oss-hib732/index.html",
         "type": "file",
-        "md5": "ae4d0af691c044c3b740ccf1faeebdb3"
+        "md5": "5dfe8f37484f9dd64e706d04243e40ff"
     },
     {
         "path": "over-10gbps-pm9e1-1tb",
@@ -10252,7 +10627,7 @@
     {
         "path": "/over-10gbps-pm9e1-1tb/index.html",
         "type": "file",
-        "md5": "04cf480fa0e33724b264f97847f75187"
+        "md5": "5260356697328088210ecb1eb77c01a2"
     },
     {
         "path": "p4800x-375gb-review",
@@ -10262,7 +10637,7 @@
     {
         "path": "/p4800x-375gb-review/index.html",
         "type": "file",
-        "md5": "47537cc239bf03f1e34b9bb80cc80041"
+        "md5": "bf956e8d2df361d004476474e8ff9599"
     },
     {
         "path": "page",
@@ -10277,7 +10652,7 @@
     {
         "path": "/page/2/index.html",
         "type": "file",
-        "md5": "341c1a44702d8d4511dc6f110ee0f895"
+        "md5": "8a208df39cb3b6483bbf6b49dbb6a8e8"
     },
     {
         "path": "page/3",
@@ -10287,7 +10662,7 @@
     {
         "path": "/page/3/index.html",
         "type": "file",
-        "md5": "f99140ef2c464c25a6b4ec0bea82256e"
+        "md5": "5a07917a0795a67fe68c274175d58515"
     },
     {
         "path": "page/4",
@@ -10297,7 +10672,7 @@
     {
         "path": "/page/4/index.html",
         "type": "file",
-        "md5": "e49e4ebddbc9de052fc0a76bb539ab68"
+        "md5": "e15dd7bdc11714661cc481792b71e302"
     },
     {
         "path": "page/5",
@@ -10307,7 +10682,7 @@
     {
         "path": "/page/5/index.html",
         "type": "file",
-        "md5": "b9ba29158e5a454c6795b52e28e8f64f"
+        "md5": "65b25faee9fc310ed5b2703f95f826d1"
     },
     {
         "path": "page/6",
@@ -10317,7 +10692,7 @@
     {
         "path": "/page/6/index.html",
         "type": "file",
-        "md5": "2a9ea47a612cbd0082cd7f5344da2a03"
+        "md5": "518cfe366ac28c25970a571867ca8330"
     },
     {
         "path": "page/7",
@@ -10327,7 +10702,7 @@
     {
         "path": "/page/7/index.html",
         "type": "file",
-        "md5": "8187cf567d8bcf377c635affe473ced2"
+        "md5": "114fdf38162d2d50aac0ddedf512539c"
     },
     {
         "path": "phison-b100-d100-x100",
@@ -10337,7 +10712,7 @@
     {
         "path": "/phison-b100-d100-x100/index.html",
         "type": "file",
-        "md5": "0d570bda3214de6108abce28e18efcbc"
+        "md5": "97510effacb4a0534170bce76a8043ba"
     },
     {
         "path": "phison-ba50",
@@ -10347,7 +10722,7 @@
     {
         "path": "/phison-ba50/index.html",
         "type": "file",
-        "md5": "ba5f4f6b0a5b808a7ebdadd076921637"
+        "md5": "bd94070e6ccd5c25369291357c29e48e"
     },
     {
         "path": "phison-sa50",
@@ -10357,7 +10732,7 @@
     {
         "path": "/phison-sa50/index.html",
         "type": "file",
-        "md5": "660366c3bbe1db44354d0adf1fea3db7"
+        "md5": "13248a90eea3a554a0dbd7c1eb5ef64e"
     },
     {
         "path": "pm1725-oracle-f320-review",
@@ -10367,7 +10742,7 @@
     {
         "path": "/pm1725-oracle-f320-review/index.html",
         "type": "file",
-        "md5": "8126103e204218703b44b307b504d144"
+        "md5": "e2b996bc5a5f0cf610d9ce74d16410c6"
     },
     {
         "path": "purchasing-eaton-5p650ir",
@@ -10377,7 +10752,7 @@
     {
         "path": "/purchasing-eaton-5p650ir/index.html",
         "type": "file",
-        "md5": "b1c823c015eb0b4e1db4ce67a6eb1058"
+        "md5": "546a6f171c2e471c6ce3d59c6b6d1162"
     },
     {
         "path": "purchasing-pm883-8tb",
@@ -10387,7 +10762,7 @@
     {
         "path": "/purchasing-pm883-8tb/index.html",
         "type": "file",
-        "md5": "6f780e7926ca518dabde9d9d4ef4a1fc"
+        "md5": "a1c186cc2dd9a6db538e4d8839abffaa"
     },
     {
         "path": "purchasing-udm-pro",
@@ -10397,7 +10772,7 @@
     {
         "path": "/purchasing-udm-pro/index.html",
         "type": "file",
-        "md5": "c14a1d506afc99fb0f2001f8b3eeffb9"
+        "md5": "967d63c2bbea85231f005cd61a5cb40b"
     },
     {
         "path": "radian-memory-systems-rms-200-review",
@@ -10407,7 +10782,7 @@
     {
         "path": "/radian-memory-systems-rms-200-review/index.html",
         "type": "file",
-        "md5": "82a4fa0cc840de1d037616ba4110751d"
+        "md5": "c0347252cb3845a774e6bd49d3d3cece"
     },
     {
         "path": "record-2023",
@@ -10417,7 +10792,7 @@
     {
         "path": "/record-2023/index.html",
         "type": "file",
-        "md5": "cdd2abbefb4b07c302505d30cb352174"
+        "md5": "670f6235eb6f2a4156d11d496656fe19"
     },
     {
         "path": "refresh-ssd-benchmark-method",
@@ -10427,7 +10802,7 @@
     {
         "path": "/refresh-ssd-benchmark-method/index.html",
         "type": "file",
-        "md5": "c026d512982d9dd3aa9daca6e8b29c22"
+        "md5": "d3a9f274f35f2903875ef8cf5bcbdd0c"
     },
     {
         "path": "remember-2021",
@@ -10437,7 +10812,7 @@
     {
         "path": "/remember-2021/index.html",
         "type": "file",
-        "md5": "12a1222818cbaeb5d058d30f17357006"
+        "md5": "8675485e8bf477f71ff86ed8067c5629"
     },
     {
         "path": "robots.txt",
@@ -10452,7 +10827,7 @@
     {
         "path": "/ruminate-2022/index.html",
         "type": "file",
-        "md5": "fdfa45930c13bdb02dc3c555a2fd6785"
+        "md5": "03bcb0d2b451e9978cc3133bfefd70b1"
     },
     {
         "path": "samsung-870-evo-review",
@@ -10462,7 +10837,7 @@
     {
         "path": "/samsung-870-evo-review/index.html",
         "type": "file",
-        "md5": "5c0dca034abcb1559899facbd72218e9"
+        "md5": "2988c72e2fd9927ebfab9b9a5b2d5208"
     },
     {
         "path": "samsung-mz-3l615t",
@@ -10472,7 +10847,7 @@
     {
         "path": "/samsung-mz-3l615t/index.html",
         "type": "file",
-        "md5": "ce7f521a4596581721c21aea0031eab5"
+        "md5": "a38a0092ecc3b387d370d6f52833aab5"
     },
     {
         "path": "samsung-mz-vmx2t00",
@@ -10482,7 +10857,7 @@
     {
         "path": "/samsung-mz-vmx2t00/index.html",
         "type": "file",
-        "md5": "69856cc91901e5e43f0d1e33cbe41e26"
+        "md5": "29d4b02df979803876faa819794d6096"
     },
     {
         "path": "samsung-mz-wmo61t",
@@ -10492,7 +10867,7 @@
     {
         "path": "/samsung-mz-wmo61t/index.html",
         "type": "file",
-        "md5": "1bea53a9e4ae43624524ff4782b9d866"
+        "md5": "eea05f02b09de986e9ba750480d86513"
     },
     {
         "path": "samsung-z-nand",
@@ -10502,7 +10877,7 @@
     {
         "path": "/samsung-z-nand/index.html",
         "type": "file",
-        "md5": "44a55caf867891a502015b21181f4001"
+        "md5": "8ff201df031406d13c0349c37e005c0b"
     },
     {
         "path": "samsungs-phoenix-cssdzip",
@@ -10512,7 +10887,7 @@
     {
         "path": "/samsungs-phoenix-cssdzip/index.html",
         "type": "file",
-        "md5": "d103dc36ce75f41eaac6d4baf4198c1b"
+        "md5": "6b07999bf2a8ce2a0ea560904d8d13c8"
     },
     {
         "path": "seagate-nytro-5060",
@@ -10522,12 +10897,12 @@
     {
         "path": "/seagate-nytro-5060/index.html",
         "type": "file",
-        "md5": "525a57677227478ce654f27f1316a032"
+        "md5": "9b518866e3274650b72c479e154d000c"
     },
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "9300bb16022c15e55607816ba9471026"
+        "md5": "2cf5f7eee71a1e78294f9892f3863ce3"
     },
     {
         "path": "sitemap.xsl",
@@ -10542,7 +10917,7 @@
     {
         "path": "/sk-hynix-p31-2tb-review/index.html",
         "type": "file",
-        "md5": "04a3123c5fd999d41dfc32d208afa6b9"
+        "md5": "a13fbe499dadf2466653ab2cd39b8785"
     },
     {
         "path": "sk-hynix-p51-review",
@@ -10552,7 +10927,7 @@
     {
         "path": "/sk-hynix-p51-review/index.html",
         "type": "file",
-        "md5": "a720482e8b3310da1131622f198faf6e"
+        "md5": "4d0f9a566303d8af80084d6a6aa791b0"
     },
     {
         "path": "sn8100-2tb-review",
@@ -10562,7 +10937,7 @@
     {
         "path": "/sn8100-2tb-review/index.html",
         "type": "file",
-        "md5": "5bc23ee277365f4f74a026a3890d17f8"
+        "md5": "a9f67486771ff9c30b8f4c5216142c42"
     },
     {
         "path": "somnambulist-64gb-review",
@@ -10572,7 +10947,7 @@
     {
         "path": "/somnambulist-64gb-review/index.html",
         "type": "file",
-        "md5": "55145f11d7cff5d235e6cd2d07b67502"
+        "md5": "732a9b32579ef9fc6c4c986a0f2f76f4"
     },
     {
         "path": "synology-ns4825",
@@ -10582,7 +10957,7 @@
     {
         "path": "/synology-ns4825/index.html",
         "type": "file",
-        "md5": "1dd99d4b2730d146699c5067216caf94"
+        "md5": "75ed3b90048d4e7c1b7f8e0f577a9f2e"
     },
     {
         "path": "tags",
@@ -10597,7 +10972,7 @@
     {
         "path": "/tags/archive/index.html",
         "type": "file",
-        "md5": "c9e25157f13a18ab2997403ca0c77288"
+        "md5": "568ae02ab16da95a37b413f6811dda1e"
     },
     {
         "path": "tags/archive/page",
@@ -10612,7 +10987,7 @@
     {
         "path": "/tags/archive/page/2/index.html",
         "type": "file",
-        "md5": "efdc0b8a1a1cdde28f7e35cd2e873e52"
+        "md5": "ddf0a3d546a45e217fabe6c0f8a903d2"
     },
     {
         "path": "tags/archive/page/3",
@@ -10622,7 +10997,7 @@
     {
         "path": "/tags/archive/page/3/index.html",
         "type": "file",
-        "md5": "85ced0bfd63b975e38d38682a8282463"
+        "md5": "6afdcdb73030ac77723975d8a03982c6"
     },
     {
         "path": "tags/article",
@@ -10632,7 +11007,7 @@
     {
         "path": "/tags/article/index.html",
         "type": "file",
-        "md5": "8a26ccead2eb8c1c7a50f6c0ca57cc64"
+        "md5": "b52d64dbfece85335b37fdc2bdedbb72"
     },
     {
         "path": "tags/benchmark",
@@ -10642,7 +11017,7 @@
     {
         "path": "/tags/benchmark/index.html",
         "type": "file",
-        "md5": "8e2d5d1cc52687f50f1ee0cc6dbca87d"
+        "md5": "fe839111d1407ec876dd978976d77f10"
     },
     {
         "path": "tags/benchmark/page",
@@ -10657,7 +11032,7 @@
     {
         "path": "/tags/benchmark/page/2/index.html",
         "type": "file",
-        "md5": "80f010387fd98aa23685dd44d116b48b"
+        "md5": "9d085834b22f3be5f6685a9cf571db6c"
     },
     {
         "path": "tags/benchmark/page/3",
@@ -10667,7 +11042,17 @@
     {
         "path": "/tags/benchmark/page/3/index.html",
         "type": "file",
-        "md5": "87156f39870840c7d933ad6f3573e0e2"
+        "md5": "163d989e7297ebfec6013632e972b817"
+    },
+    {
+        "path": "tags/benchmark/page/4",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/tags/benchmark/page/4/index.html",
+        "type": "file",
+        "md5": "25fd554c0e27d8d483b72ed3dcb01430"
     },
     {
         "path": "tags/cssd",
@@ -10677,7 +11062,7 @@
     {
         "path": "/tags/cssd/index.html",
         "type": "file",
-        "md5": "c40f4c4cf389b4b8eb7c8d7f9e5e1e7c"
+        "md5": "b53988f3974168f508c916d59f67b3b4"
     },
     {
         "path": "tags/cssd/page",
@@ -10692,7 +11077,7 @@
     {
         "path": "/tags/cssd/page/2/index.html",
         "type": "file",
-        "md5": "979521176bef748237c42998376ea411"
+        "md5": "d9a6b759fd518f580fe622efe5d93ea3"
     },
     {
         "path": "tags/dramless",
@@ -10702,7 +11087,7 @@
     {
         "path": "/tags/dramless/index.html",
         "type": "file",
-        "md5": "e8feeac43ef96ff0b9c6ee1906f2f5ae"
+        "md5": "8e29c4854a2486f372486cf31c469933"
     },
     {
         "path": "tags/essd",
@@ -10712,7 +11097,7 @@
     {
         "path": "/tags/essd/index.html",
         "type": "file",
-        "md5": "4f5cb5d33a7ac159cf9d8a8ee61f5f40"
+        "md5": "3f8aa16540b2fb8d4c52402b01500d2e"
     },
     {
         "path": "tags/essd/page",
@@ -10727,7 +11112,7 @@
     {
         "path": "/tags/essd/page/2/index.html",
         "type": "file",
-        "md5": "9175ab29d154cb4610dc712024a7af03"
+        "md5": "498255e1510eb962e3530698c1f7dc24"
     },
     {
         "path": "tags/fadu",
@@ -10737,7 +11122,7 @@
     {
         "path": "/tags/fadu/index.html",
         "type": "file",
-        "md5": "b22b719a195374fca437de1016bdd7bc"
+        "md5": "1e3c1ed730f9414481f0019e1aa85144"
     },
     {
         "path": "tags/homelab",
@@ -10747,12 +11132,12 @@
     {
         "path": "/tags/homelab/index.html",
         "type": "file",
-        "md5": "f1dac1a5c3d4e1e74a3eada5384c5614"
+        "md5": "cff27d2f2b556a85965157319a66d8f9"
     },
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "f1364725b2715c2ad76d2006a0432f3a"
+        "md5": "4e7652f2d27b8b33e7308b5fd710f81f"
     },
     {
         "path": "tags/intel",
@@ -10762,7 +11147,7 @@
     {
         "path": "/tags/intel/index.html",
         "type": "file",
-        "md5": "358adaa74b3322c76b976e9cb7bcaf89"
+        "md5": "7413e3b026c52fe2f078e72cb3422edd"
     },
     {
         "path": "tags/kioxia",
@@ -10772,7 +11157,7 @@
     {
         "path": "/tags/kioxia/index.html",
         "type": "file",
-        "md5": "7a7118cdc476eb65ef926ba1f62ca35c"
+        "md5": "fdcf09e0dcfa22e680f4be8b0cff4118"
     },
     {
         "path": "tags/macos",
@@ -10782,7 +11167,7 @@
     {
         "path": "/tags/macos/index.html",
         "type": "file",
-        "md5": "a0f7b9b1808af1f64612ed526f9d3a77"
+        "md5": "6d35da424354f546bcb6d854a0f6413f"
     },
     {
         "path": "tags/marvell",
@@ -10792,7 +11177,7 @@
     {
         "path": "/tags/marvell/index.html",
         "type": "file",
-        "md5": "7d02ed15d1ba1b5a6cfe505ea9bbacc9"
+        "md5": "ec7038044a93d2926a851c91406edadc"
     },
     {
         "path": "tags/method",
@@ -10802,7 +11187,7 @@
     {
         "path": "/tags/method/index.html",
         "type": "file",
-        "md5": "7543485ed38dc01b98d0df68c586cd1e"
+        "md5": "221eeeb1c20451c55bc359ff4b67c6ca"
     },
     {
         "path": "tags/micorn",
@@ -10812,7 +11197,7 @@
     {
         "path": "/tags/micorn/index.html",
         "type": "file",
-        "md5": "04f7ee30d202faf9b2db904e4e20693d"
+        "md5": "8f024bb54df56b8b993e6707b8612595"
     },
     {
         "path": "tags/microchip",
@@ -10822,7 +11207,7 @@
     {
         "path": "/tags/microchip/index.html",
         "type": "file",
-        "md5": "450345a50ae6cb7fc9032c69469dbe81"
+        "md5": "0667ca870b4d9475442c9fec4f8021e2"
     },
     {
         "path": "tags/mlc",
@@ -10832,7 +11217,7 @@
     {
         "path": "/tags/mlc/index.html",
         "type": "file",
-        "md5": "2574e5b3068382d02417bd85bf7e8140"
+        "md5": "fcb380c6a1300eb1a7fdfbe889c9b1b3"
     },
     {
         "path": "tags/news",
@@ -10842,7 +11227,7 @@
     {
         "path": "/tags/news/index.html",
         "type": "file",
-        "md5": "32d346f7ee75561ea03e0838846c46d1"
+        "md5": "4f6f52f1f84e3c7985a600661cb2f4ee"
     },
     {
         "path": "tags/nyanyanyanyanyanyanya",
@@ -10852,7 +11237,7 @@
     {
         "path": "/tags/nyanyanyanyanyanyanya/index.html",
         "type": "file",
-        "md5": "70058475b5488343eba33cc3f79a4a3b"
+        "md5": "e63bcfdd6b38ea29fa2dd8597357bbe9"
     },
     {
         "path": "tags/optane",
@@ -10862,7 +11247,7 @@
     {
         "path": "/tags/optane/index.html",
         "type": "file",
-        "md5": "45cd6d49869f1d6773867245a10c77f1"
+        "md5": "1cd85f2fa5a94859cbdcc06de6b17066"
     },
     {
         "path": "tags/phison",
@@ -10872,7 +11257,7 @@
     {
         "path": "/tags/phison/index.html",
         "type": "file",
-        "md5": "56ab32ff8dbe09cc6bb959d43e05015a"
+        "md5": "3f0f45fe2a1b0053f5e0e732afbce382"
     },
     {
         "path": "tags/qlc",
@@ -10882,7 +11267,7 @@
     {
         "path": "/tags/qlc/index.html",
         "type": "file",
-        "md5": "6cbc642a8a36103f4f7a12890a62246a"
+        "md5": "65fc451996e81a6e72b2003700250473"
     },
     {
         "path": "tags/ram-disk",
@@ -10892,7 +11277,7 @@
     {
         "path": "/tags/ram-disk/index.html",
         "type": "file",
-        "md5": "dde6aadf49b03d3a43e89918b01f5759"
+        "md5": "d016ed08b844e6d663eb48c22a3fd1a8"
     },
     {
         "path": "tags/ramblings",
@@ -10902,7 +11287,7 @@
     {
         "path": "/tags/ramblings/index.html",
         "type": "file",
-        "md5": "b936a704b86697e347efe3469eeb7d92"
+        "md5": "f1275493bf558cf5ab338e7509293b5f"
     },
     {
         "path": "tags/realtek",
@@ -10912,7 +11297,7 @@
     {
         "path": "/tags/realtek/index.html",
         "type": "file",
-        "md5": "e82c9566740f3f01e1e9ce0bd9c8a533"
+        "md5": "7b309b5d25e73b9c989d269edfc7aae9"
     },
     {
         "path": "tags/samsung",
@@ -10922,7 +11307,7 @@
     {
         "path": "/tags/samsung/index.html",
         "type": "file",
-        "md5": "e6dcc5fcbaaa5976747278dafd342d35"
+        "md5": "338958cb08cc2233968e2240d8654bee"
     },
     {
         "path": "tags/sandisk",
@@ -10932,7 +11317,7 @@
     {
         "path": "/tags/sandisk/index.html",
         "type": "file",
-        "md5": "f71b98e607205cf8de909c17e6c82544"
+        "md5": "db0e7cfa598bc406a65f73896b602d75"
     },
     {
         "path": "tags/silicon-motion",
@@ -10942,7 +11327,7 @@
     {
         "path": "/tags/silicon-motion/index.html",
         "type": "file",
-        "md5": "8aebeecbe1cc492d4ba1cadaa292ff20"
+        "md5": "44f940c79f4a868731b22de703a044ca"
     },
     {
         "path": "tags/sk-hynix",
@@ -10952,7 +11337,7 @@
     {
         "path": "/tags/sk-hynix/index.html",
         "type": "file",
-        "md5": "edfacb8f944a46089abd8e6ab9d949b9"
+        "md5": "8f0ad9ee3a886f31b48b4150e971d729"
     },
     {
         "path": "tags/slc",
@@ -10962,7 +11347,17 @@
     {
         "path": "/tags/slc/index.html",
         "type": "file",
-        "md5": "57da07b88f1eafb9b360195e25a5de4e"
+        "md5": "44eafcc41f3e5d7e3f844c6d4da5307e"
+    },
+    {
+        "path": "tags/solidigm",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/tags/solidigm/index.html",
+        "type": "file",
+        "md5": "e77bfd5eae7cd53ec1d9ae883f04ca64"
     },
     {
         "path": "tags/spectek",
@@ -10972,7 +11367,7 @@
     {
         "path": "/tags/spectek/index.html",
         "type": "file",
-        "md5": "7b34552c1c70586748f28e38188033ec"
+        "md5": "bf2d542096daa30ba56e3dd506da7d5e"
     },
     {
         "path": "tags/tlc",
@@ -10982,7 +11377,7 @@
     {
         "path": "/tags/tlc/index.html",
         "type": "file",
-        "md5": "2b91bb9c01482457fdf35f911039a64d"
+        "md5": "9b60d71406c6f9bb18d2f1c5c10cbb56"
     },
     {
         "path": "tags/tlc/page",
@@ -10997,7 +11392,7 @@
     {
         "path": "/tags/tlc/page/2/index.html",
         "type": "file",
-        "md5": "8cda5b68e8950ee865de8bfb12e4a3bb"
+        "md5": "1ac18359f2582b63383b0aace83daab7"
     },
     {
         "path": "tags/toshiba",
@@ -11007,7 +11402,7 @@
     {
         "path": "/tags/toshiba/index.html",
         "type": "file",
-        "md5": "57cc61fa67d466f2e5dd90512d83a7e6"
+        "md5": "1f3c6fd99193408998d73bfe73ec9d46"
     },
     {
         "path": "tags/western-digital",
@@ -11017,7 +11412,7 @@
     {
         "path": "/tags/western-digital/index.html",
         "type": "file",
-        "md5": "ab78a55f67063b40ce41823767a0caa5"
+        "md5": "3cd852252b623e0e0ca0435795b5feb4"
     },
     {
         "path": "tags/z-nand",
@@ -11027,7 +11422,7 @@
     {
         "path": "/tags/z-nand/index.html",
         "type": "file",
-        "md5": "d52a98a83f1490f2996b0d4b0a82a444"
+        "md5": "ad04bf55bf4b0da487fd2e63b8764569"
     },
     {
         "path": "the-last-mlc-970-pro",
@@ -11037,7 +11432,7 @@
     {
         "path": "/the-last-mlc-970-pro/index.html",
         "type": "file",
-        "md5": "32a005aec8b9df3b34a2bfff32089829"
+        "md5": "43ca7656f07f7daa6f62a2c7211843e0"
     },
     {
         "path": "the-product-behind-the-benchmarks-905p-960gb",
@@ -11047,7 +11442,7 @@
     {
         "path": "/the-product-behind-the-benchmarks-905p-960gb/index.html",
         "type": "file",
-        "md5": "84d499fdcf25a44326b508eb6b9677bf"
+        "md5": "77fccdaf80ceef4aacef5f6f1b546599"
     },
     {
         "path": "tmpfs-benchmark",
@@ -11057,7 +11452,7 @@
     {
         "path": "/tmpfs-benchmark/index.html",
         "type": "file",
-        "md5": "7e0cc1f798b224677297fbdc2a6bb577"
+        "md5": "7295f19560eef23f44c6984f5553ffd6"
     },
     {
         "path": "toshiba-mg11sca24t",
@@ -11067,7 +11462,7 @@
     {
         "path": "/toshiba-mg11sca24t/index.html",
         "type": "file",
-        "md5": "da436d7907fd94ffa78ec8f23f5160a9"
+        "md5": "acba59b8667e64377f5e70ee68e04ede"
     },
     {
         "path": "transcend-mte310s",
@@ -11077,7 +11472,7 @@
     {
         "path": "/transcend-mte310s/index.html",
         "type": "file",
-        "md5": "cc27e4af9a62062f16c3a3885d0c96af"
+        "md5": "e88a4339abd310ac3b25f5e469911671"
     },
     {
         "path": "usw-pro-max-16-available",
@@ -11087,7 +11482,7 @@
     {
         "path": "/usw-pro-max-16-available/index.html",
         "type": "file",
-        "md5": "e9415ec2c116e16e4b2b5c162699b2ce"
+        "md5": "daac7f5d312207d38fa1c82f5e0c788d"
     },
     {
         "path": "wd-3-5-inch-sata-rvxha2",
@@ -11097,7 +11492,7 @@
     {
         "path": "/wd-3-5-inch-sata-rvxha2/index.html",
         "type": "file",
-        "md5": "0a0ef88726b956a14e9959533c952ffb"
+        "md5": "ef55b29d1601559bb0f36359af687f5b"
     },
     {
         "path": "wd-us7s",
@@ -11107,7 +11502,7 @@
     {
         "path": "/wd-us7s/index.html",
         "type": "file",
-        "md5": "f1f2f6dd42ef4b2368e6076984fcb88b"
+        "md5": "cd22958ac06084fad932881a62d28187"
     },
     {
         "path": "western-digital-sn850x-4tb-review",
@@ -11117,7 +11512,7 @@
     {
         "path": "/western-digital-sn850x-4tb-review/index.html",
         "type": "file",
-        "md5": "05b17f01f2af328a2a6402456dd0be7b"
+        "md5": "bc72a41a4054da1c576b70b0a1ba55ba"
     },
     {
         "path": "z-ssd-983-zet-sz983-review",
@@ -11127,6 +11522,6 @@
     {
         "path": "/z-ssd-983-zet-sz983-review/index.html",
         "type": "file",
-        "md5": "01165ffd6f187372a2844c74a3063c12"
+        "md5": "27281576ee8b15dcf1f1126a3e20536f"
     }
 ]
